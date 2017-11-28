@@ -1,4 +1,0 @@
-#!/bin/bash
-
-BASEDIR="/home/wirexmed/www/tools/utils"
-svn co svn://wirexmedia.com/home/repository/tools/utils $BASEDIR --username $1 --password $2 --non-interactive
