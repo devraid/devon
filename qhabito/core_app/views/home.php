@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/home.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
-		<link href="/css/common.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/qhabito/css/common.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 <body>
 	<!-- HEADER / BEGIN -->
