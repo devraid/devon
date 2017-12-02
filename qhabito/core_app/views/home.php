@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+echo $_SERVER['DOCUMENT_ROOT'].' '.base_url();
 ?>
 <!DOCTYPE HTML>
 	<html lang="en" class="has-scroll">
@@ -30,13 +31,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script type="text/javascript" src="/js/common.js"></script>
 		
 		<link href="/css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="/css/common.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/modules.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/home.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
+		<link href="<?= base_url(); ?>css/common.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 <body>
+	<!-- HEADER / BEGIN -->
+	<div class="header clearfix">
+		<div class="top-bar">
+			<div class="search">
+				<form class="search" action="/busca" method="get">
+					<fieldset>
+						<input class="text" type="text" name="q" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+						<a class="send" href="#" title="">&nbsp;</a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- HEADER / END -->
 	hello world
 </body>
 </html>

@@ -25,9 +25,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = '';
 if ($_SERVER['SERVER_NAME'] === 'devon.wirexmedia.localhost') {
-	$config['base_url'] = 'http://devon.wirexmedia.localhost';
+	$config['base_url'] = 'http://devon.wirexmedia.localhost/qhabito';
 } else {
-	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'];
+	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . 'qhabito';
 }
 
 /*
