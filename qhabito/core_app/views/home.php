@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-echo $_SERVER['DOCUMENT_ROOT'].' '.base_url();
 ?>
 <!DOCTYPE HTML>
 	<html lang="en" class="has-scroll">
@@ -35,7 +34,7 @@ echo $_SERVER['DOCUMENT_ROOT'].' '.base_url();
 		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/home.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
-		<link href="<?= base_url(); ?>css/common.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/qhabito/css/common.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 <body>
 	<!-- HEADER / BEGIN -->
