@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE HTML>
 	<html lang="en" class="has-scroll">
 	<head>
-		<title>SoloProyectos</title>
+		<title>QHabito</title>
 		<meta http-equiv="pragma" content="no-cache" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -32,25 +32,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href="/css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/modules.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="/css/home.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
 		<link href="/qhabito/css/common.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/qhabito/css/modules.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/qhabito/css/home.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 <body>
-	<!-- HEADER / BEGIN -->
-	<div class="header clearfix">
-		<div class="top-bar">
+	<!-- MAIN / BEGIN -->
+	<div class="main home">
+		<!-- HEADER / BEGIN -->
+		<div class="header clearfix">
+			<div class="top-bar">
+				<ul class="languages">
+					<li><a class="selected" href="#" title="">ESP</a></li>
+					<li><a href="#" title="">ENG</a></li>
+				</ul>
+			</div>
+			<a class="logo-link" href="#" title="">&nbsp;</a>
+		</div>
+		<!-- HEADER / END -->
+
+		<div class="module top-big-poster" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="search">
-				<form class="search" action="/busca" method="get">
+				<form action="/busca" method="get">
 					<fieldset>
-						<input class="text" type="text" name="q" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-						<a class="send" href="#" title="">&nbsp;</a>
+						<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
+						<div><a class="send" href="#" title="">Buscar</a></div>
 					</fieldset>
 				</form>
 			</div>
 		</div>
+		
+		<div class="content">
+			<div class="centered">
+				hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />
+			</div>
+		</div>
 	</div>
-	<!-- HEADER / END -->
-	hello world
+	<!-- MAIN / END -->
 </body>
 </html>
