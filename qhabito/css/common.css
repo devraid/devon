@@ -98,6 +98,7 @@ html, body {
 	
 	/* Smooth scrolling */
 	-webkit-overflow-scrolling: touch; /* smooth scrolling on native IOS */
+	transform: translate3d(0, 0, 0);
 }
 
 /* MAIN : HEADER */
@@ -107,7 +108,6 @@ html, body {
 	top: 0;
 	width: 100%;
 	height: auto;
-	background-color: #16487B;
 	display: block;
 }
 
@@ -130,7 +130,6 @@ html, body {
 	float: left;
 	width: 100%;
 	height: 50px;
-	background-color: #6789B2;
 	display: block;
 }
 
@@ -153,7 +152,7 @@ html, body {
 	list-style: none;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	/*color: #FFFFFF;*/
 	font-size: 10pt;
 	font-weight: normal;
 	font-style: normal;
@@ -170,19 +169,17 @@ html, body {
 	transition: color .25s ease;
 }
 .main .header .top-bar .languages li a:hover {
-	color: #09315A;
+	/*color: #09315A;*/
 }
 .main .header .top-bar .languages li .selected {
-	color: #09315A;
+	/*color: #09315A;*/
 	cursor: default;
 }
 
 /* MAIN : CONTENT */
 .main .content,
 .main .content .centered {
-	position: relative;
-	top: 0;
-	left: 0;
+	clear: both;
 	width: 100%;
 	height: auto;
 	padding: 0 10% 0 10%;
@@ -192,8 +189,34 @@ html, body {
 	padding: 0;
 	max-width: 1440px;
 	margin: 0 auto;
-	background-color: #FFFFFF;
 }
+
+/* COLORS */
+.fn-white {	color: #FFFFFF; }
+.bg-white {	background-color: #FFFFFF; }
+.fn-purple { color: #927BB4; }
+.bg-purple { background-color: #927BB4; }
+.fn-cove-blue {	color: #6789B2; }
+.bg-cove-blue {	background-color: #6789B2; }
+.fn-eastern-blue { color: #1C7EBE; }
+.bg-eastern-blue { background-color: #1C7EBE; }
+.fn-chathams-blue {	color: #16487B; }
+.bg-chathams-blue {	background-color: #16487B; }
+.bg-eastern-blue { background-color: #1C7EBE; }
+.fn-madison-blue { color: #09315A; }
+.bg-madison-blue { background-color: #09315A; }
+.fn-picton-blue { color: #33BAF1; }
+.bg-picton-blue { background-color: #33BAF1; }
+.fn-astral-blue { color: #3B8D99; }
+.bg-astral-blue { background-color: #3B8D99; }
+.fn-cucumber-green { color: #86B14F; }
+.bg-cucumber-green { background-color: #86B14F; }
+.fn-golden-yellow { color: #86B14F; }
+.bg-golden-yellow { background-color: #86B14F; }
+.fn-flame-red { color: #DA592A; }
+.bg-flame-red { background-color: #DA592A; }
+.fn-mystic-gray { color: #DBE4E8; }
+.bg-mystic-gray { background-color: #DBE4E8; }
 
 /* RESPONSIVE */
 @media (max-device-width: 1200px), (max-width: 1200px) { /* up to 1200px */

@@ -7,8 +7,6 @@
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	border-radius: 0;
-	background: none;
-	background-image: none;
 	outline: none;
 	line-height: 60px;
 	height: 60px;
@@ -17,7 +15,6 @@
 .home .top-big-poster .search h1 {
 	height: auto;
 	line-height: 24px;
-	color: #FFFFFF;
 	font-size: 18pt;
 	font-weight: bold;
 	font-style: normal;
@@ -27,10 +24,11 @@
 .home .top-big-poster .search fieldset,
 .home .top-big-poster .search input {
 	width: 100%;
-	color: #09315A;
 	font-weight: normal;
     font-style: normal;
 	font-size: 13.5pt;
+	background: none;
+	background-image: none;
 }
 .home .top-big-poster .search {
 	position: relative;
@@ -50,35 +48,54 @@
 .home .top-big-poster .search input {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
+	background-color: #DBE4E8;
+	padding: 0 15px 0 15px;
+	color: #09315A;
+}
+.home .top-big-poster .search input::-ms-clear {
+	display: none;
 }
 .home .top-big-poster .search input,
 .home .top-big-poster .search .send {
-	background-color: #DBE4E8;
-	padding: 0 15px 0 15px;
-	
-	/* Transition */
-	-webkit-transition: background-color 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
-	-moz-transition: background-color 0.25s ease; /* Firefox < 16 */
-	-ms-transition: background-color 0.25s ease; /* Internet Explorer */
-	-o-transition: background-color 0.25s ease; /* Opera < 12.1 */
-	transition: background-color 0.25s ease;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 .home .top-big-poster .search input:focus {
 	background-color: #FFFFFF;
 }
-.home .top-big-poster .search .send {
+.home .top-big-poster .search .send,
+.home .top-big-poster .search .send span {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	padding: 0 20px 0 20px;
 	text-decoration: none;
 	text-align: center;
 	font-size: 13.5pt;
-	color: #FFFFFF;
 	width: auto;
-	background-color: #16487B;
 }
-.home .top-big-poster .search .send:hover {
-	background-color: #33BAF1;
+.home .top-big-poster .search .send span:first-of-type,
+.home .top-big-poster .search .send span:last-of-type{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.home .top-big-poster .search .send span:first-of-type {
+	width: 100%;
+	opacity: 0;
+	
+	/* Transition */
+	-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+	-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
+	-ms-transition: opacity 0.25s ease; /* Internet Explorer */
+	-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
+	transition: opacity 0.25s ease;
+}
+.home .top-big-poster .search .send span:last-of-type {
+	position: relative;
+	padding: 0 20px 0 20px;
+}
+.home .top-big-poster .search .send:hover span:first-of-type {
+	opacity: 1;
 }
 .home .top-big-poster .search div {
 	display: table-cell;

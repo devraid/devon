@@ -41,31 +41,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- MAIN / BEGIN -->
 	<div class="main home">
 		<!-- HEADER / BEGIN -->
-		<div class="header clearfix">
-			<div class="top-bar">
+		<div class="header bg-chathams-blue clearfix">
+			<div class="top-bar bg-cove-blue">
 				<ul class="languages">
-					<li><a class="selected" href="#" title="">ESP</a></li>
-					<li><a href="#" title="">ENG</a></li>
+					<li><a class="selected" href="#" title=""><span class="fn-white">ESP</span><span class="fn-madison-blue">ESP</span></a></li>
+					<li><a href="#" title=""><span class="fn-white">ENG</span><span class="fn-madison-blue">ENG</span></a></li>
 				</ul>
 			</div>
-			<a class="logo-link" href="#" title="">&nbsp;</a>
+			<div class="content">
+				<div class="centered">
+					<a class="logo-link" href="#" title="">&nbsp;</a>
+				</div>
+			</div>
 		</div>
 		<!-- HEADER / END -->
 
-		<div class="module top-big-poster" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
+		<div class="module top-big-poster bg-cove-blue" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="search">
-				<h1>Alquilar y comprar en pocos pasos...</h1>
+				<h1 class="fn-white">Alquilar y comprar en pocos pasos...</h1>
 				<form action="/busca" method="get">
 					<fieldset>
 						<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
-						<div><a class="send" href="#" title="">Buscar</a></div>
+						<div><a class="send bg-chathams-blue fn-white" href="#" title=""><span class="bg-picton-blue">&nbsp;</span><span>Buscar</span></a></div>
 					</fieldset>
 				</form>
 			</div>
 		</div>
 		
 		<div class="content">
-			<div class="centered">
+			<div class="centered bg-white">
 				hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />
 			</div>
 		</div>
