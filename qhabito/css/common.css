@@ -197,18 +197,7 @@ html, body {
 
 /* RESPONSIVE */
 @media (max-device-width: 1200px), (max-width: 1200px) { /* up to 1200px */
-	.main .header .top-bar .search:hover,
-	.main .header .top-bar .search {
-		margin: 5px 15px 0 0;
-		width: calc(100% - 30px);
-		max-width: 300px;
-		background-color: #DBE4E8;
-		border: #DBE4E8 solid 1px;
-	}
-	.main .header .top-bar .search input {
-		padding: 0 40px 0 15px;
-		visibility: visible;
-	}
+	/* TBD */
 }
 @media (max-device-width: 900px), (max-width: 900px) { /* up to 900px */
 	.main .header .top-bar .languages {
@@ -216,5 +205,13 @@ html, body {
 		top: 0;
 		left: 0;
 		padding: 0 0 0 10px;
+	}
+	.main h1 br,
+	.main h2 br,
+	.main h3 br,
+	.main h4 br,
+	.main h5 br,
+	.main h6 br {
+		display: none;
 	}
 }

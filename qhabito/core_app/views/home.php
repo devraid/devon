@@ -54,6 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div class="module top-big-poster" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="search">
+				<h1>Alquilar y comprar en pocos pasos...</h1>
 				<form action="/busca" method="get">
 					<fieldset>
 						<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>

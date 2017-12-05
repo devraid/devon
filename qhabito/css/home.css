@@ -14,6 +14,15 @@
 	height: 60px;
 	display: block;
 }
+.home .top-big-poster .search h1 {
+	height: auto;
+	line-height: 24px;
+	color: #FFFFFF;
+	font-size: 18pt;
+	font-weight: bold;
+	font-style: normal;
+	padding: 13px 0 13px 0;
+}
 .home .top-big-poster .search form,
 .home .top-big-poster .search fieldset,
 .home .top-big-poster .search input {
@@ -25,7 +34,7 @@
 }
 .home .top-big-poster .search {
 	position: relative;
-	top: 50%;
+	top: calc(50% - 50px);
 	left: 50%;
 	width: 660px;
 	max-width: 80%;
@@ -38,27 +47,28 @@
 	-o-transform:                translate(-50%, -50%); /* Opera < 12.1 */
 	transform:                   translate(-50%, -50%);
 }
+.home .top-big-poster .search input {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
 .home .top-big-poster .search input,
 .home .top-big-poster .search .send {
-	border-radius: 5px;
 	background-color: #DBE4E8;
 	padding: 0 15px 0 15px;
-	visibility: visible;
 	
 	/* Transition */
-	-webkit-transition: background-color .25s ease; /* Safari, Chrome and Opera > 12.1 */
-	-moz-transition: background-color .25s ease; /* Firefox < 16 */
-	-ms-transition: background-color .25s ease; /* Internet Explorer */
-	-o-transition: background-color .25s ease; /* Opera < 12.1 */
-	transition: background-color .25s ease;
+	-webkit-transition: background-color 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+	-moz-transition: background-color 0.25s ease; /* Firefox < 16 */
+	-ms-transition: background-color 0.25s ease; /* Internet Explorer */
+	-o-transition: background-color 0.25s ease; /* Opera < 12.1 */
+	transition: background-color 0.25s ease;
 }
 .home .top-big-poster .search input:focus {
 	background-color: #FFFFFF;
 }
 .home .top-big-poster .search .send {
-	position: absolute;
-	top: 0;
-	right: -1px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	padding: 0 20px 0 20px;
 	text-decoration: none;
 	text-align: center;
@@ -66,8 +76,13 @@
 	color: #FFFFFF;
 	width: auto;
 	background-color: #16487B;
-	display: block;
 }
 .home .top-big-poster .search .send:hover {
 	background-color: #33BAF1;
+}
+.home .top-big-poster .search div {
+	display: table-cell;
+}
+.home .top-big-poster .search div:first-of-type {
+	width: 100%;
 }
