@@ -81,7 +81,11 @@
 }
 .home .top-big-poster .search .send span:first-of-type {
 	width: 100%;
-	opacity: 0;
+}
+.home .top-big-poster .search .send span:last-of-type {
+	position: relative;
+	padding: 0 20px 0 20px;
+	opacity: 1;
 	
 	/* Transition */
 	-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
@@ -90,12 +94,8 @@
 	-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
 	transition: opacity 0.25s ease;
 }
-.home .top-big-poster .search .send span:last-of-type {
-	position: relative;
-	padding: 0 20px 0 20px;
-}
-.home .top-big-poster .search .send:hover span:first-of-type {
-	opacity: 1;
+.home .top-big-poster .search .send:hover span:last-of-type {
+	opacity: 0;
 }
 .home .top-big-poster .search div {
 	display: table-cell;

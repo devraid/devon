@@ -62,14 +62,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<form action="/busca" method="get">
 					<fieldset>
 						<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
-						<div><a class="send bg-chathams-blue fn-white" href="#" title=""><span class="bg-picton-blue">&nbsp;</span><span>Buscar</span></a></div>
+						<div><a class="send fn-white" href="#" title=""><span class="bg-picton-blue">Buscar</span><span class="bg-chathams-blue">Buscar</span></a></div>
 					</fieldset>
 				</form>
 			</div>
 		</div>
 		
 		<div class="content">
-			<div class="centered bg-white">
+			<div class="centered bg-white fn-flame-red">
 				hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />
 			</div>
 		</div>
