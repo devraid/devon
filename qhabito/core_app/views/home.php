@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta name="keywords" content="" />
 		<meta name="robots" content="index,follow" />
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
-		<meta name="theme-color" content="#001A69" />
-		<meta name="msapplication-navbutton-color" content="#001A69" />
+		<meta name="theme-color" content="#16487B" />
+		<meta name="msapplication-navbutton-color" content="#16487B" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="format-detection" content="telephone=no">
 		<!--
@@ -49,13 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 			</div>
 			<div class="content">
-				<div class="centered">
+				<div class="padded-wrap">
 					<a class="logo-link" href="#" title="">&nbsp;</a>
 				</div>
 			</div>
 		</div>
 		<!-- HEADER / END -->
-
+		<!-- MODULE / BEGIN -->
 		<div class="module top-big-poster bg-cove-blue" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="search">
 				<h1 class="fn-white">Alquilar y comprar en pocos pasos...</h1>
@@ -67,12 +67,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</form>
 			</div>
 		</div>
-		
+		<!-- MODULE / END -->
+		<!-- CONTENT / BEGIN -->
 		<div class="content">
-			<div class="centered bg-white fn-flame-red">
+			<div class="padded-wrap bg-white fn-flame-red">
 				hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />
 			</div>
 		</div>
+		<!-- CONTENT / END -->
+		<!-- FOOTER / BEGIN -->
+		<div class="footer bg-sand-gray">
+			<div class="padded-wrap">
+				<ul class="primary clearfix">
+					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Inicio</span><span class="bg-sand-gray fn-picton-blue">Inicio</span></a></li>
+					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Alquiler</span><span class="bg-sand-gray fn-picton-blue">Alquiler</span></a></li>
+					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Compra</span><span class="bg-sand-gray fn-picton-blue">Compra</span></a></li>
+					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Venta</span><span class="bg-sand-gray fn-picton-blue">Venta</span></a></li>
+					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Vacacional</span><span class="bg-sand-gray fn-picton-blue">Vacacional</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- FOOTER / END -->
 	</div>
 	<!-- MAIN / END -->
 </body>
