@@ -77,15 +77,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- CONTENT / END -->
 		<!-- FOOTER / BEGIN -->
 		<div class="footer bg-sand-gray">
-			<div class="padded-wrap">
-				<ul class="primary clearfix">
-					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Inicio</span><span class="bg-sand-gray fn-picton-blue">Inicio</span></a></li>
-					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Alquiler</span><span class="bg-sand-gray fn-picton-blue">Alquiler</span></a></li>
-					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Compra</span><span class="bg-sand-gray fn-picton-blue">Compra</span></a></li>
-					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Venta</span><span class="bg-sand-gray fn-picton-blue">Venta</span></a></li>
-					<li><a href="#" title=""><span class="bg-picton-blue fn-white">Vacacional</span><span class="bg-sand-gray fn-picton-blue">Vacacional</span></a></li>
-				</ul>
-			</div>
+			<ul class="primary clearfix">
+				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Inicio</span><span class="bg-sand-gray fn-cove-blue">Inicio</span></a></li>
+				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Alquiler</span><span class="bg-sand-gray fn-cove-blue">Alquiler</span></a></li>
+				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Compra</span><span class="bg-sand-gray fn-cove-blue">Compra</span></a></li>
+				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Venta</span><span class="bg-sand-gray fn-cove-blue">Venta</span></a></li>
+				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Vacacional</span><span class="bg-sand-gray fn-cove-blue">Vacacional</span></a></li>
+			</ul>
 		</div>
 		<!-- FOOTER / END -->
 	</div>
