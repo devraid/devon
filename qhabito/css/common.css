@@ -126,6 +126,12 @@ html, body {
 	background-size: contain;
 	display: block;
 }
+.main .header .content {
+	position: relative;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 
 /* MAIN : HEADER : TOP BAR */
 .main .header .top-bar {
