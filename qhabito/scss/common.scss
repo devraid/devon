@@ -1,0 +1,337 @@
+/* RESET STYLES */
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-style: normal;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+body {
+	line-height: 1;
+}
+:focus {
+	outline: 0;
+}
+ol, ul {
+	list-style: none;
+}
+img {
+	display: block;
+	border: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+i, em {
+	font-style: italic;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* HTML AND BODY */
+html, body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background-color: #F6F6F6;
+	font-family: Helvetica, Arial, 'sans-serif';
+	display: block;
+	
+	/* Overflow */
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	/* Font smoothing */
+	-webkit-font-smoothing: antialiased;
+	
+	/* Smooth scrolling */
+	-webkit-overflow-scrolling: touch; /* smooth scrolling on native IOS */
+}
+
+/* CLEARFIX */
+.clearfix:after {
+	content: ".";
+	height: 0;
+	width: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+	opacity: 0;
+	display: block;
+}
+
+/* MAIN */
+.main {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	/* Smooth scrolling */
+	-webkit-overflow-scrolling: touch; /* smooth scrolling on native IOS */
+	transform: translate3d(0, 0, 0);
+}
+
+/* MAIN : HEADER */
+.main .header {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	display: block;
+	
+	.content {
+		position: relative;
+		top: 0;
+		left: 0;
+		position: -webkit-sticky;
+		position: sticky;
+	}
+	
+	.logo-link {
+		clear: both;
+		width: 500px;
+		height: 100px;
+		font-size: 1pt;
+		text-decoration: none;
+		background-image: url(../css/images/image-0001.png);
+		background-position: center left;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: block;
+	}
+
+	.top-bar {
+		float: left;
+		width: 100%;
+		height: 50px;
+		display: block;
+		
+		.languages,
+		.languages * {
+			float: left;
+			width: auto;
+			height: 50px;
+			line-height: 50px;
+			list-style: none;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 10pt;
+			font-weight: normal;
+			font-style: normal;
+			display: block;
+		}
+		
+		.languages {
+			float: right;
+			padding: 0 10px 0 0;
+			
+			li a {
+				position: relative;
+				top: 0;
+				left: 0;
+				
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 1;
+					padding: 0 10px 0 10px;
+
+					/* Transition */
+					-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+					-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
+					-ms-transition: opacity 0.25s ease; /* Internet Explorer */
+					-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
+					transition: opacity 0.25s ease;
+				}
+				
+				span:last-of-type {
+					position: relative;
+				}
+			}
+			
+			li a:hover,
+			.selected {
+				span:last-of-type {
+					opacity: 0;
+				}
+			}
+			
+			.selected {
+				cursor: default;
+			}
+		}
+	}
+}
+
+/* MAIN : CONTENT, MAIN : FOOTER */
+.main .content,
+.main .content .padded-wrap,
+.main .footer,
+.main .footer .padded-wrap {
+	clear: both;
+	width: 90%;
+	max-width: 1440px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+.main .content {
+	.padded-wrap {
+		padding: 0 5% 0 5%;
+		width: 100%;
+	}	
+}
+
+/* MAIN : FOOTER */
+.main .footer {
+	padding: 50px 0 50px 0;
+	
+	.primary,
+	.primary li,
+	.primary li a,
+	.primary li a span {
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		text-decoration: none;
+		font-size: 15pt;
+		display: block;
+	}
+	
+	.primary {
+		border-bottom: #C7C7C7 solid 1px;
+		overflow: hidden;
+	
+		li {
+			float: left;
+			width: auto;
+			border-right: #C7C7C7 solid 1px;
+			overflow: hidden;
+		}
+
+		li:last-of-type {
+			border-right: none;
+		}
+
+		li {
+			a,
+			a span {
+				width: auto;
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		li {
+			a {
+				span {
+					padding: 0 20px 0 20px;
+					position: relative;
+					top: 0;
+					left: 0;
+					opacity: 1;
+
+					/* Transition */
+					-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+					-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
+					-ms-transition: opacity 0.25s ease; /* Internet Explorer */
+					-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
+					transition: opacity 0.25s ease;
+				}
+				
+				span:last-of-type {
+					position: absolute;
+				}
+			}
+			a:hover {
+				span:last-of-type {
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+
+/* COLORS */
+.fnca {	color: #FFFFFF !important; }
+.bgca {	background-color: #FFFFFF !important; }
+.fncb { color: #927BB4 !important; }
+.bgcb { background-color: #927BB4 !important; }
+.fncc {	color: #6789B2 !important; }
+.bgcc {	background-color: #6789B2 !important; }
+.fncd { color: #1C7EBE !important; }
+.bgcd { background-color: #1C7EBE !important; }
+.fnce {	color: #16487B !important; }
+.bgce {	background-color: #16487B !important; }
+.fncf { color: #09315A !important; }
+.bgcf { background-color: #09315A !important; }
+.fncg { color: #33BAF1 !important; }
+.bgcg { background-color: #33BAF1 !important; }
+.fnch { color: #3B8D99 !important; }
+.bgch { background-color: #3B8D99 !important; }
+.fnci { color: #86B14F !important; }
+.bgci { background-color: #86B14F !important; }
+.fncj { color: #86B14F !important; }
+.bgcj { background-color: #86B14F !important; }
+.fnck { color: #DA592A !important; }
+.bgck { background-color: #DA592A !important; }
+.fncl { color: #DBE4E8 !important; }
+.bgcl { background-color: #DBE4E8 !important; }
+.fncm { color: #F6F6F6 !important; }
+.bgcm { background-color: #F6F6F6 !important; }
+
+/* RESPONSIVE */
+@media (max-device-width: 1200px), (max-width: 1200px) { /* up to 1200px */
+	/* TBD */
+}
+@media (max-device-width: 900px), (max-width: 900px) { /* up to 900px */
+	.main .header .top-bar .languages {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0 0 0 10px;
+	}
+	.main h1 br,
+	.main h2 br,
+	.main h3 br,
+	.main h4 br,
+	.main h5 br,
+	.main h6 br {
+		display: none;
+	}
+}

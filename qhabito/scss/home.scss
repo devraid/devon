@@ -1,0 +1,120 @@
+/* HOME : TOP BIG POSTER : SEARCH */
+.home .top-big-poster {
+	
+	.search,
+	.search * {
+		margin: 0;
+		padding: 0;
+		border: none;
+		-webkit-appearance: none;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		outline: none;
+		line-height: 60px;
+		height: 60px;
+		display: block;
+	}
+	
+	.search {
+		position: relative;
+		top: calc(50% - 50px);
+		left: 50%;
+		width: 660px;
+		max-width: 90%;
+		z-index: 99999;
+
+		/* Translate */
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
+		div {
+			display: table-cell;
+		}
+		
+		div:first-of-type {
+			width: 100%;
+		}
+		
+		form,
+		fieldset,
+		input {
+			width: 100%;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 13.5pt;
+			background: none;
+			background-image: none;
+		}
+		
+		h1 {
+			height: auto;
+			line-height: 24px;
+			font-size: 18pt;
+			font-weight: bold;
+			font-style: normal;
+			padding: 13px 0 13px 0;
+		}
+		
+		input,
+		.send,
+		.send span {
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+		
+		input {
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			/*background-color: #DBE4E8;*/
+			padding: 0 15px 0 15px;
+			color: #09315A;
+			line-height: normal;
+		}
+		
+		input:focus {
+			background-color: #FFFFFF !important;
+		}
+		
+		input::-ms-clear {
+			display: none;
+		}
+		
+		.send,
+		.send span {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			text-decoration: none;
+			text-align: center;
+			font-size: 13.5pt;
+			width: auto;
+		}
+		
+		.send {
+			span:first-of-type {
+				position: absolute;
+				width: 100%;
+			}
+			span:last-of-type {
+				padding: 0 20px 0 20px;
+				opacity: 0;
+
+				/* Transition */
+				-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+				-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
+				-ms-transition: opacity 0.25s ease; /* Internet Explorer */
+				-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
+				transition: opacity 0.25s ease;
+			}
+		}
+		
+		.send:hover {
+			span:last-of-type {
+				opacity: 1;
+			}
+		}
+	}
+}

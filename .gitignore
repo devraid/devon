@@ -2,3 +2,4 @@
 .DS_Store
 access_log
 error_log
+/qhabito/tmp

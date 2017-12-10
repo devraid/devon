@@ -1,0 +1,9 @@
+/* TOP BIG POSTER */
+.top-big-poster {
+	width: 100%;
+	height: calc(100% - 150px); /* minus header height */
+	background-image: none;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

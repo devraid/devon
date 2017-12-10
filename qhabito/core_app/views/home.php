@@ -41,11 +41,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- MAIN / BEGIN -->
 	<div class="main home">
 		<!-- HEADER / BEGIN -->
-		<div class="header bg-chathams-blue clearfix">
-			<div class="top-bar bg-cove-blue">
+		<div class="header bgce clearfix">
+			<div class="top-bar bgcc">
 				<ul class="languages">
-					<li><a class="selected" href="#" title=""><span class="fn-white">ESP</span><span class="fn-madison-blue">ESP</span></a></li>
-					<li><a href="#" title=""><span class="fn-white">ENG</span><span class="fn-madison-blue">ENG</span></a></li>
+					<li><a class="selected" href="#" title=""><span class="bgcc fnca">ESP</span><span class="bgcc fncf">ESP</span></a></li>
+					<li><a href="#" title=""><span class="bgcc fnca">ENG</span><span class="bgcc fncf">ENG</span></a></li>
 				</ul>
 			</div>
 			<div class="content">
@@ -56,13 +56,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<!-- HEADER / END -->
 		<!-- MODULE / BEGIN -->
-		<div class="module top-big-poster bg-cove-blue" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
+		<div class="module top-big-poster bgcc" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="search">
-				<h1 class="fn-white">Alquilar y comprar en pocos pasos...</h1>
+				<h1 class="fnca">Alquilar y comprar en pocos pasos...</h1>
 				<form action="/busca" method="get">
 					<fieldset>
-						<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
-						<div><a class="send fn-white" href="#" title=""><span class="bg-picton-blue">Buscar</span><span class="bg-chathams-blue">Buscar</span></a></div>
+						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
+						<div><a class="send fnca" href="#" title=""><span class="bgcg">Buscar</span><span class="bgce">Buscar</span></a></div>
 					</fieldset>
 				</form>
 			</div>
@@ -70,19 +70,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- MODULE / END -->
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
-			<div class="padded-wrap bg-white fn-flame-red">
+			<div class="padded-wrap bgca fnck">
 				hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />
 			</div>
 		</div>
 		<!-- CONTENT / END -->
 		<!-- FOOTER / BEGIN -->
-		<div class="footer bg-sand-gray">
+		<div class="footer bgcm">
 			<ul class="primary clearfix">
-				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Inicio</span><span class="bg-sand-gray fn-cove-blue">Inicio</span></a></li>
-				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Alquiler</span><span class="bg-sand-gray fn-cove-blue">Alquiler</span></a></li>
-				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Compra</span><span class="bg-sand-gray fn-cove-blue">Compra</span></a></li>
-				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Venta</span><span class="bg-sand-gray fn-cove-blue">Venta</span></a></li>
-				<li><a href="#" title=""><span class="bg-cove-blue fn-white">Vacacional</span><span class="bg-sand-gray fn-cove-blue">Vacacional</span></a></li>
+				<li><a href="#" title=""><span class="bgcc fnca">Inicio</span><span class="bgcm fncc">Inicio</span></a></li>
+				<li><a href="#" title=""><span class="bgcc fnca">Alquiler</span><span class="bgcm fncc">Alquiler</span></a></li>
+				<li><a href="#" title=""><span class="bgcc fnca">Compra</span><span class="bgcm fncc">Compra</span></a></li>
+				<li><a href="#" title=""><span class="bgcc fnca">Venta</span><span class="bgcm fncc">Venta</span></a></li>
+				<li><a href="#" title=""><span class="bgcc fnca">Vacacional</span><span class="bgcm fncc">Vacacional</span></a></li>
 			</ul>
 		</div>
 		<!-- FOOTER / END -->
