@@ -33,6 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link href="/css/modules.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
+		<link href="/qhabito/css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/qhabito/css/common.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/qhabito/css/modules.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/qhabito/css/home.css" media="screen" rel="stylesheet" type="text/css" />
@@ -62,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<form action="/busca" method="get">
 					<fieldset>
 						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
-						<div><a class="send fnca" href="#" title=""><span class="bgcg">Buscar</span><span class="bgce">Buscar</span></a></div>
+						<div><a class="send fnca" href="#" title=""><span class="bgce">Buscar</span><span class="bgcg">Buscar</span></a></div>
 					</fieldset>
 				</form>
 			</div>
@@ -71,6 +72,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
 			<div class="padded-wrap bgca fnck">
+			
+				<!-- MODULE / BEGIN -->
+				<!--
+				<div class="module test">
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+				</div>
+				-->
+				<div class="module test">
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World Hello<br />World Hello<br />World Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+				</div>
+				<!-- MODULE / END -->
+			
 				hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />
 			</div>
 		</div>
@@ -78,11 +103,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- FOOTER / BEGIN -->
 		<div class="footer bgcm">
 			<ul class="primary clearfix">
-				<li><a href="#" title=""><span class="bgcc fnca">Inicio</span><span class="bgcm fncc">Inicio</span></a></li>
-				<li><a href="#" title=""><span class="bgcc fnca">Alquiler</span><span class="bgcm fncc">Alquiler</span></a></li>
-				<li><a href="#" title=""><span class="bgcc fnca">Compra</span><span class="bgcm fncc">Compra</span></a></li>
-				<li><a href="#" title=""><span class="bgcc fnca">Venta</span><span class="bgcm fncc">Venta</span></a></li>
-				<li><a href="#" title=""><span class="bgcc fnca">Vacacional</span><span class="bgcm fncc">Vacacional</span></a></li>
+				<li><a href="#" title=""><span class="bgcd fnca">Inicio</span><span class="bgcm fncd">Inicio</span></a></li>
+				<li><a href="#" title=""><span class="bgcd fnca">Alquiler</span><span class="bgcm fncd">Alquiler</span></a></li>
+				<li><a href="#" title=""><span class="bgcd fnca">Compra</span><span class="bgcm fncd">Compra</span></a></li>
+				<li><a href="#" title=""><span class="bgcd fnca">Venta</span><span class="bgcm fncd">Venta</span></a></li>
+				<li><a href="#" title=""><span class="bgcd fnca">Vacacional</span><span class="bgcm fncd">Vacacional</span></a></li>
+			</ul>
+			<ul class="secondary clearfix">
+				<li><h1 class="fncj">Visitor Essentials</h1>
+					<ul>
+						<li class="fnce"><a class="fncc" href="#" title="">Itineraries</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Maps</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Tours</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Transportation</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Traveler Information</a></li>
+					</ul>
+				</li>
+				<li><h1 class="fncj">Visit WeHo</h1>
+					<ul>
+						<li class="fnce"><a class="fncc" href="#" title="">About Us</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">I Am West Hollywood</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Site Map</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Legal</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Privacy Policy</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<!-- FOOTER / END -->

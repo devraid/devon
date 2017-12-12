@@ -60,7 +60,7 @@ html, body {
 	height: 100%;
 	min-height: 100%;
 	background-color: #F6F6F6;
-	font-family: Helvetica, Arial, 'sans-serif';
+	font-family: Arial, 'sans-serif';
 	display: block;
 	
 	/* Overflow */
@@ -220,6 +220,7 @@ html, body {
 .main .footer {
 	padding: 50px 0 50px 0;
 	
+	/* PRIMARY */
 	.primary,
 	.primary li,
 	.primary li a,
@@ -229,12 +230,17 @@ html, body {
 		line-height: 50px;
 		text-decoration: none;
 		font-size: 15pt;
+		font-weight: bold;
+		font-style: normal;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 		display: block;
 	}
 	
 	.primary {
 		border-bottom: #C7C7C7 solid 1px;
 		overflow: hidden;
+		height: auto;
 	
 		li {
 			float: left;
@@ -247,41 +253,96 @@ html, body {
 			border-right: none;
 		}
 
-		li {
-			a,
-			a span {
-				width: auto;
-				position: relative;
-				top: 0;
-				left: 0;
-			}
+		li a,
+		li a span {
+			width: auto;
+			position: relative;
+			top: 0;
+			left: 0;
 		}
 
 		li {
-			a {
-				span {
-					padding: 0 20px 0 20px;
-					position: relative;
-					top: 0;
-					left: 0;
-					opacity: 1;
+			a span {
+				padding: 0 20px 0 20px;
+				position: relative;
+				top: 0;
+				left: 0;
+				opacity: 1;
+
+				/* Transition */
+				-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+				-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
+				-ms-transition: opacity 0.25s ease; /* Internet Explorer */
+				-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
+				transition: opacity 0.25s ease;
+			}
+			a span:last-of-type {
+				position: absolute;
+			}
+			a:hover span:last-of-type {
+				opacity: 0;
+			}
+		}
+	}
+	
+	/* SECONDARY */
+	.secondary,
+	.secondary * {
+		width: auto;
+		height: auto;
+		line-height: 20px;
+		min-height: 20px;
+		list-style: none;
+		text-decoration: none;
+		font-size: 12.5pt;
+		font-weight: normal;
+		font-style: normal;
+		display: block;
+	}
+	.secondary {
+		float: left;
+		padding: 0 0 55px 0;
+		width: 66%;
+		
+		li,
+		li h1 {
+			float: left;
+			text-transform: uppercase;
+			font-size: 15pt;
+		}
+		li h1 {
+			float: none;
+			min-height: 40px;
+		}
+		li {
+			width: 50%;
+			padding: 48px 0 0 20px;
+			
+			li {
+				float: none;
+				text-transform: none;
+				width: auto;
+				margin: 10px 0 10px 0;
+				padding: 0;
+
+				a {
+					display: inline-block;
 
 					/* Transition */
-					-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
-					-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
-					-ms-transition: opacity 0.25s ease; /* Internet Explorer */
-					-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
-					transition: opacity 0.25s ease;
+					-webkit-transition: color 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+					-moz-transition: color 0.25s ease; /* Firefox < 16 */
+					-ms-transition: color 0.25s ease; /* Internet Explorer */
+					-o-transition: color 0.25s ease; /* Opera < 12.1 */
+					transition: color 0.25s ease;
 				}
-				
-				span:last-of-type {
-					position: absolute;
+				a:hover {
+					text-decoration: underline;
+					color: inherit !important;
 				}
 			}
-			a:hover {
-				span:last-of-type {
-					opacity: 0;
-				}
+			
+			li:last-of-type {
+				margin: 10px 0 0 0;
 			}
 		}
 	}
@@ -306,8 +367,8 @@ html, body {
 .bgch { background-color: #3B8D99 !important; }
 .fnci { color: #86B14F !important; }
 .bgci { background-color: #86B14F !important; }
-.fncj { color: #86B14F !important; }
-.bgcj { background-color: #86B14F !important; }
+.fncj { color: #C7C7C7 !important; }
+.bgcj { background-color: #C7C7C7 !important; }
 .fnck { color: #DA592A !important; }
 .bgck { background-color: #DA592A !important; }
 .fncl { color: #DBE4E8 !important; }
@@ -319,7 +380,7 @@ html, body {
 @media (max-device-width: 1200px), (max-width: 1200px) { /* up to 1200px */
 	/* TBD */
 }
-@media (max-device-width: 900px), (max-width: 900px) { /* up to 900px */
+@media (max-device-width: 800px), (max-width: 800px) { /* up to 800px */
 	.main .header .top-bar .languages {
 		position: absolute;
 		top: 0;
@@ -333,5 +394,29 @@ html, body {
 	.main h5 br,
 	.main h6 br {
 		display: none;
+	}
+	.main .footer .primary {
+		border-bottom: none;
+		
+		li {
+			border-right: none;
+			border-bottom: #C7C7C7 solid 1px;
+			float: none;
+			
+			a span {
+				width: 100%;
+			}
+			a:hover span:last-of-type {
+				opacity: 1;
+			}
+		}
+	}
+	.main .footer .secondary {
+		width: 100%;
+	}
+}
+@media (max-device-width: 600px), (max-width: 600px) { /* up to 600px */
+	.main .footer .secondary li {
+		width: 100%;
 	}
 }

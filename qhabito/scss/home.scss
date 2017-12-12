@@ -100,7 +100,7 @@
 			}
 			span:last-of-type {
 				padding: 0 20px 0 20px;
-				opacity: 0;
+				opacity: 1;
 
 				/* Transition */
 				-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
@@ -113,7 +113,7 @@
 		
 		.send:hover {
 			span:last-of-type {
-				opacity: 1;
+				opacity: 0;
 			}
 		}
 	}
