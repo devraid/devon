@@ -301,7 +301,6 @@ html, body {
 	}
 	.secondary {
 		float: left;
-		padding: 0 0 55px 0;
 		width: 66%;
 		
 		li,
@@ -346,6 +345,21 @@ html, body {
 			}
 		}
 	}
+	
+	/* NEWSLETTER */
+	.simple-form {
+		float: right;
+		width: 33%;
+		
+		h1 {
+			line-height: 20px;
+			font-size: 15pt;
+			font-weight: normal;
+			font-style: normal;
+			padding: 48px 0 37px 0px;
+			text-transform: uppercase;
+		}
+	}
 }
 
 /* COLORS */
@@ -377,8 +391,42 @@ html, body {
 .bgcm { background-color: #F6F6F6 !important; }
 
 /* RESPONSIVE */
+@media (max-device-width: 1400px), (max-width: 1400px) { /* up to 1400px */
+	.main .footer {
+		.secondary {
+			width: 60%;
+		}
+		
+		.simple-form {
+			width: 40%;
+		}
+	}
+}
 @media (max-device-width: 1200px), (max-width: 1200px) { /* up to 1200px */
-	/* TBD */
+	.main .footer {
+		.secondary {
+			width: 55%;
+		}
+		
+		.simple-form {
+			width: 45%;
+		}
+	}
+}
+@media (max-device-width: 1200px), (max-width: 1000px) { /* up to 1000px */
+	.main .footer {
+		.secondary {
+			width: 40%;
+			li {
+				width: 100%;
+				clear: both;
+			}
+		}
+		
+		.simple-form {
+			width: 60%;
+		}
+	}
 }
 @media (max-device-width: 800px), (max-width: 800px) { /* up to 800px */
 	.main .header .top-bar .languages {
@@ -395,24 +443,40 @@ html, body {
 	.main h6 br {
 		display: none;
 	}
-	.main .footer .primary {
-		border-bottom: none;
-		
-		li {
-			border-right: none;
-			border-bottom: #C7C7C7 solid 1px;
-			float: none;
-			
-			a span {
-				width: 100%;
-			}
-			a:hover span:last-of-type {
-				opacity: 1;
+	.main .footer {
+		.primary {
+			border-bottom: none;
+
+			li {
+				border-right: none;
+				border-bottom: #C7C7C7 solid 1px;
+				float: none;
+
+				a span {
+					width: 100%;
+				}
+				a:hover span:last-of-type {
+					opacity: 1;
+				}
 			}
 		}
-	}
-	.main .footer .secondary {
-		width: 100%;
+	
+		.secondary {
+			width: 100%;
+			
+			a,
+			a:hover {
+				text-decoration: none;
+				color: inherit !important;
+			}
+		}
+		
+		.simple-form {
+			float: none;
+			clear: both;
+			width: calc(100% - 20px);
+			padding: 0 0 0 20px;
+		}
 	}
 }
 @media (max-device-width: 600px), (max-width: 600px) { /* up to 600px */

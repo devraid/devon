@@ -58,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- HEADER / END -->
 		<!-- MODULE / BEGIN -->
 		<div class="module top-big-poster bgcc" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
-			<div class="search">
+			<div class="module simple-form">
 				<h1 class="fnca">Alquilar y comprar en pocos pasos...</h1>
 				<form action="/busca" method="get">
 					<fieldset>
@@ -101,7 +101,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<!-- CONTENT / END -->
 		<!-- FOOTER / BEGIN -->
-		<div class="footer bgcm">
+		<div class="footer bgcm clearfix">
 			<ul class="primary clearfix">
 				<li><a href="#" title=""><span class="bgcd fnca">Inicio</span><span class="bgcm fncd">Inicio</span></a></li>
 				<li><a href="#" title=""><span class="bgcd fnca">Alquiler</span><span class="bgcm fncd">Alquiler</span></a></li>
@@ -110,25 +110,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<li><a href="#" title=""><span class="bgcd fnca">Vacacional</span><span class="bgcm fncd">Vacacional</span></a></li>
 			</ul>
 			<ul class="secondary clearfix">
-				<li><h1 class="fncj">Visitor Essentials</h1>
+				<li><h1 class="fncg">Esenciales</h1>
 					<ul>
-						<li class="fnce"><a class="fncc" href="#" title="">Itineraries</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Maps</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Tours</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Transportation</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Traveler Information</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Area de Usuarios</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Preguntas Frecuentes</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Mapa del Sitio</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Contactar</a></li>
 					</ul>
 				</li>
-				<li><h1 class="fncj">Visit WeHo</h1>
+				<li><h1 class="fncg">QHabito</h1>
 					<ul>
-						<li class="fnce"><a class="fncc" href="#" title="">About Us</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">I Am West Hollywood</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Site Map</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Legal</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Privacy Policy</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Sobre Nosotros</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Publicidad</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Condiciones Generales</a></li>
+						<li class="fnce"><a class="fncc" href="#" title="">Política de Privacidad</a></li>
 					</ul>
 				</li>
 			</ul>
+			<div class="module simple-form clearfix">
+				<h1 class="fncg">Newsletter</h1>
+				<form action="/newsletter" method="get">
+					<fieldset>
+						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
+						<div><a class="send fnca" href="#" title=""><span class="bgce">Suscribirse</span><span class="bgcg">Suscribirse</span></a></div>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 		<!-- FOOTER / END -->
 	</div>
