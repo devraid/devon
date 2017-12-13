@@ -67,7 +67,8 @@
   height: auto;
 }
 .simple-form div {
-  /*backface-visibility: hidden;*/
+  backface-visibility: hidden;
+  vertical-align: top;
   display: table-cell;
 }
 .simple-form div:first-of-type {

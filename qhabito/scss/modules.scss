@@ -68,7 +68,8 @@
 	height: auto;
 
 	div {
-		/*backface-visibility: hidden;*/
+		backface-visibility: hidden;
+		vertical-align: top;
 		display: table-cell;
 	}
 
