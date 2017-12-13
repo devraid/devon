@@ -29,8 +29,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script type="text/javascript" src="/js/slick.js"></script>
 		<script type="text/javascript" src="/js/common.js"></script>
 		
-		<link href="/css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="/css/modules.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
 		<link href="/qhabito/css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
@@ -131,7 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h1 class="fncg">Newsletter</h1>
 				<form action="/newsletter" method="get">
 					<fieldset>
-						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
+						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
 						<div><a class="send fnca" href="#" title=""><span class="bgce">Suscribirse</span><span class="bgcg">Suscribirse</span></a></div>
 					</fieldset>
 				</form>

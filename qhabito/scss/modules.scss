@@ -155,4 +155,9 @@
 			opacity: 0;
 		}
 	}
+	.send:focus {
+		span:last-of-type {
+			opacity: 1;
+		}
+	}
 }

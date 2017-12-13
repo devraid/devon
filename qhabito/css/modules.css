@@ -143,3 +143,6 @@
 .simple-form .send:hover span:last-of-type {
   opacity: 0;
 }
+.simple-form .send:focus span:last-of-type {
+  opacity: 1;
+}

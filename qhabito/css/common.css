@@ -459,8 +459,8 @@ html, body {
 }
 
 /* RESPONSIVE */
-@media (max-device-width: 1400px), (max-width: 1400px) {
-  /* up to 1400px */
+@media (max-device-width: 1440px), (max-width: 1440px) {
+  /* up to 1440px */
   .main .footer .secondary {
     width: 60%;
   }
@@ -477,8 +477,8 @@ html, body {
     width: 45%;
   }
 }
-@media (max-device-width: 1200px), (max-width: 1000px) {
-  /* up to 1000px */
+@media (max-device-width: 1024px), (max-width: 1024px) {
+  /* up to 1024px */
   .main .footer .secondary {
     width: 40%;
   }
@@ -490,8 +490,8 @@ html, body {
     width: 60%;
   }
 }
-@media (max-device-width: 800px), (max-width: 800px) {
-  /* up to 800px */
+@media (max-device-width: 767px), (max-width: 767px) {
+  /* up to 767px */
   .main .header .top-bar .languages {
     position: absolute;
     top: 0;
@@ -518,24 +518,24 @@ html, body {
     border-right: none;
     border-bottom: #C7C7C7 solid 1px;
     float: none;
+    /*a:hover span:last-of-type {
+    	opacity: 1;
+    }*/
   }
   .main .footer .primary li a span {
     width: 100%;
     padding: 0 5% 0 5%;
-  }
-  .main .footer .primary li a:hover span:last-of-type {
-    opacity: 1;
   }
   .main .footer .secondary {
     width: 100%;
   }
   .main .footer .secondary li {
     padding: 48px 0 0 5%;
-  }
-  .main .footer .secondary li a,
-  .main .footer .secondary li a:hover {
-    text-decoration: none;
-    color: inherit !important;
+    /*a,
+    a:hover {
+    	text-decoration: none;
+    	color: inherit !important;
+    }*/
   }
   .main .footer .simple-form {
     float: none;
@@ -544,7 +544,7 @@ html, body {
     padding: 0 0 0 5%;
   }
 }
-@media (max-device-width: 600px), (max-width: 600px) {
-  /* up to 600px */
+@media (max-device-width: 680px), (max-width: 680px) {
+  /* up to 680px */
   /* TBD */
 }
