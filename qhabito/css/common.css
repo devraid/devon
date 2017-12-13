@@ -508,6 +508,9 @@ html, body {
     display: none;
   }
 
+  .main .footer {
+    width: 100%;
+  }
   .main .footer .primary {
     border-bottom: none;
   }
@@ -518,6 +521,7 @@ html, body {
   }
   .main .footer .primary li a span {
     width: 100%;
+    padding: 0 5% 0 5%;
   }
   .main .footer .primary li a:hover span:last-of-type {
     opacity: 1;
@@ -525,21 +529,22 @@ html, body {
   .main .footer .secondary {
     width: 100%;
   }
-  .main .footer .secondary a,
-  .main .footer .secondary a:hover {
+  .main .footer .secondary li {
+    padding: 48px 0 0 5%;
+  }
+  .main .footer .secondary li a,
+  .main .footer .secondary li a:hover {
     text-decoration: none;
     color: inherit !important;
   }
   .main .footer .simple-form {
     float: none;
     clear: both;
-    width: calc(100% - 20px);
-    padding: 0 0 0 20px;
+    width: calc(100% - 5%);
+    padding: 0 0 0 5%;
   }
 }
 @media (max-device-width: 600px), (max-width: 600px) {
   /* up to 600px */
-  .main .footer .secondary li {
-    width: 100%;
-  }
+  /* TBD */
 }

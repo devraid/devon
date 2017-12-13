@@ -444,6 +444,8 @@ html, body {
 		display: none;
 	}
 	.main .footer {
+		width: 100%;
+		
 		.primary {
 			border-bottom: none;
 
@@ -454,6 +456,7 @@ html, body {
 
 				a span {
 					width: 100%;
+					padding: 0 5% 0 5%;
 				}
 				a:hover span:last-of-type {
 					opacity: 1;
@@ -464,23 +467,24 @@ html, body {
 		.secondary {
 			width: 100%;
 			
-			a,
-			a:hover {
-				text-decoration: none;
-				color: inherit !important;
+			li {
+				padding: 48px 0 0 5%;	
+				a,
+				a:hover {
+					text-decoration: none;
+					color: inherit !important;
+				}
 			}
 		}
 		
 		.simple-form {
 			float: none;
 			clear: both;
-			width: calc(100% - 20px);
-			padding: 0 0 0 20px;
+			width: calc(100% - 5%);
+			padding: 0 0 0 5%;
 		}
 	}
 }
 @media (max-device-width: 600px), (max-width: 600px) { /* up to 600px */
-	.main .footer .secondary li {
-		width: 100%;
-	}
+	/* TBD */
 }
