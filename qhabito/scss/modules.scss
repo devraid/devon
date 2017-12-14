@@ -148,16 +148,10 @@
 			-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
 			transition: opacity 0.25s ease;
 		}
-	}
-
-	.send:hover {
-		span:last-of-type {
-			opacity: 0;
-		}
-	}
-	.send:focus {
-		span:last-of-type {
-			opacity: 1;
+		body.desktop &:hover {
+			span:last-of-type {
+				opacity: 0;
+			}
 		}
 	}
 }

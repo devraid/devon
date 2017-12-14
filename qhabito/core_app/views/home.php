@@ -31,12 +31,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
-		<link href="/qhabito/css/fonts.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="/qhabito/css/common.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="/qhabito/css/modules.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="/qhabito/css/home.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
-<body>
+<body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
 	<div class="main home">
 		<!-- HEADER / BEGIN -->

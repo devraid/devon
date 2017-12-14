@@ -140,9 +140,6 @@
   /* Opera < 12.1 */
   transition: opacity 0.25s ease;
 }
-.simple-form .send:hover span:last-of-type {
+body.desktop .simple-form .send:hover span:last-of-type {
   opacity: 0;
-}
-.simple-form .send:focus span:last-of-type {
-  opacity: 1;
 }

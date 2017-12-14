@@ -190,11 +190,10 @@ html, body {
 .main .header .top-bar .languages li a span:last-of-type {
   position: relative;
 }
-.main .header .top-bar .languages li a:hover span:last-of-type,
-.main .header .top-bar .languages .selected span:last-of-type {
+body.desktop .main .header .top-bar .languages li a:hover span:last-of-type, .main .header .top-bar .languages li a.selected span:last-of-type {
   opacity: 0;
 }
-.main .header .top-bar .languages .selected {
+.main .header .top-bar .languages li a.selected {
   cursor: default;
 }
 
@@ -279,7 +278,7 @@ html, body {
 .main .footer .primary li a span:last-of-type {
   position: absolute;
 }
-.main .footer .primary li a:hover span:last-of-type {
+body.desktop .main .footer .primary li a:hover span:last-of-type {
   opacity: 0;
 }
 .main .footer .secondary,
@@ -333,7 +332,7 @@ html, body {
   /* Opera < 12.1 */
   transition: color 0.25s ease;
 }
-.main .footer .secondary li li a:hover {
+body.desktop .main .footer .secondary li li a:hover {
   text-decoration: underline;
   color: inherit !important;
 }
@@ -518,9 +517,6 @@ html, body {
     border-right: none;
     border-bottom: #C7C7C7 solid 1px;
     float: none;
-    /*a:hover span:last-of-type {
-    	opacity: 1;
-    }*/
   }
   .main .footer .primary li a span {
     width: 100%;
@@ -531,11 +527,6 @@ html, body {
   }
   .main .footer .secondary li {
     padding: 48px 0 0 5%;
-    /*a,
-    a:hover {
-    	text-decoration: none;
-    	color: inherit !important;
-    }*/
   }
   .main .footer .simple-form {
     float: none;
