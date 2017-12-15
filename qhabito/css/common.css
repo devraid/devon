@@ -240,7 +240,7 @@ html, body {
   clear: both;
   width: 500px;
   height: 100px;
-  font-size: 1pt;
+  font-size: 0;
   text-decoration: none;
   background-image: url(../css/images/image-0001.png);
   background-position: center left;
@@ -263,7 +263,7 @@ html, body {
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 10pt;
+  font-size: 0.8rem;
   font-weight: normal;
   font-style: normal;
   display: block;

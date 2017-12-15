@@ -98,55 +98,56 @@
 		padding: 13px 0 13px 0;
 	}
 
-	input,
-	.send,
-	.send span {
-		position: relative;
-		top: 0;
-		left: 0;
-	}
-
 	input {
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
 		padding: 0 15px 0 15px;
 		color: #09315A;
 		line-height: normal;
-	}
-
-	input:focus {
-		background-color: #FFFFFF !important;
-	}
-
-	input::-ms-clear {
-		display: none;
+		
+		&:focus {
+			background-color: #FFFFFF !important;
+		}
+		&::-ms-clear {
+			display: none;
+		}
 	}
 
 	.send,
 	.send span {
+		position: relative;
+		top: 0;
+		left: 0;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
 		text-decoration: none;
 		text-align: center;
-		font-size: 13.5pt;
+		text-transform: uppercase;
+		font-family: 'ProximaNova-Bold';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 1.2rem;
 		width: auto;
 	}
 
 	.send {
-		span:first-of-type {
-			position: absolute;
-			width: 100%;
-		}
-		span:last-of-type {
+		span {
 			padding: 0 20px 0 20px;
-			opacity: 1;
+			
+			&:last-of-type {
+				position: absolute;
+				width: 100%;
+				padding: 0;
 
-			/* Transition */
-			-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
-			-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
-			-ms-transition: opacity 0.25s ease; /* Internet Explorer */
-			-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
-			transition: opacity 0.25s ease;
+				opacity: 1;
+
+				/* Transition */
+				-webkit-transition: opacity 0.25s ease; /* Safari, Chrome and Opera > 12.1 */
+				-moz-transition: opacity 0.25s ease; /* Firefox < 16 */
+				-ms-transition: opacity 0.25s ease; /* Internet Explorer */
+				-o-transition: opacity 0.25s ease; /* Opera < 12.1 */
+				transition: opacity 0.25s ease;
+			}
 		}
 		@include on-hover {
 			span:last-of-type {

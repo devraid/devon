@@ -127,7 +127,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<form action="/newsletter" method="get">
 					<fieldset>
 						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
-						<div><a class="send fnca" href="#" title=""><span class="bgce">Suscribirse</span><span class="bgcg">Suscribirse</span></a></div>
+						<div><a class="send fnca" href="#" title=""><span class="bgce">Enviar</span><span class="bgcg">Enviar</span></a></div>
 					</fieldset>
 				</form>
 			</div>
