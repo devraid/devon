@@ -480,8 +480,23 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   font-family: 'ProximaNova-Regular';
   font-weight: normal;
   font-style: normal;
-  padding: 48px 0 37px 0px;
+  padding: 48px 0 37px 0;
   text-transform: uppercase;
+}
+.main .footer .bottom-text {
+  clear: both;
+  width: 100%;
+  height: auto;
+  padding: 40px 5% 0 5%;
+}
+.main .footer .bottom-text p {
+  width: 100%;
+  line-height: 1em;
+  font-size: 1rem;
+  font-family: 'ProximaNova-Regular';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
 }
 
 /* RESPONSIVE */

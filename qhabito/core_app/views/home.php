@@ -131,6 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</fieldset>
 				</form>
 			</div>
+			<div class="bottom-text fncj clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
 		</div>
 		<!-- FOOTER / END -->
 	</div>
