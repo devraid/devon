@@ -52,8 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<!-- HEADER / END -->
 		<!-- MODULE / BEGIN -->
-		<div class="module top-big-poster bgcc" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
-			<div class="module simple-form">
+		<div class="mod-top-big-poster bgcc" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
+			<div class="mod-simple-form">
 				<h1 class="fnca">Alquilar y comprar en pocos pasos...</h1>
 				<form action="/busca" method="get">
 					<fieldset>
@@ -80,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="item">Hello<br />World</div>
 				</div>
 				-->
-				<div class="module test">
+				<div class="mod-test">
 					<div class="item">Hello<br />World</div>
 					<div class="item">Hello<br />World</div>
 					<div class="item">Hello<br />World</div>
@@ -122,7 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</ul>
 				</li>
 			</ul>
-			<div class="module simple-form clearfix">
+			<div class="mod-simple-form clearfix">
 				<h1 class="fncg">Newsletter</h1>
 				<form action="/newsletter" method="get">
 					<fieldset>

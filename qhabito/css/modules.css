@@ -1,145 +1,79 @@
-/* TOP BIG POSTER */
-.top-big-poster {
-  width: 100%;
-  height: calc(100% - 150px);
-  /* minus header height */
-  background-image: none;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/*
+Error: Undefined mixin 'on-hover'.
+        on line 151 of D:/xampp/htdocs/wirexmedia.com/www/devon/qhabito/scss/modules.scss, in `on-hover'
+        from line 151 of D:/xampp/htdocs/wirexmedia.com/www/devon/qhabito/scss/modules.scss
 
-/* MODULE */
-/*.test {
-	display: flex;
-	flex-wrap: wrap;
-	background-color: red;
-	min-height: 100px;
-	
-	.item {
-		width: 32%;
-		margin: 1%;
-	}
-	.item:nth-of-type(3n) {
-		margin-right: 0;	
-	}
-	.item:nth-of-type(3n+1) {
-		margin-left: 0;
-	}
-	.item:nth-of-type(even) {
-		background-color: blue;
-	}
-	.item:nth-of-type(odd) {
-		background-color: yellow;
-	}
-}*/
-.test {
-  max-width: 100%;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-}
-.test .item {
-  background-color: red;
-}
+146: 			-moz-transition: opacity 0.25s ease; /* Firefox < 16 *\/
+147: 			-ms-transition: opacity 0.25s ease; /* Internet Explorer *\/
+148: 			-o-transition: opacity 0.25s ease; /* Opera < 12.1 *\/
+149: 			transition: opacity 0.25s ease;
+150: 		}
+151: 		@include on-hover {
+152: 			span:last-of-type {
+153: 				opacity: 0;
+154: 			}
+155: 		}
+156: 	}
 
-/* SIMPLE FORM */
-.simple-form,
-.simple-form * {
-  margin: 0;
-  padding: 0;
-  border: none;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  outline: none;
-  line-height: 60px;
-  height: 60px;
-  display: block;
-}
-
-.simple-form {
-  width: 100%;
-  height: auto;
-}
-.simple-form div {
-  backface-visibility: hidden;
-  vertical-align: top;
-  display: table-cell;
-}
-.simple-form div:first-of-type {
-  width: 100%;
-}
-.simple-form form,
-.simple-form fieldset,
-.simple-form input {
-  width: 100%;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 13.5pt;
-  background: none;
-  background-image: none;
-}
-.simple-form h1 {
-  height: auto;
-  line-height: 24px;
-  font-size: 18pt;
-  font-weight: bold;
-  font-style: normal;
-  padding: 13px 0 13px 0;
-}
-.simple-form input,
-.simple-form .send,
-.simple-form .send span {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.simple-form input {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  /*background-color: #DBE4E8;*/
-  padding: 0 15px 0 15px;
-  color: #09315A;
-  line-height: normal;
-}
-.simple-form input:focus {
-  background-color: #FFFFFF !important;
-}
-.simple-form input::-ms-clear {
-  display: none;
-}
-.simple-form .send,
-.simple-form .send span {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 13.5pt;
-  width: auto;
-}
-.simple-form .send span:first-of-type {
-  position: absolute;
-  width: 100%;
-}
-.simple-form .send span:last-of-type {
-  padding: 0 20px 0 20px;
-  opacity: 1;
-  /* Transition */
-  -webkit-transition: opacity 0.25s ease;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-transition: opacity 0.25s ease;
-  /* Firefox < 16 */
-  -ms-transition: opacity 0.25s ease;
-  /* Internet Explorer */
-  -o-transition: opacity 0.25s ease;
-  /* Opera < 12.1 */
-  transition: opacity 0.25s ease;
-}
-body.desktop .simple-form .send:hover span:last-of-type {
-  opacity: 0;
-}
+Backtrace:
+D:/xampp/htdocs/wirexmedia.com/www/devon/qhabito/scss/modules.scss:151:in `on-hover'
+D:/xampp/htdocs/wirexmedia.com/www/devon/qhabito/scss/modules.scss:151
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:278:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:420:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'on-hover'.\A         on line 151 of D:/xampp/htdocs/wirexmedia.com/www/devon/qhabito/scss/modules.scss, in `on-hover'\A         from line 151 of D:/xampp/htdocs/wirexmedia.com/www/devon/qhabito/scss/modules.scss\A \A 146: 			-moz-transition: opacity 0.25s ease; /* Firefox < 16 */\A 147: 			-ms-transition: opacity 0.25s ease; /* Internet Explorer */\A 148: 			-o-transition: opacity 0.25s ease; /* Opera < 12.1 */\A 149: 			transition: opacity 0.25s ease;\A 150: 		}\A 151: 		@include on-hover {\A 152: 			span:last-of-type {\A 153: 				opacity: 0;\A 154: 			}\A 155: 		}\A 156: 	}"; }
