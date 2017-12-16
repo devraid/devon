@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'on-hover'.
-        on line 152 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss, in `on-hover'
-        from line 152 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss
+        on line 128 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss, in `on-hover'
+        from line 128 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss
 
-147: 				-ms-transition: opacity 0.25s ease; /* Internet Explorer *\/
-148: 				-o-transition: opacity 0.25s ease; /* Opera < 12.1 *\/
-149: 				transition: opacity 0.25s ease;
-150: 			}
-151: 		}
-152: 		@include on-hover {
-153: 			span:last-of-type {
-154: 				opacity: 0;
-155: 			}
-156: 		}
-157: 	}
+123: 				-ms-transition: opacity 0.25s ease; /* Internet Explorer *\/
+124: 				-o-transition: opacity 0.25s ease; /* Opera < 12.1 *\/
+125: 				transition: opacity 0.25s ease;
+126: 			}
+127: 		}
+128: 		@include on-hover {
+129: 			span:last-of-type {
+130: 				opacity: 0;
+131: 			}
+132: 		}
+133: 	}
 
 Backtrace:
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss:152:in `on-hover'
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss:152
+D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss:128:in `on-hover'
+D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss:128
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
@@ -76,4 +76,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'on-hover'.\A         on line 152 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss, in `on-hover'\A         from line 152 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss\A \A 147: 				-ms-transition: opacity 0.25s ease; /* Internet Explorer */\A 148: 				-o-transition: opacity 0.25s ease; /* Opera < 12.1 */\A 149: 				transition: opacity 0.25s ease;\A 150: 			}\A 151: 		}\A 152: 		@include on-hover {\A 153: 			span:last-of-type {\A 154: 				opacity: 0;\A 155: 			}\A 156: 		}\A 157: 	}"; }
+  content: "Error: Undefined mixin 'on-hover'.\A         on line 128 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss, in `on-hover'\A         from line 128 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\modules.scss\A \A 123: 				-ms-transition: opacity 0.25s ease; /* Internet Explorer */\A 124: 				-o-transition: opacity 0.25s ease; /* Opera < 12.1 */\A 125: 				transition: opacity 0.25s ease;\A 126: 			}\A 127: 		}\A 128: 		@include on-hover {\A 129: 			span:last-of-type {\A 130: 				opacity: 0;\A 131: 			}\A 132: 		}\A 133: 	}"; }

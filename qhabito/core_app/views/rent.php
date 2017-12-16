@@ -32,11 +32,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script type="text/javascript" src="/qhabito/js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
+		<script type="text/javascript" src="/qhabito/js/rent.js"></script>
 		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 <body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
-	<div class="main home">
+	<div class="main rent">
 		<!-- HEADER / BEGIN -->
 		<div class="header bgce clearfix">
 			<div class="top-bar bgcc">
@@ -52,19 +53,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 		<!-- HEADER / END -->
-		<!-- MODULE / BEGIN -->
-		<div class="mod-top-big-poster bgcc" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
-			<div class="mod-simple-form">
-				<h1 class="fnca">Alquilar y comprar en pocos pasos...</h1>
-				<form action="/busca" method="get">
-					<fieldset>
-						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
-						<div><a class="send fnca" href="#" title=""><span class="bgce">Buscar</span><span class="bgcg">Buscar</span></a></div>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-		<!-- MODULE / END -->
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
 			<div class="padded-wrap bgca fnck">
