@@ -1,12 +1,15 @@
-/* Fonts */
+// Fonts
 @import "fonts.scss";
 
-/* Common */
+// Common
 @import "common.scss";
 
-/* Modules */
+// Third party
+@import "slick.scss";
+
+// Modules
 @import "modules.scss";
 
-/* Views */
+// Views
 @import "home.scss";
 @import "rent.scss";

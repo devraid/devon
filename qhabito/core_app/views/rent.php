@@ -24,13 +24,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="manifest" href="/manifest.json">
 		
-		<script type="text/javascript" src="/js/slick.js"></script>
 		
-		
-		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
 		<script type="text/javascript" src="/qhabito/js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
 		<script type="text/javascript" src="/qhabito/js/rent.js"></script>
 		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
@@ -58,25 +56,70 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="padded-wrap bgca fnck">
 			
 				<!-- MODULE / BEGIN -->
-				<!--
-				<div class="module test">
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-				</div>
-				-->
 				<div class="mod-grid">
-					<div class="item bgcd">Hello<br />World</div>
-					<div class="item bgce">Hello<br />World</div>
-					<div class="item bgcd">Hello<br />World</div>
-					<div class="item bgce">Hello<br />World</div>
-					<div class="item bgcd">Hello<br />World Hello<br />World Hello<br />World Hello<br />World</div>
-					<div class="item bgce">Hello<br />World</div>
-					<div class="item bgcd">Hello<br />World</div>
+					<div class="item bgcd">
+						<ul class="slider">
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+					</div>
+					<div class="item bgce">
+						<ul class="slider">
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+					</div>
+					<div class="item bgcd">
+						<ul class="slider">
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+					</div>
+					<div class="item bgce">
+						<ul class="slider">
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+					</div>
+					<div class="item bgcd">
+						<ul class="slider">
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+					</div>
+					<div class="item bgce">
+						<ul class="slider">
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+					</div>
+					<div class="item bgcd">
+						<ul class="slider">
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+					</div>
 				</div>
 				<!-- MODULE / END -->
 			

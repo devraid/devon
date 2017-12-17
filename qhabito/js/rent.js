@@ -10,7 +10,14 @@ var QHABITO = window.QHABITO || {};
 		QHABITO.rent = {
 			target : $('div.main'),
 			init: function() {
-				
+				// Top big slideshow
+				$('.mod-grid .slider', QHABITO.rent.target).slick({
+					touchMove : true,
+					slickSetOption : true,
+					autoplay: false,
+					prevArrow : '<a class="button left" href="#" title=""><span>&nbsp;</span></a>',
+					nextArrow : '<a class="button right" href="#" title=""><span>&nbsp;</span></a>'
+				});
 			}
 		};
 		
