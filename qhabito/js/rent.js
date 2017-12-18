@@ -12,11 +12,28 @@ var QHABITO = window.QHABITO || {};
 			init: function() {
 				// Top big slideshow
 				$('.mod-grid .slider', QHABITO.rent.target).slick({
+					infinite : true,
 					touchMove : true,
+					draggable : true,
+					swipe : true,
 					slickSetOption : true,
 					autoplay: false,
+					slidesToShow: 1,
+					dots : true,
+					dotsClass : 'thumbs',
 					prevArrow : '<a class="button left" href="#" title=""><span>&nbsp;</span></a>',
-					nextArrow : '<a class="button right" href="#" title=""><span>&nbsp;</span></a>'
+					nextArrow : '<a class="button right" href="#" title=""><span>&nbsp;</span></a>',
+					customPaging : function() {
+						return '<a href="#"></a>';
+					}
+				}).after(function() {
+					var _this = $(this);
+					var _thumbs = $('.thumbs', _this);
+					var _index = 0;
+					$('.slick-list li[id]', _this).each(function() {
+						
+						_index++;
+					});
 				});
 			}
 		};

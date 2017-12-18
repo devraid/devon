@@ -1,5 +1,6 @@
-/* RENT : GRID : SLIDER */
+// RENT : GRID : SLIDER
 .rent .mod-grid {
+	// SLIDER
 	.slider,
 	.slick-list {
 		position: relative;
@@ -7,10 +8,21 @@
 		left: 0;
 	}
 	.slider {
-		height: 200px;
+		height: auto;
 		
 		.slick-list {
 			z-index: 99990;
+			padding-bottom: 56.25%;
+			
+			.slick-track {
+				position: absolute;
+				
+				li {
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+			}
 		}
 		.button {
 			&.left,
@@ -39,7 +51,7 @@
 				left: 0;
 				
 				span {
-					/* Rotate */
+					// Rotate
 					-webkit-transform: rotate(320deg);
 					-moz-transform: rotate(320deg);
 					-ms-transform: rotate(320deg);
@@ -51,13 +63,35 @@
 				right: 0;
 				
 				span {
-					/* Rotate */
+					// Rotate
 					-webkit-transform: rotate(135deg);
 					-moz-transform: rotate(135deg);
 					-ms-transform: rotate(135deg);
 					-o-transform: rotate(135deg);
 					transform: rotate(135deg);
 				}
+			}
+		}
+	}
+	
+	// THUMBNAILS
+	.thumbs {
+		width: 100%;
+		height: auto;
+		
+		li {
+			float: left;
+			width: 20%;
+			height: auto;
+			display: block;
+			
+			a {
+				width: 100%;
+				height: auto;
+				font-size: 0;
+				text-decoration: none;
+				padding-bottom: 56.25%;
+				display: block;
 			}
 		}
 	}
