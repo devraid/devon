@@ -19,13 +19,9 @@ var QHABITO = window.QHABITO || {};
 					slickSetOption : true,
 					autoplay: false,
 					slidesToShow: 1,
-					dots : true,
-					dotsClass : 'thumbs',
+					dots : false,
 					prevArrow : '<a class="button left" href="#" title=""><span>&nbsp;</span></a>',
-					nextArrow : '<a class="button right" href="#" title=""><span>&nbsp;</span></a>',
-					customPaging : function() {
-						return '<a href="#"></a>';
-					}
+					nextArrow : '<a class="button right" href="#" title=""><span>&nbsp;</span></a>'
 				}).after(function() {
 					var _this = $(this);
 					var _thumbs = $('.thumbs', _this);

@@ -59,65 +59,149 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="mod-grid">
 					<div class="item bgcd">
 						<ul class="slider">
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+						<ul class="thumbs">
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li><a href="#" title=""><span class="bgcg">&nbsp;</span><span class="bgce">&nbsp;</span></a></li>
 						</ul>
 					</div>
 					<div class="item bgce">
 						<ul class="slider">
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+						<ul class="thumbs">
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li><a href="#" title=""><span class="bgcg">&nbsp;</span><span class="bgce">&nbsp;</span></a></li>
 						</ul>
 					</div>
 					<div class="item bgcd">
 						<ul class="slider">
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+						<ul class="thumbs">
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li><a href="#" title=""><span class="bgcg">&nbsp;</span><span class="bgce">&nbsp;</span></a></li>
 						</ul>
 					</div>
 					<div class="item bgce">
 						<ul class="slider">
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+						<ul class="thumbs">
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li><a href="#" title=""><span class="bgcg">&nbsp;</span><span class="bgce">&nbsp;</span></a></li>
 						</ul>
 					</div>
 					<div class="item bgcd">
 						<ul class="slider">
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+						<ul class="thumbs">
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li><a href="#" title=""><span class="bgcg">&nbsp;</span><span class="bgce">&nbsp;</span></a></li>
 						</ul>
 					</div>
 					<div class="item bgce">
 						<ul class="slider">
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+						<ul class="thumbs">
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li><a href="#" title=""><span class="bgcg">&nbsp;</span><span class="bgce">&nbsp;</span></a></li>
 						</ul>
 					</div>
 					<div class="item bgcd">
 						<ul class="slider">
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
-							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');" data-image="/qhabito/css/images/image-0002.jpg">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+							<li class="slide" style="background-image:url('/qhabito/css/images/image-0002.jpg');">&nbsp;</li>
+						</ul>
+						<ul class="thumbs">
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li style="background-image:url('/qhabito/css/images/image-0002.jpg');"><a href="#" title="">&nbsp;</a></li>
+							<li><a href="#" title=""><span class="bgcg">&nbsp;</span><span class="bgce">&nbsp;</span></a></li>
 						</ul>
 					</div>
 				</div>
