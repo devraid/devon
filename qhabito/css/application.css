@@ -763,7 +763,7 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
 
 @media (max-device-width: 1200px), (max-width: 1200px) {
   .mod-grid .item {
-    width: calc(1/2*100% - (1 - 1/2)*10px);
+    width: calc(1/2*100% - (1 - 1/2)*20px);
   }
 }
 @media (max-device-width: 767px), (max-width: 767px) {
@@ -789,11 +789,62 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
   width: 100%;
   height: 150px;
   background-color: #E4E5E6;
+  margin: 0 0 5% 0;
 }
 
+.rent .mod-grid .item .wrapper {
+  min-height: 100%;
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+body.desktop .rent .mod-grid .item:not(.disabled):hover .wrapper, body.desktop .rent .mod-grid .item:not(.disabled):active .wrapper, body.desktop .rent .mod-grid .item:not(.disabled):focus .wrapper, .rent .mod-grid .item:not(.disabled).selected .wrapper {
+  background-color: inherit !important;
+}
+.rent .mod-grid .item:not(.disabled).selected {
+  cursor: default;
+}
 .rent .mod-grid .slider-thumbs {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
+}
+.rent .mod-grid .slider-thumbs .add-to-favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12.5%;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  z-index: 99999;
+  display: block;
+}
+.rent .mod-grid .slider-thumbs .add-to-favorite span {
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: block;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.rent .mod-grid .slider-thumbs .add-to-favorite span:after {
+  font-size: 2rem;
+  content: '\2661';
+}
+body.desktop .rent .mod-grid .slider-thumbs .add-to-favorite:not(.disabled):hover span, body.desktop .rent .mod-grid .slider-thumbs .add-to-favorite:not(.disabled):active span, body.desktop .rent .mod-grid .slider-thumbs .add-to-favorite:not(.disabled):focus span, .rent .mod-grid .slider-thumbs .add-to-favorite:not(.disabled).selected span {
+  color: inherit !important;
+}
+.rent .mod-grid .slider-thumbs .add-to-favorite:not(.disabled).selected {
+  cursor: default;
 }
 .rent .mod-grid .slider-thumbs .slider,
 .rent .mod-grid .slider-thumbs .slick-list {
@@ -820,7 +871,7 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
   position: absolute;
   top: 0;
   z-index: 99999;
-  width: 50px;
+  width: 12.5%;
   height: 100%;
   font-size: 0;
   text-decoration: none;

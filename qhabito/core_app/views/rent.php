@@ -60,193 +60,214 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				<!-- MODULE / BEGIN -->
 				<div class="mod-grid">
-					<div class="item bgcm">
-						<div class="slider-thumbs clearfix">
-							<ul class="slider">
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
-							</ul>
-							<ul class="thumbs">
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
-							</ul>
-						</div>
-						<div class="details">
-							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-							<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-						</div>
-					</div>
-					<div class="item bgcm">
-						<div class="slider-thumbs clearfix">
-							<ul class="slider">
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
-							</ul>
-							<ul class="thumbs">
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
-							</ul>
-						</div>
-						<div class="details">
-							<h1 class="title fncd">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena</h1>
-							<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+					<div class="item bgcl">
+						<div class="wrapper bgcm">
+							<div class="slider-thumbs clearfix">
+								<ul class="slider">
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+								</ul>
+								<ul class="thumbs clearfix">
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+								</ul>
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+							</div>
+							<div class="details">
+								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
-						<div class="slider-thumbs clearfix">
-							<ul class="slider">
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
-							</ul>
-							<ul class="thumbs">
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
-							</ul>
-						</div>
-						<div class="details">
-							<h1 class="title fncd">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena</h1>
-							<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-						</div>
-					</div>
-					<div class="item bgcm">
-						<div class="slider-thumbs clearfix">
-							<ul class="slider">
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
-							</ul>
-							<ul class="thumbs">
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
-							</ul>
-						</div>
-						<div class="details">
-							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-							<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+					<div class="item bgcl">
+						<div class="wrapper bgcm">
+							<div class="slider-thumbs clearfix">
+								<ul class="slider">
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+								</ul>
+								<ul class="thumbs">
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+								</ul>
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+							</div>
+							<div class="details">
+								<h1 class="title fncd">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena</h1>
+								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
-						<div class="slider-thumbs clearfix">
-							<ul class="slider">
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
-							</ul>
-							<ul class="thumbs">
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
-							</ul>
-						</div>
-						<div class="details">
-							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-							<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-						</div>
-					</div>
-					<div class="item bgcm">
-						<div class="slider-thumbs clearfix">
-							<ul class="slider">
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
-							</ul>
-							<ul class="thumbs">
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
-							</ul>
-						</div>
-						<div class="details">
-							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-							<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+					<div class="item bgcl">
+						<div class="wrapper bgcm">
+							<div class="slider-thumbs clearfix">
+								<ul class="slider">
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+								</ul>
+								<ul class="thumbs">
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+								</ul>
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+							</div>
+							<div class="details">
+								<h1 class="title fncd">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena</h1>
+								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
-						<div class="slider-thumbs clearfix">
-							<ul class="slider">
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
-								<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
-							</ul>
-							<ul class="thumbs">
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-								<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
-							</ul>
+					<div class="item bgcl">
+						<div class="wrapper bgcm">
+							<div class="slider-thumbs clearfix">
+								<ul class="slider">
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+								</ul>
+								<ul class="thumbs">
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+								</ul>
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+							</div>
+							<div class="details">
+								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+							</div>
 						</div>
-						<div class="details">
-							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-							<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+					</div>
+					<div class="item bgcl">
+						<div class="wrapper bgcm">
+							<div class="slider-thumbs clearfix">
+								<ul class="slider">
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+								</ul>
+								<ul class="thumbs">
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+								</ul>
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+							</div>
+							<div class="details">
+								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+							</div>
+						</div>
+					</div>
+					<div class="item bgcl">
+						<div class="wrapper bgcm">
+							<div class="slider-thumbs clearfix">
+								<ul class="slider">
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+								</ul>
+								<ul class="thumbs">
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+								</ul>
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+							</div>
+							<div class="details">
+								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+							</div>
+						</div>
+					</div>
+					<div class="item bgcl">
+						<div class="wrapper bgcm">
+							<div class="slider-thumbs clearfix">
+								<ul class="slider">
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+								</ul>
+								<ul class="thumbs">
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+								</ul>
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+							</div>
+							<div class="details">
+								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+							</div>
 						</div>
 					</div>
 				</div>

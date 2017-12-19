@@ -141,7 +141,7 @@
 @media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
 	// GRID
 	.mod-grid .item {
-		width: calc(1/2*100% - (1 - 1/2)*10px);
+		width: calc(1/2*100% - (1 - 1/2)*20px);
 	}
 }
 @media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
