@@ -10,14 +10,10 @@
 .rent .mod-grid {
 	
 	.item {
-		cursor: default;
+		cursor: pointer;
 		
 		.wrapper {
-			position: relative;
-			top: 0;
-			left: 0;
 			min-height: 100%;
-			padding-bottom: 50px;
 			
 			// Transition
 			-webkit-transition: background-color 0.25s ease;
@@ -286,32 +282,40 @@
 		}
 		
 		.view {
-			position: absolute;
-			bottom: 0;
-			right: 5%;
+			position: relative;
+			top: 0;
+			left: 0;
 			width: auto;
-			height: 40px;
-			line-height: 40px;
-			font-size: 1rem;
-			font-family: 'ProximaNova-Bold';
-			font-weight: bold;
-			font-style: normal;
+			height: 50px;
+			font-size: 0;
 			text-decoration: none;
-			margin-bottom: 5%;
-			display: inline-block;
+			margin: 0 0 5% auto;
+			display: table;
+			
+			&:last-of-type {
+				margin: 0 0 0 auto;
+			}
 
 			span {
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: auto;
+				font-size: 1.2rem;
+				font-family: 'ProximaNova-Bold';
+				font-weight: bold;
+				font-style: normal;
+				width: 100%;
 				height: 100%;
-				line-height: 32px;
-				padding: 0 15px 0 15px;
-				border: #33BAF1 solid 4px;
+				line-height: 42px;
+				vertical-align: middle;
+				padding: 0 50px 0 10px;
+				border: #6789B2 solid 4px;
 				opacity: 1;
-				display: block;
-				
+				display: table-cell;
+			}
+			
+			span,
+			&:after {
 				// Transition
 				-webkit-transition: opacity 0.25s ease, border-color 0.25s ease;
 				-moz-transition: opacity 0.25s ease, border-color 0.25s ease;
@@ -320,17 +324,53 @@
 				transition: opacity 0.25s ease, border-color 0.25s ease;
 			}
 			
-			span:last-of-type {
+			span:first-of-type {
 				position: relative;
-				border: #6789B2 solid 4px;
+				width: auto;
+				border: #33BAF1 solid 4px;
+			}
+			
+			span:last-of-type {
+				left: auto;
+				right: 15px;
+				top: calc(50% - 10px);
+				width: 20px;
+				height: 20px;
+				font-size: 0;
+				padding: 0;
+				border: none;
+				border-left: #6789B2 solid 5px;
+				border-top: #6789B2 solid 5px;
+				
+				// Rotate
+				-webkit-transform: rotate(135deg);
+				-moz-transform: rotate(135deg);
+				-ms-transform: rotate(135deg);
+				-o-transform: rotate(135deg);
+				transform: rotate(135deg);
+			}
+			
+			&:after {
+				position: absolute;
+				top: calc(50% - 3px);
+				right: 15px;
+				content: '';
+				width: 20px;
+				height: 0;
+				font-size: 0;
+				border-bottom: #6789B2 solid 5px;
 			}
 			
 			@include on-hover {
-				span:last-of-type {
+				span:nth-of-type(2) {
 					opacity: 0;
 				}
+				span:last-of-type {
+					border-left: #33BAF1 solid 5px;
+					border-top: #33BAF1 solid 5px;
+				}
 				&:after {
-					
+					border-bottom: #33BAF1 solid 5px;
 				}
 			}
 		}

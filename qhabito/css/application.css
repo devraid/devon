@@ -792,8 +792,15 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
   margin: 0 0 5% 0;
 }
 
+.rent .mod-grid .item {
+  cursor: default;
+}
 .rent .mod-grid .item .wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
   min-height: 100%;
+  padding-bottom: 50px;
   -webkit-transition: background-color 0.25s ease;
   -moz-transition: background-color 0.25s ease;
   -ms-transition: background-color 0.25s ease;
@@ -917,7 +924,11 @@ body.desktop .rent .mod-grid .slider-thumbs .add-to-favorite:not(.disabled):hove
   background-position: center center;
   background-repeat: no-repeat;
   background-size: calc(100% + 5px);
+  overflow: hidden;
   display: block;
+}
+.rent .mod-grid .slider-thumbs .thumbs li:nth-child(8n+8) {
+  overflow: visible;
 }
 .rent .mod-grid .slider-thumbs .thumbs li a {
   position: relative;
@@ -984,7 +995,8 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
   width: 100%;
   height: auto;
 }
-.rent .mod-grid .details .title {
+.rent .mod-grid .details .title,
+.rent .mod-grid .details .subtitle {
   padding: 0 0 5% 0;
   width: 100%;
   height: auto;
@@ -996,6 +1008,13 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
   font-style: normal;
   display: block;
 }
+.rent .mod-grid .details .subtitle {
+  line-height: 1.2em;
+  font-size: 1rem;
+}
+.rent .mod-grid .details .subtitle span {
+  font-size: 1.5rem;
+}
 .rent .mod-grid .details .description {
   padding: 0 0 5% 0;
   width: 100%;
@@ -1003,4 +1022,46 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
   font-size: 0.95rem;
   line-height: 1.2em;
   display: block;
+}
+.rent .mod-grid .details .view {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  margin-bottom: 5%;
+  display: inline-block;
+}
+.rent .mod-grid .details .view span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  line-height: 32px;
+  padding: 0 15px 0 15px;
+  border: #33BAF1 solid 4px;
+  opacity: 1;
+  display: block;
+  -webkit-transition: opacity 0.25s ease, border-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, border-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, border-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, border-color 0.25s ease;
+  transition: opacity 0.25s ease, border-color 0.25s ease;
+}
+.rent .mod-grid .details .view span:last-of-type {
+  position: relative;
+  border: #6789B2 solid 4px;
+}
+body.desktop .rent .mod-grid .details .view:not(.disabled):hover span:last-of-type, body.desktop .rent .mod-grid .details .view:not(.disabled):active span:last-of-type, body.desktop .rent .mod-grid .details .view:not(.disabled):focus span:last-of-type, .rent .mod-grid .details .view:not(.disabled).selected span:last-of-type {
+  opacity: 0;
+}
+.rent .mod-grid .details .view:not(.disabled).selected {
+  cursor: default;
 }

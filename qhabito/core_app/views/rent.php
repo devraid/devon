@@ -60,8 +60,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				<!-- MODULE / BEGIN -->
 				<div class="mod-grid">
-					<div class="item bgcl">
-						<div class="wrapper bgcm">
+					<div class="item bgcm">
+						<div class="wrapper">
 							<div class="slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
@@ -80,18 +80,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
 									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
+								<a class="add-to-favorite fncg" href="#" title="" aria-hidden="true"><span class="fnca">&nbsp;</span></a>
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcl">
-						<div class="wrapper bgcm">
+					<div class="item bgcm">
+						<div class="wrapper">
 							<div class="slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
@@ -116,12 +126,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena</h1>
+								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcl">
-						<div class="wrapper bgcm">
+					<div class="item bgcm">
+						<div class="wrapper">
 							<div class="slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
@@ -140,18 +152,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
 									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca">&nbsp;</span></a>
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena</h1>
+								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcl">
-						<div class="wrapper bgcm">
+					<div class="item bgcm">
+						<div class="wrapper">
 							<div class="slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
@@ -176,12 +193,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcl">
-						<div class="wrapper bgcm">
+					<div class="item bgcm">
+						<div class="wrapper">
 							<div class="slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
@@ -206,12 +225,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcl">
-						<div class="wrapper bgcm">
+					<div class="item bgcm">
+						<div class="wrapper">
 							<div class="slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
@@ -236,12 +257,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcl">
-						<div class="wrapper bgcm">
+					<div class="item bgcm">
+						<div class="wrapper">
 							<div class="slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
@@ -266,7 +289,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
+								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
