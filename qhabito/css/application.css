@@ -87,7 +87,7 @@ html, body {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  background-color: #F6F6F6;
+  background-color: #FFFFFF;
   font-family: Arial, 'sans-serif';
   font-size: 100%;
   display: block;
@@ -313,9 +313,9 @@ body.desktop .main .header .top-bar .languages li a:not(.disabled):hover span:la
 }
 
 .main .content,
-.main .content .padded-wrap,
-.main .footer,
-.main .footer .padded-wrap {
+.main .padded-wrap,
+.main .wrap,
+.main .footer {
   clear: both;
   width: 90%;
   max-width: 1440px;
@@ -324,13 +324,18 @@ body.desktop .main .header .top-bar .languages li a:not(.disabled):hover span:la
   display: block;
 }
 
-.main .content .padded-wrap {
+.main .padded-wrap {
   padding: 0 5% 0 5%;
+  width: 100%;
+}
+.main .wrap {
   width: 100%;
 }
 
 .main .footer {
   padding: 50px 0 50px 0;
+  max-width: none;
+  width: 100%;
 }
 .main .footer .primary * {
   width: 100%;
@@ -522,6 +527,9 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   }
 
   .main .footer {
+    width: 100%;
+  }
+  .main .footer .wrap {
     width: 100%;
   }
   .main .footer .primary {
@@ -792,6 +800,9 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
   margin: 0 0 5% 0;
 }
 
+.rent .mod-grid {
+  padding-bottom: 30px;
+}
 .rent .mod-grid .item {
   cursor: default;
 }
@@ -1014,6 +1025,7 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
 }
 .rent .mod-grid .details .subtitle span {
   font-size: 1.5rem;
+  display: block;
 }
 .rent .mod-grid .details .description {
   padding: 0 0 5% 0;

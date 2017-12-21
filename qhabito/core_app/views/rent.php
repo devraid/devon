@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- HEADER / END -->
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
-			<div class="padded-wrap bgca fnck">
+			<div class="wrap bgca fnck">
 				
 				<div class="filters">
 				</div>
@@ -94,7 +94,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
+								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
@@ -126,7 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena</h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
+								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
@@ -161,7 +161,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena</h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
+								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
@@ -193,7 +193,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
+								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
@@ -225,7 +225,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
+								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
@@ -257,7 +257,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
+								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
@@ -289,7 +289,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							<div class="details">
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span><br />85m | 2 hab | 1 baño</h2>
+								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
@@ -303,41 +303,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- CONTENT / END -->
 		<!-- FOOTER / BEGIN -->
 		<div class="footer bgcm clearfix">
-			<ul class="primary clearfix">
-				<li><a href="#" title=""><span class="bgcd fnca">Inicio</span><span class="bgcm fncd">Inicio</span></a></li>
-				<li><a href="#" title=""><span class="bgcd fnca">Alquiler</span><span class="bgcm fncd">Alquiler</span></a></li>
-				<li><a href="#" title=""><span class="bgcd fnca">Compra</span><span class="bgcm fncd">Compra</span></a></li>
-				<li><a href="#" title=""><span class="bgcd fnca">Venta</span><span class="bgcm fncd">Venta</span></a></li>
-				<li><a href="#" title=""><span class="bgcd fnca">Vacacional</span><span class="bgcm fncd">Vacacional</span></a></li>
-			</ul>
-			<ul class="secondary clearfix">
-				<li><h1 class="fncg">Esenciales</h1>
-					<ul>
-						<li class="fnce"><a class="fncc" href="#" title="">Area de Usuarios</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Preguntas Frecuentes</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Mapa del Sitio</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Contactar</a></li>
-					</ul>
-				</li>
-				<li><h1 class="fncg">QHabito</h1>
-					<ul>
-						<li class="fnce"><a class="fncc" href="#" title="">Sobre Nosotros</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Publicidad</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Condiciones Generales</a></li>
-						<li class="fnce"><a class="fncc" href="#" title="">Política de Privacidad</a></li>
-					</ul>
-				</li>
-			</ul>
-			<div class="mod-simple-form clearfix">
-				<h1 class="fncg">Newsletter</h1>
-				<form action="/newsletter" method="get">
-					<fieldset>
-						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
-						<div><a class="send fnca" href="#" title=""><span class="bgce">Enviar</span><span class="bgcg">Enviar</span></a></div>
-					</fieldset>
-				</form>
+			<div class="wrap">
+				<ul class="primary clearfix">
+					<li><a href="#" title=""><span class="bgcd fnca">Inicio</span><span class="bgcm fncd">Inicio</span></a></li>
+					<li><a href="#" title=""><span class="bgcd fnca">Alquiler</span><span class="bgcm fncd">Alquiler</span></a></li>
+					<li><a href="#" title=""><span class="bgcd fnca">Compra</span><span class="bgcm fncd">Compra</span></a></li>
+					<li><a href="#" title=""><span class="bgcd fnca">Venta</span><span class="bgcm fncd">Venta</span></a></li>
+					<li><a href="#" title=""><span class="bgcd fnca">Vacacional</span><span class="bgcm fncd">Vacacional</span></a></li>
+				</ul>
+				<ul class="secondary clearfix">
+					<li><h1 class="fncg">Esenciales</h1>
+						<ul>
+							<li class="fnce"><a class="fncc" href="#" title="">Area de Usuarios</a></li>
+							<li class="fnce"><a class="fncc" href="#" title="">Preguntas Frecuentes</a></li>
+							<li class="fnce"><a class="fncc" href="#" title="">Mapa del Sitio</a></li>
+							<li class="fnce"><a class="fncc" href="#" title="">Contactar</a></li>
+						</ul>
+					</li>
+					<li><h1 class="fncg">QHabito</h1>
+						<ul>
+							<li class="fnce"><a class="fncc" href="#" title="">Sobre Nosotros</a></li>
+							<li class="fnce"><a class="fncc" href="#" title="">Publicidad</a></li>
+							<li class="fnce"><a class="fncc" href="#" title="">Condiciones Generales</a></li>
+							<li class="fnce"><a class="fncc" href="#" title="">Política de Privacidad</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="mod-simple-form clearfix">
+					<h1 class="fncg">Newsletter</h1>
+					<form action="/newsletter" method="get">
+						<fieldset>
+							<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
+							<div><a class="send fnca" href="#" title=""><span class="bgce">Enviar</span><span class="bgcg">Enviar</span></a></div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="bottom-text fncj clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
 			</div>
-			<div class="bottom-text fncj clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
 		</div>
 		<!-- FOOTER / END -->
 	</div>
