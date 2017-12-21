@@ -96,6 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<h3 class="contact"><a class="fncc" href="" title="">Tel. 952 146 413</a><a class="fncc" href="" title="">Contactar</a></h3>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
@@ -128,6 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title fncd">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena</h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<h3 class="contact"><a class="fncc" href="" title="">Tel. 952 146 413</a><a class="fncc" href="" title="">Contactar</a></h3>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
@@ -163,6 +165,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title fncd">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena</h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<h3 class="contact"><a class="fncc" href="" title="">Tel. 952 146 413</a><a class="fncc" href="" title="">Contactar</a></h3>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
@@ -195,6 +198,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<h3 class="contact"><a class="fncc" href="" title="">Tel. 952 146 413</a><a class="fncc" href="" title="">Contactar</a></h3>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
@@ -227,6 +231,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<h3 class="contact"><a class="fncc" href="" title="">Tel. 952 146 413</a><a class="fncc" href="" title="">Contactar</a></h3>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
@@ -259,6 +264,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<h3 class="contact"><a class="fncc" href="" title="">Tel. 952 146 413</a><a class="fncc" href="" title="">Contactar</a></h3>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>
@@ -291,6 +297,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena</h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<h3 class="contact"><a class="fncc" href="" title="">Tel. 952 146 413</a><a class="fncc" href="" title="">Contactar</a></h3>
 								<a class="view" href="#" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
 							</div>
 						</div>

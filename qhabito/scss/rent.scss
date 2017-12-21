@@ -70,6 +70,9 @@
 				transition: color 0.25s ease;
 				
 				&:after {
+					font-family: 'ProximaNova-Regular';
+					font-weight: normal;
+					font-style: normal;
 					font-size: 2rem;
 					content: '\2661';
 				}
@@ -256,7 +259,8 @@
 		height: auto;
 		
 		.title,
-		.subtitle {
+		.subtitle,
+		.contact {
 			padding: 0 0 5% 0;
 			width: 100%;
 			height: auto;
@@ -268,12 +272,22 @@
 			font-style: normal;
 			display: block;
 		}
-		.subtitle {
+		.subtitle,
+		.contact {
 			line-height: 1.2em;
 			font-size: 1rem;
 			
 			span {
 				font-size: 1.5rem;
+				display: block;
+			}
+		}
+		.contact {
+			position: absolute;
+			bottom: 0;
+			left: 5%;
+			
+			& a {
 				display: block;
 			}
 		}
