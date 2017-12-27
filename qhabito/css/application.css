@@ -1097,7 +1097,7 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
   bottom: 0;
   left: 5%;
   line-height: 1.2em;
-  font-ize: 1rem;
+  font-size: 1rem;
   width: auto;
 }
 .rent .mod-grid .details .contact a {
