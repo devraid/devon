@@ -1088,8 +1088,12 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
   font-style: normal;
   display: block;
 }
+.rent .mod-grid .details .subtitle {
+  font-size: 1rem;
+}
 .rent .mod-grid .details .subtitle span {
   font-size: 1.5rem;
+  line-height: 1em;
   display: block;
 }
 .rent .mod-grid .details .contact {
