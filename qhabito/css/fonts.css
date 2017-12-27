@@ -17,3 +17,13 @@
   font-weight: bold;
   font-style: normal;
 }
+/* FONTELLO */
+@font-face {
+  font-family: 'Icons';
+  src: url("fonts/fontello.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/fontello.eot?#iefix") format("embedded-opentype"), url("fonts/fontello.woff") format("woff"), url("fonts/fontello.ttf") format("truetype"), url("fonts/fontello.svg#icons") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -53,17 +53,20 @@
 			line-height: 50px;
 			text-decoration: none;
 			z-index: 99999;
-			font-family: 'ProximaNova-Regular';
-			font-weight: normal;
-			font-style: normal;
+			overflow: hidden;
 			display: block;
 			
-			span {
-				font-size: 0;
+			span,
+			span:before {
+				float: none;
 				width: 100%;
 				height: 100%;
+				line-height: 50px;
 				text-align: center;
 				display: block;
+			}
+			span {
+				font-size: 0;
 				
 				// Transition
 				-webkit-transition: color 0.25s ease;
@@ -71,14 +74,6 @@
 				-ms-transition: color 0.25s ease;
 				-o-transition: color 0.25s ease;
 				transition: color 0.25s ease;
-				
-				&:after {
-					font-family: 'ProximaNova-Regular';
-					font-weight: normal;
-					font-style: normal;
-					font-size: 2rem;
-					content: '\2661';
-				}
 			}
 			
 			@include on-hover {
@@ -275,26 +270,39 @@
 			font-style: normal;
 			display: block;
 		}
-		.subtitle,
-		.contact {
-			line-height: 1.2em;
-			font-size: 1rem;
-			
-			span {
-				font-size: 1.5rem;
-				display: block;
-			}
+		
+		.subtitle span {
+			font-size: 1.5rem;
+			display: block;
 		}
+		
 		.contact {
 			position: absolute;
 			bottom: 0;
 			left: 5%;
+			line-height: 1.2em;
+			font-ize: 1rem;
+			width: auto;
 			
 			& a {
 				display: block;
 			}
 		}
 		
+		.title a,
+		.contact a {
+			// Transition
+			-webkit-transition: color 0.25s ease;
+			-moz-transition: color 0.25s ease;
+			-ms-transition: color 0.25s ease;
+			-o-transition: color 0.25s ease;
+			transition: color 0.25s ease;
+			
+			@include on-hover {
+				color: inherit !important;
+			}
+		}
+
 		.description {
 			padding: 0 0 5% 0;
 			width: 100%;
