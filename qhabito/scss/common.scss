@@ -169,6 +169,91 @@ html, body {
 .fncn { color: #000000 !important; }
 .bgcn { background-color: #000000 !important; }
 
+// COOKIES
+.cookies {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	padding: 5%;
+	
+	p {
+		width: 100%;
+		height: auto;
+		font-size: 0.95rem;
+		line-height: 1.2em;
+		padding-bottom: 25px;
+		display: block;
+		
+		a {
+			font-weight: bold;
+			
+			span {
+				// Transition
+				-webkit-transition: color 0.25s ease;
+				-moz-transition: color 0.25s ease;
+				-ms-transition: color 0.25s ease;
+				-o-transition: color 0.25s ease;
+				transition: color 0.25s ease;
+			}
+			
+			@include on-hover {
+				span {
+					color: inherit !important;
+				}
+			}
+		}
+	}
+	
+	.button,
+	.button span {
+		position: relative;
+		top: 0;
+		left: 0;
+		border-radius: 5px;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'ProximaNova-Bold';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 1.2rem;
+		width: auto;
+		height: 50px;
+		line-height: 50px;
+		display: inline-block;
+	}
+
+	.button {
+		float: right;
+		overflow: hidden;
+		
+		span {
+			padding: 0 20px 0 20px;
+
+			&:last-of-type {
+				position: absolute;
+				width: 100%;
+				padding: 0;
+				opacity: 1;
+
+				// Transition
+				-webkit-transition: opacity 0.25s ease;
+				-moz-transition: opacity 0.25s ease;
+				-ms-transition: opacity 0.25s ease;
+				-o-transition: opacity 0.25s ease;
+				transition: opacity 0.25s ease;
+			}
+		}
+		@include on-hover {
+			span:last-of-type {
+				opacity: 0;
+			}
+		}
+	}
+}
+
 // MAIN
 .main {
 	position: relative;

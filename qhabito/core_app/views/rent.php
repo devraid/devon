@@ -372,5 +372,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- FOOTER / END -->
 	</div>
 	<!-- MAIN / END -->
+	<!-- COOKIES / BEGIN -->
+	<div class="cookies bgcj">
+		<p>
+			Usamos cookies para ofrecer una experiencia más personalizada. <a class="fnce" href="#" title=""><span  class="fncd">Más información &gt;</span></a><br /><strong>¿Nos permites utilizar cookies?</strong>
+		</p>
+		<a class="button fnca" href="#" title=""><span class="bgcg">Aceptar</span><span class="bgce">Aceptar</span></a>
+	</div>
+	<!-- COOKIES / END -->
 </body>
 </html>

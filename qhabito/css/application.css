@@ -286,6 +286,81 @@ html, body {
   background-color: #000000 !important;
 }
 
+.cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+}
+.cookies p {
+  width: 100%;
+  height: auto;
+  font-size: 0.95rem;
+  line-height: 1.2em;
+  padding-bottom: 25px;
+  display: block;
+}
+.cookies p a {
+  font-weight: bold;
+}
+.cookies p a span {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+body.desktop .cookies p a:not(.disabled):hover span, body.desktop .cookies p a:not(.disabled):active span, body.desktop .cookies p a:not(.disabled):focus span, .cookies p a:not(.disabled).selected span {
+  color: inherit !important;
+}
+.cookies p a:not(.disabled).selected {
+  cursor: default;
+}
+.cookies .button,
+.cookies .button span {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.2rem;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+}
+.cookies .button {
+  float: right;
+  overflow: hidden;
+}
+.cookies .button span {
+  padding: 0 20px 0 20px;
+}
+.cookies .button span:last-of-type {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.desktop .cookies .button:not(.disabled):active span:last-of-type, body.desktop .cookies .button:not(.disabled):focus span:last-of-type, .cookies .button:not(.disabled).selected span:last-of-type {
+  opacity: 0;
+}
+.cookies .button:not(.disabled).selected {
+  cursor: default;
+}
+
 .main {
   position: relative;
   top: 0;
