@@ -291,6 +291,7 @@ html, body {
   width: 100%;
   height: auto;
   padding: 50px;
+  display: none;
 }
 .cookies p {
   width: 100%;
@@ -357,6 +358,10 @@ body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.deskt
 }
 .cookies .button:not(.disabled).selected {
   cursor: default;
+}
+
+.cookies.visible {
+  display: block;
 }
 
 .main {

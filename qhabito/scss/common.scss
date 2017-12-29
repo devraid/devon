@@ -141,6 +141,7 @@ html, body {
 	width: 100%;
 	height: auto;
 	padding: 50px;
+	display: none;
 	
 	p {
 		width: 100%;
@@ -216,6 +217,9 @@ html, body {
 			}
 		}
 	}
+}
+.cookies.visible {
+	display: block;
 }
 
 // MAIN
