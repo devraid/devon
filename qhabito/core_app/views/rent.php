@@ -23,15 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="manifest" href="/manifest.json">
-		
-		
 		-->
+		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
+		
 		<script type="text/javascript" src="/qhabito/js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
 		<script type="text/javascript" src="/qhabito/js/rent.js"></script>
-		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 <body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
@@ -93,7 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<div class="details">
-								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena</a></h1>
+								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<p class="contact fncg">
@@ -129,7 +128,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<div class="details">
-								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena</a></h1>
+								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<p class="contact fncg">
@@ -168,7 +167,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<div class="details">
-								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena</a></h1>
+								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<p class="contact fncg">
@@ -204,7 +203,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<div class="details">
-								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena</a></h1>
+								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<p class="contact fncg">
@@ -240,7 +239,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<div class="details">
-								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena</a></h1>
+								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<p class="contact fncg">
@@ -276,7 +275,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<div class="details">
-								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena</a></h1>
+								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<p class="contact fncg">
@@ -312,7 +311,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<div class="details">
-								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena</a></h1>
+								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 								<p class="contact fncg">
@@ -375,9 +374,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- COOKIES / BEGIN -->
 	<div class="cookies bgcj">
 		<p>
-			Usamos cookies para ofrecer una experiencia más personalizada. <a class="fnce" href="#" title=""><span  class="fncd">Más información &gt;</span></a><br /><strong>¿Nos permites utilizar cookies?</strong>
+			Usamos cookies para ofrecer una experiencia más personalizada. <a class="fnce" href="#" title=""><span  class="fncd">Más información &gt;</span></a>
 		</p>
-		<a class="button fnca" href="#" title=""><span class="bgcg">Aceptar</span><span class="bgce">Aceptar</span></a>
+		<a class="button fnca" href="#" title=""><span class="bgce">Cerrar</span><span class="bgcd">Cerrar</span></a>
 	</div>
 	<!-- COOKIES / END -->
 </body>

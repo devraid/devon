@@ -1,4 +1,4 @@
-/* PROXIMA NOVA */
+// PROXIMA NOVA
 @font-face {
 	font-family: 'ProximaNova-Regular';
 	src: url('fonts/ProximaNova-Regular.eot'); /* IE9 Compat Modes */
@@ -20,7 +20,7 @@
 	font-style: normal;
 }
 
-/* FONTELLO */
+// FONTELLO ICONS
 @font-face {
 	font-family: 'Icons';
 	src: url('fonts/fontello.eot'); /* IE9 Compat Modes */
@@ -31,3 +31,38 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+[class^="icon-"],
+[class*=" icon-"],
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: 'Icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	speak: none;
+	font-size: 0rem;
+	line-height: 1em;
+	text-align: left;
+	height: auto;
+	width: auto;
+	float: left;
+	display: inline-block;
+	
+	// Font smoothing. That was taken from TWBS
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-size: 1rem;
+	width: 100%;
+	min-width: 25px;
+}
+.icon-heart:before { content: '\e800'; }
+.icon-grid:before { content: '\e801'; }
+.icon-list:before { content: '\e802'; }
+.icon-lock-open:before { content: '\e803'; }
+.icon-lock:before { content: '\e804'; }
+.icon-phone:before { content: '\e805'; }
+.icon-mail:before { content: '\e806'; }

@@ -23,16 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="manifest" href="/manifest.json">
-		
-		<script type="text/javascript" src="/js/slick.js"></script>
-		
-		
-		<link href="/css/slick.css" media="screen" rel="stylesheet" type="text/css" />
 		-->
+		
+		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
+		
 		<script type="text/javascript" src="/qhabito/js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
-		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
 <body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
@@ -139,5 +137,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- FOOTER / END -->
 	</div>
 	<!-- MAIN / END -->
+	<!-- COOKIES / BEGIN -->
+	<div class="cookies bgcj">
+		<p>
+			Usamos cookies para ofrecer una experiencia más personalizada. <a class="fnce" href="#" title=""><span  class="fncd">Más información &gt;</span></a>
+		</p>
+		<a class="button fnca" href="#" title=""><span class="bgce">Cerrar</span><span class="bgcd">Cerrar</span></a>
+	</div>
+	<!-- COOKIES / END -->
 </body>
 </html>

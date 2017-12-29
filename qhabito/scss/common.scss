@@ -103,42 +103,6 @@ html, body {
 	}
 }
 
-// ICONS
-[class^="icon-"],
-[class*=" icon-"],
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-	font-family: 'Icons';
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	speak: none;
-	font-size: 0rem;
-	line-height: 1em;
-	text-align: left;
-	height: auto;
-	width: auto;
-	float: left;
-	display: inline-block;
-	
-	// Font smoothing. That was taken from TWBS
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-	font-size: 1rem;
-	width: 100%;
-	min-width: 25px;
-}
-.icon-heart:before { content: '\e800'; }
-.icon-grid:before { content: '\e801'; }
-.icon-list:before { content: '\e802'; }
-.icon-lock-open:before { content: '\e803'; }
-.icon-lock:before { content: '\e804'; }
-.icon-phone:before { content: '\e805'; }
-.icon-mail:before { content: '\e806'; }
-
 // COLORS
 .fnca {	color: #FFFFFF !important; }
 .bgca {	background-color: #FFFFFF !important; }
@@ -176,7 +140,7 @@ html, body {
 	left: 0;
 	width: 100%;
 	height: auto;
-	padding: 5%;
+	padding: 50px;
 	
 	p {
 		width: 100%;
@@ -559,6 +523,10 @@ html, body {
 		.mod-simple-form {
 			width: 40%;
 		}
+	}
+	// COOKIES
+	.cookies {
+		padding: 5%;
 	}
 }
 @media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
