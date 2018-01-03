@@ -1503,13 +1503,12 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
   .rent .mod-grid.list .slider-thumbs {
     float: left;
-    width: 32.3%;
+    width: 32.4%;
     overflow: hidden;
   }
   .rent .mod-grid.list .details {
     float: left;
-    padding: 2% 2% 0 2%;
-    width: 67.7%;
+    width: 67.6%;
   }
   .rent .mod-grid.list .details .title,
   .rent .mod-grid.list .details .subtitle {
@@ -1522,13 +1521,20 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     padding: 0;
   }
   .rent .mod-grid.list .contact-view {
-    float: right;
     padding: 2%;
-    width: 67.2%;
+    width: 67.6%;
     height: auto;
-    position: relative;
-    top: 0;
-    bottom: auto;
-    left: 0;
+    left: auto;
+    left: auto;
+    right: 0;
+  }
+}
+.rent .mod-grid.list .details {
+  padding: 2% 2% 8% 2%;
+}
+
+@media (max-device-width: 1024px), (max-width: 1024px) {
+  .rent .mod-grid.list .details {
+    padding: 2% 2% 12% 2%;
   }
 }

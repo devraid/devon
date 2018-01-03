@@ -560,6 +560,7 @@
 	
 }
 
+// RESPONSIVE
 @media (min-width: 768px) { // from 768px
 	// RENT : FILTERS : LIST TYPE
 	.rent .filters .list-type {
@@ -581,15 +582,14 @@
 		// SLIDER AND THUMBS
 		.slider-thumbs {
 			float: left;
-			width: 32.3%;
+			width: 32.4%;
 			overflow: hidden;
 		}
 
 		// DETAILS
 		.details {
 			float: left;
-			padding: 2% 2% 0 2%;
-			width: 67.7%;
+			width: 67.6%;
 
 			.title,
 			.subtitle {
@@ -606,15 +606,31 @@
 
 		// CONTACT VIEW
 		.contact-view {
-			float: right;
 			padding: 2%;
-			width: 67.2%;
+			width: 67.6%;
 			height: auto;
-			position: relative;
-			top: 0;
-			bottom: auto;
-			left: 0;
+			left: auto;
+			left: auto;
+			right: 0;
 		}
 
+	}
+}
+// RENT : GRID (LIST TYPE)
+.rent .mod-grid.list {
+
+	// DETAILS
+	.details {
+		padding: 2% 2% 8% 2%;
+	}
+}
+@media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
+	// RENT : GRID (LIST TYPE)
+	.rent .mod-grid.list {
+
+		// DETAILS
+		.details {
+			padding: 2% 2% 12% 2%;
+		}
 	}
 }

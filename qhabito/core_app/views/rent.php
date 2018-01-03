@@ -54,6 +54,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="content">
 			<div class="wrap bgca fnck">
 				
+				<ul class="breadcrumb">
+					<li><a class="fncg" href="#" title=""><span class="fncc">Inicio</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
+				</ul>
+				
 				<div class="filters clearfix">
 					<ul class="list-type">
 						<?php $selected = ($data['list_type'] === 'grid') ? ' selected' : ''; ?>

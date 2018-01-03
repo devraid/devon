@@ -11,7 +11,7 @@ var QHABITO = window.QHABITO || {};
 			target : $('div.main'),
 			init: function() {
 				// Item slider
-				$('.mod-grid .slider', QHABITO.rent.target).slick({
+				$('.mod-grid .slider').slick({
 					infinite : true,
 					touchMove : true,
 					draggable : true,
@@ -36,22 +36,22 @@ var QHABITO = window.QHABITO || {};
 				if (!qh_list) {
 					QHABITO.common.setCookie('qh_list', 'false');
 				}
-				$('.filters .list-type a:eq(0)', QHABITO.rent.target).on('click', function() {
+				$('.filters .list-type a:eq(0)').on('click', function() {
 					var _this = $(this);
 					_this.blur();
-					$('.filters .list-type a', QHABITO.rent.target).removeClass('selected');
+					$('.filters .list-type a').removeClass('selected');
 					_this.addClass('selected');
 					QHABITO.common.setCookie('qh_list', 'false');
-					$('.mod-grid', QHABITO.rent.target).removeClass('list');
+					$('.mod-grid').removeClass('list');
 					return false;
 				});
-				$('.filters .list-type a:eq(1)', QHABITO.rent.target).on('click', function() {
+				$('.filters .list-type a:eq(1)').on('click', function() {
 					var _this = $(this);
 					_this.blur();
-					$('.filters .list-type a', QHABITO.rent.target).removeClass('selected');
+					$('.filters .list-type a').removeClass('selected');
 					_this.addClass('selected');
-					if (!$('.mod-grid', QHABITO.rent.target).hasClass('list')) {
-						$('.mod-grid', QHABITO.rent.target).addClass('list');
+					if (!$('.mod-grid').hasClass('list')) {
+						$('.mod-grid').addClass('list');
 					}
 					QHABITO.common.setCookie('qh_list', 'true');
 					return false;

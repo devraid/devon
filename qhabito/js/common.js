@@ -19,7 +19,7 @@ var QHABITO = window.QHABITO || {};
 				document.cookie = key + '=' + value + ';path=/;expires=' + expires.toUTCString();
 			},
 			modSelect: function() {
-				$('.mod-select li:eq(0) a', QHABITO.common.target).on('click', function() {
+				$('.mod-select li:eq(0) a').on('click', function() {
 					var _this = $(this);
 					_this.blur();
 					_this.closest('.mod-select').toggleClass('active');
