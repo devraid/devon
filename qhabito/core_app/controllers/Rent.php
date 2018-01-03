@@ -10,6 +10,12 @@ class Rent extends CI_Controller {
 			$data['device'] = 'mobile-tablet';
 		}
 		
+		// Cookies: Grid or list
+		$data['list_type'] = 'grid';
+		if ((boolean)json_decode(get_cookie('qh_list')) === TRUE) {
+			$data['list_type'] = 'list';
+		}
+		
 		// Model
 		$data['data'] = $data;
 		

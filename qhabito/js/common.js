@@ -18,6 +18,14 @@ var QHABITO = window.QHABITO || {};
 				expires.setTime(expires.getTime() + (360 * 24 * 60 * 60 * 1000));
 				document.cookie = key + '=' + value + ';path=/;expires=' + expires.toUTCString();
 			},
+			modSelect: function() {
+				$('.mod-select li:eq(0) a', QHABITO.common.target).on('click', function() {
+					var _this = $(this);
+					_this.blur();
+					_this.closest('.mod-select').toggleClass('active');
+					return false;
+				});
+			},
 			init: function() {
 				// Cookies
 				var cookies = $('.cookies');
@@ -33,6 +41,9 @@ var QHABITO = window.QHABITO || {};
 				} else {
 					cookies.remove();
 				}
+				
+				// Module select
+				QHABITO.common.modSelect();
 				
 				// It's always good to focus on things :)
 				$(window).focus();

@@ -56,14 +56,6 @@
   content: '\e800';
 }
 
-.icon-grid:before {
-  content: '\e801';
-}
-
-.icon-list:before {
-  content: '\e802';
-}
-
 .icon-lock-open:before {
   content: '\e803';
 }
@@ -917,6 +909,99 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
   cursor: default;
 }
 
+.mod-select,
+.mod-select * {
+  width: auto;
+  height: auto;
+  line-height: 1em;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+}
+
+.mod-select {
+  float: right;
+  height: auto;
+  max-height: 57px;
+  margin-right: 10px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease;
+  -moz-transition: max-height 0.5s ease;
+  -ms-transition: max-height 0.5s ease;
+  -o-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
+}
+.mod-select li {
+  border-bottom: #C7C7C7 solid 1px;
+  border-left: #C7C7C7 solid 1px;
+  border-right: #C7C7C7 solid 1px;
+}
+.mod-select li a {
+  padding: 12px 40px 12px 15px;
+  font-family: 'ProximaNova-Regular';
+  font-weight: normal;
+  font-style: normal;
+}
+.mod-select li a span {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+body.desktop .mod-select li a:not(.disabled):hover span, body.desktop .mod-select li a:not(.disabled):active span, body.desktop .mod-select li a:not(.disabled):focus span, .mod-select li a:not(.disabled).selected span {
+  color: inherit !important;
+}
+.mod-select li a:not(.disabled).selected {
+  cursor: default;
+}
+.mod-select li:first-of-type {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border: #C7C7C7 solid 1px;
+}
+.mod-select li:first-of-type, .mod-select li:first-of-type a {
+  height: 57px;
+  line-height: 57px;
+}
+.mod-select li:first-of-type a {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0 40px 0 15px;
+  text-transform: uppercase;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+}
+.mod-select li:first-of-type span.arrow {
+  position: absolute;
+  right: 16px;
+  top: calc(50% - 8px);
+  width: 8px;
+  height: 8px;
+  font-size: 0;
+  border-left: 3px solid #6789B2;
+  border-top: 3px solid #6789B2;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.mod-select.active {
+  max-height: 400px;
+}
+.mod-select.active li a span.arrow {
+  top: calc(50% - 4px);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 @media (max-device-width: 1200px), (max-width: 1200px) {
   .mod-grid .item {
     width: calc(1/2*100% - (1 - 1/2)*20px);
@@ -943,9 +1028,126 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
 
 .rent .filters {
   width: 100%;
-  height: 150px;
+  height: auto;
   background-color: #E4E5E6;
-  margin: 0 0 5% 0;
+  margin: 0 0 20px 0;
+  padding: 10px;
+}
+.rent .filters .list-type,
+.rent .filters .list-type * {
+  width: auto;
+  height: 57px;
+  line-height: 57px;
+  font-size: 0;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.rent .filters .list-type {
+  float: right;
+  height: 57px;
+  border: #C7C7C7 solid 1px;
+  display: none;
+}
+.rent .filters .list-type li {
+  float: left;
+}
+.rent .filters .list-type li a {
+  height: 37px;
+  width: 40px;
+  margin: 10px;
+}
+.rent .filters .list-type li a span, .rent .filters .list-type li a span:before, .rent .filters .list-type li a span:after {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.rent .filters .list-type li a span:before {
+  float: none;
+  line-height: 50px;
+  font-size: 2rem;
+}
+.rent .filters .list-type li a.icon-list {
+  width: 40px;
+  margin: 10px 10px 10px 0px;
+}
+.rent .filters .list-type li a.icon-list span {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 10px;
+  margin-bottom: 3px;
+}
+.rent .filters .list-type li a.icon-list span:before, .rent .filters .list-type li a.icon-list span:after {
+  background-color: #C7C7C7;
+}
+.rent .filters .list-type li a.icon-list span:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 10px;
+  height: 10px;
+}
+.rent .filters .list-type li a.icon-list span:after {
+  position: absolute;
+  top: 0;
+  left: 13px;
+  content: '';
+  width: 27px;
+  height: 10px;
+}
+.rent .filters .list-type li a.icon-list.selected span:before, .rent .filters .list-type li a.icon-list.selected span:after {
+  background-color: #1C7EBE !important;
+}
+body.desktop .rent .filters .list-type li a.icon-list:not(.disabled):hover span:before, body.desktop .rent .filters .list-type li a.icon-list:not(.disabled):hover span:after, body.desktop .rent .filters .list-type li a.icon-list:not(.disabled):active span:before, body.desktop .rent .filters .list-type li a.icon-list:not(.disabled):active span:after, body.desktop .rent .filters .list-type li a.icon-list:not(.disabled):focus span:before, body.desktop .rent .filters .list-type li a.icon-list:not(.disabled):focus span:after, .rent .filters .list-type li a.icon-list:not(.disabled).selected span:before, .rent .filters .list-type li a.icon-list:not(.disabled).selected span:after {
+  background-color: #1C7EBE !important;
+}
+.rent .filters .list-type li a.icon-list:not(.disabled).selected {
+  cursor: default;
+}
+.rent .filters .list-type li a.icon-grid {
+  width: 40px;
+  margin: 10px 7px 10px 10px;
+}
+.rent .filters .list-type li a.icon-grid span,
+.rent .filters .list-type li a.icon-grid span:before,
+.rent .filters .list-type li a.icon-grid span:after {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  background-color: #C7C7C7;
+  display: block;
+}
+.rent .filters .list-type li a.icon-grid span {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.rent .filters .list-type li a.icon-grid span:before {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  content: '';
+}
+.rent .filters .list-type li a.icon-grid span:after {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  content: '';
+}
+.rent .filters .list-type li a.icon-grid.selected span, .rent .filters .list-type li a.icon-grid.selected span:before, .rent .filters .list-type li a.icon-grid.selected span:after {
+  background-color: #1C7EBE !important;
+}
+body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):hover span, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):hover span:before, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):hover span:after, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):active span, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):active span:before, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):active span:after, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):focus span, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):focus span:before, body.desktop .rent .filters .list-type li a.icon-grid:not(.disabled):focus span:after, .rent .filters .list-type li a.icon-grid:not(.disabled).selected span, .rent .filters .list-type li a.icon-grid:not(.disabled).selected span:before, .rent .filters .list-type li a.icon-grid:not(.disabled).selected span:after {
+  background-color: #1C7EBE !important;
+}
+.rent .filters .list-type li a.icon-grid:not(.disabled).selected {
+  cursor: default;
 }
 
 .rent .mod-grid {
@@ -1163,8 +1365,7 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
   height: auto;
 }
 .rent .mod-grid .details .title,
-.rent .mod-grid .details .subtitle,
-.rent .mod-grid .details .contact {
+.rent .mod-grid .details .subtitle {
   padding: 0 0 5% 0;
   width: 100%;
   height: auto;
@@ -1189,38 +1390,17 @@ body.desktop .rent .mod-grid .slider-thumbs .thumbs li a:not(.disabled):hover sp
   line-height: 1em;
   display: block;
 }
-.rent .mod-grid .details .contact {
-  position: absolute;
-  bottom: 0;
-  left: 5%;
-  line-height: 1.2em;
-  font-size: 1rem;
-  width: auto;
-}
-.rent .mod-grid .details .contact a {
-  display: block;
-}
-.rent .mod-grid .details .title a,
-.rent .mod-grid .details .contact a {
+.rent .mod-grid .details .title a {
   -webkit-transition: color 0.25s ease;
   -moz-transition: color 0.25s ease;
   -ms-transition: color 0.25s ease;
   -o-transition: color 0.25s ease;
   transition: color 0.25s ease;
 }
-body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.desktop .rent .mod-grid .details .title a:not(.disabled):hover span, body.desktop .rent .mod-grid .details .title a:not(.disabled):active, body.desktop .rent .mod-grid .details .title a:not(.disabled):active span, body.desktop .rent .mod-grid .details .title a:not(.disabled):focus, body.desktop .rent .mod-grid .details .title a:not(.disabled):focus span, .rent .mod-grid .details .title a:not(.disabled).selected, .rent .mod-grid .details .title a:not(.disabled).selected span, body.desktop
-.rent .mod-grid .details .contact a:not(.disabled):hover, body.desktop
-.rent .mod-grid .details .contact a:not(.disabled):hover span, body.desktop
-.rent .mod-grid .details .contact a:not(.disabled):active, body.desktop
-.rent .mod-grid .details .contact a:not(.disabled):active span, body.desktop
-.rent .mod-grid .details .contact a:not(.disabled):focus, body.desktop
-.rent .mod-grid .details .contact a:not(.disabled):focus span,
-.rent .mod-grid .details .contact a:not(.disabled).selected,
-.rent .mod-grid .details .contact a:not(.disabled).selected span {
+body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.desktop .rent .mod-grid .details .title a:not(.disabled):hover span, body.desktop .rent .mod-grid .details .title a:not(.disabled):active, body.desktop .rent .mod-grid .details .title a:not(.disabled):active span, body.desktop .rent .mod-grid .details .title a:not(.disabled):focus, body.desktop .rent .mod-grid .details .title a:not(.disabled):focus span, .rent .mod-grid .details .title a:not(.disabled).selected, .rent .mod-grid .details .title a:not(.disabled).selected span {
   color: inherit !important;
 }
-.rent .mod-grid .details .title a:not(.disabled).selected,
-.rent .mod-grid .details .contact a:not(.disabled).selected {
+.rent .mod-grid .details .title a:not(.disabled).selected {
   cursor: default;
 }
 .rent .mod-grid .details .description {
@@ -1231,10 +1411,46 @@ body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.deskto
   line-height: 1.2em;
   display: block;
 }
-.rent .mod-grid .details .view {
+.rent .mod-grid .contact-view {
+  padding: 5%;
+  width: 100%;
+  height: auto;
   position: absolute;
   bottom: 0;
-  right: 5%;
+  left: 0;
+}
+.rent .mod-grid .contact-view .contact {
+  float: left;
+  width: auto;
+  height: auto;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  line-height: 1.2em;
+  font-size: 1rem;
+}
+.rent .mod-grid .contact-view .contact a {
+  display: block;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):hover, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):hover span, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):active, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):active span, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):focus, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):focus span, .rent .mod-grid .contact-view .contact a:not(.disabled).selected, .rent .mod-grid .contact-view .contact a:not(.disabled).selected span {
+  color: inherit !important;
+}
+.rent .mod-grid .contact-view .contact a:not(.disabled).selected {
+  cursor: default;
+}
+.rent .mod-grid .contact-view .view {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: right;
   width: auto;
   height: 40px;
   line-height: 40px;
@@ -1243,10 +1459,9 @@ body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.deskto
   font-weight: bold;
   font-style: normal;
   text-decoration: none;
-  margin-bottom: 5%;
   display: inline-block;
 }
-.rent .mod-grid .details .view span {
+.rent .mod-grid .contact-view .view span {
   position: absolute;
   top: 0;
   left: 0;
@@ -1263,13 +1478,57 @@ body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.deskto
   -o-transition: opacity 0.25s ease, border-color 0.25s ease;
   transition: opacity 0.25s ease, border-color 0.25s ease;
 }
-.rent .mod-grid .details .view span:last-of-type {
+.rent .mod-grid .contact-view .view span:last-of-type {
   position: relative;
   border: #6789B2 solid 4px;
 }
-body.desktop .rent .mod-grid .details .view:not(.disabled):hover span:last-of-type, body.desktop .rent .mod-grid .details .view:not(.disabled):active span:last-of-type, body.desktop .rent .mod-grid .details .view:not(.disabled):focus span:last-of-type, .rent .mod-grid .details .view:not(.disabled).selected span:last-of-type {
+body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-of-type, body.desktop .rent .mod-grid .contact-view .view:not(.disabled):active span:last-of-type, body.desktop .rent .mod-grid .contact-view .view:not(.disabled):focus span:last-of-type, .rent .mod-grid .contact-view .view:not(.disabled).selected span:last-of-type {
   opacity: 0;
 }
-.rent .mod-grid .details .view:not(.disabled).selected {
+.rent .mod-grid .contact-view .view:not(.disabled).selected {
   cursor: default;
+}
+
+@media (min-width: 768px) {
+  .rent .filters .list-type {
+    display: block;
+  }
+
+  .rent .mod-grid.list .item {
+    width: 100%;
+  }
+  .rent .mod-grid.list .item .wrapper {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .rent .mod-grid.list .slider-thumbs {
+    float: left;
+    width: 32.3%;
+    overflow: hidden;
+  }
+  .rent .mod-grid.list .details {
+    float: left;
+    padding: 2% 2% 0 2%;
+    width: 67.7%;
+  }
+  .rent .mod-grid.list .details .title,
+  .rent .mod-grid.list .details .subtitle {
+    padding: 0 0 2% 0;
+  }
+  .rent .mod-grid.list .details .description {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+  }
+  .rent .mod-grid.list .contact-view {
+    float: right;
+    padding: 2%;
+    width: 67.2%;
+    height: auto;
+    position: relative;
+    top: 0;
+    bottom: auto;
+    left: 0;
+  }
 }

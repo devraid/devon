@@ -134,6 +134,116 @@
 	}
 }
 
+// SELECT
+.mod-select,
+.mod-select * {
+	width: auto;
+	height: auto;
+	line-height: 1em;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+.mod-select {
+	float: right;
+	height: auto;
+	max-height: 57px;
+	margin-right: 10px;
+	overflow: hidden;
+	
+	// Transition
+	-webkit-transition: max-height 0.5s ease;
+	-moz-transition: max-height 0.5s ease;
+	-ms-transition: max-height 0.5s ease;
+	-o-transition: max-height 0.5s ease;
+	transition: max-height 0.5s ease;
+
+	li {
+		border-bottom: #C7C7C7 solid 1px;
+		border-left: #C7C7C7 solid 1px;
+		border-right: #C7C7C7 solid 1px;
+		//max-width: 132px;
+
+		a {
+			padding: 12px 40px 12px 15px;
+			font-family: 'ProximaNova-Regular';
+			font-weight: normal;
+			font-style: normal;
+
+			span {
+				// Transition
+				-webkit-transition: color 0.25s ease;
+				-moz-transition: color 0.25s ease;
+				-ms-transition: color 0.25s ease;
+				-o-transition: color 0.25s ease;
+				transition: color 0.25s ease;
+			}
+
+			@include on-hover {
+				span {
+					color: inherit!important;
+				}
+			}
+		}
+
+		&:first-of-type {
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+			border: #C7C7C7 solid 1px;
+
+			&, & a {
+				height: 57px;
+				line-height: 57px;
+			}
+
+			& a {
+				position: relative;
+				top: 0;
+				left: 0;
+				padding: 0 40px 0 15px;
+				text-transform: uppercase;
+				font-family: 'ProximaNova-Bold';
+				font-weight: bold;
+			}
+
+			span.arrow {
+				position: absolute;
+				right: 16px;
+				top: calc(50% - 8px);
+				width: 8px;
+				height: 8px;
+				font-size: 0;
+				border-left: 3px solid #6789B2;
+				border-top: 3px solid #6789B2;
+
+				// Rotate
+				-webkit-transform: rotate(225deg);
+				-moz-transform: rotate(225deg);
+				-ms-transform: rotate(225deg);
+				-o-transform: rotate(225deg);
+				transform: rotate(225deg);
+			}
+		}
+	}
+
+	&.active {
+		max-height: 400px;
+
+		li a span.arrow {
+			top: calc(50% - 4px);
+
+			// Rotate
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+	}
+}
+
 // RESPONSIVE
 @media (max-device-width: 1440px), (max-width: 1440px) { // up to 1440px
 	// TBD
