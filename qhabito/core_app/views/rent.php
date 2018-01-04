@@ -54,12 +54,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="content">
 			<div class="wrap bgca fnck">
 				
-				<ul class="breadcrumb">
-					<li><a class="fncg" href="#" title=""><span class="fncc">Inicio</span></a></li>
-					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
-					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
-					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
-					<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
+				<ul class="breadcrumb clearfix">
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Inicio</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum dolor</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg selected" href="#" title=""><span class="fncc text">Lorem ipsum sit amet</span></a></li>
 				</ul>
 				
 				<div class="filters clearfix">

@@ -1,5 +1,6 @@
 // RENT : FILTERS
 .rent .filters {
+	clear: both;
 	width: 100%;
 	height: auto;
 	background-color: #E4E5E6;
@@ -19,6 +20,7 @@
 	}
 	.list-type {
 		float: right;
+		margin-left: 10px;
 		height: 57px;
 		border: #C7C7C7 solid 1px;
 		display: none;

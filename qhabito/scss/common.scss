@@ -60,8 +60,8 @@ html, body {
 	height: 100%;
 	min-height: 100%;
 	background-color: #FFFFFF;
-	font-family: Arial, 'sans-serif';
 	font-size: 100%;
+	font-family: Arial, 'sans-serif';
 	display: block;
 	
 	// Overflow
@@ -351,8 +351,71 @@ html, body {
 }
 
 // MAIN : BREADCRUMB
+.main .breadcrumb,
+.main .breadcrumb * {
+	float: left;
+	width: auto;
+	height: auto;
+	line-height: 1.2em;
+	text-decoration: none;
+	font-size: 0.95rem;
+	/*font-family: 'ProximaNova-Regular';
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;*/
+	display: block;
+}
 .main .breadcrumb {
+	padding: 10px;
 	
+	li {
+		a {
+			position: relative;
+			top: 0;
+			left: 0;
+			padding: 6px 0 6px 0;
+			overflow: hidden;
+
+			span {
+				// Transition
+				-webkit-transition: color 0.25s ease;
+				-moz-transition: color 0.25s ease;
+				-ms-transition: color 0.25s ease;
+				-o-transition: color 0.25s ease;
+				transition: color 0.25s ease;
+			}
+			span.text {
+				padding: 0 18px 0 10px;
+			}
+			span.arrow {
+				position: absolute;
+				right: 2px;
+				top: calc(50% - 4px);
+				width: 8px;
+				height: 8px;
+				font-size: 0;
+				border-left: 3px solid #6789B2;
+				border-top: 3px solid #6789B2;
+
+				// Rotate
+				-webkit-transform: rotate(135deg);
+				-moz-transform: rotate(135deg);
+				-ms-transform: rotate(135deg);
+				-o-transform: rotate(135deg);
+				transform: rotate(135deg);
+			}
+			
+			@include on-hover {
+				span {
+					color: inherit !important;
+				}
+			}
+		}
+
+		&:last-of-type a span.text {
+			font-weight: bold;
+		}
+	}
 }
 
 // MAIN : FOOTER
