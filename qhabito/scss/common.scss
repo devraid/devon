@@ -366,7 +366,7 @@ html, body {
 	display: block;
 }
 .main .breadcrumb {
-	padding: 10px;
+	padding: 10px 0px 10px 0px;
 	
 	li {
 		a {
@@ -385,11 +385,11 @@ html, body {
 				transition: color 0.25s ease;
 			}
 			span.text {
-				padding: 0 18px 0 10px;
+				padding: 0 28px 0 0px;
 			}
 			span.arrow {
 				position: absolute;
-				right: 2px;
+				right: 12px;
 				top: calc(50% - 4px);
 				width: 8px;
 				height: 8px;
@@ -684,6 +684,19 @@ html, body {
 			clear: both;
 			width: calc(100% - 5%);
 			padding: 0 0 0 5%;
+		}
+	}
+	
+	// MAIN : BREADCRUMB
+	.main .breadcrumb,
+	.main .breadcrumb * {
+		font-size: 1.5rem;
+	}
+	.main .breadcrumb li {
+		display: none;
+		
+		&:last-of-type {
+			display: block;
 		}
 	}
 }
