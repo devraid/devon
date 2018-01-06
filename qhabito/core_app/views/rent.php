@@ -54,6 +54,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="content">
 			<div class="wrap bgca fnck">
 				
+				<ul class="breadcrumb clearfix">
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Inicio</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum dolor</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg selected" href="#" title=""><span class="fncc text">Lorem ipsum sit amet</span></a></li>
+				</ul>
+				
 				<div class="filters clearfix">
 					<ul class="list-type">
 						<?php $selected = ($data['list_type'] === 'grid') ? ' selected' : ''; ?>
@@ -96,24 +104,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
+									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
 								</ul>
 								<ul class="thumbs clearfix">
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a class="selected" href="#" title="" data-index="0"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="1"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="2"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="3"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title="" data-index="7"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="8"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="9"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="10"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="11"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="12"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="13"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="14"><span>&nbsp;</span></a></li>
+									<li><a class="view" href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
@@ -144,14 +160,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
 								</ul>
 								<ul class="thumbs">
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a class="selected" href="#" title="" data-index="0"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="1"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="2"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="3"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
+									<li><a class="view" href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
@@ -182,17 +198,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
 								</ul>
 								<ul class="thumbs">
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a class="selected" href="#" title="" data-index="0"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="1"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="2"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="3"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
+									<li><a class="view" href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
@@ -223,14 +236,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
 								</ul>
 								<ul class="thumbs">
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a class="selected" href="#" title="" data-index="0"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="1"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="2"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="3"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
+									<li><a class="view" href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
@@ -261,14 +274,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
 								</ul>
 								<ul class="thumbs">
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a class="selected" href="#" title="" data-index="0"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="1"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="2"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="3"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
+									<li><a class="view" href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
@@ -299,14 +312,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
 								</ul>
 								<ul class="thumbs">
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a class="selected" href="#" title="" data-index="0"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="1"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="2"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="3"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
+									<li><a class="view" href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
@@ -337,14 +350,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');">&nbsp;</li>
 								</ul>
 								<ul class="thumbs">
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title=""><span>&nbsp;</span></a></li>
-									<li><a href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');"><a class="selected" href="#" title="" data-index="0"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');"><a href="#" title="" data-index="1"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0003.jpg');"><a href="#" title="" data-index="2"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0004.jpg');"><a href="#" title="" data-index="3"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
+									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
+									<li><a class="view" href="#" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>

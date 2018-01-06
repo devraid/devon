@@ -69,8 +69,8 @@ html, body {
   height: 100%;
   min-height: 100%;
   background-color: #FFFFFF;
-  font-family: Arial, 'sans-serif';
   font-size: 100%;
+  font-family: Arial, 'sans-serif';
   display: block;
   overflow: hidden;
   overflow-x: hidden;
@@ -393,6 +393,62 @@ body.desktop .main .header .top-bar .languages li a:not(.disabled):hover span:la
   width: 100%;
 }
 
+.main .breadcrumb,
+.main .breadcrumb * {
+  float: left;
+  width: auto;
+  height: auto;
+  line-height: 1.2em;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.main .breadcrumb {
+  padding: 10px 0px 10px 0px;
+}
+.main .breadcrumb li a {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 6px 0 6px 0;
+  overflow: hidden;
+}
+.main .breadcrumb li a span {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.main .breadcrumb li a span.text {
+  padding: 0 28px 0 0px;
+}
+.main .breadcrumb li a span.arrow {
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  font-size: 0;
+  border-left: 3px solid #6789B2;
+  border-top: 3px solid #6789B2;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+body.desktop .main .breadcrumb li a:not(.disabled):hover span, body.desktop .main .breadcrumb li a:not(.disabled):active span, body.desktop .main .breadcrumb li a:not(.disabled):focus span, .main .breadcrumb li a:not(.disabled).selected span {
+  color: inherit !important;
+}
+.main .breadcrumb li a:not(.disabled).selected {
+  cursor: default;
+}
+.main .breadcrumb li:last-of-type a span.text {
+  font-weight: bold;
+}
+
 .main .footer {
   padding: 50px 5% 50px 5%;
   max-width: none;
@@ -511,6 +567,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 .main .footer .mod-simple-form {
   float: right;
   width: 33%;
+  padding-right: 20px;
 }
 .main .footer .mod-simple-form h1 {
   line-height: 1em;
@@ -621,5 +678,24 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     clear: both;
     width: calc(100% - 5%);
     padding: 0 0 0 5%;
+  }
+
+  .main .breadcrumb,
+  .main .breadcrumb * {
+    font-size: 1.5rem;
+    line-height: 1em;
+    font-family: 'ProximaNova-Bold';
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .main .breadcrumb li {
+    display: none;
+  }
+  .main .breadcrumb li a span.text {
+    padding: 0;
+  }
+  .main .breadcrumb li:last-of-type {
+    display: block;
   }
 }

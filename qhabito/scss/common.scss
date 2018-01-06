@@ -60,8 +60,8 @@ html, body {
 	height: 100%;
 	min-height: 100%;
 	background-color: #FFFFFF;
-	font-family: Arial, 'sans-serif';
 	font-size: 100%;
+	font-family: Arial, 'sans-serif';
 	display: block;
 	
 	// Overflow
@@ -350,6 +350,70 @@ html, body {
 	}
 }
 
+// MAIN : BREADCRUMB
+.main .breadcrumb,
+.main .breadcrumb * {
+	float: left;
+	width: auto;
+	height: auto;
+	line-height: 1.2em;
+	text-decoration: none;
+	font-size: 0.95rem;
+	display: block;
+}
+.main .breadcrumb {
+	padding: 10px 0px 10px 0px;
+	
+	li {
+		a {
+			position: relative;
+			top: 0;
+			left: 0;
+			padding: 6px 0 6px 0;
+			overflow: hidden;
+
+			span {
+				// Transition
+				-webkit-transition: color 0.25s ease;
+				-moz-transition: color 0.25s ease;
+				-ms-transition: color 0.25s ease;
+				-o-transition: color 0.25s ease;
+				transition: color 0.25s ease;
+			}
+			span.text {
+				padding: 0 28px 0 0px;
+			}
+			span.arrow {
+				position: absolute;
+				right: 12px;
+				top: calc(50% - 4px);
+				width: 8px;
+				height: 8px;
+				font-size: 0;
+				border-left: 3px solid #6789B2;
+				border-top: 3px solid #6789B2;
+
+				// Rotate
+				-webkit-transform: rotate(135deg);
+				-moz-transform: rotate(135deg);
+				-ms-transform: rotate(135deg);
+				-o-transform: rotate(135deg);
+				transform: rotate(135deg);
+			}
+			
+			@include on-hover {
+				span {
+					color: inherit !important;
+				}
+			}
+		}
+
+		&:last-of-type a span.text {
+			font-weight: bold;
+		}
+	}
+}
+
 // MAIN : FOOTER
 .main .footer {
 	padding: 50px 5% 50px 5%;
@@ -487,6 +551,7 @@ html, body {
 	.mod-simple-form {
 		float: right;
 		width: 33%;
+		padding-right: 20px;
 		
 		h1 {
 			line-height: 1em;
@@ -499,6 +564,7 @@ html, body {
 		}
 	}
 	
+	// BOTTOM TEXT
 	.bottom-text {
 		clear: both;
 		width: 100%;
@@ -519,7 +585,9 @@ html, body {
 
 // RESPONSIVE
 @media (max-device-width: 1440px), (max-width: 1440px) { // up to 1440px
+	// MAIN : FOOTER
 	.main .footer {
+		// SECONDARY
 		.secondary {
 			width: 60%;
 		}
@@ -528,30 +596,39 @@ html, body {
 			width: 40%;
 		}
 	}
+	
 	// COOKIES
 	.cookies {
 		padding: 5%;
 	}
 }
 @media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
+	// MAIN : FOOTER
 	.main .footer {
+		
+		// SECONDARY
 		.secondary {
 			width: 55%;
 		}
 		
+		// NEWSLETTER
 		.mod-simple-form {
 			width: 45%;
 		}
 	}
 }
 @media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
+	// MAIN : FOOTER
 	.main .footer {
+		
+		// PRIMARY, SECONDARY
 		.primary *,
 		.secondary li h1,
 		.mod-simple-form h1 {
 			font-size: 1.3rem;
 		}
 		
+		// SECONDARY
 		.secondary {
 			width: 40%;
 			li {
@@ -560,12 +637,14 @@ html, body {
 			}
 		}
 		
+		// NEWSLETTER
 		.mod-simple-form {
 			width: 60%;
 		}
 	}
 }
 @media (max-device-width: 767px), (max-width: 767px) { // up to 767px
+	// MAIN : HEADER : LANGUAGES
 	.main .header .top-bar .languages {
 		position: absolute;
 		top: 0;
@@ -580,6 +659,8 @@ html, body {
 	.main h6 br {
 		display: none;
 	}
+	
+	// MAIN : FOOTER
 	.main .footer {
 		padding: 50px 0 50px 0;
 		width: 100%;
@@ -588,6 +669,7 @@ html, body {
 			width: 100%;
 		}
 		
+		// PRIMARY
 		.primary {
 			border-bottom: none;
 
@@ -603,6 +685,7 @@ html, body {
 			}
 		}
 	
+		// SECONDARY
 		.secondary {
 			width: 100%;
 			
@@ -611,11 +694,33 @@ html, body {
 			}
 		}
 		
+		// NEWSLETTER
 		.mod-simple-form {
 			float: none;
 			clear: both;
 			width: calc(100% - 5%);
 			padding: 0 0 0 5%;
+		}
+	}
+	
+	// MAIN : BREADCRUMB
+	.main .breadcrumb,
+	.main .breadcrumb * {
+		font-size: 1.5rem;
+		line-height: 1em;
+		font-family: 'ProximaNova-Bold';
+		font-weight: bold;
+		font-style: normal;
+	}
+	.main .breadcrumb li {
+		display: none;
+		
+		a span.text {
+			padding: 0;
+		}
+		
+		&:last-of-type {
+			display: block;
 		}
 	}
 }
