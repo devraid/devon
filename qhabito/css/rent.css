@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'on-hover'.
-        on line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito - Copy\scss\rent.scss, in `on-hover'
-        from line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito - Copy\scss\rent.scss
+        on line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss, in `on-hover'
+        from line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss
 
 90: 						&:before, &:after {
 91: 							background-color: #1C7EBE !important;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'on-hover'.
 100: 						}
 
 Backtrace:
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito - Copy\scss\rent.scss:95:in `on-hover'
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito - Copy\scss\rent.scss:95
+D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss:95:in `on-hover'
+D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss:95
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
@@ -109,4 +109,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'on-hover'.\A         on line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito - Copy\scss\rent.scss, in `on-hover'\A         from line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito - Copy\scss\rent.scss\A \A 90: 						&:before, &:after {\A 91: 							background-color: #1C7EBE !important;\A 92: 						}\A 93: 					}\A 94: 					\A 95: 					@include on-hover {\A 96: 						span {\A 97: 							&:before, &:after {\A 98: 								background-color: #1C7EBE !important;\A 99: 							}\A 100: 						}"; }
+  content: "Error: Undefined mixin 'on-hover'.\A         on line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss, in `on-hover'\A         from line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss\A \A 90: 						&:before, &:after {\A 91: 							background-color: #1C7EBE !important;\A 92: 						}\A 93: 					}\A 94: 					\A 95: 					@include on-hover {\A 96: 						span {\A 97: 							&:before, &:after {\A 98: 								background-color: #1C7EBE !important;\A 99: 							}\A 100: 						}"; }
