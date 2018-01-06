@@ -475,10 +475,6 @@ body.desktop .main .header .top-bar .languages li a:not(.disabled):hover span:la
   line-height: 1.2em;
   text-decoration: none;
   font-size: 0.95rem;
-  /*font-family: 'ProximaNova-Regular';
-  font-weight: bold;
-  font-style: normal;
-  text-transform: uppercase;*/
   display: block;
 }
 
@@ -645,6 +641,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 .main .footer .mod-simple-form {
   float: right;
   width: 33%;
+  padding-right: 20px;
 }
 .main .footer .mod-simple-form h1 {
   line-height: 1em;
@@ -760,10 +757,17 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   .main .breadcrumb,
   .main .breadcrumb * {
     font-size: 1.5rem;
+    line-height: 1em;
+    font-family: 'ProximaNova-Bold';
+    font-weight: bold;
+    font-style: normal;
   }
 
   .main .breadcrumb li {
     display: none;
+  }
+  .main .breadcrumb li a span.text {
+    padding: 0;
   }
   .main .breadcrumb li:last-of-type {
     display: block;

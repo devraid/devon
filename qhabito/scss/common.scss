@@ -359,10 +359,6 @@ html, body {
 	line-height: 1.2em;
 	text-decoration: none;
 	font-size: 0.95rem;
-	/*font-family: 'ProximaNova-Regular';
-	font-weight: bold;
-	font-style: normal;
-	text-transform: uppercase;*/
 	display: block;
 }
 .main .breadcrumb {
@@ -555,6 +551,7 @@ html, body {
 	.mod-simple-form {
 		float: right;
 		width: 33%;
+		padding-right: 20px;
 		
 		h1 {
 			line-height: 1em;
@@ -567,6 +564,7 @@ html, body {
 		}
 	}
 	
+	// BOTTOM TEXT
 	.bottom-text {
 		clear: both;
 		width: 100%;
@@ -587,7 +585,9 @@ html, body {
 
 // RESPONSIVE
 @media (max-device-width: 1440px), (max-width: 1440px) { // up to 1440px
+	// MAIN : FOOTER
 	.main .footer {
+		// SECONDARY
 		.secondary {
 			width: 60%;
 		}
@@ -596,30 +596,39 @@ html, body {
 			width: 40%;
 		}
 	}
+	
 	// COOKIES
 	.cookies {
 		padding: 5%;
 	}
 }
 @media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
+	// MAIN : FOOTER
 	.main .footer {
+		
+		// SECONDARY
 		.secondary {
 			width: 55%;
 		}
 		
+		// NEWSLETTER
 		.mod-simple-form {
 			width: 45%;
 		}
 	}
 }
 @media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
+	// MAIN : FOOTER
 	.main .footer {
+		
+		// PRIMARY, SECONDARY
 		.primary *,
 		.secondary li h1,
 		.mod-simple-form h1 {
 			font-size: 1.3rem;
 		}
 		
+		// SECONDARY
 		.secondary {
 			width: 40%;
 			li {
@@ -628,12 +637,14 @@ html, body {
 			}
 		}
 		
+		// NEWSLETTER
 		.mod-simple-form {
 			width: 60%;
 		}
 	}
 }
 @media (max-device-width: 767px), (max-width: 767px) { // up to 767px
+	// MAIN : HEADER : LANGUAGES
 	.main .header .top-bar .languages {
 		position: absolute;
 		top: 0;
@@ -648,6 +659,8 @@ html, body {
 	.main h6 br {
 		display: none;
 	}
+	
+	// MAIN : FOOTER
 	.main .footer {
 		padding: 50px 0 50px 0;
 		width: 100%;
@@ -656,6 +669,7 @@ html, body {
 			width: 100%;
 		}
 		
+		// PRIMARY
 		.primary {
 			border-bottom: none;
 
@@ -671,6 +685,7 @@ html, body {
 			}
 		}
 	
+		// SECONDARY
 		.secondary {
 			width: 100%;
 			
@@ -679,6 +694,7 @@ html, body {
 			}
 		}
 		
+		// NEWSLETTER
 		.mod-simple-form {
 			float: none;
 			clear: both;
@@ -691,9 +707,17 @@ html, body {
 	.main .breadcrumb,
 	.main .breadcrumb * {
 		font-size: 1.5rem;
+		line-height: 1em;
+		font-family: 'ProximaNova-Bold';
+		font-weight: bold;
+		font-style: normal;
 	}
 	.main .breadcrumb li {
 		display: none;
+		
+		a span.text {
+			padding: 0;
+		}
 		
 		&:last-of-type {
 			display: block;

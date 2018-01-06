@@ -13,21 +13,20 @@ var QHABITO = window.QHABITO || {};
 				var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
 				return keyValue ? keyValue[2] : null;
 			},
-			setCookie: function(key, value) {
+			setCookie : function(key, value) {
 				var expires = new Date();
 				expires.setTime(expires.getTime() + (360 * 24 * 60 * 60 * 1000));
 				document.cookie = key + '=' + value + ';path=/;expires=' + expires.toUTCString();
 			},
-			modSelect: function() {
+			modSelect : function() {
 				$('.mod-select li:eq(0) a').on('click', function() {
-					var _this = $(this);
-					_this.blur();
-					_this.closest('.mod-select').toggleClass('active');
+					var self = $(this);
+					self.blur();
+					self.closest('.mod-select').toggleClass('active');
 					return false;
 				});
 			},
-			init: function() {
-				// Cookies
+			setCookies : function() {
 				var cookies = $('.cookies');
 				var qh_cookies = QHABITO.common.getCookie('qh_cookies');
 				if (!qh_cookies) {
@@ -41,6 +40,10 @@ var QHABITO = window.QHABITO || {};
 				} else {
 					cookies.remove();
 				}
+			},
+			init : function() {
+				// Cookies
+				QHABITO.common.setCookies();
 				
 				// Module select
 				QHABITO.common.modSelect();
