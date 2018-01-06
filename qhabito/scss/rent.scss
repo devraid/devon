@@ -618,6 +618,7 @@
 
 	}
 }
+
 // RENT : GRID (LIST TYPE)
 .rent .mod-grid.list {
 
@@ -630,9 +631,56 @@
 	// RENT : GRID (LIST TYPE)
 	.rent .mod-grid.list {
 
+		// SLIDER AND THUMBS
+		.slider-thumbs {
+			width: 50%;
+		}
+		
 		// DETAILS
 		.details {
-			padding: 2% 2% 12% 2%;
+			width: 50%;
+			padding: 2% 2% 0% 2%;
+		}
+		
+		// CONTACT VIEW
+		.contact-view {
+			position: relative;
+			clear: both;
+			width: 100%;
+		}
+	}
+}
+@media (max-device-width: 768px), (max-width: 768px) { // up to 768px
+	// RENT : GRID (ALL TYPES)
+	.rent .mod-grid.list {
+
+		// SLIDER AND THUMBS
+		.slider-thumbs {
+			width: 100%;
+		}
+		
+		// DETAILS
+		.details {
+			width: 100%;
+			padding: 5% 5% 0% 5%;
+		}
+	}
+	.rent .mod-grid {
+		
+		.item .wrapper {
+			padding-bottom: 0;
+		}
+		
+		// DETAILS
+		.details {
+			padding: 2% 2% 0% 2%;
+		}
+		
+		// CONTACT VIEW
+		.contact-view {
+			clear: both;
+			position: relative;
+			padding: 5%;
 		}
 	}
 }
