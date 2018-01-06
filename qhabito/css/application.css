@@ -56,20 +56,12 @@
   content: '\e800';
 }
 
-.icon-lock-open:before {
-  content: '\e803';
-}
-
-.icon-lock:before {
-  content: '\e804';
-}
-
 .icon-phone:before {
-  content: '\e805';
+  content: '\e801';
 }
 
 .icon-mail:before {
-  content: '\e806';
+  content: '\e802';
 }
 
 *,
