@@ -18,14 +18,6 @@ var QHABITO = window.QHABITO || {};
 				expires.setTime(expires.getTime() + (360 * 24 * 60 * 60 * 1000));
 				document.cookie = key + '=' + value + ';path=/;expires=' + expires.toUTCString();
 			},
-			modSelect : function() {
-				$('.mod-select li:eq(0) a').on('click', function() {
-					var self = $(this);
-					self.blur();
-					self.closest('.mod-select').toggleClass('active');
-					return false;
-				});
-			},
 			setCookies : function() {
 				var cookies = $('.cookies');
 				var qh_cookies = QHABITO.common.getCookie('qh_cookies');
@@ -41,12 +33,60 @@ var QHABITO = window.QHABITO || {};
 					cookies.remove();
 				}
 			},
+			modSelect : function() {
+				$('.mod-select li:eq(0) a').on('click', function() {
+					var self = $(this);
+					self.blur();
+					self.closest('.mod-select').toggleClass('active');
+					return false;
+				});
+			},
+			modSliderThumbs : function() {
+				$('.mod-slider-thumbs .slider').slick({
+					infinite : true,
+					touchMove : true,
+					draggable : true,
+					swipe : true,
+					slickSetOption : true,
+					autoplay: false,
+					slidesToShow: 1,
+					dots : false,
+					prevArrow : '<a class="button left" href="#" title=""><span>&nbsp;</span></a>',
+					nextArrow : '<a class="button right" href="#" title=""><span>&nbsp;</span></a>'
+				}).after(function() {
+					// Slider
+					var slider = $(this);
+					// Thumbs
+					var thumbs = $('ul.thumbs', slider.parent());
+					var all_thumbs = $('li a:not(".view")', thumbs);
+					all_thumbs.each(function() {
+						var thumb = $(this);
+						thumb.on('click', function() {
+							var self = $(this);
+							self.blur();
+							if (!self.hasClass('selected')) {
+								all_thumbs.removeClass('selected');
+								self.addClass('selected');
+								$('.slider', self.closest('.mod-slider-thumbs')).slick('slickGoTo', self.data('index'), false);
+							}
+							return false;
+						});
+					});
+					// Arrows
+					slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+						$('li:eq(' + nextSlide + ') a', thumbs).trigger('click');
+					});
+				});
+			},
 			init : function() {
 				// Cookies
 				QHABITO.common.setCookies();
 				
 				// Module select
 				QHABITO.common.modSelect();
+				
+				// Module slider and thumbs
+				QHABITO.common.modSliderThumbs();
 				
 				// It's always good to focus on things :)
 				$(window).focus();

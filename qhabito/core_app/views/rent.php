@@ -95,7 +95,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="mod-grid <?php echo $data['list_type']; ?>">
 					<div class="item bgcm">
 						<div class="wrapper">
-							<div class="slider-thumbs clearfix">
+							<!-- MODULE / BEGIN -->
+							<div class="mod-slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
@@ -133,6 +134,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
+							<!-- MODULE / END -->
 							<div class="details">
 								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
@@ -149,7 +151,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="item bgcm">
 						<div class="wrapper">
-							<div class="slider-thumbs clearfix">
+							<!-- MODULE / BEGIN -->
+							<div class="mod-slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
@@ -171,6 +174,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
+							<!-- MODULE / END -->
 							<div class="details">
 								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
@@ -187,7 +191,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="item bgcm">
 						<div class="wrapper">
-							<div class="slider-thumbs clearfix">
+							<!-- MODULE / BEGIN -->
+							<div class="mod-slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
@@ -209,6 +214,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
+							<!-- MODULE / END -->
 							<div class="details">
 								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
@@ -225,7 +231,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="item bgcm">
 						<div class="wrapper">
-							<div class="slider-thumbs clearfix">
+							<!-- MODULE / BEGIN -->
+							<div class="mod-slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
@@ -247,6 +254,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
+							<!-- MODULE / END -->
 							<div class="details">
 								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
@@ -263,7 +271,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="item bgcm">
 						<div class="wrapper">
-							<div class="slider-thumbs clearfix">
+							<!-- MODULE / BEGIN -->
+							<div class="mod-slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
@@ -285,6 +294,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
+							<!-- MODULE / END -->
 							<div class="details">
 								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
@@ -301,7 +311,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="item bgcm">
 						<div class="wrapper">
-							<div class="slider-thumbs clearfix">
+							<!-- MODULE / BEGIN -->
+							<div class="mod-slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
@@ -323,6 +334,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
+							<!-- MODULE / END -->
 							<div class="details">
 								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
@@ -339,7 +351,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="item bgcm">
 						<div class="wrapper">
-							<div class="slider-thumbs clearfix">
+							<!-- MODULE / BEGIN -->
+							<div class="mod-slider-thumbs clearfix">
 								<ul class="slider">
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0001.jpg');">&nbsp;</li>
 									<li class="slide" style="background-image:url('/qhabito/css/images/tmp/image-0002.jpg');">&nbsp;</li>
@@ -361,6 +374,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
+							<!-- MODULE / END -->
 							<div class="details">
 								<h1 class="title fncg"><a class="fncd" href="#" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>

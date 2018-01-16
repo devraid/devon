@@ -35,47 +35,7 @@ var QHABITO = window.QHABITO || {};
 					return false;
 				});
 			},
-			itemSlider : function() {
-				$('.mod-grid .slider').slick({
-					infinite : true,
-					touchMove : true,
-					draggable : true,
-					swipe : true,
-					slickSetOption : true,
-					autoplay: false,
-					slidesToShow: 1,
-					dots : false,
-					prevArrow : '<a class="button left" href="#" title=""><span>&nbsp;</span></a>',
-					nextArrow : '<a class="button right" href="#" title=""><span>&nbsp;</span></a>'
-				}).after(function() {
-					// Slider
-					var slider = $(this);
-					// Thumbs
-					var thumbs = $('ul.thumbs', slider.parent());
-					var all_thumbs = $('li a:not(".view")', thumbs);
-					all_thumbs.each(function() {
-						var thumb = $(this);
-						thumb.on('click', function() {
-							var self = $(this);
-							self.blur();
-							if (!self.hasClass('selected')) {
-								all_thumbs.removeClass('selected');
-								self.addClass('selected');
-								$('.slider', self.closest('.slider-thumbs')).slick('slickGoTo', self.data('index'), false);
-							}
-							return false;
-						});
-					});
-					// Arrows
-					slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-						$('li:eq(' + nextSlide + ') a', thumbs).trigger('click');
-					});
-				});
-			},
 			init : function() {
-				// Item slider
-				QHABITO.rent.itemSlider();
-				
 				// Cookies: Grid or list
 				QHABITO.rent.setCookies();
 			}

@@ -1,0 +1,72 @@
+// RENT : TWO COLUMNS
+.rent-detail .two-columns {
+	clear: both;
+	width: 100%;
+	height: auto;
+	
+	// COLUMNS
+	.column {
+		
+		// LEFT COLUMN
+		&.left {
+			float: left;
+			width: calc(100% - 350px);
+		}
+		
+		// RIGHT COLUMN
+		&.right {
+			float: right;
+			width: 350px;
+		}
+		
+		// BOTTOM COLUMN
+		&.bottom {
+			float: left;
+			width: calc(100% - 350px);
+		}
+		
+		// BLOCKS
+		.block {
+			width: 100%;
+			padding: 2% 0 2% 0;
+
+			.title,
+			.subtitle {
+				padding: 0 0 2% 0;
+				width: 100%;
+				height: auto;
+				line-height: 1em;
+				text-decoration: none;
+				font-size: 1.5rem;
+				font-family: 'ProximaNova-Bold';
+				font-weight: bold;
+				font-style: normal;
+				display: block;
+			}
+
+			.title span {
+				font-style: italic;
+				font-size: 0.8rem;
+				display: inline-block;
+			}
+
+			.subtitle {
+				font-size: 1rem;
+
+				span {
+					font-size: 1.5rem;
+					line-height: 1em;
+					display: block;
+				}
+			}
+
+			.text {
+				width: 100%;
+				height: auto;
+				font-size: 0.95rem;
+				line-height: 1.2em;
+				display: block;
+			}
+		}
+	}
+}
