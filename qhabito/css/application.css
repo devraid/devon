@@ -1431,13 +1431,13 @@ body.desktop .rent .mod-grid .item:not(.disabled):hover .wrapper, body.desktop .
   cursor: default;
 }
 .rent .mod-grid .details {
-  padding: 5%;
+  padding: 30px;
   width: 100%;
   height: auto;
 }
 .rent .mod-grid .details .title,
 .rent .mod-grid .details .subtitle {
-  padding: 0 0 5% 0;
+  padding: 0 0 18px 0;
   width: 100%;
   height: auto;
   line-height: 1em;
@@ -1475,7 +1475,7 @@ body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.deskto
   cursor: default;
 }
 .rent .mod-grid .details .description {
-  padding: 0 0 5% 0;
+  padding: 0 0 30px 0;
   width: 100%;
   height: auto;
   font-size: 0.95rem;
@@ -1483,7 +1483,7 @@ body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.deskto
   display: block;
 }
 .rent .mod-grid .contact-view {
-  padding: 5%;
+  padding: 30px;
   width: 100%;
   height: auto;
   position: absolute;
@@ -1582,7 +1582,7 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
   .rent .mod-grid.list .details .title,
   .rent .mod-grid.list .details .subtitle {
-    padding: 0 0 2% 0;
+    padding: 0 0 18px 0;
   }
   .rent .mod-grid.list .details .description {
     position: relative;
@@ -1591,7 +1591,7 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     padding: 0;
   }
   .rent .mod-grid.list .contact-view {
-    padding: 2%;
+    padding: 30px;
     width: 67.6%;
     height: auto;
     left: auto;
@@ -1600,16 +1600,21 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
 }
 .rent .mod-grid.list .details {
-  padding: 2% 2% 8% 2%;
+  padding: 30px 30px 8% 30px;
 }
 
+@media (max-device-width: 1200px), (max-width: 1200px) {
+  .rent .mod-grid.list .details {
+    padding: 30px 30px 10% 30px;
+  }
+}
 @media (max-device-width: 1024px), (max-width: 1024px) {
   .rent .mod-grid.list .mod-slider-thumbs {
     width: 50%;
   }
   .rent .mod-grid.list .details {
     width: 50%;
-    padding: 2% 2% 0% 2%;
+    padding: 30px 30px 0% 30px;
   }
   .rent .mod-grid.list .contact-view {
     position: relative;
@@ -1631,6 +1636,9 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
   .rent .mod-grid .details {
     padding: 5% 5% 0% 5%;
+  }
+  .rent .mod-grid .details .description {
+    padding: 0;
   }
   .rent .mod-grid .contact-view {
     clear: both;

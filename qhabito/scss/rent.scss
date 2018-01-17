@@ -187,13 +187,13 @@
 	
 	// DETAILS
 	.details {
-		padding: 5%;
+		padding: 30px;
 		width: 100%;
 		height: auto;
 		
 		.title,
 		.subtitle {
-			padding: 0 0 5% 0;
+			padding: 0 0 18px 0;
 			width: 100%;
 			height: auto;
 			line-height: 1em;
@@ -237,7 +237,7 @@
 		}
 
 		.description {
-			padding: 0 0 5% 0;
+			padding: 0 0 30px 0;
 			width: 100%;
 			height: auto;
 			font-size: 0.95rem;
@@ -248,7 +248,7 @@
 	
 	// CONTACT VIEW
 	.contact-view {
-		padding: 5%;
+		padding: 30px;
 		width: 100%;
 		height: auto;
 		position: absolute;
@@ -371,7 +371,7 @@
 
 			.title,
 			.subtitle {
-				padding: 0 0 2% 0;
+				padding: 0 0 18px 0;
 			}
 
 			.description {
@@ -384,7 +384,7 @@
 
 		// CONTACT VIEW
 		.contact-view {
-			padding: 2%;
+			padding: 30px;
 			width: 67.6%;
 			height: auto;
 			left: auto;
@@ -400,7 +400,17 @@
 
 	// DETAILS
 	.details {
-		padding: 2% 2% 8% 2%;
+		padding: 30px 30px 8% 30px;
+	}
+}
+@media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
+	// RENT : GRID (LIST TYPE)
+	.rent .mod-grid.list {
+
+		// DETAILS
+		.details {
+			padding: 30px 30px 10% 30px;
+		}
 	}
 }
 @media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
@@ -415,7 +425,7 @@
 		// DETAILS
 		.details {
 			width: 50%;
-			padding: 2% 2% 0% 2%;
+			padding: 30px 30px 0% 30px;
 		}
 		
 		// CONTACT VIEW
@@ -450,6 +460,10 @@
 		// DETAILS
 		.details {
 			padding: 5% 5% 0% 5%;
+			
+			.description {
+				padding: 0;
+			}
 		}
 		
 		// CONTACT VIEW
