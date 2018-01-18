@@ -1651,24 +1651,13 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   width: 100%;
   height: auto;
 }
-.rent-detail .two-columns .column.left {
-  float: left;
-  width: calc(100% - 350px);
-}
-.rent-detail .two-columns .column.right {
-  float: right;
-  width: 350px;
-}
-.rent-detail .two-columns .column.bottom {
-  float: left;
-  width: calc(100% - 350px);
-}
-.rent-detail .two-columns .column .block {
+.rent-detail .two-columns .block {
   width: 100%;
-  padding: 2% 0 2% 0;
+  padding: 30px;
+  margin: 0 0 20px 0;
 }
-.rent-detail .two-columns .column .block .title,
-.rent-detail .two-columns .column .block .subtitle {
+.rent-detail .two-columns .block .title,
+.rent-detail .two-columns .block .subtitle {
   padding: 0 0 2% 0;
   width: 100%;
   height: auto;
@@ -1680,23 +1669,38 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   font-style: normal;
   display: block;
 }
-.rent-detail .two-columns .column .block .title span {
+.rent-detail .two-columns .block .title span {
   font-style: italic;
   font-size: 0.8rem;
   display: inline-block;
 }
-.rent-detail .two-columns .column .block .subtitle {
+.rent-detail .two-columns .block .subtitle {
   font-size: 1rem;
 }
-.rent-detail .two-columns .column .block .subtitle span {
+.rent-detail .two-columns .block .subtitle span {
   font-size: 1.5rem;
   line-height: 1em;
   display: block;
 }
-.rent-detail .two-columns .column .block .text {
+.rent-detail .two-columns .block .text {
   width: 100%;
   height: auto;
   font-size: 0.95rem;
   line-height: 1.2em;
   display: block;
+}
+.rent-detail .two-columns .column.left {
+  float: left;
+  width: 60%;
+}
+.rent-detail .two-columns .column.right {
+  float: right;
+  width: 40%;
+}
+.rent-detail .two-columns .column.right .block {
+  padding: 0 30px 30px 30px;
+}
+.rent-detail .two-columns .column.bottom {
+  float: left;
+  width: 60%;
 }

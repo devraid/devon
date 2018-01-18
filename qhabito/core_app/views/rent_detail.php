@@ -105,14 +105,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- MODULE / END -->
 					</div>
 					<div class="column right">
-						<!-- MODULE / BEGIN -->
-						bbbbbbbbbbbb
-						<!-- MODULE / END -->
-					</div>
-					<div class="column bottom">
 						<div class="block">
 							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></h1>
 							<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+						</div>
+					</div>
+					<div class="column bottom">
+						<div class="block">
+							<h1 class="title fncd">Descripción</h1>
 							<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
 						</div>
 						<div class="block">
