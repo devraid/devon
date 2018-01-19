@@ -62,8 +62,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<li><a class="fncg selected" href="#" title=""><span class="fncc text">Lorem ipsum sit amet</span></a></li>
 				</ul>
 				
-				<div class="two-columns">
-					<div class="column left">
+				<div class="wrapper bgcm clearfix">
+					<div class="block right padded">
+						<div class="resume">
+							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></h1>
+							<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+						</div>
+					</div>
+					<div class="block left">
 						<!-- MODULE / BEGIN -->
 						<div class="mod-slider-thumbs clearfix">
 							<ul class="slider">
@@ -104,21 +110,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						<!-- MODULE / END -->
 					</div>
-					<div class="column right">
-						<div class="block">
-							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></h1>
-							<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+					<div class="block right padded">
+						<div class="contact-form">
+							<h1 class="title fncd">Formulario de contacto</h1>
+							<form action="/" method="get">
+								<fieldset>
+									<input class="bgcl" type="text" name="cf_fullname" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Nombre completo" />
+									<input class="bgcl" type="text" name="cf_email" value="" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" />
+									<input class="bgcl" type="text" name="cf_phone" value="" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Teléfono" />
+								</fieldset>
+							</form>
 						</div>
 					</div>
-					<div class="column bottom">
-						<div class="block">
-							<h1 class="title fncd">Descripción</h1>
-							<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
-						</div>
-						<div class="block">
-							<h1 class="title fncd">Otros detalles</h1>
-							<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
-						</div>
+					<div class="block left padded">
+						<h1 class="title fncd">Descripción</h1>
+						<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
+					</div>
+					<div class="block left padded">
+						<h1 class="title fncd">Otros detalles</h1>
+						<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
 					</div>
 				</div>
 				

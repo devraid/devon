@@ -53,6 +53,12 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+::-webkit-contacts-auto-fill-button {
+	visibility: hidden;
+	display: none !important;
+	position: absolute;
+	right: 0;
+}
 
 // HTML AND BODY
 html, body {
