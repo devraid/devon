@@ -651,10 +651,8 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   .main h6 br {
     display: none;
   }
-  .main .header {
-    position: sticky;
-  }
   .main .header .content {
+    /*position: sticky;*/
     height: 50px;
   }
   .main .header .content .logo-link {
