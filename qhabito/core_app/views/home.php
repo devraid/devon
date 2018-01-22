@@ -44,9 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 			</div>
 			<div class="content">
-				<div class="padded-wrap">
-					<a class="logo-link" href="#" title="">&nbsp;</a>
-				</div>
+				<a class="logo-link" href="#" title="">&nbsp;</a>
 			</div>
 		</div>
 		<!-- HEADER / END -->

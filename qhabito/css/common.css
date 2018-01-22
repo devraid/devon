@@ -299,7 +299,6 @@ body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.deskt
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  transform: translate3d(0, 0, 0);
 }
 
 .main .header {
@@ -308,19 +307,21 @@ body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.deskt
   top: 0;
   width: 100%;
   height: auto;
+  z-index: 999999;
   display: block;
 }
 .main .header .content {
   position: relative;
   top: 0;
   left: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  /*position: -webkit-sticky;
+  position: sticky;*/
+  height: 100px;
 }
 .main .header .logo-link {
   clear: both;
-  width: 500px;
-  height: 100px;
+  width: 188px;
+  height: 100%;
   font-size: 0;
   text-decoration: none;
   background-image: url(../css/images/image-0001.png);
@@ -639,13 +640,9 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   }
 }
 @media (max-device-width: 767px), (max-width: 767px) {
-  .main .header .top-bar .languages {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 0 0 10px;
+  .main {
+    margin-top: 100px;
   }
-
   .main h1 br,
   .main h2 br,
   .main h3 br,
@@ -654,7 +651,22 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   .main h6 br {
     display: none;
   }
-
+  .main .header {
+    position: fixed;
+  }
+  .main .header .content {
+    height: 50px;
+  }
+  .main .header .content .logo-link {
+    width: 100%;
+    background-position: center center;
+  }
+  .main .header .top-bar .languages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0 0 10px;
+  }
   .main .footer {
     padding: 50px 0 50px 0;
     width: 100%;
@@ -686,7 +698,6 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     width: calc(100% - 5%);
     padding: 0 0 0 5%;
   }
-
   .main .breadcrumb,
   .main .breadcrumb * {
     font-size: 1.5rem;
@@ -695,7 +706,6 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     font-weight: bold;
     font-style: normal;
   }
-
   .main .breadcrumb li {
     display: none;
   }

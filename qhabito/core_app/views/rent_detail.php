@@ -44,9 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 			</div>
 			<div class="content">
-				<div class="padded-wrap">
-					<a class="logo-link" href="#" title="">&nbsp;</a>
-				</div>
+				<a class="logo-link" href="#" title="">&nbsp;</a>
 			</div>
 		</div>
 		<!-- HEADER / END -->
@@ -55,21 +53,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="wrap bgca fnck">
 				
 				<ul class="breadcrumb clearfix">
-					<li><a class="fncg" href="#" title=""><span class="fncc text">Inicio</span><span class="fncc arrow">&nbsp;</span></a></li>
+					<li><a class="fncg" href="/qhabito/" title=""><span class="fncc text">Inicio</span><span class="fncc arrow">&nbsp;</span></a></li>
 					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
 					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
 					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum dolor</span><span class="fncc arrow">&nbsp;</span></a></li>
 					<li><a class="fncg selected" href="#" title=""><span class="fncc text">Lorem ipsum sit amet</span></a></li>
 				</ul>
 				
-				<div class="wrapper bgcm clearfix">
-					<div class="block right padded">
-						<div class="resume">
-							<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></h1>
-							<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-						</div>
+				<div class="wrapper clearfix">
+					<div class="block right resume bgcm padded">
+						<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></h1>
+						<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 					</div>
-					<div class="block left">
+					<div class="block left gallery bgcm">
 						<!-- MODULE / BEGIN -->
 						<div class="mod-slider-thumbs clearfix">
 							<ul class="slider">
@@ -110,23 +106,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						<!-- MODULE / END -->
 					</div>
-					<div class="block right padded">
-						<div class="contact-form">
-							<h1 class="title fncd">Formulario de contacto</h1>
-							<form action="/" method="get">
-								<fieldset>
-									<input class="bgcl" type="text" name="cf_fullname" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Nombre completo" />
-									<input class="bgcl" type="text" name="cf_email" value="" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" />
-									<input class="bgcl" type="text" name="cf_phone" value="" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Teléfono" />
-								</fieldset>
-							</form>
-						</div>
+					<div class="block right contact-form padded">
+						<h1 class="title fncd">Formulario de contacto</h1>
+						<form action="/" method="get">
+							<fieldset>
+								<div class="bgcl"><input class="bgca" type="text" name="cf_fullname" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Nombre completo" /></div>
+								<div class="bgcl"><input class="bgca" type="text" name="cf_email" value="" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
+								<div class="bgcl"><input class="bgca" type="text" name="cf_phone" value="" tabindex="3" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Teléfono" /></div>
+							</fieldset>
+						</form>
 					</div>
-					<div class="block left padded">
+					<div class="block left bgcm padded">
 						<h1 class="title fncd">Descripción</h1>
 						<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
 					</div>
-					<div class="block left padded">
+					<div class="block left bgcm padded">
+						<h1 class="title fncd">Equipamiento</h1>
+						<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
+					</div>
+					<div class="block left bgcm padded">
 						<h1 class="title fncd">Otros detalles</h1>
 						<p class="text fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular <br /><br />Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular</p>
 					</div>
@@ -167,7 +165,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h1 class="fncg">Newsletter</h1>
 					<form action="/newsletter" method="get">
 						<fieldset>
-							<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
+							<div><input class="text bgcl" type="text" name="q" value="" tabindex="4" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
 							<div><a class="send fnca" href="#" title=""><span class="bgce">Enviar</span><span class="bgcg">Enviar</span></a></div>
 						</fieldset>
 					</form>

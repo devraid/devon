@@ -88,6 +88,18 @@ var QHABITO = window.QHABITO || {};
 				// Module slider and thumbs
 				QHABITO.common.modSliderThumbs();
 				
+				// Navigation
+				QHABITO.common.target.on('scroll', function() {
+					var self = $(this);
+					if (self.scrollTop() >= 50) {
+						if (!QHABITO.common.target.hasClass('scrolled')) {
+							QHABITO.common.target.addClass('scrolled');
+						}
+					} else {
+						QHABITO.common.target.removeClass('scrolled');
+					}
+				});
+				
 				// It's always good to focus on things :)
 				$(window).focus();
 			}

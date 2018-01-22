@@ -12,15 +12,16 @@
 .rent-detail .wrapper .block.left {
   float: left;
   width: 60%;
+  margin: 0 0 20px 0;
 }
 .rent-detail .wrapper .block.right {
   float: right;
-  width: 40%;
+  width: calc(40% - 20px);
 }
-.rent-detail .wrapper .block .contact-form,
-.rent-detail .wrapper .block .contact-form * {
+.rent-detail .wrapper .block.gallery {
   margin: 0;
-  padding: 0;
+}
+.rent-detail .wrapper .block.contact-form, .rent-detail .wrapper .block.contact-form * {
   border: none;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -29,13 +30,12 @@
   height: auto;
   display: block;
 }
-.rent-detail .wrapper .block .contact-form {
-  width: 100%;
+.rent-detail .wrapper .block.contact-form {
   backface-visibility: hidden;
 }
-.rent-detail .wrapper .block .contact-form form,
-.rent-detail .wrapper .block .contact-form fieldset,
-.rent-detail .wrapper .block .contact-form input {
+.rent-detail .wrapper .block.contact-form form,
+.rent-detail .wrapper .block.contact-form fieldset,
+.rent-detail .wrapper .block.contact-form input {
   width: 100%;
   font-weight: normal;
   font-style: normal;
@@ -43,26 +43,75 @@
   background: none;
   background-image: none;
 }
-.rent-detail .wrapper .block .contact-form input {
+.rent-detail .wrapper .block.contact-form div,
+.rent-detail .wrapper .block.contact-form input {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: #DBE4E8 solid 2px;
   padding: 0 15px 0 15px;
-  margin: 0 0 10px 0;
   color: #09315A;
   line-height: normal;
   height: 60px;
 }
-.rent-detail .wrapper .block .contact-form input:focus {
-  background-color: #FFFFFF !important;
+.rent-detail .wrapper .block.contact-form div {
+  border: none;
+  padding: 0;
+  margin: 0 0 10px 0;
 }
-.rent-detail .wrapper .block .contact-form input::-ms-clear {
+.rent-detail .wrapper .block.contact-form input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.rent-detail .wrapper .block.contact-form input:-moz-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.rent-detail .wrapper .block.contact-form input::-moz-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.rent-detail .wrapper .block.contact-form input:-ms-input-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.rent-detail .wrapper .block.contact-form input::-ms-input-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.rent-detail .wrapper .block.contact-form input::placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.rent-detail .wrapper .block.contact-form input:focus {
+  background-color: inherit !important;
+  border: #33BAF1 solid 2px;
+}
+.rent-detail .wrapper .block.contact-form input:focus::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.rent-detail .wrapper .block.contact-form input:focus:-moz-placeholder {
+  color: #FFFFFF;
+}
+.rent-detail .wrapper .block.contact-form input:focus::-moz-placeholder {
+  color: #FFFFFF;
+}
+.rent-detail .wrapper .block.contact-form input:focus:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.rent-detail .wrapper .block.contact-form input:focus::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.rent-detail .wrapper .block.contact-form input:focus::placeholder {
+  color: #FFFFFF;
+}
+.rent-detail .wrapper .block.contact-form input::-ms-clear {
   display: none;
 }
 .rent-detail .wrapper .block .title,
 .rent-detail .wrapper .block .subtitle {
-  padding: 0 0 2% 0;
+  padding: 0 0 18px 0;
   width: 100%;
   height: auto;
   line-height: 1em;

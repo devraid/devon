@@ -18,19 +18,23 @@
 		&.left {
 			float: left;
 			width: 60%;
+			margin: 0 0 20px 0;
 		}
 		
 		// RIGHT COLUMN
 		&.right {
 			float: right;
-			width: 40%;
+			width: calc(40% - 20px);
+		}
+		
+		// GALLERY
+		&.gallery {
+			margin: 0;
 		}
 		
 		// CONTACT FORM
-		.contact-form,
-		.contact-form * {
-			margin: 0;
-			padding: 0;
+		&.contact-form,
+		&.contact-form * {
 			border: none;
 			-webkit-appearance: none;
 			-webkit-border-radius: 0;
@@ -39,8 +43,7 @@
 			height: auto;
 			display: block;
 		}
-		.contact-form {
-			width: 100%;
+		&.contact-form {
 			backface-visibility: hidden;
 			
 			form,
@@ -54,19 +57,75 @@
 				background-image: none;
 			}
 			
+			div,
 			input {
 				border-top-left-radius: 5px;
 				border-bottom-left-radius: 5px;
 				border-top-right-radius: 5px;
 				border-bottom-right-radius: 5px;
+				border: #DBE4E8 solid 2px;
 				padding: 0 15px 0 15px;
-				margin: 0 0 10px 0;
 				color: #09315A;
 				line-height: normal;
 				height: 60px;
-
+			}
+			
+			div {
+				border: none;
+				padding: 0;
+				margin: 0 0 10px 0;
+			}
+			
+			input {
+				// PLACE HOLDER COLOR
+				&::-webkit-input-placeholder {
+					opacity: 1;
+					color: #6789B2;
+				}
+				&:-moz-placeholder {
+					opacity: 1;
+					color: #6789B2;
+				}
+				&::-moz-placeholder {
+					opacity: 1;
+					color: #6789B2;
+				}
+				&:-ms-input-placeholder {
+					opacity: 1;
+					color: #6789B2;
+				}
+				&::-ms-input-placeholder {
+					opacity: 1;
+					color: #6789B2;
+				}
+				&::placeholder {
+					opacity: 1;
+					color: #6789B2;
+				}
+				
 				&:focus {
-					background-color: #FFFFFF !important;
+					background-color: inherit!important;
+					border: #33BAF1 solid 2px;
+					
+					// PLACE HOLDER COLOR
+					&::-webkit-input-placeholder {
+						color: #FFFFFF;
+					}
+					&:-moz-placeholder {
+						color: #FFFFFF;
+					}
+					&::-moz-placeholder {
+						color: #FFFFFF;
+					}
+					&:-ms-input-placeholder {
+						color: #FFFFFF;
+					}
+					&::-ms-input-placeholder {
+						color: #FFFFFF;
+					}
+					&::placeholder {
+						color: #FFFFFF;
+					}
 				}
 				&::-ms-clear {
 					display: none;
@@ -74,9 +133,10 @@
 			}
 		}
 		
+		// COMMON
 		.title,
 		.subtitle {
-			padding: 0 0 2% 0;
+			padding: 0 0 18px 0;
 			width: 100%;
 			height: auto;
 			line-height: 1em;
