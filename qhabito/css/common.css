@@ -641,7 +641,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 }
 @media (max-device-width: 767px), (max-width: 767px) {
   .main {
-    margin-top: 100px;
+    /*margin-top: 100px;*/
   }
   .main h1 br,
   .main h2 br,
@@ -652,7 +652,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     display: none;
   }
   .main .header {
-    position: fixed;
+    position: sticky;
   }
   .main .header .content {
     height: 50px;

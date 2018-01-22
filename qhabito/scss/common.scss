@@ -654,7 +654,7 @@ html, body {
 @media (max-device-width: 767px), (max-width: 767px) { // up to 767px
 	// MAIN
 	.main {
-		margin-top: 100px;
+		/*margin-top: 100px;*/
 		
 		// BREAKLINES
 		h1 br,
@@ -668,7 +668,7 @@ html, body {
 		
 		// HEADER
 		.header {
-			position: fixed;
+			position: sticky;
 
 			// CONTENT
 			.content {
