@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!DOCTYPE HTML>
-	<html lang="en" class="has-scroll">
+	<html lang="en">
 	<head>
 		<title>QHabito</title>
 		<meta http-equiv="pragma" content="no-cache" />

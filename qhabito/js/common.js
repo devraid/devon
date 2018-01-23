@@ -89,7 +89,7 @@ var QHABITO = window.QHABITO || {};
 				QHABITO.common.modSliderThumbs();
 				
 				// Navigation
-				QHABITO.common.target.on('scroll', function() {
+				/*QHABITO.common.target.on('scroll', function() {
 					var self = $(this);
 					if (self.scrollTop() >= 50) {
 						if (!QHABITO.common.target.hasClass('scrolled')) {
@@ -98,7 +98,7 @@ var QHABITO = window.QHABITO || {};
 					} else {
 						QHABITO.common.target.removeClass('scrolled');
 					}
-				});
+				});*/
 				
 				// It's always good to focus on things :)
 				$(window).focus();

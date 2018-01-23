@@ -718,7 +718,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     display: none;
   }
   .main .header .content {
-    /*position: sticky;*/
+    /* position: sticky; */
     height: 50px;
   }
   .main .header .content .logo-link {
