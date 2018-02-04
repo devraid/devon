@@ -200,7 +200,7 @@
 @media (max-device-width: 1023px), (max-width: 1023px) { // up to 1023px
 	// RENT : TWO COLUMNS
 	.rent-detail .wrapper {
-
+		
 		// BLOCKS
 		.block {
 
@@ -212,6 +212,16 @@
 				width: 100%;
 				max-width: none;
 			}
+		}
+	}
+}
+@media (max-device-width: 768px), (max-width: 768px) { // up to 768px
+	// RENT : TWO COLUMNS
+	.rent-detail .wrapper {
+
+		// PADDED
+		.padded {
+			padding: 5%;
 		}
 	}
 }

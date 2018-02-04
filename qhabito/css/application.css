@@ -1829,3 +1829,8 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     max-width: none;
   }
 }
+@media (max-device-width: 768px), (max-width: 768px) {
+  .rent-detail .wrapper .padded {
+    padding: 5%;
+  }
+}
