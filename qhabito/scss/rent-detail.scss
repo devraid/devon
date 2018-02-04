@@ -4,32 +4,32 @@
 	width: 100%;
 	height: auto;
 	
+	// PADDED
+	.padded {
+		padding: 30px;
+	}
+	
+	// MARGIN
+	.margined {
+		margin: 0 0 20px 0;
+	}
+	
 	// BLOCKS
 	.block {
 		width: 100%;
-		//margin: 0 0 20px 0;
-
-		// PADDED
-		&.padded {
-			padding: 30px;
-		}
 		
 		// LEFT
 		&.left {
 			float: left;
-			width: 60%;
-			margin: 0 0 20px 0;
+			clear: left;
+			width: calc(100% - 390px);
+			max-width: 68%;
 		}
 		
 		// RIGHT COLUMN
 		&.right {
 			float: right;
-			width: calc(40% - 20px);
-		}
-		
-		// GALLERY
-		&.gallery {
-			margin: 0;
+			width: 360px;
 		}
 		
 		// CONTACT FORM
@@ -171,6 +171,47 @@
 			line-height: 1.2em;
 			display: block;
 		}
+		
+		// RESUME
+		&.resume .subtitle {
+			padding: 0;
+		}
 	}
 	
+}
+
+// RESPONSIVE
+@media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
+	// RENT : TWO COLUMNS
+	.rent-detail .wrapper {
+
+		// BLOCKS
+		.block {
+
+			// RESUME
+			&.resume {
+				float: none;
+				clear: none;
+				width: 100%;
+			}
+		}
+	}
+}
+@media (max-device-width: 1023px), (max-width: 1023px) { // up to 1023px
+	// RENT : TWO COLUMNS
+	.rent-detail .wrapper {
+
+		// BLOCKS
+		.block {
+
+			// LEFT, RIGHT
+			&.left,
+			&.right {
+				float: none;
+				clear: none;
+				width: 100%;
+				max-width: none;
+			}
+		}
+	}
 }

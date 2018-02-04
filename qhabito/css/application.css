@@ -1670,23 +1670,24 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   width: 100%;
   height: auto;
 }
+.rent-detail .wrapper .padded {
+  padding: 30px;
+}
+.rent-detail .wrapper .margined {
+  margin: 0 0 20px 0;
+}
 .rent-detail .wrapper .block {
   width: 100%;
 }
-.rent-detail .wrapper .block.padded {
-  padding: 30px;
-}
 .rent-detail .wrapper .block.left {
   float: left;
-  width: 60%;
-  margin: 0 0 20px 0;
+  clear: left;
+  width: calc(100% - 390px);
+  max-width: 68%;
 }
 .rent-detail .wrapper .block.right {
   float: right;
-  width: calc(40% - 20px);
-}
-.rent-detail .wrapper .block.gallery {
-  margin: 0;
+  width: 360px;
 }
 .rent-detail .wrapper .block.contact-form, .rent-detail .wrapper .block.contact-form * {
   border: none;
@@ -1808,4 +1809,23 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   font-size: 0.95rem;
   line-height: 1.2em;
   display: block;
+}
+.rent-detail .wrapper .block.resume .subtitle {
+  padding: 0;
+}
+
+@media (max-device-width: 1200px), (max-width: 1200px) {
+  .rent-detail .wrapper .block.resume {
+    float: none;
+    clear: none;
+    width: 100%;
+  }
+}
+@media (max-device-width: 1023px), (max-width: 1023px) {
+  .rent-detail .wrapper .block.left, .rent-detail .wrapper .block.right {
+    float: none;
+    clear: none;
+    width: 100%;
+    max-width: none;
+  }
 }
