@@ -35,7 +35,7 @@
   font-variant: normal;
   speak: none;
   font-size: 0rem;
-  line-height: 1em;
+  line-height: inherit;
   text-align: left;
   height: auto;
   width: auto;
@@ -62,4 +62,8 @@
 
 .icon-mail:before {
   content: '\e802';
+}
+
+.icon-bug:before {
+  content: '\e803';
 }

@@ -62,8 +62,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				<div class="wrapper clearfix">
 					<div class="block right resume bgcm padded">
+						<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 						<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></h1>
 						<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+						<p class="extra fncg">
+							<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+							<a class="fncc" href="" title="">Reportar<span class="icon-bug">&nbsp;</span></a>
+						</p>
 					</div>
 					<div class="block left">
 						<div class="bgcm gallery">
@@ -103,7 +108,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="13"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="14"><span>&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 						</div>
@@ -130,7 +134,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</fieldset>
 						</form>
 					</div>
-					<div class="block right padded">
+					<div class="block right advert padded">
 						<img src="/qhabito/css/images/tmp/banner-300-250.jpg" width="300" height="250" alt="" />
 					</div>
 				</div>

@@ -130,10 +130,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="14"><span>&nbsp;</span></a></li>
 									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular...</p>
@@ -170,10 +170,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
 									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
@@ -210,10 +210,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
 									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
@@ -250,10 +250,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
 									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
@@ -290,10 +290,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
 									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
@@ -330,10 +330,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
 									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
@@ -370,10 +370,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
 									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
 								</ul>
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fnca icon-heart">&nbsp;</span></a>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
+								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>

@@ -35,7 +35,7 @@
   font-variant: normal;
   speak: none;
   font-size: 0rem;
-  line-height: 1em;
+  line-height: inherit;
   text-align: left;
   height: auto;
   width: auto;
@@ -62,6 +62,10 @@
 
 .icon-mail:before {
   content: '\e802';
+}
+
+.icon-bug:before {
+  content: '\e803';
 }
 
 *,
@@ -353,6 +357,43 @@ body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.deskt
 
 .cookies.visible {
   display: block;
+}
+
+.add-to-favorite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  z-index: 99999;
+  overflow: hidden;
+  display: block;
+}
+.add-to-favorite span,
+.add-to-favorite span:before {
+  float: none;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+.add-to-favorite span {
+  font-size: 0;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+body.desktop .add-to-favorite:not(.disabled):hover span, body.desktop .add-to-favorite:not(.disabled):active span, body.desktop .add-to-favorite:not(.disabled):focus span, .add-to-favorite:not(.disabled).selected span {
+  color: inherit !important;
+}
+.add-to-favorite:not(.disabled).selected {
+  cursor: default;
 }
 
 .main {
@@ -1092,42 +1133,6 @@ body.desktop .mod-select li a:not(.disabled):hover span, body.desktop .mod-selec
   height: auto;
   overflow: hidden;
 }
-.mod-slider-thumbs .add-to-favorite {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-decoration: none;
-  z-index: 99999;
-  overflow: hidden;
-  display: block;
-}
-.mod-slider-thumbs .add-to-favorite span,
-.mod-slider-thumbs .add-to-favorite span:before {
-  float: none;
-  width: 100%;
-  height: 100%;
-  line-height: 50px;
-  text-align: center;
-  font-weight: bold;
-  display: block;
-}
-.mod-slider-thumbs .add-to-favorite span {
-  font-size: 0;
-  -webkit-transition: color 0.25s ease;
-  -moz-transition: color 0.25s ease;
-  -ms-transition: color 0.25s ease;
-  -o-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-}
-body.desktop .mod-slider-thumbs .add-to-favorite:not(.disabled):hover span, body.desktop .mod-slider-thumbs .add-to-favorite:not(.disabled):active span, body.desktop .mod-slider-thumbs .add-to-favorite:not(.disabled):focus span, .mod-slider-thumbs .add-to-favorite:not(.disabled).selected span {
-  color: inherit !important;
-}
-.mod-slider-thumbs .add-to-favorite:not(.disabled).selected {
-  cursor: default;
-}
 .mod-slider-thumbs .slider,
 .mod-slider-thumbs .slick-list {
   position: relative;
@@ -1450,6 +1455,9 @@ body.desktop .rent .mod-grid .item:not(.disabled):hover .wrapper, body.desktop .
   cursor: default;
 }
 .rent .mod-grid .details {
+  position: relative;
+  top: 0;
+  left: 0;
   padding: 30px;
   width: 100%;
   height: auto;
@@ -1466,6 +1474,9 @@ body.desktop .rent .mod-grid .item:not(.disabled):hover .wrapper, body.desktop .
   font-weight: bold;
   font-style: normal;
   display: block;
+}
+.rent .mod-grid .details .title {
+  width: calc(100% - 20px);
 }
 .rent .mod-grid .details .title a span {
   font-style: italic;
@@ -1669,6 +1680,9 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   clear: both;
   width: 100%;
   height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 .rent-detail .wrapper .padded {
   padding: 30px;
@@ -1810,8 +1824,34 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   line-height: 1.2em;
   display: block;
 }
-.rent-detail .wrapper .block.resume .subtitle {
-  padding: 0;
+.rent-detail .wrapper .block.resume .title {
+  width: calc(100% - 20px);
+}
+.rent-detail .wrapper .block.resume .extra {
+  width: 100%;
+  height: auto;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  line-height: 1.2em;
+  font-size: 1rem;
+}
+.rent-detail .wrapper .block.resume .extra a {
+  display: block;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):hover, body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):hover span, body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):active, body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):active span, body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):focus, body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):focus span, .rent-detail .wrapper .block.resume .extra a:not(.disabled).selected, .rent-detail .wrapper .block.resume .extra a:not(.disabled).selected span {
+  color: inherit !important;
+}
+.rent-detail .wrapper .block.resume .extra a:not(.disabled).selected {
+  cursor: default;
 }
 
 @media (max-device-width: 1200px), (max-width: 1200px) {
@@ -1821,12 +1861,15 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     width: 100%;
   }
 }
-@media (max-device-width: 1023px), (max-width: 1023px) {
+@media (max-device-width: 900px), (max-width: 900px) {
   .rent-detail .wrapper .block.left, .rent-detail .wrapper .block.right {
     float: none;
     clear: none;
     width: 100%;
     max-width: none;
+  }
+  .rent-detail .wrapper .block.advert {
+    display: none;
   }
 }
 @media (max-device-width: 768px), (max-width: 768px) {

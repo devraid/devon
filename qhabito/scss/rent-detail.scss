@@ -3,6 +3,9 @@
 	clear: both;
 	width: 100%;
 	height: auto;
+	position: relative;
+	top: 0;
+	left: 0;
 	
 	// PADDED
 	.padded {
@@ -173,8 +176,44 @@
 		}
 		
 		// RESUME
-		&.resume .subtitle {
-			padding: 0;
+		&.resume {
+			.subtitle {
+				//padding: 0;
+			}
+			
+			.title {
+				width: calc(100% - 20px);
+			}
+			
+			.extra {
+				width: 100%;
+				height: auto;
+				line-height: 1em;
+				text-decoration: none;
+				font-family: 'ProximaNova-Bold';
+				font-weight: bold;
+				font-style: normal;
+				display: block;
+				line-height: 1.2em;
+				font-size: 1rem;
+
+				a {
+					display: block;
+
+					// Transition
+					-webkit-transition: color 0.25s ease;
+					-moz-transition: color 0.25s ease;
+					-ms-transition: color 0.25s ease;
+					-o-transition: color 0.25s ease;
+					transition: color 0.25s ease;
+
+					@include on-hover {
+						&, & span {
+							color: inherit !important;
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -197,7 +236,7 @@
 		}
 	}
 }
-@media (max-device-width: 1023px), (max-width: 1023px) { // up to 1023px
+@media (max-device-width: 900px), (max-width: 900px) { // up to 900px
 	// RENT : TWO COLUMNS
 	.rent-detail .wrapper {
 		
@@ -211,6 +250,11 @@
 				clear: none;
 				width: 100%;
 				max-width: none;
+			}
+			
+			// ADVERT
+			&.advert {
+				display: none;
 			}
 		}
 	}
