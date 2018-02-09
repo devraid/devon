@@ -148,6 +148,7 @@ html, body {
 	height: auto;
 	padding: 50px;
 	display: none;
+	z-index: 999999;
 	
 	p {
 		width: 100%;
@@ -237,7 +238,6 @@ html, body {
 	height: 50px;
 	line-height: 50px;
 	text-decoration: none;
-	z-index: 99999;
 	overflow: hidden;
 	display: block;
 

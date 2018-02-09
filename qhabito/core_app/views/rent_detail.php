@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 				
 				<div class="wrapper clearfix">
-					<div class="block right resume bgcm padded">
+					<div class="block right resume bgcm clearfix padded">
 						<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
 						<h1 class="title fncd">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></h1>
 						<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>

@@ -6,6 +6,7 @@
 	position: relative;
 	top: 0;
 	left: 0;
+	padding-bottom: 30px;
 	
 	// PADDED
 	.padded {
@@ -186,7 +187,8 @@
 			}
 			
 			.extra {
-				width: 100%;
+				float: left;
+				width: auto;
 				height: auto;
 				line-height: 1em;
 				text-decoration: none;
@@ -214,6 +216,11 @@
 					}
 				}
 			}
+		}
+		
+		// ADVERT
+		&.advert {
+			display: none;
 		}
 	}
 	

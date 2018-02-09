@@ -217,6 +217,7 @@ html, body {
   height: auto;
   padding: 50px;
   display: none;
+  z-index: 999999;
 }
 .cookies p {
   width: 100%;
@@ -297,7 +298,6 @@ body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.deskt
   height: 50px;
   line-height: 50px;
   text-decoration: none;
-  z-index: 99999;
   overflow: hidden;
   display: block;
 }
