@@ -36,11 +36,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- MAIN / BEGIN -->
 	<div class="main home">
 		<!-- HEADER / BEGIN -->
-		<div class="header bgce clearfix">
-			<div class="top-bar bgcc">
+		<div class="header clearfix">
+			<div class="top-bar">
 				<ul class="languages">
-					<li><a class="selected" href="#" title=""><span class="bgcc fnca">ESP</span><span class="bgcc fncf">ESP</span></a></li>
-					<li><a href="#" title=""><span class="bgcc fnca">ENG</span><span class="bgcc fncf">ENG</span></a></li>
+					<li><a class="selected" href="#" title=""><span>ESP</span><span>ESP</span></a></li>
+					<li><a href="#" title=""><span>ENG</span><span>ENG</span></a></li>
 				</ul>
 			</div>
 			<div class="content">
@@ -49,13 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<!-- HEADER / END -->
 		<!-- MODULE / BEGIN -->
-		<div class="mod-top-big-poster bgcc" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
+		<div class="mod-top-big-poster" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="mod-simple-form">
-				<h1 class="fnca">Alquilar y comprar en pocos pasos...</h1>
+				<h1>Alquilar y comprar en pocos pasos...</h1>
 				<form action="/busca" method="get">
 					<fieldset>
-						<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
-						<div><a class="send fnca" href="#" title=""><span class="bgce">Buscar</span><span class="bgcg">Buscar</span></a></div>
+						<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
+						<div><a class="send" href="#" title=""><span>Buscar</span><span>Buscar</span></a></div>
 					</fieldset>
 				</form>
 			</div>
@@ -63,28 +63,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- MODULE / END -->
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
-			<div class="wrap bgca fnck">
+			<div class="wrap">
 			
 				<!-- MODULE / BEGIN -->
-				<!--
-				<div class="module test">
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-				</div>
-				-->
 				<div class="mod-grid">
-					<div class="item bgcd">Hello<br />World</div>
-					<div class="item bgce">Hello<br />World</div>
-					<div class="item bgcd">Hello<br />World</div>
-					<div class="item bgce">Hello<br />World</div>
-					<div class="item bgcd">Hello<br />World Hello<br />World Hello<br />World Hello<br />World</div>
-					<div class="item bgce">Hello<br />World</div>
-					<div class="item bgcd">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World Hello<br />World Hello<br />World Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
+					<div class="item">Hello<br />World</div>
 				</div>
 				<!-- MODULE / END -->
 			
@@ -93,54 +82,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<!-- CONTENT / END -->
 		<!-- FOOTER / BEGIN -->
-		<div class="footer bgcm clearfix">
+		<div class="footer clearfix">
 			<div class="wrap">
 				<ul class="primary clearfix">
-					<li><a href="#" title=""><span class="bgcd fnca">Inicio</span><span class="bgcm fncd">Inicio</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Alquiler</span><span class="bgcm fncd">Alquiler</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Compra</span><span class="bgcm fncd">Compra</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Venta</span><span class="bgcm fncd">Venta</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Vacacional</span><span class="bgcm fncd">Vacacional</span></a></li>
+					<li><a href="#" title=""><span>Inicio</span><span>Inicio</span></a></li>
+					<li><a href="#" title=""><span>Alquiler</span><span>Alquiler</span></a></li>
+					<li><a href="#" title=""><span>Compra</span><span>Compra</span></a></li>
+					<li><a href="#" title=""><span>Venta</span><span>Venta</span></a></li>
+					<li><a href="#" title=""><span>Vacacional</span><span>Vacacional</span></a></li>
 				</ul>
 				<ul class="secondary clearfix">
-					<li><h1 class="fncg">Esenciales</h1>
+					<li><h1>Esenciales</h1>
 						<ul>
-							<li class="fnce"><a class="fncc" href="#" title="">Area de Usuarios</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Preguntas Frecuentes</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Mapa del Sitio</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Contactar</a></li>
+							<li><a href="#" title="">Area de Usuarios</a></li>
+							<li><a href="#" title="">Preguntas Frecuentes</a></li>
+							<li><a href="#" title="">Mapa del Sitio</a></li>
+							<li><a href="#" title="">Contactar</a></li>
 						</ul>
 					</li>
-					<li><h1 class="fncg">QHabito</h1>
+					<li><h1>QHabito</h1>
 						<ul>
-							<li class="fnce"><a class="fncc" href="#" title="">Sobre Nosotros</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Publicidad</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Condiciones Generales</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Política de Privacidad</a></li>
+							<li><a href="#" title="">Sobre Nosotros</a></li>
+							<li><a href="#" title="">Publicidad</a></li>
+							<li><a href="#" title="">Condiciones Generales</a></li>
+							<li><a href="#" title="">Política de Privacidad</a></li>
 						</ul>
 					</li>
 				</ul>
 				<div class="mod-simple-form clearfix">
-					<h1 class="fncg">Newsletter</h1>
+					<h1>Newsletter</h1>
 					<form action="/newsletter" method="get">
 						<fieldset>
-							<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
-							<div><a class="send fnca" href="#" title=""><span class="bgce">Enviar</span><span class="bgcg">Enviar</span></a></div>
+							<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
+							<div><a class="send" href="#" title=""><span>Enviar</span><span>Enviar</span></a></div>
 						</fieldset>
 					</form>
 				</div>
-				<div class="bottom-text fncj clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
+				<div class="bottom-text clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
 			</div>
 		</div>
 		<!-- FOOTER / END -->
 	</div>
 	<!-- MAIN / END -->
 	<!-- COOKIES / BEGIN -->
-	<div class="cookies bgcj">
+	<div class="cookies">
 		<p>
-			Usamos cookies para ofrecer una experiencia más personalizada. <a class="fnce" href="#" title=""><span  class="fncd">Más información &gt;</span></a>
+			Usamos cookies para ofrecer una experiencia más personalizada. <a href="#" title=""><span>Más información &gt;</span></a>
 		</p>
-		<a class="button fnca" href="#" title=""><span class="bgce">Cerrar</span><span class="bgcd">Cerrar</span></a>
+		<a class="button" href="#" title=""><span>Cerrar</span><span>Cerrar</span></a>
 	</div>
 	<!-- COOKIES / END -->
 </body>

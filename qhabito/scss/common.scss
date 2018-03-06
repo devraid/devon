@@ -60,28 +60,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 	right: 0;
 }
 
-// HTML AND BODY
-html, body {
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
-	background-color: #FFFFFF;
-	font-size: 100%;
-	font-family: Arial, 'sans-serif';
-	display: block;
-	
-	// Overflow
-	overflow: hidden;
-	overflow-x: hidden;
-	overflow-y: hidden;
-
-	// Font smoothing
-	-webkit-font-smoothing: antialiased;
-	
-	// Smooth scrolling
-	-webkit-overflow-scrolling: touch; // smooth scrolling on native IOS
-}
-
 // CLEARFIX
 .clearfix:after {
 	content: ".";
@@ -110,34 +88,43 @@ html, body {
 }
 
 // COLORS
-.fnca {	color: #FFFFFF !important; }
-.bgca {	background-color: #FFFFFF !important; }
-.fncb { color: #927BB4 !important; }
-.bgcb { background-color: #927BB4 !important; }
-.fncc {	color: #6789B2 !important; }
-.bgcc {	background-color: #6789B2 !important; }
-.fncd { color: #1C7EBE !important; }
-.bgcd { background-color: #1C7EBE !important; }
-.fnce {	color: #16487B !important; }
-.bgce {	background-color: #16487B !important; }
-.fncf { color: #09315A !important; }
-.bgcf { background-color: #09315A !important; }
-.fncg { color: #33BAF1 !important; }
-.bgcg { background-color: #33BAF1 !important; }
-.fnch { color: #3B8D99 !important; }
-.bgch { background-color: #3B8D99 !important; }
-.fnci { color: #86B14F !important; }
-.bgci { background-color: #86B14F !important; }
-.fncj { color: #C7C7C7 !important; }
-.bgcj { background-color: #C7C7C7 !important; }
-.fnck { color: #DA592A !important; }
-.bgck { background-color: #DA592A !important; }
-.fncl { color: #DBE4E8 !important; }
-.bgcl { background-color: #DBE4E8 !important; }
-.fncm { color: #F6F6F6 !important; }
-.bgcm { background-color: #F6F6F6 !important; }
-.fncn { color: #000000 !important; }
-.bgcn { background-color: #000000 !important; }
+$colora: #FFFFFF;
+$colorb: #927BB4;
+$colorc: #6789B2;
+$colord: #1C7EBE;
+$colore: #16487B;
+$colorf: #09315A;
+$colorg: #33BAF1;
+$colorh: #3B8D99;
+$colori: #86B14F;
+$colorj: #C7C7C7;
+$colork: #DA592A;
+$colorl: #DBE4E8;
+$colorm: #F6F6F6;
+$colorn: #000000;
+$coloro: #E4E5E6;
+
+// HTML AND BODY
+html, body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background-color: $colora;
+	font-size: 100%;
+	font-family: Arial, 'sans-serif';
+	display: block;
+	
+	// Overflow
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	// Font smoothing
+	-webkit-font-smoothing: antialiased;
+	
+	// Smooth scrolling
+	-webkit-overflow-scrolling: touch; // smooth scrolling on native IOS
+}
 
 // COOKIES
 .cookies {
@@ -147,10 +134,12 @@ html, body {
 	width: 100%;
 	height: auto;
 	padding: 50px;
+	background-color: $colorj;
 	display: none;
 	z-index: 999999;
 	
 	p {
+		color: $colorn;
 		width: 100%;
 		height: auto;
 		font-size: 0.95rem;
@@ -159,9 +148,12 @@ html, body {
 		display: block;
 		
 		a {
+			color: $colore;
 			font-weight: bold;
 			
 			span {
+				color: $colord;
+				
 				// Transition
 				-webkit-transition: color 0.25s ease;
 				-moz-transition: color 0.25s ease;
@@ -198,8 +190,17 @@ html, body {
 	}
 
 	.button {
+		color: $colora;
 		float: right;
 		overflow: hidden;
+		
+		span:first-of-type {
+			background-color: $colore;
+		}
+		
+		span:last-of-type {
+			background-color: $colord;
+		}
 		
 		span {
 			padding: 0 20px 0 20px;
@@ -218,6 +219,7 @@ html, body {
 				transition: opacity 0.25s ease;
 			}
 		}
+		
 		@include on-hover {
 			span:last-of-type {
 				opacity: 0;
@@ -238,9 +240,10 @@ html, body {
 	height: 50px;
 	line-height: 50px;
 	text-decoration: none;
+	color: $colorg;
 	overflow: hidden;
 	display: block;
-
+	
 	span,
 	span:before {
 		float: none;
@@ -253,7 +256,8 @@ html, body {
 	}
 	span {
 		font-size: 0;
-
+		color: $colorc;
+		
 		// Transition
 		-webkit-transition: color 0.25s ease;
 		-moz-transition: color 0.25s ease;
@@ -293,6 +297,7 @@ html, body {
 	width: 100%;
 	height: auto;
 	z-index: 999999;
+	background-color: $colore;
 	display: block;
 	
 	.content {
@@ -321,6 +326,7 @@ html, body {
 		float: left;
 		width: 100%;
 		height: 50px;
+		background-color: $colorc;
 		display: block;
 		
 		.languages,
@@ -362,7 +368,14 @@ html, body {
 					transition: opacity 0.25s ease;
 				}
 				
+				span:first-of-type {
+					color: $colora;
+					background-color: $colorc;
+				}
+				
 				span:last-of-type {
+					color: $colorf;
+					background-color: $colorc;
 					position: relative;
 				}
 				
@@ -396,6 +409,8 @@ html, body {
 	}
 	.wrap {
 		width: 100%;
+		background-color: $colora;
+		color: $colork;
 	}
 }
 
@@ -411,7 +426,10 @@ html, body {
 	display: block;
 }
 .main .breadcrumb {
-	padding: 10px 0px 10px 0px;
+	padding: 10px 0px 10px 20px;
+	min-width: 100%;
+	background-color: $colora;
+	box-shadow: 0 2px 8px 0 rgba(71,71,68,0.24);
 	
 	li {
 		a {
@@ -421,6 +439,14 @@ html, body {
 			padding: 6px 0 6px 0;
 			overflow: hidden;
 
+			& {
+				color: $colorg;
+			}
+			
+			span {
+				color: $colorc;
+			}
+			
 			span {
 				// Transition
 				-webkit-transition: color 0.25s ease;
@@ -439,8 +465,8 @@ html, body {
 				width: 8px;
 				height: 8px;
 				font-size: 0;
-				border-left: 3px solid #6789B2;
-				border-top: 3px solid #6789B2;
+				border-left: $colorc solid 1px;
+				border-top: $colorc solid 1px;
 
 				// Rotate
 				-webkit-transform: rotate(135deg);
@@ -468,6 +494,12 @@ html, body {
 	padding: 50px 5% 50px 5%;
 	max-width: none;
 	width: 100%;
+	background-color: $colorm;
+	
+	// WRAP
+	.wrap {
+		background-color: $colorm;
+	}
 	
 	// PRIMARY
 	.primary * {
@@ -484,14 +516,14 @@ html, body {
 	}
 	
 	.primary {
-		border-bottom: #C7C7C7 solid 1px;
+		border-bottom: $colorj solid 1px;
 		overflow: hidden;
 		height: auto;
 	
 		li {
 			float: left;
 			width: auto;
-			border-right: #C7C7C7 solid 1px;
+			border-right: $colorj solid 1px;
 			overflow: hidden;
 			
 			&:last-of-type {
@@ -504,6 +536,16 @@ html, body {
 				position: relative;
 				top: 0;
 				left: 0;
+			}
+			
+			& a span:first-of-type {
+				color: $colora;
+				background-color: $colord;
+			}
+			
+			& a span:last-of-type {
+				color: $colord;
+				background-color: $colorm;
 			}
 		
 			& a span {
@@ -554,6 +596,7 @@ html, body {
 		li,
 		li h1 {
 			float: left;
+			color: $colorg;
 		}
 		li h1 {
 			float: none;
@@ -565,6 +608,7 @@ html, body {
 		li {
 			width: 50%;
 			padding: 48px 0 0 20px;
+			color: $colore;
 			
 			li {
 				float: none;
@@ -574,6 +618,7 @@ html, body {
 				padding: 0;
 
 				a {
+					color: $colorc;
 					display: inline-block;
 
 					// Transition
@@ -603,6 +648,7 @@ html, body {
 		padding-right: 20px;
 		
 		h1 {
+			color: $colorg;
 			line-height: 1em;
 			font-size: 1.5rem;
 			font-family: 'ProximaNova-Regular';
@@ -619,6 +665,7 @@ html, body {
 		width: 100%;
 		height: auto;
 		padding: 40px 5% 0 5%;
+		color: $colorj;
 		
 		p {
 			width: 100%;
@@ -746,7 +793,7 @@ html, body {
 
 				li {
 					border-right: none;
-					border-bottom: #C7C7C7 solid 1px;
+					border-bottom: $colorj solid 1px;
 					float: none;
 
 					a span {
@@ -785,7 +832,7 @@ html, body {
 		}
 		.breadcrumb li {
 			display: none;
-
+			
 			a span.text {
 				padding: 0;
 			}

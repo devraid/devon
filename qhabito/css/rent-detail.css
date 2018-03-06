@@ -1,28 +1,24 @@
 /*
-Error: Undefined mixin 'on-hover'.
-        on line 212 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss, in `on-hover'
-        from line 212 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss
+Error: Undefined variable: "$colorm".
+        on line 40 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss
 
-207: 					-moz-transition: color 0.25s ease;
-208: 					-ms-transition: color 0.25s ease;
-209: 					-o-transition: color 0.25s ease;
-210: 					transition: color 0.25s ease;
-211: 
-212: 					@include on-hover {
-213: 						&, & span {
-214: 							color: inherit !important;
-215: 						}
-216: 					}
-217: 				}
+35: 				clear: left;
+36: 				width: calc(100% - 390px);
+37: 				max-width: 68%;
+38: 
+39: 				div {
+40: 					background-color: $colorm;
+41: 				}
+42: 			}
+43: 
+44: 			// RIGHT COLUMN
+45: 			&.right {
 
 Backtrace:
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss:212:in `on-hover'
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss:212
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss:40
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -109,4 +105,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'on-hover'.\A         on line 212 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss, in `on-hover'\A         from line 212 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss\A \A 207: 					-moz-transition: color 0.25s ease;\A 208: 					-ms-transition: color 0.25s ease;\A 209: 					-o-transition: color 0.25s ease;\A 210: 					transition: color 0.25s ease;\A 211: \A 212: 					@include on-hover {\A 213: 						&, & span {\A 214: 							color: inherit !important;\A 215: 						}\A 216: 					}\A 217: 				}"; }
+  content: "Error: Undefined variable: \"$colorm\".\A         on line 40 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent-detail.scss\A \A 35: 				clear: left;\A 36: 				width: calc(100% - 390px);\A 37: 				max-width: 68%;\A 38: \A 39: 				div {\A 40: 					background-color: $colorm;\A 41: 				}\A 42: 			}\A 43: \A 44: 			// RIGHT COLUMN\A 45: 			&.right {"; }

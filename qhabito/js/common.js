@@ -34,11 +34,17 @@ var QHABITO = window.QHABITO || {};
 				}
 			},
 			modSelect : function() {
-				$('.mod-select li:eq(0) a').on('click', function() {
-					var self = $(this);
-					self.blur();
-					self.closest('.mod-select').toggleClass('active');
-					return false;
+				$('.mod-select').each(function() {
+					$('li:eq(0) a', $(this)).on('click', function() {
+						var self = $(this);
+						self.blur();
+						var closest = self.closest('.mod-select');
+						setTimeout(function() {
+							$('.mod-select').not(closest).removeClass('active');
+						}, 500);
+						closest.toggleClass('active');
+						return false;
+					});
 				});
 			},
 			modSliderThumbs : function() {

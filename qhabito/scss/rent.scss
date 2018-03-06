@@ -3,9 +3,19 @@
 	clear: both;
 	width: 100%;
 	height: auto;
-	background-color: #E4E5E6;
-	margin: 0 0 20px 0;
-	padding: 10px;
+	padding: 20px 0 10px 0;
+	
+	// MOD SELECT
+	.mod-select {
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		
+		// ORDER
+		&.order {
+			float: right;
+		}
+	}
 	
 	// LIST TYPE
 	.list-type,
@@ -20,10 +30,16 @@
 	}
 	.list-type {
 		float: right;
-		margin-left: 10px;
 		height: 57px;
-		border: #C7C7C7 solid 1px;
+		border: $coloro solid 1px;
 		display: none;
+		
+		// Transition
+		-webkit-transition: border-color 0.25s ease;
+		-moz-transition: border-color 0.25s ease;
+		-ms-transition: border-color 0.25s ease;
+		-o-transition: border-color 0.25s ease;
+		transition: border-color 0.25s ease;
 		
 		li {
 			float: left;
@@ -64,7 +80,7 @@
 						
 						&:before,
 						&:after {
-							background-color: #C7C7C7;
+							background-color: $colorj;
 						}
 						
 						&:before {
@@ -88,14 +104,14 @@
 					
 					&.selected span {
 						&:before, &:after {
-							background-color: #1C7EBE !important;
+							background-color: $colord !important;
 						}
 					}
 					
 					@include on-hover {
 						span {
 							&:before, &:after {
-								background-color: #1C7EBE !important;
+								background-color: $colord !important;
 							}
 						}
 					}
@@ -112,7 +128,7 @@
 						width: 10px;
 						height: 10px;
 						margin-right: 3px;
-						background-color: #C7C7C7;
+						background-color: $colorj;
 						display: block;
 					}
 					
@@ -138,20 +154,24 @@
 					
 					&.selected span {
 						&, &:before, &:after {
-							background-color: #1C7EBE !important;
+							background-color: $colord !important;
 						}
 					}
 					
 					@include on-hover {
 						span {
 							&, &:before, &:after {
-								background-color: #1C7EBE !important;
+								background-color: $colord !important;
 							}
 						}
 					}
 				}
 
 			}
+		}
+		
+		@include on-hover {
+			border: $colorj solid 1px;
 		}
 	}
 }
@@ -162,6 +182,7 @@
 	
 	.item {
 		cursor: default;
+		background-color: $colorm;
 		
 		.wrapper {
 			position: relative;
@@ -209,9 +230,11 @@
 		}
 		.title {
 			width: calc(100% - 20px);
+			color: $colorg;
 		}
 		
 		.title a span {
+			color: $colorc;
 			font-style: italic;
 			font-size: 0.8rem;
 			display: inline-block;
@@ -219,6 +242,7 @@
 		
 		.subtitle {
 			font-size: 1rem;
+			color: $colork;
 			
 			span {
 				font-size: 1.5rem;
@@ -228,6 +252,8 @@
 		}
 		
 		.title a {
+			color: $colord;
+			
 			// Transition
 			-webkit-transition: color 0.25s ease;
 			-moz-transition: color 0.25s ease;
@@ -243,6 +269,7 @@
 		}
 
 		.description {
+			color: $colorc;
 			padding: 0 0 30px 0;
 			width: 100%;
 			height: auto;
@@ -273,8 +300,10 @@
 			display: block;
 			line-height: 1.2em;
 			font-size: 1rem;
+			color: $colorg;
 			
 			a {
+				color: $colorc;
 				display: block;
 				
 				// Transition
@@ -315,7 +344,7 @@
 				height: 100%;
 				line-height: 32px;
 				padding: 0 15px 0 15px;
-				border: #33BAF1 solid 4px;
+				border: $colorg solid 4px;
 				opacity: 1;
 				display: block;
 				
@@ -327,9 +356,16 @@
 				transition: opacity 0.25s ease, border-color 0.25s ease;
 			}
 			
+			span:first-of-type {
+				background-color: $colora;
+				color: $colorg;
+			}
+			
 			span:last-of-type {
+				background-color: $colorm;
+				color: $colorc;
 				position: relative;
-				border: #6789B2 solid 4px;
+				border: $colorc solid 4px;
 			}
 			
 			@include on-hover {

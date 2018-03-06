@@ -36,31 +36,89 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- MAIN / BEGIN -->
 	<div class="main rent">
 		<!-- HEADER / BEGIN -->
-		<div class="header bgce clearfix">
-			<div class="top-bar bgcc">
+		<div class="header clearfix">
+			<div class="top-bar">
 				<ul class="languages">
-					<li><a class="selected" href="#" title=""><span class="bgcc fnca">ESP</span><span class="bgcc fncf">ESP</span></a></li>
-					<li><a href="#" title=""><span class="bgcc fnca">ENG</span><span class="bgcc fncf">ENG</span></a></li>
+					<li><a class="selected" href="#" title=""><span>ESP</span><span>ESP</span></a></li>
+					<li><a href="#" title=""><span>ENG</span><span>ENG</span></a></li>
 				</ul>
 			</div>
-			<div class="content navigation">
+			<div class="content">
 				<a class="logo-link" href="#" title="">&nbsp;</a>
 			</div>
+			<ul class="breadcrumb clearfix">
+				<li><a href="/qhabito/" title=""><span class="text">Inicio</span><span class="arrow">&nbsp;</span></a></li>
+				<li><a href="#" title=""><span class="text">Lorem ipsum</span><span class="arrow">&nbsp;</span></a></li>
+				<li><a href="#" title=""><span class="text">Lorem ipsum</span><span class="arrow">&nbsp;</span></a></li>
+				<li><a href="#" title=""><span class="text">Lorem ipsum dolor</span><span class="arrow">&nbsp;</span></a></li>
+				<li><a class="selected" href="#" title=""><span class="text">Lorem ipsum sit amet</span></a></li>
+			</ul>
 		</div>
 		<!-- HEADER / END -->
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
-			<div class="wrap bgca fnck">
-				
-				<ul class="breadcrumb clearfix">
-					<li><a class="fncg" href="/qhabito/" title=""><span class="fncc text">Inicio</span><span class="fncc arrow">&nbsp;</span></a></li>
-					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
-					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum</span><span class="fncc arrow">&nbsp;</span></a></li>
-					<li><a class="fncg" href="#" title=""><span class="fncc text">Lorem ipsum dolor</span><span class="fncc arrow">&nbsp;</span></a></li>
-					<li><a class="fncg selected" href="#" title=""><span class="fncc text">Lorem ipsum sit amet</span></a></li>
-				</ul>
+			<div class="wrap">
 				
 				<div class="filters clearfix">
+					<ul class="mod-select property">
+						<li><a href="#" title="">Tipo<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title=""><span>Piso</span></a></li>
+						<li><a href="#" title=""><span>Casa</span></a></li>
+						<li><a href="#" title=""><span>Chalet</span></a></li>
+						<li><a href="#" title=""><span>Ático</span></a></li>
+						<li><a href="#" title=""><span>Dúplex</span></a></li>
+						<li><a href="#" title=""><span>Estudio</span></a></li>
+						<li><a href="#" title=""><span>Loft</span></a></li>
+					</ul>
+					
+					<ul class="mod-select price-min">
+						<li><a href="#" title="">Desde €<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title=""><span>0</span></a></li>
+						<li><a href="#" title=""><span>100</span></a></li>
+						<li><a href="#" title=""><span>200</span></a></li>
+						<li><a href="#" title=""><span>300</span></a></li>
+						<li><a href="#" title=""><span>400</span></a></li>
+						<li><a href="#" title=""><span>500</span></a></li>
+						<li><a href="#" title=""><span>600</span></a></li>
+						<li><a href="#" title=""><span>700</span></a></li>
+						<li><a href="#" title=""><span>800</span></a></li>
+						<li><a href="#" title=""><span>900</span></a></li>
+						<li><a href="#" title=""><span>1000</span></a></li>
+					</ul>
+					
+					<ul class="mod-select price-max">
+						<li><a href="#" title="">Hasta €<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title=""><span>0</span></a></li>
+						<li><a href="#" title=""><span>100</span></a></li>
+						<li><a href="#" title=""><span>200</span></a></li>
+						<li><a href="#" title=""><span>300</span></a></li>
+						<li><a href="#" title=""><span>400</span></a></li>
+						<li><a href="#" title=""><span>500</span></a></li>
+						<li><a href="#" title=""><span>600</span></a></li>
+						<li><a href="#" title=""><span>700</span></a></li>
+						<li><a href="#" title=""><span>800</span></a></li>
+						<li><a href="#" title=""><span>900</span></a></li>
+						<li><a href="#" title=""><span>1000</span></a></li>
+					</ul>
+					
+					<ul class="mod-select size-min">
+						<li><a href="#" title="">Desde m²<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+					</ul>
+					
+					<ul class="mod-select size-max">
+						<li><a href="#" title="">Hasta m²<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+					</ul>
+					
 					<ul class="list-type">
 						<?php $selected = ($data['list_type'] === 'grid') ? ' selected' : ''; ?>
 						<li>
@@ -80,18 +138,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</li>
 					</ul>
 					<ul class="mod-select order">
-						<li><a class="fncc" href="#" title="">Ordenar<span class="arrow">&nbsp;</span></a></li>
-						<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
-						<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
-						<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
-						<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
-						<li><a class="fncg" href="#" title=""><span class="fncc">Lorem ipsum</span></a></li>
+						<li><a href="#" title="">Ordenar<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
 					</ul>
 				</div>
 				
 				<!-- MODULE / BEGIN -->
 				<div class="mod-grid <?php echo $data['list_type']; ?>">
-					<div class="item bgcm">
+					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->
 							<div class="mod-slider-thumbs clearfix">
@@ -128,26 +186,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="12"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="13"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="14"><span>&nbsp;</span></a></li>
-									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span>&nbsp;</span><span>&nbsp;</span></a></li>
 								</ul>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
-								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular...</p>
+								<a class="add-to-favorite" href="#" title=""><span class="icon-heart">&nbsp;</span></a>
+								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
+								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular...</p>
 							</div>
 							<div class="contact-view clearfix">
-								<p class="contact fncg">
-									<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
-									<a class="fncc" href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
+								<p class="contact">
+									<a href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+									<a href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
 								</p>
-								<a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
+								<a class="view" href="/qhabito/alquiler/detalle" title=""><span>Ver en detalle</span><span>Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
+					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->
 							<div class="mod-slider-thumbs clearfix">
@@ -168,26 +226,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
-									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span>&nbsp;</span><span>&nbsp;</span></a></li>
 								</ul>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
-								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="add-to-favorite" href="#" title=""><span class="icon-heart">&nbsp;</span></a>
+								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
+								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 							</div>
 							<div class="contact-view clearfix">
-								<p class="contact fncg">
-									<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
-									<a class="fncc" href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
+								<p class="contact">
+									<a href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+									<a href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
 								</p>
-								<a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
+								<a class="view" href="/qhabito/alquiler/detalle" title=""><span>Ver en detalle</span><span>Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
+					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->
 							<div class="mod-slider-thumbs clearfix">
@@ -208,26 +266,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
-									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span>&nbsp;</span><span>&nbsp;</span></a></li>
 								</ul>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
-								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="add-to-favorite" href="#" title=""><span class="icon-heart">&nbsp;</span></a>
+								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
+								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 							</div>
 							<div class="contact-view clearfix">
-								<p class="contact fncg">
-									<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
-									<a class="fncc" href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
+								<p class="contact">
+									<a href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+									<a href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
 								</p>
-								<a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
+								<a class="view" href="/qhabito/alquiler/detalle" title=""><span>Ver en detalle</span><span>Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
+					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->
 							<div class="mod-slider-thumbs clearfix">
@@ -248,26 +306,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
-									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span>&nbsp;</span><span>&nbsp;</span></a></li>
 								</ul>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
-								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="add-to-favorite" href="#" title=""><span class="icon-heart">&nbsp;</span></a>
+								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
+								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 							</div>
 							<div class="contact-view clearfix">
-								<p class="contact fncg">
-									<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
-									<a class="fncc" href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
+								<p class="contact">
+									<a href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+									<a href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
 								</p>
-								<a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
+								<a class="view" href="/qhabito/alquiler/detalle" title=""><span>Ver en detalle</span><span>Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
+					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->
 							<div class="mod-slider-thumbs clearfix">
@@ -288,26 +346,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
-									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span>&nbsp;</span><span>&nbsp;</span></a></li>
 								</ul>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
-								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="add-to-favorite" href="#" title=""><span class="icon-heart">&nbsp;</span></a>
+								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
+								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 							</div>
 							<div class="contact-view clearfix">
-								<p class="contact fncg">
-									<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
-									<a class="fncc" href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
+								<p class="contact">
+									<a href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+									<a href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
 								</p>
-								<a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
+								<a class="view" href="/qhabito/alquiler/detalle" title=""><span>Ver en detalle</span><span>Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
+					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->
 							<div class="mod-slider-thumbs clearfix">
@@ -328,26 +386,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
-									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span>&nbsp;</span><span>&nbsp;</span></a></li>
 								</ul>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
-								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="add-to-favorite" href="#" title=""><span class="icon-heart">&nbsp;</span></a>
+								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
+								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 							</div>
 							<div class="contact-view clearfix">
-								<p class="contact fncg">
-									<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
-									<a class="fncc" href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
+								<p class="contact">
+									<a href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+									<a href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
 								</p>
-								<a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
+								<a class="view" href="/qhabito/alquiler/detalle" title=""><span>Ver en detalle</span><span>Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
-					<div class="item bgcm">
+					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->
 							<div class="mod-slider-thumbs clearfix">
@@ -368,22 +426,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0005.jpg');"><a href="#" title="" data-index="4"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0006.jpg');"><a href="#" title="" data-index="5"><span>&nbsp;</span></a></li>
 									<li style="background-image:url('/qhabito/css/images/tmp/image-0007.jpg');"><a href="#" title="" data-index="6"><span>&nbsp;</span></a></li>
-									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgce">&nbsp;</span><span class="bgcg">&nbsp;</span></a></li>
+									<li><a class="view" href="/qhabito/alquiler/detalle" title=""><span>&nbsp;</span><span>&nbsp;</span></a></li>
 								</ul>
 							</div>
 							<!-- MODULE / END -->
 							<div class="details">
-								<a class="add-to-favorite fncg" href="#" title=""><span class="fncc icon-heart">&nbsp;</span></a>
-								<h1 class="title fncg"><a class="fncd" href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span class="fncc">&mdash; 12/07/18 12:30h</span></a></h1>
-								<h2 class="subtitle fnck"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
-								<p class="description fncc">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<a class="add-to-favorite" href="#" title=""><span class="icon-heart">&nbsp;</span></a>
+								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
+								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
+								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
 							</div>
 							<div class="contact-view clearfix">
-								<p class="contact fncg">
-									<a class="fncc" href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
-									<a class="fncc" href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
+								<p class="contact">
+									<a href="" title="">952 146 413<span class="icon-phone">&nbsp;</span></a>
+									<a href="" title="">Contactar<span class="icon-mail">&nbsp;</span></a>
 								</p>
-								<a class="view" href="/qhabito/alquiler/detalle" title=""><span class="bgca fncg">Ver en detalle</span><span class="bgcm fncc">Ver en detalle</span></a>
+								<a class="view" href="/qhabito/alquiler/detalle" title=""><span>Ver en detalle</span><span>Ver en detalle</span></a>
 							</div>
 						</div>
 					</div>
@@ -394,54 +452,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<!-- CONTENT / END -->
 		<!-- FOOTER / BEGIN -->
-		<div class="footer bgcm clearfix">
+		<div class="footer clearfix">
 			<div class="wrap">
 				<ul class="primary clearfix">
-					<li><a href="#" title=""><span class="bgcd fnca">Inicio</span><span class="bgcm fncd">Inicio</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Alquiler</span><span class="bgcm fncd">Alquiler</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Compra</span><span class="bgcm fncd">Compra</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Venta</span><span class="bgcm fncd">Venta</span></a></li>
-					<li><a href="#" title=""><span class="bgcd fnca">Vacacional</span><span class="bgcm fncd">Vacacional</span></a></li>
+					<li><a href="#" title=""><span>Inicio</span><span>Inicio</span></a></li>
+					<li><a href="#" title=""><span>Alquiler</span><span>Alquiler</span></a></li>
+					<li><a href="#" title=""><span>Compra</span><span>Compra</span></a></li>
+					<li><a href="#" title=""><span>Venta</span><span>Venta</span></a></li>
+					<li><a href="#" title=""><span>Vacacional</span><span>Vacacional</span></a></li>
 				</ul>
 				<ul class="secondary clearfix">
-					<li><h1 class="fncg">Esenciales</h1>
+					<li><h1>Esenciales</h1>
 						<ul>
-							<li class="fnce"><a class="fncc" href="#" title="">Area de Usuarios</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Preguntas Frecuentes</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Mapa del Sitio</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Contactar</a></li>
+							<li><a href="#" title="">Area de Usuarios</a></li>
+							<li><a href="#" title="">Preguntas Frecuentes</a></li>
+							<li><a href="#" title="">Mapa del Sitio</a></li>
+							<li><a href="#" title="">Contactar</a></li>
 						</ul>
 					</li>
-					<li><h1 class="fncg">QHabito</h1>
+					<li><h1>QHabito</h1>
 						<ul>
-							<li class="fnce"><a class="fncc" href="#" title="">Sobre Nosotros</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Publicidad</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Condiciones Generales</a></li>
-							<li class="fnce"><a class="fncc" href="#" title="">Política de Privacidad</a></li>
+							<li><a href="#" title="">Sobre Nosotros</a></li>
+							<li><a href="#" title="">Publicidad</a></li>
+							<li><a href="#" title="">Condiciones Generales</a></li>
+							<li><a href="#" title="">Política de Privacidad</a></li>
 						</ul>
 					</li>
 				</ul>
 				<div class="mod-simple-form clearfix">
-					<h1 class="fncg">Newsletter</h1>
+					<h1>Newsletter</h1>
 					<form action="/newsletter" method="get">
 						<fieldset>
-							<div><input class="text bgcl" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
-							<div><a class="send fnca" href="#" title=""><span class="bgce">Enviar</span><span class="bgcg">Enviar</span></a></div>
+							<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
+							<div><a class="send" href="#" title=""><span>Enviar</span><span>Enviar</span></a></div>
 						</fieldset>
 					</form>
 				</div>
-				<div class="bottom-text fncj clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
+				<div class="bottom-text clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
 			</div>
 		</div>
 		<!-- FOOTER / END -->
 	</div>
 	<!-- MAIN / END -->
 	<!-- COOKIES / BEGIN -->
-	<div class="cookies bgcj">
+	<div class="cookies">
 		<p>
-			Usamos cookies para ofrecer una experiencia más personalizada. <a class="fnce" href="#" title=""><span  class="fncd">Más información &gt;</span></a>
+			Usamos cookies para ofrecer una experiencia más personalizada. <a href="#" title=""><span>Más información &gt;</span></a>
 		</p>
-		<a class="button fnca" href="#" title=""><span class="bgce">Cerrar</span><span class="bgcd">Cerrar</span></a>
+		<a class="button" href="#" title=""><span>Cerrar</span><span>Cerrar</span></a>
 	</div>
 	<!-- COOKIES / END -->
 </body>
