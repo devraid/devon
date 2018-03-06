@@ -197,7 +197,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="mod-modal report visible">
 		<div class="wrapper">
 			<a class="close-button" href="#" title=""><span class="icon-close">&nbsp;</span></a>
-			<div class="content">hello</div>
+			<div class="content">hi</div>
 		</div>
 	</div>
 	<!-- MODAL REPORT  / END -->
