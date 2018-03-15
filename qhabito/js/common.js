@@ -35,18 +35,71 @@ var QHABITO = window.QHABITO || {};
 			},
 			modSelect : function() {
 				$('.mod-select').each(function() {
-					$('li:eq(0) a', $(this)).on('click', function() {
+					var select = $(this);
+					var length = $('li', select).length;
+					select.data('height', '' + (57+((length-1)*40))); // 57 is the first li. 40 are next ones
+					$('li:eq(0) a', select).on('click', function() {
 						var self = $(this);
 						self.blur();
 						var closest = self.closest('.mod-select');
 						setTimeout(function() {
+							$('.mod-select').not(closest).removeAttr('style');
+							$('.mod-select-grid').not(closest).removeAttr('style');
 							$('.mod-select').not(closest).removeClass('active');
-						}, 500);
+							$('.mod-select-grid').not(closest).removeClass('active');
+						}, 250);
+						if (closest.attr('style')) {
+							closest.removeAttr('style');
+						} else {
+							closest.css('height', closest.data('height') + 'px');
+						}
 						closest.toggleClass('active');
 						return false;
 					});
 				});
 			},
+			modSelectGrid : function() {
+				$('.mod-select-grid').each(function() {
+					var select = $(this);
+					var length = Math.round($('ul li', select).length / 2);
+					console.log(length);
+					select.data('height', '' + (57+(length*40))); // 57 is the first li. 40 are next ones
+					$('li:eq(0) a', select).on('click', function() {
+						var self = $(this);
+						self.blur();
+						var closest = self.closest('.mod-select-grid');
+						setTimeout(function() {
+							$('.mod-select').not(closest).removeAttr('style');
+							$('.mod-select-grid').not(closest).removeAttr('style');
+							$('.mod-select').not(closest).removeClass('active');
+							$('.mod-select-grid').not(closest).removeClass('active');
+						}, 250);
+						if (closest.attr('style')) {
+							closest.removeAttr('style');
+						} else {
+							closest.css('height', closest.data('height') + 'px');
+						}
+						closest.toggleClass('active');
+						return false;
+					});
+				});
+			},/*
+			modSelectGrid : function() {
+				$('.mod-select-grid').each(function() {
+					var select = $(this);
+					$('li:eq(0) a', select).on('click', function() {
+						var self = $(this);
+						self.blur();
+						var closest = self.closest('.mod-select-grid');
+						setTimeout(function() {
+							$('.mod-select').not(closest).removeAttr('style');
+							$('.mod-select-grid').not(closest).removeClass('active');
+						}, 500);
+						closest.toggleClass('active');
+						return false;
+					});
+				});
+			}*/
 			modSliderThumbs : function() {
 				$('.mod-slider-thumbs .slider').slick({
 					infinite : true,
@@ -90,6 +143,9 @@ var QHABITO = window.QHABITO || {};
 				
 				// Module select
 				QHABITO.common.modSelect();
+				
+				// Module range
+				QHABITO.common.modSelectGrid();
 				
 				// Module slider and thumbs
 				QHABITO.common.modSliderThumbs();

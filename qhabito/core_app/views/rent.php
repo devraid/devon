@@ -26,8 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		-->
 		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
 		
-		<script type="text/javascript" src="/qhabito/js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="/qhabito/js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/qhabito/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
 		<script type="text/javascript" src="/qhabito/js/rent.js"></script>
@@ -59,65 +58,144 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="content">
 			<div class="wrap">
 				
+				<div class="filters more clearfix">
+					<div class="wrapper">
+						<ul class="mod-select bathrooms">
+							<li><a href="#" title="">Baños<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">1 ó más</a></li>
+							<li><a href="#" title="">2 ó más</a></li>
+							<li><a href="#" title="">3 ó más</a></li>
+							<li><a href="#" title="">4 ó más</a></li>
+						</ul>
+
+						<ul class="mod-select-grid size-min">
+							<li>
+								<a href="#" title="">Tamaño Mín<span class="arrow">&nbsp;</span></a>
+								<ul class="clearfix">
+									<li><a href="#" title="">50m²</a></li>
+									<li><a href="#" title="">60m²</a></li>
+									<li><a href="#" title="">70m²</a></li>
+									<li><a href="#" title="">80m²</a></li>
+									<li><a href="#" title="">100m²</a></li>
+									<li><a href="#" title="">120m²</a></li>
+									<li><a href="#" title="">140m²</a></li>
+									<li><a href="#" title="">160m²</a></li>
+									<li><a href="#" title="">180m²</a></li>
+									<li><a href="#" title="">200m²</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="mod-select-grid size-max">
+							<li>
+								<a href="#" title="">Tamaño Máx<span class="arrow">&nbsp;</span></a>
+								<ul class="clearfix">
+									<li><a href="#" title="">50m²</a></li>
+									<li><a href="#" title="">60m²</a></li>
+									<li><a href="#" title="">70m²</a></li>
+									<li><a href="#" title="">80m²</a></li>
+									<li><a href="#" title="">100m²</a></li>
+									<li><a href="#" title="">120m²</a></li>
+									<li><a href="#" title="">140m²</a></li>
+									<li><a href="#" title="">160m²</a></li>
+									<li><a href="#" title="">180m²</a></li>
+									<li><a href="#" title="">200m²</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="mod-select equipment">
+							<li><a href="#" title="">Equipamiento<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">Amueblado</a></li>
+							<li><a href="#" title="">Semiamueblado</a></li>
+							<li><a href="#" title="">Sólo Cocina</a></li>
+						</ul>
+
+						<ul class="mod-select state">
+							<li><a href="#" title="">Estado<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">Nuevo</a></li>
+							<li><a href="#" title="">Buen Estado</a></li>
+							<li><a href="#" title="">A Reformar</a></li>
+						</ul>
+
+						<ul class="mod-select pets">
+							<li><a href="#" title="">Mascotas<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">Acepta</a></li>
+							<li><a href="#" title="">No Acepta</a></li>
+							<li><a href="#" title="">Acepta Gatos</a></li>
+							<li><a href="#" title="">Acepta Perros</a></li>
+						</ul>
+
+						<ul class="mod-select level">
+							<li><a href="#" title="">Planta<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">Planta Baja</a></li>
+							<li><a href="#" title="">Planta Intermedia</a></li>
+							<li><a href="#" title="">Última Planta</a></li>
+						</ul>
+						
+					</div>
+				</div>
+				
 				<div class="filters clearfix">
-					<ul class="mod-select property">
-						<li><a href="#" title="">Tipo<span class="arrow">&nbsp;</span></a></li>
-						<li><a href="#" title=""><span>Piso</span></a></li>
-						<li><a href="#" title=""><span>Casa</span></a></li>
-						<li><a href="#" title=""><span>Chalet</span></a></li>
-						<li><a href="#" title=""><span>Ático</span></a></li>
-						<li><a href="#" title=""><span>Dúplex</span></a></li>
-						<li><a href="#" title=""><span>Estudio</span></a></li>
-						<li><a href="#" title=""><span>Loft</span></a></li>
+					<ul class="mod-select-grid property">
+						<li>
+							<a href="#" title="">Tipo de Vivienda<span class="arrow">&nbsp;</span></a>
+							<ul class="clearfix">
+								<li><a href="#" title="">Piso</a></li>
+								<li><a href="#" title="">Ático</a></li>
+								<li><a href="#" title="">Dúplex</a></li>
+								<li><a href="#" title="">Estudio</a></li>
+								<li><a href="#" title="">Loft</a></li>
+								<li><a href="#" title="">Casa o Chalet</a></li>
+							</ul>
+						</li>
 					</ul>
 					
-					<ul class="mod-select price-min">
-						<li><a href="#" title="">Desde €<span class="arrow">&nbsp;</span></a></li>
-						<li><a href="#" title=""><span>0</span></a></li>
-						<li><a href="#" title=""><span>100</span></a></li>
-						<li><a href="#" title=""><span>200</span></a></li>
-						<li><a href="#" title=""><span>300</span></a></li>
-						<li><a href="#" title=""><span>400</span></a></li>
-						<li><a href="#" title=""><span>500</span></a></li>
-						<li><a href="#" title=""><span>600</span></a></li>
-						<li><a href="#" title=""><span>700</span></a></li>
-						<li><a href="#" title=""><span>800</span></a></li>
-						<li><a href="#" title=""><span>900</span></a></li>
-						<li><a href="#" title=""><span>1000</span></a></li>
+					<ul class="mod-select rooms">
+						<li><a href="#" title="">Habitaciones<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title="">1 ó más</a></li>
+						<li><a href="#" title="">2 ó más</a></li>
+						<li><a href="#" title="">3 ó más</a></li>
+						<li><a href="#" title="">4 ó más</a></li>
 					</ul>
 					
-					<ul class="mod-select price-max">
-						<li><a href="#" title="">Hasta €<span class="arrow">&nbsp;</span></a></li>
-						<li><a href="#" title=""><span>0</span></a></li>
-						<li><a href="#" title=""><span>100</span></a></li>
-						<li><a href="#" title=""><span>200</span></a></li>
-						<li><a href="#" title=""><span>300</span></a></li>
-						<li><a href="#" title=""><span>400</span></a></li>
-						<li><a href="#" title=""><span>500</span></a></li>
-						<li><a href="#" title=""><span>600</span></a></li>
-						<li><a href="#" title=""><span>700</span></a></li>
-						<li><a href="#" title=""><span>800</span></a></li>
-						<li><a href="#" title=""><span>900</span></a></li>
-						<li><a href="#" title=""><span>1000</span></a></li>
+					<ul class="mod-select-grid price-min">
+						<li>
+							<a href="#" title="">Precio Mín<span class="arrow">&nbsp;</span></a>
+							<ul class="clearfix">
+								<li><a href="#" title="">300€</a></li>
+								<li><a href="#" title="">350€</a></li>
+								<li><a href="#" title="">400€</a></li>
+								<li><a href="#" title="">450€</a></li>
+								<li><a href="#" title="">500€</a></li>
+								<li><a href="#" title="">550€</a></li>
+								<li><a href="#" title="">600€</a></li>
+								<li><a href="#" title="">650€</a></li>
+								<li><a href="#" title="">700€</a></li>
+								<li><a href="#" title="">750€</a></li>
+							</ul>
+						</li>
 					</ul>
 					
-					<ul class="mod-select size-min">
-						<li><a href="#" title="">Desde m²<span class="arrow">&nbsp;</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+					<ul class="mod-select-grid price-max">
+						<li>
+							<a href="#" title="">Precio Máx<span class="arrow">&nbsp;</span></a>
+							<ul class="clearfix">
+								<li><a href="#" title="">300€</a></li>
+								<li><a href="#" title="">350€</a></li>
+								<li><a href="#" title="">400€</a></li>
+								<li><a href="#" title="">450€</a></li>
+								<li><a href="#" title="">500€</a></li>
+								<li><a href="#" title="">550€</a></li>
+								<li><a href="#" title="">600€</a></li>
+								<li><a href="#" title="">650€</a></li>
+								<li><a href="#" title="">700€</a></li>
+								<li><a href="#" title="">750€</a></li>
+							</ul>
+						</li>
 					</ul>
 					
-					<ul class="mod-select size-max">
-						<li><a href="#" title="">Hasta m²<span class="arrow">&nbsp;</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-					</ul>
+					<a class="more-filters selected" href="#" title=""><span>&nbsp;</span><span>&nbsp;</span></a>
 					
 					<ul class="list-type">
 						<?php $selected = ($data['list_type'] === 'grid') ? ' selected' : ''; ?>
@@ -137,6 +215,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</a>
 						</li>
 					</ul>
+					
 					<ul class="mod-select order">
 						<li><a href="#" title="">Ordenar<span class="arrow">&nbsp;</span></a></li>
 						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>

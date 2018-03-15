@@ -26,15 +26,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		-->
 		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
 		
-		<script type="text/javascript" src="/qhabito/js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="/qhabito/js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/qhabito/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
 		<script type="text/javascript" src="/qhabito/js/rent.js"></script>
 	</head>
 <body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
-	<div class="main rent-detail">
+	<div class="main rent-detail has-modal">
 		<!-- HEADER / BEGIN -->
 		<div class="header clearfix">
 			<div class="top-bar">
@@ -183,6 +182,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 		<!-- FOOTER / END -->
+		<!-- MODAL REPORT / BEGIN -->
+		<div class="mod-modal report visible">
+			<div class="wrap">
+				<a class="close-button" href="#" title=""><span class="icon-close">&nbsp;</span></a>
+				<div class="content">hi</div>
+			</div>
+		</div>
+		<!-- MODAL REPORT  / END -->
 	</div>
 	<!-- MAIN / END -->
 	<!-- COOKIES / BEGIN -->
@@ -193,13 +200,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<a class="button" href="#" title=""><span>Cerrar</span><span>Cerrar</span></a>
 	</div>
 	<!-- COOKIES / END -->
-	<!-- MODAL REPORT / BEGIN -->
-	<div class="mod-modal report visible">
-		<div class="wrapper">
-			<a class="close-button" href="#" title=""><span class="icon-close">&nbsp;</span></a>
-			<div class="content">hi</div>
-		</div>
-	</div>
-	<!-- MODAL REPORT  / END -->
 </body>
 </html>

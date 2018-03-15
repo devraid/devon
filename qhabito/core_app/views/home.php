@@ -27,8 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<link href="/qhabito/css/application.css" media="screen" rel="stylesheet" type="text/css" />
 		
-		<script type="text/javascript" src="/qhabito/js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="/qhabito/js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/qhabito/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
 	</head>
