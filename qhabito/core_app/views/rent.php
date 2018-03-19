@@ -58,8 +58,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="content">
 			<div class="wrap">
 				
-				<div class="filters more clearfix">
-					<div class="wrapper">
+				<div class="filters selection mod-tags-cloud clearfix">
+					<div class="wrapper clearfix">
+						<h1>Filtros aplicados:</h1>
+					</div>
+				</div>
+				
+				<div class="filters more active clearfix">
+					<div class="wrapper clearfix">
 						<ul class="mod-select bathrooms">
 							<li><a href="#" title="">Baños<span class="arrow">&nbsp;</span></a></li>
 							<li><a href="#" title="">1 ó más</a></li>
@@ -132,7 +138,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li><a href="#" title="">Planta Intermedia</a></li>
 							<li><a href="#" title="">Última Planta</a></li>
 						</ul>
-						
+					
+						<div class="mod-grid-tags-cloud clearfix">
+							<h1>Otros:</h1>
+							<ul class="clearfix">
+								<li><a class="item" href="#" title="" data-ref="mgtca">Ascensor</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcb">Acceso para discapacitados</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcc">Portería</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcd">Videoportero</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtce">Lavandería</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcf">Gimnasio</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcg">Piscina</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtch">Garaje privado</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtci">Garaje comunitario</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcj">Aire acondicionado</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtck">Calefacción central</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcl">Comunidad incluída</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcm">Balcón</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcn">Patio</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtco">Terraza</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcp">Suelos de marmol</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcq">Parquet o tarima</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcr">Lavadora</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcs">Secadora</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtct">Lavavajillas</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcu">Horno</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcv">Closets</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcw">Armarios empotrados</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcx">Jacuzzi</a></li>
+								<li><a class="item" href="#" title="" data-ref="mgtcy">Hidromasaje</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				

@@ -62,7 +62,7 @@ var QHABITO = window.QHABITO || {};
 				$('.mod-select-grid').each(function() {
 					var select = $(this);
 					var length = Math.round($('ul li', select).length / 2);
-					console.log(length);
+					//console.log(length);
 					select.data('height', '' + (57+(length*40))); // 57 is the first li. 40 are next ones
 					$('li:eq(0) a', select).on('click', function() {
 						var self = $(this);
@@ -83,23 +83,38 @@ var QHABITO = window.QHABITO || {};
 						return false;
 					});
 				});
-			},/*
-			modSelectGrid : function() {
-				$('.mod-select-grid').each(function() {
-					var select = $(this);
-					$('li:eq(0) a', select).on('click', function() {
-						var self = $(this);
-						self.blur();
-						var closest = self.closest('.mod-select-grid');
-						setTimeout(function() {
-							$('.mod-select').not(closest).removeAttr('style');
-							$('.mod-select-grid').not(closest).removeClass('active');
-						}, 500);
-						closest.toggleClass('active');
-						return false;
-					});
+			}/*,
+			modGridTagsCloud : function() {
+				QHABITO.common.target.on('click', '.mod-grid-tags-cloud a.item', function() {
+					var self = $(this);
+					self.blur();
+
+					self.toggleClass('checked');
+
+					// Change event
+					self.change();
+
+					return false;
 				});
-			}*/
+			},
+			modTagsCloud : function() {
+				QHABITO.common.target.on('click', '.mod-tags-cloud a.item', function() {
+					var self = $(this);
+					self.blur();
+
+					var closest = self.closest('.mod-tags-cloud');
+					var item = $('a.item', closest);
+					if (item.length === 1) {
+						closest.removeClass('active');
+					}
+					//self.remove();
+
+					// Change event
+					self.change();
+
+					return false;
+				});
+			}*/,
 			modSliderThumbs : function() {
 				$('.mod-slider-thumbs .slider').slick({
 					infinite : true,
@@ -141,14 +156,20 @@ var QHABITO = window.QHABITO || {};
 				// Cookies
 				QHABITO.common.setCookies();
 				
-				// Module select
+				// Module
 				QHABITO.common.modSelect();
 				
-				// Module range
+				// Module
 				QHABITO.common.modSelectGrid();
 				
-				// Module slider and thumbs
+				// Module
 				QHABITO.common.modSliderThumbs();
+				
+				// Module
+				//QHABITO.common.modTagsCloud();
+				
+				// Module
+				//QHABITO.common.modGridTagsCloud();
 				
 				// Navigation
 				/*QHABITO.common.target.on('scroll', function() {

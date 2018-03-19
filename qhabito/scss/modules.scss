@@ -9,6 +9,105 @@
 	background-color: $colorc;
 }
 
+// CLOUD ITEMS
+.mod-tags-cloud,
+.mod-grid-tags-cloud {
+	
+	h1 {
+		clear: both;
+		font-family: 'ProximaNova-Bold';
+		font-weight: bold;
+		font-style: normal;
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+	
+	h1, .item {
+		float: left;
+		color: $colorc;
+		line-height: 29px;
+		margin: 0 8px 8px 0;
+	}
+	
+	ul {
+		clear: both;
+	}
+	
+	ul, li {
+		width: 100%;
+		height: auto;
+	}
+	
+	li {
+		float: left;
+		width: calc(1/5*100%);
+		
+		a {
+			width: calc(100% - 8px);
+		}
+	}
+	
+	.item {
+		font-size: 0.85rem;
+		font-family: 'ProximaNova-Regular';
+		font-weight: normal;
+		font-style: normal;
+		padding: 0 8px 0 27px;
+		text-decoration: none;
+		background-image: url(../css/images/image-0004.png);
+		background-position: 0px -60px;
+		background-repeat: no-repeat;
+		background-color: $coloro;
+		border: $colorj solid 1px;
+		text-overflow: ellipsis;
+		min-width: 100px;
+		white-space: nowrap;
+		overflow: hidden;
+		display: block;
+		
+		// Transition
+		-webkit-transition: color 0.25s ease, background-color 0.25s ease;
+		-moz-transition: color 0.25s ease, background-color 0.25s ease;
+		-ms-transition: color 0.25s ease, background-color 0.25s ease;
+		-o-transition: color 0.25s ease, background-color 0.25s ease;
+		transition: color 0.25s ease, background-color 0.25s ease;
+		
+		// Border radius
+		//border-radius: 3px;
+		
+		@include on-hover {
+			color: $colorg;
+			background-color: $colora;
+			background-position: 0px -90px;
+		}
+	}
+}
+.mod-grid-tags-cloud {
+	width: calc(100% + 8px);
+	
+	.item {
+		margin: 0 0px 8px 0;
+		padding: 0 8px 0 27px;
+		background-image: url(../css/images/image-0004.png);
+		background-color: $colora;
+		background-position: 0px 0px;
+		border: $coloro solid 1px;
+		
+		@include on-hover {
+			//color: $colorc;
+			background-position: 0px -30px;
+		}
+		
+		&.checked,
+		&.checked:focus {
+			color: $colorc;
+			background-color: $coloro;
+			background-position: 0px -60px;
+			border: $colorj solid 1px;
+		}
+	}
+}
+
 // GRID
 .mod-grid {
 	display: flex;
@@ -680,9 +779,20 @@
 	.mod-grid .item {
 		width: calc(1/2*100% - (1 - 1/2)*20px);
 	}
+	// CLOUD ITEMS
+	.mod-grid-tags-cloud {
+		li {
+			width: calc(1/4*100%);
+		}
+	}
 }
 @media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
-	// TBD
+	// CLOUD ITEMS
+	.mod-grid-tags-cloud {
+		li {
+			width: calc(1/3*100%);
+		}
+	}
 }
 @media (max-device-width: 767px), (max-width: 767px) { // up to 767px
 	// GRID
@@ -693,7 +803,18 @@
 	.mod-top-big-poster {
 		height: calc(100% - 100px);
 	}
+	// CLOUD ITEMS
+	.mod-grid-tags-cloud {
+		li {
+			width: calc(1/2*100%);
+		}
+	}
 }
 @media (max-device-width: 680px), (max-width: 680px) { // up to 680px
-	// TBD
+	// CLOUD ITEMS
+	.mod-grid-tags-cloud {
+		li {
+			width: 100%;
+		}
+	}
 }
