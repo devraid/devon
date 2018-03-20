@@ -868,6 +868,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 .mod-tags-cloud h1,
 .mod-grid-tags-cloud h1 {
   clear: both;
+  line-height: 31px;
   font-family: 'ProximaNova-Bold';
   font-weight: bold;
   font-style: normal;
@@ -879,7 +880,6 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 .mod-grid-tags-cloud .item {
   float: left;
   color: #6789B2;
-  line-height: 29px;
   margin: 0 8px 8px 0;
 }
 .mod-tags-cloud ul,
@@ -903,6 +903,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 }
 .mod-tags-cloud .item,
 .mod-grid-tags-cloud .item {
+  line-height: 29px;
   font-size: 0.85rem;
   font-family: 'ProximaNova-Regular';
   font-weight: normal;

@@ -44,7 +44,7 @@ var QHABITO = window.QHABITO || {};
 					self.toggleClass('checked');
 					if (self.hasClass('checked')) {
 						if (!$('a.item[data-ref="' + self.data('ref') + '"]', cloud).length) {
-							cloud.append(self.clone());
+							cloud.append(self.clone().attr('class', 'item extra'));
 							if (!cloud.parent().hasClass('active')) {
 								cloud.parent().addClass('active');
 							}
