@@ -1562,7 +1562,7 @@ body.desktop .mod-slider-thumbs .thumbs li a:not(.disabled):hover span:last-of-t
     width: calc(1/2*100%);
   }
 }
-@media (max-device-width: 680px), (max-width: 680px) {
+@media (max-device-width: 480px), (max-width: 480px) {
   .mod-grid-tags-cloud li {
     width: 100%;
   }

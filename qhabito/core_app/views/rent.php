@@ -149,6 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<li><a class="item" href="#" title="" data-ref="lavanderia">Lavandería</a></li>
 								<li><a class="item" href="#" title="" data-ref="gimnasio">Gimnasio</a></li>
 								<li><a class="item" href="#" title="" data-ref="piscina">Piscina</a></li>
+								<li><a class="item" href="#" title="" data-ref="trastero">Trastero</a></li>
 								<li><a class="item" href="#" title="" data-ref="garaje-privado">Garaje privado</a></li>
 								<li><a class="item" href="#" title="" data-ref="garaje-comunitario">Garaje comunitario</a></li>
 								<li><a class="item" href="#" title="" data-ref="aire-acondicionado">Aire acondicionado</a></li>
@@ -167,6 +168,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<li><a class="item" href="#" title="" data-ref="armarios-empotrados">Armarios empotrados</a></li>
 								<li><a class="item" href="#" title="" data-ref="jacuzzi">Jacuzzi</a></li>
 								<li><a class="item" href="#" title="" data-ref="hidromasaje">Hidromasaje</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-farmacia">Cerca: Farmacia</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-supermercado">Cerca: Supermercado</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-parque-infantil">Cerca: Parque infantil</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-colegio">Cerca: Colegio</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-instituto">Cerca: Instituto</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-universidad">Cerca: Universidad</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-autobus">Cerca: Autobús</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-metro">Cerca: Metro</a></li>
+								<li><a class="item" href="#" title="" data-ref="cerca-tren">Cerca: Tren</a></li>
 							</ul>
 						</div>
 					</div>
