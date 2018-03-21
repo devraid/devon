@@ -66,14 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				<div class="filters more active clearfix">
 					<div class="wrapper clearfix">
-						<ul class="mod-select bathrooms">
-							<li><a href="#" title="">Baños<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">1 ó más</a></li>
-							<li><a href="#" title="">2 ó más</a></li>
-							<li><a href="#" title="">3 ó más</a></li>
-							<li><a href="#" title="">4 ó más</a></li>
-						</ul>
-
+						
 						<ul class="mod-select-grid size-min">
 							<li>
 								<a href="#" title="">Tamaño Mín<span class="arrow">&nbsp;</span></a>
@@ -110,8 +103,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</li>
 						</ul>
 
-						<ul class="mod-select equipment">
-							<li><a href="#" title="">Equipamiento<span class="arrow">&nbsp;</span></a></li>
+						<ul class="mod-select bathrooms">
+							<li><a href="#" title="">Baños<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">1 ó más</a></li>
+							<li><a href="#" title="">2 ó más</a></li>
+							<li><a href="#" title="">3 ó más</a></li>
+							<li><a href="#" title="">4 ó más</a></li>
+						</ul>
+						
+						<ul class="mod-select furniture">
+							<li><a href="#" title="">Mobiliario<span class="arrow">&nbsp;</span></a></li>
 							<li><a href="#" title="">Amueblado</a></li>
 							<li><a href="#" title="">Semiamueblado</a></li>
 							<li><a href="#" title="">Sólo Cocina</a></li>

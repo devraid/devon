@@ -872,7 +872,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   font-family: 'ProximaNova-Bold';
   font-weight: bold;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
 }
 .mod-tags-cloud h1, .mod-tags-cloud .item,
@@ -941,7 +941,7 @@ body.desktop .mod-tags-cloud .item:not(.disabled):hover, body.desktop .mod-tags-
 }
 
 .mod-grid-tags-cloud {
-  width: calc(100% + 8px);
+  width: 100%;
 }
 .mod-grid-tags-cloud .item {
   margin: 0 0px 8px 0;
@@ -1160,7 +1160,7 @@ body.desktop .mod-modal .wrap a.close-button:not(.disabled):hover span, body.des
 .mod-select-grid,
 .mod-select-grid * {
   width: auto;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-decoration: none;
   text-align: left;
   display: block;
@@ -1200,12 +1200,16 @@ body.desktop .mod-modal .wrap a.close-button:not(.disabled):hover span, body.des
   border-top: #E4E5E6 solid 1px;
   border-left: #E4E5E6 solid 1px;
   border-right: #E4E5E6 solid 1px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   padding: 0 40px 0 15px;
   position: relative;
   top: 0;
   left: 0;
   color: #6789B2;
+  text-overflow: ellipsis;
+  min-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 body.desktop .mod-select-grid li a:not(.disabled):hover, body.desktop .mod-select-grid li a:not(.disabled):active, body.desktop .mod-select-grid li a:not(.disabled):focus, .mod-select-grid li a:not(.disabled).selected {
   color: inherit !important;
@@ -1259,6 +1263,8 @@ body.desktop .mod-select-grid li a:not(.disabled):hover, body.desktop .mod-selec
   width: 100%;
   text-align: center;
   padding: 0;
+  min-width: 0;
+  white-space: normal;
 }
 body.desktop .mod-select-grid:not(.disabled):hover ul, body.desktop .mod-select-grid:not(.disabled):hover li, body.desktop .mod-select-grid:not(.disabled):hover a, body.desktop .mod-select-grid:not(.disabled):active ul, body.desktop .mod-select-grid:not(.disabled):active li, body.desktop .mod-select-grid:not(.disabled):active a, body.desktop .mod-select-grid:not(.disabled):focus ul, body.desktop .mod-select-grid:not(.disabled):focus li, body.desktop .mod-select-grid:not(.disabled):focus a, .mod-select-grid:not(.disabled).selected ul, .mod-select-grid:not(.disabled).selected li, .mod-select-grid:not(.disabled).selected a {
   border-color: #C7C7C7;
@@ -1280,7 +1286,7 @@ body.desktop .mod-select-grid:not(.disabled):hover ul, body.desktop .mod-select-
   width: auto;
   height: 40px;
   line-height: 40px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-decoration: none;
   text-align: left;
   display: block;
@@ -1333,7 +1339,7 @@ body.desktop .mod-select li a:not(.disabled):hover, body.desktop .mod-select li 
 .mod-select li:first-of-type, .mod-select li:first-of-type a {
   height: 57px;
   line-height: 57px;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .mod-select li:first-of-type a {
   position: relative;
@@ -1343,6 +1349,10 @@ body.desktop .mod-select li a:not(.disabled):hover, body.desktop .mod-select li 
   text-transform: uppercase;
   font-family: 'ProximaNova-Bold';
   font-weight: bold;
+  text-overflow: ellipsis;
+  min-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .mod-select li:first-of-type span.arrow {
   position: absolute;
@@ -1806,10 +1816,19 @@ body.desktop .rent .filters .list-type:not(.disabled):hover, body.desktop .rent 
 .rent .filters.selection.active {
   max-height: 250px;
 }
+.rent .filters.more .wrapper {
+  width: calc(100% + 21px);
+}
+.rent .filters.more .wrapper .mod-select,
+.rent .filters.more .wrapper .mod-select-grid {
+  width: calc(1/7*100% - 20px);
+}
 .rent .filters.more.active {
   max-height: 1000px;
 }
 .rent .filters.more .mod-grid-tags-cloud {
+  clear: both;
+  width: calc(100% - 12px);
   padding-bottom: 12px;
 }
 
@@ -2030,9 +2049,20 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   padding: 30px 30px 8% 30px;
 }
 
+@media (max-device-width: 1439px), (max-width: 1439px) {
+  .rent .filters.more .wrapper .mod-select,
+  .rent .filters.more .wrapper .mod-select-grid {
+    width: calc(1/5*100% - 20px);
+  }
+}
 @media (max-device-width: 1200px), (max-width: 1200px) {
   .rent .mod-grid.list .details {
     padding: 30px 30px 10% 30px;
+  }
+
+  .rent .filters.more .wrapper .mod-select,
+  .rent .filters.more .wrapper .mod-select-grid {
+    width: calc(1/4*100% - 20px);
   }
 }
 @media (max-device-width: 1024px), (max-width: 1024px) {
@@ -2047,6 +2077,12 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     position: relative;
     clear: both;
     width: 100%;
+  }
+}
+@media (max-device-width: 900px), (max-width: 900px) {
+  .rent .filters.more .wrapper .mod-select,
+  .rent .filters.more .wrapper .mod-select-grid {
+    width: calc(1/3*100% - 20px);
   }
 }
 @media (max-device-width: 768px), (max-width: 768px) {
@@ -2071,6 +2107,18 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     clear: both;
     position: relative;
     padding: 5%;
+  }
+}
+@media (max-device-width: 640px), (max-width: 640px) {
+  .rent .filters.more .wrapper .mod-select,
+  .rent .filters.more .wrapper .mod-select-grid {
+    width: calc(1/2*100% - 20px);
+  }
+}
+@media (max-device-width: 480px), (max-width: 480px) {
+  .rent .filters.more .wrapper .mod-select,
+  .rent .filters.more .wrapper .mod-select-grid {
+    width: calc(1/1*100% - 20px);
   }
 }
 .rent-detail .wrap {

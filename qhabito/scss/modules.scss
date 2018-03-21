@@ -19,7 +19,7 @@
 		font-family: 'ProximaNova-Bold';
 		font-weight: bold;
 		font-style: normal;
-		font-size: 1rem;
+		font-size: 0.95rem;
 		text-transform: uppercase;
 	}
 	
@@ -84,7 +84,7 @@
 	}
 }
 .mod-grid-tags-cloud {
-	width: calc(100% + 8px);
+	width: 100%;
 	
 	.item {
 		margin: 0 0px 8px 0;
@@ -332,7 +332,7 @@
 .mod-select-grid,
 .mod-select-grid * {
 	width: auto;
-	font-size: 1rem;
+	font-size: 0.95rem;
 	text-decoration: none;
 	text-align: left;
 	display: block;
@@ -375,12 +375,16 @@
 		border-top: $coloro solid 1px;
 		border-left: $coloro solid 1px;
 		border-right: $coloro solid 1px;
-		font-size: 1rem;
+		font-size: 0.95rem;
 		padding: 0 40px 0 15px;
 		position: relative;
 		top: 0;
 		left: 0;
 		color: $colorc;
+		text-overflow: ellipsis;
+		min-width: 100px;
+		white-space: nowrap;
+		overflow: hidden;
 		
 		@include on-hover {
 			color: inherit!important;
@@ -436,6 +440,8 @@
 				width: 100%;
 				text-align: center;
 				padding: 0;
+				min-width: 0;
+				white-space: normal;
 			}
 		}
 	}
@@ -466,7 +472,7 @@
 	width: auto;
 	height: 40px;
 	line-height: 40px;
-	font-size: 1rem;
+	font-size: 0.95rem;
 	text-decoration: none;
 	text-align: left;
 	display: block;
@@ -524,7 +530,7 @@
 			&, & a {
 				height: 57px;
 				line-height: 57px;
-				font-size: 1rem;
+				font-size: 0.95rem;
 			}
 
 			& a {
@@ -535,6 +541,10 @@
 				text-transform: uppercase;
 				font-family: 'ProximaNova-Bold';
 				font-weight: bold;
+				text-overflow: ellipsis;
+				min-width: 100px;
+				white-space: nowrap;
+				overflow: hidden;
 			}
 
 			span.arrow {
