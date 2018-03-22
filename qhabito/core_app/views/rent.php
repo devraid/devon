@@ -67,6 +67,64 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="filters more active clearfix">
 					<div class="wrapper clearfix">
 						
+						<ul class="mod-select-grid property">
+							<li>
+								<a href="#" title="">Tipo<span class="arrow">&nbsp;</span></a>
+								<ul class="clearfix">
+									<li><a href="#" title="">Piso</a></li>
+									<li><a href="#" title="">Ático</a></li>
+									<li><a href="#" title="">Dúplex</a></li>
+									<li><a href="#" title="">Estudio</a></li>
+									<li><a href="#" title="">Loft</a></li>
+									<li><a href="#" title="">Casa o Chalet</a></li>
+								</ul>
+							</li>
+						</ul>
+					
+						<ul class="mod-select rooms">
+							<li><a href="#" title="">Habitaciones<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">1 ó más</a></li>
+							<li><a href="#" title="">2 ó más</a></li>
+							<li><a href="#" title="">3 ó más</a></li>
+							<li><a href="#" title="">4 ó más</a></li>
+						</ul>
+					
+						<ul class="mod-select-grid price-min">
+							<li>
+								<a href="#" title="">Precio Mín<span class="arrow">&nbsp;</span></a>
+								<ul class="clearfix">
+									<li><a href="#" title="">300€</a></li>
+									<li><a href="#" title="">350€</a></li>
+									<li><a href="#" title="">400€</a></li>
+									<li><a href="#" title="">450€</a></li>
+									<li><a href="#" title="">500€</a></li>
+									<li><a href="#" title="">550€</a></li>
+									<li><a href="#" title="">600€</a></li>
+									<li><a href="#" title="">650€</a></li>
+									<li><a href="#" title="">700€</a></li>
+									<li><a href="#" title="">750€</a></li>
+								</ul>
+							</li>
+						</ul>
+					
+						<ul class="mod-select-grid price-max">
+							<li>
+								<a href="#" title="">Precio Máx<span class="arrow">&nbsp;</span></a>
+								<ul class="clearfix">
+									<li><a href="#" title="">300€</a></li>
+									<li><a href="#" title="">350€</a></li>
+									<li><a href="#" title="">400€</a></li>
+									<li><a href="#" title="">450€</a></li>
+									<li><a href="#" title="">500€</a></li>
+									<li><a href="#" title="">550€</a></li>
+									<li><a href="#" title="">600€</a></li>
+									<li><a href="#" title="">650€</a></li>
+									<li><a href="#" title="">700€</a></li>
+									<li><a href="#" title="">750€</a></li>
+								</ul>
+							</li>
+						</ul>
+						
 						<ul class="mod-select-grid size-min">
 							<li>
 								<a href="#" title="">Tamaño Mín<span class="arrow">&nbsp;</span></a>

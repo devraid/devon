@@ -1831,6 +1831,12 @@ body.desktop .rent .filters .list-type:not(.disabled):hover, body.desktop .rent 
   width: calc(100% - 12px);
   padding-bottom: 12px;
 }
+.rent .filters.more .mod-select-grid.property,
+.rent .filters.more .mod-select.rooms,
+.rent .filters.more .mod-select-grid.price-min,
+.rent .filters.more .mod-select-grid.price-max {
+  display: none;
+}
 
 .rent .mod-grid {
   padding-bottom: 30px;
@@ -2060,9 +2066,22 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     padding: 30px 30px 10% 30px;
   }
 
+  .rent .filters .mod-select-grid.property,
+  .rent .filters .mod-select.rooms,
+  .rent .filters .mod-select-grid.price-min,
+  .rent .filters .mod-select-grid.price-max {
+    display: none;
+  }
+
   .rent .filters.more .wrapper .mod-select,
   .rent .filters.more .wrapper .mod-select-grid {
     width: calc(1/4*100% - 20px);
+  }
+  .rent .filters.more .wrapper .mod-select-grid.property,
+  .rent .filters.more .wrapper .mod-select.rooms,
+  .rent .filters.more .wrapper .mod-select-grid.price-min,
+  .rent .filters.more .wrapper .mod-select-grid.price-max {
+    display: block;
   }
 }
 @media (max-device-width: 1024px), (max-width: 1024px) {

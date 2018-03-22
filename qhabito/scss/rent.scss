@@ -300,7 +300,17 @@
 			width: calc(100% - 12px);
 			padding-bottom: 12px;
 		}
+		
+		// HIDE SOME FILTERS
+		.mod-select-grid.property,
+		.mod-select.rooms,
+		.mod-select-grid.price-min,
+		.mod-select-grid.price-max {
+			display: none;
+			
+		}
 	}
+	
 }
 
 // RENT : GRID (GRID TYPE)
@@ -605,6 +615,17 @@
 			padding: 30px 30px 10% 30px;
 		}
 	}
+	// RENT : FILTERS
+	.rent .filters {
+			
+		// HIDE SOME FILTERS
+		.mod-select-grid.property,
+		.mod-select.rooms,
+		.mod-select-grid.price-min,
+		.mod-select-grid.price-max {
+			display: none;
+		}
+	}
 	// RENT : FILTERS : MORE
 	.rent .filters.more {
 		
@@ -614,6 +635,15 @@
 			.mod-select,
 			.mod-select-grid {
 				width: calc(1/4*100% - 20px);
+			}
+			
+			// HIDE SOME FILTERS
+			.mod-select-grid.property,
+			.mod-select.rooms,
+			.mod-select-grid.price-min,
+			.mod-select-grid.price-max {
+				display: block;
+
 			}
 		}
 	}
