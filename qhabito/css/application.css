@@ -2061,15 +2061,12 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     width: calc(1/5*100% - 20px);
   }
 }
-@media (max-device-width: 1200px), (max-width: 1200px) {
+@media (max-device-width: 1280px), (max-width: 1280px) {
   .rent .mod-grid.list .details {
     padding: 30px 30px 10% 30px;
   }
 
-  .rent .filters .mod-select-grid.property,
-  .rent .filters .mod-select.rooms,
-  .rent .filters .mod-select-grid.price-min,
-  .rent .filters .mod-select-grid.price-max {
+  .rent .filters .mod-select.rooms {
     display: none;
   }
 
@@ -2077,10 +2074,7 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   .rent .filters.more .wrapper .mod-select-grid {
     width: calc(1/4*100% - 20px);
   }
-  .rent .filters.more .wrapper .mod-select-grid.property,
-  .rent .filters.more .wrapper .mod-select.rooms,
-  .rent .filters.more .wrapper .mod-select-grid.price-min,
-  .rent .filters.more .wrapper .mod-select-grid.price-max {
+  .rent .filters.more .wrapper .mod-select.rooms {
     display: block;
   }
 }
@@ -2096,6 +2090,17 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
     position: relative;
     clear: both;
     width: 100%;
+  }
+}
+@media (max-device-width: 1023px), (max-width: 1023px) {
+  .rent .filters .mod-select-grid.price-min,
+  .rent .filters .mod-select-grid.price-max {
+    display: none;
+  }
+
+  .rent .filters.more .wrapper .mod-select-grid.price-min,
+  .rent .filters.more .wrapper .mod-select-grid.price-max {
+    display: block;
   }
 }
 @media (max-device-width: 900px), (max-width: 900px) {
@@ -2129,9 +2134,16 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
 }
 @media (max-device-width: 640px), (max-width: 640px) {
+  .rent .filters .mod-select-grid.property {
+    display: none;
+  }
+
   .rent .filters.more .wrapper .mod-select,
   .rent .filters.more .wrapper .mod-select-grid {
     width: calc(1/2*100% - 20px);
+  }
+  .rent .filters.more .wrapper .mod-select-grid.property {
+    display: block;
   }
 }
 @media (max-device-width: 480px), (max-width: 480px) {

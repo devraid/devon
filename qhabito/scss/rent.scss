@@ -606,7 +606,7 @@
 		}
 	}
 }
-@media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
+@media (max-device-width: 1280px), (max-width: 1280px) { // up to 1280px
 	// RENT : GRID (LIST TYPE)
 	.rent .mod-grid.list {
 
@@ -619,10 +619,10 @@
 	.rent .filters {
 			
 		// HIDE SOME FILTERS
-		.mod-select-grid.property,
-		.mod-select.rooms,
-		.mod-select-grid.price-min,
-		.mod-select-grid.price-max {
+		//.mod-select-grid.property,
+		.mod-select.rooms {
+		//.mod-select-grid.price-min,
+		//.mod-select-grid.price-max {
 			display: none;
 		}
 	}
@@ -638,12 +638,11 @@
 			}
 			
 			// HIDE SOME FILTERS
-			.mod-select-grid.property,
-			.mod-select.rooms,
-			.mod-select-grid.price-min,
-			.mod-select-grid.price-max {
+			//.mod-select-grid.property,
+			.mod-select.rooms {
+			//.mod-select-grid.price-min,
+			//.mod-select-grid.price-max {
 				display: block;
-
 			}
 		}
 	}
@@ -668,6 +667,29 @@
 			position: relative;
 			clear: both;
 			width: 100%;
+		}
+	}
+}
+@media (max-device-width: 1023px), (max-width: 1023px) { // up to 1023px
+	// RENT : FILTERS
+	.rent .filters {
+			
+		// HIDE SOME FILTERS
+		.mod-select-grid.price-min,
+		.mod-select-grid.price-max {
+			display: none;
+		}
+	}
+	// RENT : FILTERS : MORE
+	.rent .filters.more {
+		
+		.wrapper {
+			
+			// HIDE SOME FILTERS
+			.mod-select-grid.price-min,
+			.mod-select-grid.price-max {
+				display: block;
+			}
 		}
 	}
 }
@@ -724,6 +746,14 @@
 	}
 }
 @media (max-device-width: 640px), (max-width: 640px) { // up to 640px
+	// RENT : FILTERS
+	.rent .filters {
+			
+		// HIDE SOME FILTERS
+		.mod-select-grid.property {
+			display: none;
+		}
+	}
 	// RENT : FILTERS : MORE
 	.rent .filters.more {
 		
@@ -733,6 +763,11 @@
 			.mod-select,
 			.mod-select-grid {
 				width: calc(1/2*100% - 20px);
+			}
+			
+			// HIDE SOME FILTERS
+			.mod-select-grid.property {
+				display: block;
 			}
 		}
 	}
