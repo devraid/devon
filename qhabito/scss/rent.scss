@@ -14,40 +14,39 @@
 		// ORDER
 		&.order {
 			float: right;
+			margin-right: 0;
 		}
 	}
 	
 	// MORE FILTERS BUTTON
 	a.more-filters {
-		border-top: $colorj solid 1px;
 		border-bottom: $colorj solid 1px;
 		border-left: $colorj solid 1px;
 		border-right: $colorj solid 1px;
+		position: relative;
+		top: -24px;
+		left: 0;
 		
 		&, span {
-			position: relative;
-			top: 0;
-			left: 0;
 			margin-right: 20px;
 			float: left;
 			font-size: 0;
 			text-decoration: none;
 			width: 60px;
-			height: 57px;
+			height: 81px;
 			line-height: 57px;
 			background-image: url(../css/images/image-0003.png);
 			background-position: -62px bottom;
 			background-repeat: no-repeat;
-			background-color: #FFFFFF;
+			background-color: $colorm;
 			display: block;
 		}
 		
 		span {
 			margin-right: 0;
 			position: absolute;
-			top: -1px;
+			top: 0;
 			left: -1px;
-			border-top: $coloro solid 1px;
 			border-bottom: $coloro solid 1px;
 			border-left: $coloro solid 1px;
 			border-right: $coloro solid 1px;
@@ -66,16 +65,11 @@
 			opacity: 0;
 		}
 		&.selected span:last-of-type {
-			top: auto;
-			bottom: -1px;
 			opacity: 1 !important;
-			border-top: none;
 			border-bottom: $coloro solid 1px;
 			border-left: $coloro solid 1px;
 			border-right: $coloro solid 1px;
-			background-color: $colorm;
 			cursor: pointer;
-			height: 81px; // 77px + 4px border
 		}
 		
 		@include on-hover {
@@ -286,18 +280,18 @@
 			// SELECTS ALL
 			.mod-select,
 			.mod-select-grid {
-				width: calc(1/7*100% - 20px);
+				width: calc(1/7*99.99% - 20px);
 			}
 		}
 		
 		&.active {
-			max-height: 1000px;
+			max-height: none;
 		}
 		
 		// CLOUD ITEMS
 		.mod-grid-tags-cloud {
 			clear: both;
-			width: calc(100% - 12px);
+			width: calc(100% - 2px);
 			padding-bottom: 12px;
 		}
 		
@@ -524,7 +518,10 @@
 	.rent .filters .list-type {
 		display: block;
 	}
-	
+	// RENT : FILTERS : ORDER
+	.rent .filters .mod-select.order {
+		margin-right: 20px;
+	}
 	// RENT : GRID (LIST TYPE)
 	.rent .mod-grid.list {
 
@@ -583,14 +580,7 @@
 	}
 }
 @media (max-device-width: 1440px), (max-width: 1440px) { // up to 1440px
-	// RENT : FILTERS : MORE
-	.rent .filters.more {
-		
-		.wrapper {
-			
-			
-		}
-	}
+	// TBD
 }
 @media (max-device-width: 1439px), (max-width: 1439px) { // up to 1439px
 	// RENT : FILTERS : MORE
@@ -702,7 +692,7 @@
 			// SELECTS ALL
 			.mod-select,
 			.mod-select-grid {
-				width: calc(1/3*100% - 20px);
+				width: calc(1/3*99.99% - 20px);
 			}
 		}
 	}

@@ -64,12 +64,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				
-				<div class="filters more active clearfix">
+				<div class="filters more clearfix">
 					<div class="wrapper clearfix">
 						
 						<ul class="mod-select-grid property">
 							<li>
-								<a href="#" title="">Tipo<span class="arrow">&nbsp;</span></a>
+								<a href="#" title="">Tipo de Vivienda<span class="arrow">&nbsp;</span></a>
 								<ul class="clearfix">
 									<li><a href="#" title="">Piso</a></li>
 									<li><a href="#" title="">Ático</a></li>
@@ -79,14 +79,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<li><a href="#" title="">Casa o Chalet</a></li>
 								</ul>
 							</li>
-						</ul>
-					
-						<ul class="mod-select rooms">
-							<li><a href="#" title="">Habitaciones<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">1 ó más</a></li>
-							<li><a href="#" title="">2 ó más</a></li>
-							<li><a href="#" title="">3 ó más</a></li>
-							<li><a href="#" title="">4 ó más</a></li>
 						</ul>
 					
 						<ul class="mod-select-grid price-min">
@@ -161,6 +153,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</li>
 						</ul>
 
+						<ul class="mod-select rooms">
+							<li><a href="#" title="">Habitaciones<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="">1 ó más</a></li>
+							<li><a href="#" title="">2 ó más</a></li>
+							<li><a href="#" title="">3 ó más</a></li>
+							<li><a href="#" title="">4 ó más</a></li>
+						</ul>
+						
 						<ul class="mod-select bathrooms">
 							<li><a href="#" title="">Baños<span class="arrow">&nbsp;</span></a></li>
 							<li><a href="#" title="">1 ó más</a></li>
@@ -300,7 +300,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</li>
 					</ul>
 					
-					<a class="more-filters selected" href="#" title=""><span>&nbsp;</span><span>&nbsp;</span></a>
+					<a class="more-filters" href="#" title=""><span>&nbsp;</span><span>&nbsp;</span></a>
 					
 					<ul class="list-type">
 						<?php $selected = ($data['list_type'] === 'grid') ? ' selected' : ''; ?>

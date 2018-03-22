@@ -83,38 +83,7 @@ var QHABITO = window.QHABITO || {};
 						return false;
 					});
 				});
-			}/*,
-			modGridTagsCloud : function() {
-				QHABITO.common.target.on('click', '.mod-grid-tags-cloud a.item', function() {
-					var self = $(this);
-					self.blur();
-
-					self.toggleClass('checked');
-
-					// Change event
-					self.change();
-
-					return false;
-				});
 			},
-			modTagsCloud : function() {
-				QHABITO.common.target.on('click', '.mod-tags-cloud a.item', function() {
-					var self = $(this);
-					self.blur();
-
-					var closest = self.closest('.mod-tags-cloud');
-					var item = $('a.item', closest);
-					if (item.length === 1) {
-						closest.removeClass('active');
-					}
-					//self.remove();
-
-					// Change event
-					self.change();
-
-					return false;
-				});
-			}*/,
 			modSliderThumbs : function() {
 				$('.mod-slider-thumbs .slider').slick({
 					infinite : true,

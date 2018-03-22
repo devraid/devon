@@ -43,7 +43,7 @@
 		width: calc(1/5*100%);
 		
 		a {
-			width: calc(100% - 8px);
+			width: calc(100% - 18px);
 		}
 	}
 	
@@ -785,7 +785,7 @@
 @media (max-device-width: 1440px), (max-width: 1440px) { // up to 1440px
 	// TBD
 }
-@media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
+@media (max-device-width: 1280px), (max-width: 1280px) { // up to 1280px
 	// GRID
 	.mod-grid .item {
 		width: calc(1/2*100% - (1 - 1/2)*20px);
@@ -798,6 +798,9 @@
 	}
 }
 @media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
+	// TBD
+}
+@media (max-device-width: 900px), (max-width: 900px) { // up to 900px
 	// CLOUD ITEMS
 	.mod-grid-tags-cloud {
 		li {
@@ -814,15 +817,14 @@
 	.mod-top-big-poster {
 		height: calc(100% - 100px);
 	}
+}
+@media (max-device-width: 640px), (max-width: 640px) { // up to 640px
 	// CLOUD ITEMS
 	.mod-grid-tags-cloud {
 		li {
 			width: calc(1/2*100%);
 		}
 	}
-}
-@media (max-device-width: 680px), (max-width: 680px) { // up to 680px
-	// TBD
 }
 @media (max-device-width: 480px), (max-width: 480px) { // up to 480px
 	// CLOUD ITEMS

@@ -73,6 +73,28 @@ var QHABITO = window.QHABITO || {};
 
 					return false;
 				});
+				
+				// Show/hide filters
+				var filters_more = $('.filters.more');
+				$('.filters').on('click', 'a.more-filters', function() {
+					var self = $(this);
+					self.blur();
+
+					filters_more.css('max-height', ($('.wrapper', filters_more).height() + 24) + 'px'); // margin + border
+					if (self.hasClass('selected')) {
+						setTimeout(function() {
+							filters_more.css('max-height', '0px');
+						}, 250);
+					}
+					setTimeout(function() {
+						filters_more.removeAttr('style');
+					}, 500);
+					
+					filters_more.toggleClass('active');
+					self.toggleClass('selected');
+
+					return false;
+				});
 			},
 			init : function() {
 				// Cookies: Grid or list

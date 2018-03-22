@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$colorj".
-        on line 22 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss
+        on line 23 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss
 
-17: 		}
-18: 	}
-19: 	
-20: 	// MORE FILTERS BUTTON
-21: 	a.more-filters {
-22: 		border-top: $colorj solid 1px;
+18: 		}
+19: 	}
+20: 	
+21: 	// MORE FILTERS BUTTON
+22: 	a.more-filters {
 23: 		border-bottom: $colorj solid 1px;
 24: 		border-left: $colorj solid 1px;
 25: 		border-right: $colorj solid 1px;
-26: 		
-27: 		&, span {
+26: 		position: relative;
+27: 		top: -24px;
+28: 		left: 0;
 
 Backtrace:
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss:22
+D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss:23
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -76,4 +76,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorj\".\A         on line 22 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss\A \A 17: 		}\A 18: 	}\A 19: 	\A 20: 	// MORE FILTERS BUTTON\A 21: 	a.more-filters {\A 22: 		border-top: $colorj solid 1px;\A 23: 		border-bottom: $colorj solid 1px;\A 24: 		border-left: $colorj solid 1px;\A 25: 		border-right: $colorj solid 1px;\A 26: 		\A 27: 		&, span {"; }
+  content: "Error: Undefined variable: \"$colorj\".\A         on line 23 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent.scss\A \A 18: 		}\A 19: 	}\A 20: 	\A 21: 	// MORE FILTERS BUTTON\A 22: 	a.more-filters {\A 23: 		border-bottom: $colorj solid 1px;\A 24: 		border-left: $colorj solid 1px;\A 25: 		border-right: $colorj solid 1px;\A 26: 		position: relative;\A 27: 		top: -24px;\A 28: 		left: 0;"; }
