@@ -38,7 +38,7 @@ var QHABITO = window.QHABITO || {};
 					var select = $(this);
 					var length = $('li', select).length;
 					select.data('height', '' + (57+((length-1)*40))); // 57 is the first li. 40 are next ones
-					$('li:eq(0) a', select).on('click', function() {
+					$('li:first-child a', select).on('click', function() {
 						var self = $(this);
 						self.blur();
 						var closest = self.closest('.mod-select');
@@ -55,6 +55,14 @@ var QHABITO = window.QHABITO || {};
 						}
 						closest.toggleClass('active');
 						return false;
+					});
+					//
+					select.on('close', function() {
+						$('.mod-select').removeAttr('style');
+						$('.mod-select').removeClass('active');
+					});
+					select.on('reset', function() {
+						$('li:eq(1) a', $(this)).trigger('click');
 					});
 				});
 			},

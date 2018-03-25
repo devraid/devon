@@ -1255,6 +1255,7 @@ body.desktop .mod-select-grid li a:not(.disabled):hover, body.desktop .mod-selec
   border-top: #E4E5E6 solid 1px;
   display: flex;
   flex-basis: 50%;
+  min-width: 0;
 }
 .mod-select-grid ul li a {
   border-top: none;
@@ -1264,7 +1265,7 @@ body.desktop .mod-select-grid li a:not(.disabled):hover, body.desktop .mod-selec
   text-align: center;
   padding: 0;
   min-width: 0;
-  white-space: normal;
+  padding: 0 5px 0 5px;
 }
 body.desktop .mod-select-grid:not(.disabled):hover ul, body.desktop .mod-select-grid:not(.disabled):hover li, body.desktop .mod-select-grid:not(.disabled):hover a, body.desktop .mod-select-grid:not(.disabled):active ul, body.desktop .mod-select-grid:not(.disabled):active li, body.desktop .mod-select-grid:not(.disabled):active a, body.desktop .mod-select-grid:not(.disabled):focus ul, body.desktop .mod-select-grid:not(.disabled):focus li, body.desktop .mod-select-grid:not(.disabled):focus a, .mod-select-grid:not(.disabled).selected ul, .mod-select-grid:not(.disabled).selected li, .mod-select-grid:not(.disabled).selected a {
   border-color: #C7C7C7;
@@ -1316,11 +1317,14 @@ body.desktop .mod-select-grid:not(.disabled):hover ul, body.desktop .mod-select-
 }
 .mod-select li a {
   color: #6789B2;
-  padding: 0 40px 0 15px;
+  padding: 0 15px 0 15px;
   font-family: 'ProximaNova-Regular';
   font-weight: normal;
   font-style: normal;
   font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   -webkit-transition: color 0.25s ease;
   -moz-transition: color 0.25s ease;
   -ms-transition: color 0.25s ease;
@@ -1349,10 +1353,6 @@ body.desktop .mod-select li a:not(.disabled):hover, body.desktop .mod-select li 
   text-transform: uppercase;
   font-family: 'ProximaNova-Bold';
   font-weight: bold;
-  text-overflow: ellipsis;
-  min-width: 100px;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .mod-select li:first-of-type span.arrow {
   position: absolute;
@@ -1651,9 +1651,6 @@ body.desktop .mod-slider-thumbs .thumbs li a:not(.disabled):hover span:last-of-t
 }
 .rent .filters a.more-filters.selected span:last-of-type {
   opacity: 1 !important;
-  border-bottom: #E4E5E6 solid 1px;
-  border-left: #E4E5E6 solid 1px;
-  border-right: #E4E5E6 solid 1px;
   cursor: pointer;
 }
 body.desktop .rent .filters a.more-filters:not(.disabled):hover span, body.desktop .rent .filters a.more-filters:not(.disabled):active span, body.desktop .rent .filters a.more-filters:not(.disabled):focus span, .rent .filters a.more-filters:not(.disabled).selected span {
@@ -2059,6 +2056,9 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   .rent .filters.more .wrapper .mod-select-grid {
     width: calc(1/5*100% - 20px);
   }
+  .rent .filters.more .wrapper .mod-select.pets {
+    clear: both;
+  }
 }
 @media (max-device-width: 1280px), (max-width: 1280px) {
   .rent .mod-grid.list .details {
@@ -2075,6 +2075,12 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
   .rent .filters.more .wrapper .mod-select.rooms {
     display: block;
+  }
+  .rent .filters.more .wrapper .mod-select.equipment {
+    clear: both;
+  }
+  .rent .filters.more .wrapper .mod-select.pets {
+    clear: none;
   }
 }
 @media (max-device-width: 1024px), (max-width: 1024px) {
@@ -2101,11 +2107,27 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   .rent .filters.more .wrapper .mod-select-grid.price-max {
     display: block;
   }
+  .rent .filters.more .wrapper .mod-select.pets,
+  .rent .filters.more .wrapper .mod-select.rooms {
+    clear: both;
+  }
+  .rent .filters.more .wrapper .mod-select.equipment {
+    clear: none;
+  }
 }
 @media (max-device-width: 900px), (max-width: 900px) {
   .rent .filters.more .wrapper .mod-select,
   .rent .filters.more .wrapper .mod-select-grid {
     width: calc(1/3*99.99% - 20px);
+  }
+  .rent .filters.more .wrapper .mod-select-grid.size-max,
+  .rent .filters.more .wrapper .mod-select.equipment,
+  .rent .filters.more .wrapper .mod-select.level {
+    clear: both;
+  }
+  .rent .filters.more .wrapper .mod-select.rooms,
+  .rent .filters.more .wrapper .mod-select.pets {
+    clear: none;
   }
 }
 @media (max-device-width: 768px), (max-width: 768px) {
@@ -2136,6 +2158,9 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   .rent .filters .mod-select-grid.property {
     display: none;
   }
+  .rent .filters a.more-filters.selected span:last-of-type {
+    border-left: #FFFFFF solid 1px;
+  }
 
   .rent .filters.more .wrapper .mod-select,
   .rent .filters.more .wrapper .mod-select-grid {
@@ -2143,6 +2168,14 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
   .rent .filters.more .wrapper .mod-select-grid.property {
     display: block;
+  }
+  .rent .filters.more .wrapper .mod-select-grid.price-max,
+  .rent .filters.more .wrapper .mod-select.bathrooms,
+  .rent .filters.more .wrapper .mod-select.state {
+    clear: both;
+  }
+  .rent .filters.more .wrapper .mod-select.equipment {
+    clear: none;
   }
 }
 @media (max-device-width: 480px), (max-width: 480px) {

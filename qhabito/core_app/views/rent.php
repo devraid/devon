@@ -152,90 +152,100 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 							</li>
 						</ul>
-
-						<ul class="mod-select rooms">
+						
+						<ul class="mod-select rooms" data-ref="rooms">
 							<li><a href="#" title="">Habitaciones<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">1 ó más</a></li>
-							<li><a href="#" title="">2 ó más</a></li>
-							<li><a href="#" title="">3 ó más</a></li>
-							<li><a href="#" title="">4 ó más</a></li>
+							<li><a href="#" title="" data-ref="rooms" data-filter="" data-value="">Habitaciones</a></li>
+							<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-1-o-mas" data-value="1 ó más habitaciones">1 ó más</a></li>
+							<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-2-o-mas" data-value="2 ó más habitaciones">2 ó más</a></li>
+							<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-3-o-mas" data-value="3 ó más habitaciones">3 ó más</a></li>
+							<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-4-o-mas" data-value="4 ó más habitaciones">4 ó más</a></li>
 						</ul>
 						
-						<ul class="mod-select bathrooms">
+						<ul class="mod-select bathrooms" data-ref="bathrooms">
 							<li><a href="#" title="">Baños<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">1 ó más</a></li>
-							<li><a href="#" title="">2 ó más</a></li>
-							<li><a href="#" title="">3 ó más</a></li>
-							<li><a href="#" title="">4 ó más</a></li>
+							<li><a href="#" title="" data-ref="bathrooms" data-filter="" data-value="">Baños</a></li>
+							<li><a href="#" title="" data-ref="bathrooms" data-filter="banos-1-o-mas" data-value="1 ó más baños">1 ó más</a></li>
+							<li><a href="#" title="" data-ref="bathrooms" data-filter="banos-2-o-mas" data-value="2 ó más baños">2 ó más</a></li>
+							<li><a href="#" title="" data-ref="bathrooms" data-filter="banos-3-o-mas" data-value="3 ó más baños">3 ó más</a></li>
+							<li><a href="#" title="" data-ref="bathrooms" data-filter="banos-4-o-mas" data-value="4 ó más baños">4 ó más</a></li>
 						</ul>
 						
-						<ul class="mod-select furniture">
-							<li><a href="#" title="">Mobiliario<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">Amueblado</a></li>
-							<li><a href="#" title="">Semiamueblado</a></li>
-							<li><a href="#" title="">Sólo Cocina</a></li>
+						<ul class="mod-select equipment" data-ref="equipment">
+							<li><a href="#" title="">Equipamiento<span class="arrow">&nbsp;</span></a></li>
+							<li><a href="#" title="" data-ref="equipment" data-filter="" data-value="">Mobiliario</a></li>
+							<li><a href="#" title="" data-ref="equipment" data-filter="amueblado" data-value="">Amueblado</a></li>
+							<li><a href="#" title="" data-ref="equipment" data-filter="sin-amueblar" data-value="">Sin amueblar</a></li>
+							<li><a href="#" title="" data-ref="equipment" data-filter="semiamueblado" data-value="">Semimueblado</a></li>
+							<li><a href="#" title="" data-ref="equipment" data-filter="solo-cocina" data-value="">Sólo cocina equipada</a></li>
 						</ul>
 
-						<ul class="mod-select state">
+						<ul class="mod-select state" data-ref="state">
 							<li><a href="#" title="">Estado<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">Nuevo</a></li>
-							<li><a href="#" title="">Buen Estado</a></li>
-							<li><a href="#" title="">A Reformar</a></li>
+							<li><a href="#" title="" data-ref="state" data-filter="" data-value="">Estado</a></li>
+							<li><a href="#" title="" data-ref="state" data-filter="como-nuevo" data-value="">Como nuevo</a></li>
+							<li><a href="#" title="" data-ref="state" data-filter="buen-estado" data-value="">Buen estado</a></li>
+							<li><a href="#" title="" data-ref="state" data-filter="obra-nueva" data-value="">Obra nueva</a></li>
+							<li><a href="#" title="" data-ref="state" data-filter="a-reformar" data-value="">A reformar</a></li>
 						</ul>
 
-						<ul class="mod-select pets">
+						<ul class="mod-select pets" data-ref="pets">
 							<li><a href="#" title="">Mascotas<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">Acepta</a></li>
-							<li><a href="#" title="">No Acepta</a></li>
-							<li><a href="#" title="">Acepta Gatos</a></li>
-							<li><a href="#" title="">Acepta Perros</a></li>
+							<li><a href="#" title="" data-ref="pets" data-filter="" data-value="">Mascotas</a></li>
+							<li><a href="#" title="" data-ref="pets" data-filter="mascotas" data-value="Acepta mascotas">Acepta</a></li>
+							<li><a href="#" title="" data-ref="pets" data-filter="no-mascotas" data-value="No acepta mascotas">No acepta</a></li>
+							<li><a href="#" title="" data-ref="pets" data-filter="solo-gatos" data-value="Sólo acepta gatos">Acepta gatos</a></li>
+							<li><a href="#" title="" data-ref="pets" data-filter="solo-perros" data-value="Sólo acepta perros">Acepta perros</a></li>
 						</ul>
 
-						<ul class="mod-select level">
+						<ul class="mod-select level" data-ref="level">
 							<li><a href="#" title="">Planta<span class="arrow">&nbsp;</span></a></li>
-							<li><a href="#" title="">Planta Baja</a></li>
-							<li><a href="#" title="">Planta Intermedia</a></li>
-							<li><a href="#" title="">Última Planta</a></li>
+							<li><a href="#" title="" data-ref="level" data-filter="" data-value="">Planta</a></li>
+							<li><a href="#" title="" data-ref="level" data-filter="sotano" data-value="">Sótano</a></li>
+							<li><a href="#" title="" data-ref="level" data-filter="planta-baja" data-value="">Planta baja</a></li>
+							<li><a href="#" title="" data-ref="level" data-filter="entreplanta" data-value="">Entreplanta</a></li>
+							<li><a href="#" title="" data-ref="level" data-filter="planta-intermedia" data-value="">Planta intermedia</a></li>
+							<li><a href="#" title="" data-ref="level" data-filter="ultima-planta" data-value="">Última planta</a></li>
 						</ul>
 					
 						<div class="mod-grid-tags-cloud clearfix">
 							<h1>Otras Características:</h1>
 							<ul class="clearfix">
-								<li><a class="item" href="#" title="" data-ref="ascensor">Ascensor</a></li>
-								<li><a class="item" href="#" title="" data-ref="accesible">Acceso para discapacitados</a></li>
-								<li><a class="item" href="#" title="" data-ref="porteria">Portería</a></li>
-								<li><a class="item" href="#" title="" data-ref="videoportero">Videoportero</a></li>
-								<li><a class="item" href="#" title="" data-ref="lavanderia">Lavandería</a></li>
-								<li><a class="item" href="#" title="" data-ref="gimnasio">Gimnasio</a></li>
-								<li><a class="item" href="#" title="" data-ref="piscina">Piscina</a></li>
-								<li><a class="item" href="#" title="" data-ref="trastero">Trastero</a></li>
-								<li><a class="item" href="#" title="" data-ref="garaje-privado">Garaje privado</a></li>
-								<li><a class="item" href="#" title="" data-ref="garaje-comunitario">Garaje comunitario</a></li>
-								<li><a class="item" href="#" title="" data-ref="aire-acondicionado">Aire acondicionado</a></li>
-								<li><a class="item" href="#" title="" data-ref="calefaccion-central">Calefacción central</a></li>
-								<li><a class="item" href="#" title="" data-ref="comunidad-incluida">Comunidad incluida</a></li>
-								<li><a class="item" href="#" title="" data-ref="balcon">Balcón</a></li>
-								<li><a class="item" href="#" title="" data-ref="patio">Patio</a></li>
-								<li><a class="item" href="#" title="" data-ref="terraza">Terraza</a></li>
-								<li><a class="item" href="#" title="" data-ref="suelo-marmol">Suelos de marmol</a></li>
-								<li><a class="item" href="#" title="" data-ref="parquet-tarima">Parquet o tarima</a></li>
-								<li><a class="item" href="#" title="" data-ref="lavadora">Lavadora</a></li>
-								<li><a class="item" href="#" title="" data-ref="secadora">Secadora</a></li>
-								<li><a class="item" href="#" title="" data-ref="lavavajillas">Lavavajillas</a></li>
-								<li><a class="item" href="#" title="" data-ref="horno">Horno</a></li>
-								<li><a class="item" href="#" title="" data-ref="closet">Closet</a></li>
-								<li><a class="item" href="#" title="" data-ref="armarios-empotrados">Armarios empotrados</a></li>
-								<li><a class="item" href="#" title="" data-ref="jacuzzi">Jacuzzi</a></li>
-								<li><a class="item" href="#" title="" data-ref="hidromasaje">Hidromasaje</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-farmacia">Cerca: Farmacia</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-supermercado">Cerca: Supermercado</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-parque-infantil">Cerca: Parque infantil</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-colegio">Cerca: Colegio</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-instituto">Cerca: Instituto</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-universidad">Cerca: Universidad</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-autobus">Cerca: Autobús</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-metro">Cerca: Metro</a></li>
-								<li><a class="item" href="#" title="" data-ref="cerca-tren">Cerca: Tren</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="ascensor">Ascensor</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="accesible">Acceso para discapacitados</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="porteria">Portería</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="videoportero">Videoportero</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="lavanderia">Lavandería</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="gimnasio">Gimnasio</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="piscina">Piscina</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="trastero">Trastero</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="garaje-privado">Garaje privado</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="garaje-comunitario">Garaje comunitario</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="aire-acondicionado">Aire acondicionado</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="calefaccion-central">Calefacción central</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="comunidad-incluida">Comunidad incluida</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="balcon">Balcón</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="patio">Patio</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="terraza">Terraza</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="suelo-marmol">Suelos de marmol</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="parquet-tarima">Parquet o tarima</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="lavadora">Lavadora</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="secadora">Secadora</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="lavavajillas">Lavavajillas</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="horno">Horno</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="closet">Closet</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="armarios-empotrados">Armarios empotrados</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="jacuzzi">Jacuzzi</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="hidromasaje">Hidromasaje</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-farmacia">Cerca: Farmacia</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-supermercado">Cerca: Supermercado</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-parque-infantil">Cerca: Parque infantil</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-colegio">Cerca: Colegio</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-instituto">Cerca: Instituto</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-universidad">Cerca: Universidad</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-autobus">Cerca: Autobús</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-metro">Cerca: Metro</a></li>
+								<li><a class="item" href="#" title="" data-ref="extra" data-filter="cerca-tren">Cerca: Tren</a></li>
 							</ul>
 						</div>
 					</div>
@@ -256,12 +266,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</li>
 					</ul>
 					
-					<ul class="mod-select rooms">
+					<ul class="mod-select rooms" data-ref="rooms">
 						<li><a href="#" title="">Habitaciones<span class="arrow">&nbsp;</span></a></li>
-						<li><a href="#" title="">1 ó más</a></li>
-						<li><a href="#" title="">2 ó más</a></li>
-						<li><a href="#" title="">3 ó más</a></li>
-						<li><a href="#" title="">4 ó más</a></li>
+						<li><a href="#" title="" data-ref="rooms" data-filter="" data-value="">Habitaciones</a></li>
+						<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-1-o-mas" data-value="1 ó más habitaciones">1 ó más</a></li>
+						<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-2-o-mas" data-value="2 ó más habitaciones">2 ó más</a></li>
+						<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-3-o-mas" data-value="3 ó más habitaciones">3 ó más</a></li>
+						<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-4-o-mas" data-value="4 ó más habitaciones">4 ó más</a></li>
 					</ul>
 					
 					<ul class="mod-select-grid price-min">
@@ -321,13 +332,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</li>
 					</ul>
 					
-					<ul class="mod-select order">
-						<li><a href="#" title="">Ordenar<span class="arrow">&nbsp;</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
-						<li><a href="#" title=""><span>Lorem ipsum</span></a></li>
+					<ul class="mod-select order" data-ref="order">
+						<li><a href="#" title="">Relevancia<span class="arrow">&nbsp;</span></a></li>
+						<li><a href="#" title="" data-ref="order" data-filter="" data-value="">Relevancia</a></li>
+						<li><a href="#" title="" data-ref="order" data-filter="orden-recientes" data-value="">Más recientes</a></li>
+						<li><a href="#" title="" data-ref="order" data-filter="orden-antiguos" data-value="">Más antiguos</a></li>
+						<li><a href="#" title="" data-ref="order" data-filter="orden-menor-precio" data-value="">Menor precio</a></li>
+						<li><a href="#" title="" data-ref="order" data-filter="orden-mayor-precio" data-value="">Mayor precio</a></li>
+						<li><a href="#" title="" data-ref="order" data-filter="orden-a-z" data-value="">A - Z</a></li>
+						<li><a href="#" title="" data-ref="order" data-filter="orden-z-a" data-value="">Z - A</a></li>
 					</ul>
 				</div>
 				

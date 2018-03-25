@@ -66,9 +66,6 @@
 		}
 		&.selected span:last-of-type {
 			opacity: 1 !important;
-			border-bottom: $coloro solid 1px;
-			border-left: $coloro solid 1px;
-			border-right: $coloro solid 1px;
 			cursor: pointer;
 		}
 		
@@ -593,6 +590,11 @@
 			.mod-select-grid {
 				width: calc(1/5*100% - 20px);
 			}
+			
+			// Avoid move right on select open
+			.mod-select.pets {
+				clear: both;
+			}
 		}
 	}
 }
@@ -609,10 +611,7 @@
 	.rent .filters {
 			
 		// HIDE SOME FILTERS
-		//.mod-select-grid.property,
 		.mod-select.rooms {
-		//.mod-select-grid.price-min,
-		//.mod-select-grid.price-max {
 			display: none;
 		}
 	}
@@ -628,11 +627,18 @@
 			}
 			
 			// HIDE SOME FILTERS
-			//.mod-select-grid.property,
 			.mod-select.rooms {
-			//.mod-select-grid.price-min,
-			//.mod-select-grid.price-max {
 				display: block;
+			}
+			
+			// Avoid move right on select open
+			.mod-select.equipment {
+				clear: both;
+			}
+			
+			// Reset: Avoid move right on select open
+			.mod-select.pets {
+				clear: none;
 			}
 		}
 	}
@@ -680,6 +686,17 @@
 			.mod-select-grid.price-max {
 				display: block;
 			}
+			
+			// Avoid move right on select open
+			.mod-select.pets,
+			.mod-select.rooms {
+				clear: both;
+			}
+			
+			// Reset: Avoid move right on select open
+			.mod-select.equipment {
+				clear: none;
+			}
 		}
 	}
 }
@@ -693,6 +710,19 @@
 			.mod-select,
 			.mod-select-grid {
 				width: calc(1/3*99.99% - 20px);
+			}
+			
+			// Avoid move right on select open
+			.mod-select-grid.size-max,
+			.mod-select.equipment,
+			.mod-select.level {
+				clear: both;
+			}
+			
+			// Reset: Avoid move right on select open
+			.mod-select.rooms,
+			.mod-select.pets {
+				clear: none;
 			}
 		}
 	}
@@ -743,6 +773,13 @@
 		.mod-select-grid.property {
 			display: none;
 		}
+		
+		// MORE FILTERS BUTTON
+		a.more-filters {
+			&.selected span:last-of-type {
+				border-left: $colora solid 1px;
+			}
+		}
 	}
 	// RENT : FILTERS : MORE
 	.rent .filters.more {
@@ -758,6 +795,18 @@
 			// HIDE SOME FILTERS
 			.mod-select-grid.property {
 				display: block;
+			}
+			
+			// Avoid move right on select open
+			.mod-select-grid.price-max,
+			.mod-select.bathrooms,
+			.mod-select.state {
+				clear: both;
+			}
+			
+			// Reset: Avoid move right on select open
+			.mod-select.equipment {
+				clear: none;
 			}
 		}
 	}
