@@ -9,7 +9,6 @@
 	.mod-select {
 		float: left;
 		margin-right: 20px;
-		margin-bottom: 20px;
 		
 		// ORDER
 		&.order {
@@ -28,8 +27,9 @@
 		border-bottom: $colorj solid 1px;
 		border-left: $colorj solid 1px;
 		border-right: $colorj solid 1px;
+		margin-top: -4px;
 		position: relative;
-		top: -24px;
+		top: -20px;
 		left: 0;
 		
 		&, span {
@@ -96,6 +96,7 @@
 		float: right;
 		height: 57px;
 		border: $coloro solid 1px;
+		margin-bottom: 20px;
 		display: none;
 		
 		// Transition
@@ -794,6 +795,7 @@
 			.mod-select,
 			.mod-select-grid {
 				width: calc(1/2*100% - 20px);
+				min-width: 0;
 			}
 			
 			// HIDE SOME FILTERS

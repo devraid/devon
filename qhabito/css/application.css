@@ -868,7 +868,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 .mod-tags-cloud h1,
 .mod-grid-tags-cloud h1 {
   clear: both;
-  line-height: 31px;
+  line-height: 32px;
   font-family: 'ProximaNova-Bold';
   font-weight: bold;
   font-style: normal;
@@ -903,7 +903,7 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
 }
 .mod-tags-cloud .item,
 .mod-grid-tags-cloud .item {
-  line-height: 29px;
+  line-height: 30px;
   font-size: 0.85rem;
   font-family: 'ProximaNova-Regular';
   font-weight: normal;
@@ -1305,6 +1305,7 @@ body.desktop .mod-select-grid:not(.disabled):hover ul, body.desktop .mod-select-
   height: 57px;
   overflow: hidden;
   background-color: #FFFFFF;
+  margin-bottom: 20px;
   -webkit-transition: height 0.25s ease;
   -moz-transition: height 0.25s ease;
   -ms-transition: height 0.25s ease;
@@ -1608,7 +1609,6 @@ body.desktop .mod-slider-thumbs .thumbs li a:not(.disabled):hover span:last-of-t
 .rent .filters .mod-select {
   float: left;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 .rent .filters .mod-select.order {
   float: right;
@@ -1621,8 +1621,9 @@ body.desktop .mod-slider-thumbs .thumbs li a:not(.disabled):hover span:last-of-t
   border-bottom: #C7C7C7 solid 1px;
   border-left: #C7C7C7 solid 1px;
   border-right: #C7C7C7 solid 1px;
+  margin-top: -4px;
   position: relative;
-  top: -24px;
+  top: -20px;
   left: 0;
 }
 .rent .filters a.more-filters, .rent .filters a.more-filters span {
@@ -1683,6 +1684,7 @@ body.desktop .rent .filters a.more-filters:not(.disabled):hover span, body.deskt
   float: right;
   height: 57px;
   border: #E4E5E6 solid 1px;
+  margin-bottom: 20px;
   display: none;
   -webkit-transition: border-color 0.25s ease;
   -moz-transition: border-color 0.25s ease;
@@ -2175,6 +2177,7 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   .rent .filters.more .wrapper .mod-select,
   .rent .filters.more .wrapper .mod-select-grid {
     width: calc(1/2*100% - 20px);
+    min-width: 0;
   }
   .rent .filters.more .wrapper .mod-select-grid.property {
     display: block;
@@ -2447,4 +2450,81 @@ body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):hover, 
   .rent-detail .wrapper .padded {
     padding: 5%;
   }
+}
+.favorites .filters .options,
+.favorites .filters .options * {
+  float: left;
+  height: 57px;
+  line-height: 57px;
+  width: auto;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+}
+.favorites .filters .options {
+  margin-bottom: 20px;
+}
+.favorites .filters .options li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.favorites .filters .options li a, .favorites .filters .options li span {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+}
+.favorites .filters .options li a span {
+  padding: 0 15px 0 15px;
+  color: #6789B2;
+  display: block;
+}
+.favorites .filters .options li a span:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+}
+.favorites .filters .options li a span:first-of-type:after {
+  border-top: #E4E5E6 solid 1px;
+  border-bottom: #E4E5E6 solid 1px;
+  border-left: #E4E5E6 solid 1px;
+  border-right: #E4E5E6 solid 1px;
+}
+.favorites .filters .options li a span:last-of-type {
+  position: absolute;
+  opacity: 0;
+  background-color: #FFFFFF;
+  color: #33BAF1;
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  -ms-transition: opacity 0.25s ease;
+  -o-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.favorites .filters .options li a span:last-of-type:after {
+  border-top: #C7C7C7 solid 4px;
+  border-bottom: #C7C7C7 solid 4px;
+  border-left: #C7C7C7 solid 4px;
+  border-right: #C7C7C7 solid 4px;
+}
+.favorites .filters .options li a.selected span {
+  background-color: #33BAF1;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.favorites .filters .options li a.selected span:after {
+  border-color: #33BAF1;
+}
+body.desktop .favorites .filters .options li a:not(.disabled):hover span:last-of-type, body.desktop .favorites .filters .options li a:not(.disabled):active span:last-of-type, body.desktop .favorites .filters .options li a:not(.disabled):focus span:last-of-type, .favorites .filters .options li a:not(.disabled).selected span:last-of-type {
+  opacity: 1;
+}
+.favorites .filters .options li a:not(.disabled).selected {
+  cursor: default;
 }

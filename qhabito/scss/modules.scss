@@ -15,7 +15,7 @@
 	
 	h1 {
 		clear: both;
-		line-height: 31px;
+		line-height: 32px;
 		font-family: 'ProximaNova-Bold';
 		font-weight: bold;
 		font-style: normal;
@@ -48,7 +48,7 @@
 	}
 	
 	.item {
-		line-height: 29px;
+		line-height: 30px;
 		font-size: 0.85rem;
 		font-family: 'ProximaNova-Regular';
 		font-weight: normal;
@@ -491,6 +491,7 @@
 	height: 57px;
 	overflow: hidden;
 	background-color: $colora;
+	margin-bottom: 20px;
 	
 	// Transition
 	-webkit-transition: height 0.25s ease;
@@ -532,7 +533,7 @@
 			transition: color 0.25s ease;
 
 			@include on-hover {
-				color: inherit!important;
+				color: inherit !important;
 			}
 		}
 		

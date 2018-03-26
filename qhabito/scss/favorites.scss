@@ -1,0 +1,99 @@
+// FAVORITES : FILTERS
+.favorites .filters {
+	
+	// OPTIONS
+	.options,
+	.options * {
+		float: left;
+		height: 57px;
+		line-height: 57px;
+		width: auto;
+		font-size: 0.95rem;
+		text-decoration: none;
+		text-align: left;
+		display: block;
+	}
+	.options {
+		margin-bottom: 20px;
+		
+		li {
+			margin-right: 20px;
+			margin-bottom: 20px;
+			
+			a, span {
+				position: relative;
+				top: 0;
+				left: 0;
+				text-transform: uppercase;
+				font-family: 'ProximaNova-Bold';
+				font-weight: bold;
+				font-style: normal;
+			}
+			
+			a {
+				
+				span {
+					padding: 0 15px 0 15px;
+					color: $colorc;
+					display: block;
+					
+					&:after {
+						position: absolute;
+						top: 0;
+						left: 0;
+						height: 100%;
+						width: 100%;
+						content: '';
+					}
+				}
+				
+				span:first-of-type {
+					&:after {
+						border-top: $coloro solid 1px;
+						border-bottom: $coloro solid 1px;
+						border-left: $coloro solid 1px;
+						border-right: $coloro solid 1px;
+					}
+				}
+				
+				span:last-of-type {
+					position: absolute;
+					opacity: 0;
+					background-color: $colora;
+					color: $colorg;
+					
+					// Transition
+					-webkit-transition: opacity 0.25s ease;
+					-moz-transition: opacity 0.25s ease;
+					-ms-transition: opacity 0.25s ease;
+					-o-transition: opacity 0.25s ease;
+					transition: opacity 0.25s ease;
+					
+					&:after {
+						border-top: $colorj solid 4px;
+						border-bottom: $colorj solid 4px;
+						border-left: $colorj solid 4px;
+						border-right: $colorj solid 4px;
+					}
+				}
+				
+				&.selected span {
+					background-color: $colorg;
+					color: $colora;
+					opacity: 1;
+					
+					&:after {
+						border-color: $colorg;
+					}
+				}
+				
+				@include on-hover {
+					span:last-of-type {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	
+}

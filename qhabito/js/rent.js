@@ -82,10 +82,18 @@ var QHABITO = window.QHABITO || {};
 						item.removeClass('checked');
 					} else {
 						$('.mod-select[data-ref="' + self.data('ref') + '"]').each(function() {
-							$('li:eq(0) a', $(this)).html('' + $('li:eq(1) a', $(this)).text() + '<span class="arrow">&nbsp;</span>');
+							var mod = $(this);
+							var mod_item = $('li:eq(1) > a', mod);
+							var alt_value = mod_item.data('value');
+							if (alt_value) { } else { alt_value = mod_item.text(); }
+							$('li:eq(0) > a', mod).html('' + alt_value + '<span class="arrow">&nbsp;</span>');
 						});
 						$('.mod-select-grid[data-ref="' + self.data('ref') + '"]').each(function() {
-							$('li:eq(0) > a', $(this)).html('' + $('li:eq(1) > a', $(this)).text() + '<span class="arrow">&nbsp;</span>');
+							var mod = $(this);
+							var mod_item = $('li:eq(1) > a', mod);
+							var alt_value = mod_item.data('value');
+							if (alt_value) { } else { alt_value = mod_item.text(); }
+							$('li:eq(0) > a', mod).html('' + alt_value + '<span class="arrow">&nbsp;</span>');
 						});
 					}
 					self.remove();
