@@ -18,6 +18,11 @@
 		}
 	}
 	
+	// SELECT GRID
+	.mod-select-grid.property {
+		min-width: 200px;
+	}
+	
 	// MORE FILTERS BUTTON
 	a.more-filters {
 		border-bottom: $colorj solid 1px;
@@ -298,7 +303,6 @@
 		.mod-select-grid.price-min,
 		.mod-select-grid.price-max {
 			display: none;
-			
 		}
 	}
 	

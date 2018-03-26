@@ -252,16 +252,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				
 				<div class="filters clearfix">
-					<ul class="mod-select-grid property">
+					<ul class="mod-select-grid property" data-ref="property">
 						<li>
 							<a href="#" title="">Tipo de Vivienda<span class="arrow">&nbsp;</span></a>
 							<ul class="clearfix">
-								<li><a href="#" title="">Piso</a></li>
-								<li><a href="#" title="">Ático</a></li>
-								<li><a href="#" title="">Dúplex</a></li>
-								<li><a href="#" title="">Estudio</a></li>
-								<li><a href="#" title="">Loft</a></li>
-								<li><a href="#" title="">Casa o Chalet</a></li>
+								<li><a href="#" title="" data-ref="property" data-filter="" data-value="">Tipo de Vivienda</a></li>
+								<li><a href="#" title="" data-ref="property" data-filter="piso" data-value="">Piso</a></li>
+								<li><a href="#" title="" data-ref="property" data-filter="atico" data-value="">Ático</a></li>
+								<li><a href="#" title="" data-ref="property" data-filter="duplex" data-value="">Dúplex</a></li>
+								<li><a href="#" title="" data-ref="property" data-filter="estudio" data-value="">Estudio</a></li>
+								<li><a href="#" title="" data-ref="property" data-filter="loft" data-value="">Loft</a></li>
+								<li><a href="#" title="" data-ref="property" data-filter="casa-o-chalet" data-value="">Casa o Chalet</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -275,20 +276,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<li><a href="#" title="" data-ref="rooms" data-filter="habitaciones-4-o-mas" data-value="4 ó más habitaciones">4 ó más</a></li>
 					</ul>
 					
-					<ul class="mod-select-grid price-min">
+					<ul class="mod-select-grid price-min" data-ref="price-min">
 						<li>
 							<a href="#" title="">Precio Mín<span class="arrow">&nbsp;</span></a>
 							<ul class="clearfix">
-								<li><a href="#" title="">300€</a></li>
-								<li><a href="#" title="">350€</a></li>
-								<li><a href="#" title="">400€</a></li>
-								<li><a href="#" title="">450€</a></li>
-								<li><a href="#" title="">500€</a></li>
-								<li><a href="#" title="">550€</a></li>
-								<li><a href="#" title="">600€</a></li>
-								<li><a href="#" title="">650€</a></li>
-								<li><a href="#" title="">700€</a></li>
-								<li><a href="#" title="">750€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="" data-value="">Precio Mín</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-300" data-value="Precio mín., 300€">300€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-350" data-value="Precio mín., 350€">350€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-400" data-value="Precio mín., 400€">400€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-450" data-value="Precio mín., 450€">450€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-500" data-value="Precio mín., 500€">500€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-550" data-value="Precio mín., 550€">550€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-600" data-value="Precio mín., 600€">600€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-650" data-value="Precio mín., 650€">650€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-700" data-value="Precio mín., 700€">700€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-750" data-value="Precio mín., 750€">750€</a></li>
 							</ul>
 						</li>
 					</ul>

@@ -940,6 +940,10 @@ body.desktop .mod-tags-cloud .item:not(.disabled):hover, body.desktop .mod-tags-
   cursor: default;
 }
 
+.mod-tags-cloud .item {
+  min-width: 0;
+}
+
 .mod-grid-tags-cloud {
   width: 100%;
 }
@@ -1266,6 +1270,9 @@ body.desktop .mod-select-grid li a:not(.disabled):hover, body.desktop .mod-selec
   padding: 0;
   min-width: 0;
   padding: 0 5px 0 5px;
+}
+.mod-select-grid ul li:first-of-type {
+  flex-basis: 100%;
 }
 body.desktop .mod-select-grid:not(.disabled):hover ul, body.desktop .mod-select-grid:not(.disabled):hover li, body.desktop .mod-select-grid:not(.disabled):hover a, body.desktop .mod-select-grid:not(.disabled):active ul, body.desktop .mod-select-grid:not(.disabled):active li, body.desktop .mod-select-grid:not(.disabled):active a, body.desktop .mod-select-grid:not(.disabled):focus ul, body.desktop .mod-select-grid:not(.disabled):focus li, body.desktop .mod-select-grid:not(.disabled):focus a, .mod-select-grid:not(.disabled).selected ul, .mod-select-grid:not(.disabled).selected li, .mod-select-grid:not(.disabled).selected a {
   border-color: #C7C7C7;
@@ -1606,6 +1613,9 @@ body.desktop .mod-slider-thumbs .thumbs li a:not(.disabled):hover span:last-of-t
 .rent .filters .mod-select.order {
   float: right;
   margin-right: 0;
+}
+.rent .filters .mod-select-grid.property {
+  min-width: 200px;
 }
 .rent .filters a.more-filters {
   border-bottom: #C7C7C7 solid 1px;

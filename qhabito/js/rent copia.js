@@ -40,59 +40,6 @@ var QHABITO = window.QHABITO || {};
 				var cloud_wrapper = $('.wrapper', cloud);
 				var grid_cloud = $('.mod-grid-tags-cloud');
 				
-				// Mod Tags Cloud
-				cloud.on('add', function(event, item) {
-					var self = item;
-					var cloud_items = $('a.item[data-ref="' + self.data('ref') + '"]', cloud);
-					if (self.data('filter') !== '') {
-						var cloud_item = $('a.item[data-filter="' + self.data('filter') + '"]', cloud);
-						var alt_value = self.data('value');
-						if (alt_value) { } else { alt_value = self.text(); }
-						if (!cloud_item.length) {
-							if (self.data('ref') !== 'extra') {
-								cloud_items.remove();
-							}
-							cloud_wrapper.append(self.clone().after(function() {
-								var item = $(this);
-								item.attr('class', 'item');
-								item.text(alt_value);
-							}));
-							if (!cloud.hasClass('active')) {
-								cloud.addClass('active');
-							}
-						}
-					} else {
-						cloud_items.remove();
-						if ($('a.item', cloud).length === 0) {
-							cloud.removeClass('active');
-						}
-					}
-				});
-				
-				cloud.on('click', 'a.item', function() {
-					var self = $(this);
-					self.blur();
-
-					if ($('a.item', cloud).length === 1) {
-						cloud.removeClass('active');
-					}
-					
-					var item = $('a.item[data-filter="' + self.data('filter') + '"]');
-					if (item.data('ref') === 'extra') {
-						item.removeClass('checked');
-					} else {
-						$('.mod-select[data-ref="' + self.data('ref') + '"]').each(function() {
-							$('li:eq(0) a', $(this)).html('' + $('li:eq(1) a', $(this)).text() + '<span class="arrow">&nbsp;</span>');
-						});
-						$('.mod-select-grid[data-ref="' + self.data('ref') + '"]').each(function() {
-							$('li:eq(0) > a', $(this)).html('' + $('li:eq(1) > a', $(this)).text() + '<span class="arrow">&nbsp;</span>');
-						});
-					}
-					self.remove();
-
-					return false;
-				});
-				
 				// Mod Grid Tags Cloud
 				grid_cloud.on('click', 'a.item', function() {
 					var self = $(this);
@@ -100,26 +47,31 @@ var QHABITO = window.QHABITO || {};
 
 					self.toggleClass('checked');
 					if (self.hasClass('checked')) {
-						if (!$('a.item[data-filter="' + self.data('filter') + '"]', cloud).length) {
-							cloud.trigger('add', [self]);
+						if (!$('a.item[data-ref="' + self.data('ref') + '"]', cloud).length) {
+							cloud_wrapper.append(self.clone().attr('class', 'item extra'));
+							if (!cloud.hasClass('active')) {
+								cloud.addClass('active');
+							}
 						}
 					} else {
-						$('a.item[data-filter="' + self.data('filter') + '"]', cloud).trigger('click');
+						$('a.item[data-ref="' + self.data('ref') + '"]', cloud).trigger('click');
 					}
 
 					return false;
 				});
 				
-				// Selects
-				$('.mod-select li:not(:first-child) a').on('selected', function() {
+				// Mod Tags Cloud
+				cloud.on('click', 'a.item', function() {
 					var self = $(this);
-					cloud.trigger('add', [self]);
-				});
-				
-				// Grid selects
-				$('.mod-select-grid ul li a').on('selected', function() {
-					var self = $(this);
-					cloud.trigger('add', [self]);
+					self.blur();
+
+					if ($('a.item', cloud).length === 1) {
+						cloud.removeClass('active');
+					}
+					$('a.item[data-ref="' + self.data('ref') + '"]', grid_cloud).removeClass('checked');
+					self.remove();
+
+					return false;
 				});
 				
 				// Show/hide filters
@@ -137,10 +89,9 @@ var QHABITO = window.QHABITO || {};
 					setTimeout(function() {
 						filters_more.removeAttr('style');
 					}, 500);
-					setTimeout(function() {
-						self.toggleClass('selected');
-					}, 250);
+					
 					filters_more.toggleClass('active');
+					self.toggleClass('selected');
 
 					return false;
 				});

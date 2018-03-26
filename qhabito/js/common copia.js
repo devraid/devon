@@ -38,7 +38,7 @@ var QHABITO = window.QHABITO || {};
 					var select = $(this);
 					var length = $('li', select).length;
 					select.data('height', '' + (57+((length-1)*40))); // 57 is the first li. 40 are next ones
-					$('li a', select).on('click', function() {
+					$('li:eq(0) a', select).on('click', function() {
 						var self = $(this);
 						self.blur();
 						var closest = self.closest('.mod-select');
@@ -54,24 +54,6 @@ var QHABITO = window.QHABITO || {};
 							closest.css('height', closest.data('height') + 'px');
 						}
 						closest.toggleClass('active');
-						
-						if (self.data('ref')) {
-							var has_changed = true;
-							var alt_value = self.data('value');
-							if (alt_value) { } else { alt_value = self.text(); }
-							$('.mod-select[data-ref="' + self.data('ref') + '"]').each(function() {
-								var item = $('li:eq(0) a', $(this));
-								var new_value = '' + alt_value + '<span class="arrow">&nbsp;</span>';
-								if(item.html() !== new_value) {
-									item.html(new_value);
-									if(has_changed === true) {
-										has_changed = false;
-										self.trigger('selected');
-									}		
-								}
-							});
-						}
-						
 						return false;
 					});
 				});
@@ -80,8 +62,9 @@ var QHABITO = window.QHABITO || {};
 				$('.mod-select-grid').each(function() {
 					var select = $(this);
 					var length = Math.round($('ul li', select).length / 2);
+					//console.log(length);
 					select.data('height', '' + (57+(length*40))); // 57 is the first li. 40 are next ones
-					$('li a', select).on('click', function() {
+					$('li:eq(0) a', select).on('click', function() {
 						var self = $(this);
 						self.blur();
 						var closest = self.closest('.mod-select-grid');
@@ -97,24 +80,6 @@ var QHABITO = window.QHABITO || {};
 							closest.css('height', closest.data('height') + 'px');
 						}
 						closest.toggleClass('active');
-						
-						if (self.data('ref')) {
-							var has_changed = true;
-							var alt_value = self.data('value');
-							if (alt_value) { } else { alt_value = self.text(); }
-							$('.mod-select-grid[data-ref="' + self.data('ref') + '"]').each(function() {
-								var item = $('li:eq(0) > a', $(this));
-								var new_value = '' + alt_value + '<span class="arrow">&nbsp;</span>';
-								if(item.html() !== new_value) {
-									item.html(new_value);
-									if(has_changed === true) {
-										has_changed = false;
-										self.trigger('selected');
-									}		
-								}
-							});
-						}
-						
 						return false;
 					});
 				});
