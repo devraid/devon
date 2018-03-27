@@ -55,4 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['alquiler'] = 'Rent';
 $route['alquiler/detalle'] = 'Rent_Detail';
+$route['alquiler/:any'] = 'Rent';
+
 $route['favoritos'] = 'Favorites';

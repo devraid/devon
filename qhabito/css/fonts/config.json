@@ -8,33 +8,39 @@
   "glyphs": [
     {
       "uid": "f3dc2d6d8fe9cf9ebff84dc260888cdf",
-      "css": "heart",
+      "css": "heart-empty",
       "code": 59392,
       "src": "fontawesome"
     },
     {
       "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
       "css": "phone",
-      "code": 59393,
+      "code": 59394,
       "src": "fontawesome"
     },
     {
       "uid": "bf882b30900da12fca090d9796bc3030",
       "css": "mail",
-      "code": 59394,
+      "code": 59395,
       "src": "fontawesome"
     },
     {
       "uid": "7432077e6a2d6aa19984ca821bb6bbda",
       "css": "bug",
-      "code": 59395,
+      "code": 59396,
       "src": "fontawesome"
     },
     {
       "uid": "8da3ac534210aae9c0f0e13804c1df97",
       "css": "close",
-      "code": 59396,
+      "code": 59397,
       "src": "websymbols"
+    },
+    {
+      "uid": "d73eceadda1f594cec0536087539afbf",
+      "css": "heart",
+      "code": 59393,
+      "src": "fontawesome"
     }
   ]
 }
