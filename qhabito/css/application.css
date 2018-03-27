@@ -766,6 +766,262 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     display: block;
   }
 }
+.main-grid .mod-grid {
+  padding-bottom: 30px;
+}
+.main-grid .mod-grid .item {
+  cursor: default;
+  background-color: #F6F6F6;
+}
+.main-grid .mod-grid .item .wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  padding-bottom: 50px;
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+body.desktop .main-grid .mod-grid .item:not(.disabled):hover .wrapper, body.desktop .main-grid .mod-grid .item:not(.disabled):active .wrapper, body.desktop .main-grid .mod-grid .item:not(.disabled):focus .wrapper, .main-grid .mod-grid .item:not(.disabled).selected .wrapper {
+  background-color: inherit !important;
+}
+.main-grid .mod-grid .item:not(.disabled).selected {
+  cursor: default;
+}
+.main-grid .mod-grid .details {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+.main-grid .mod-grid .details .title,
+.main-grid .mod-grid .details .subtitle {
+  padding: 0 0 18px 0;
+  width: 100%;
+  height: auto;
+  line-height: 1em;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+}
+.main-grid .mod-grid .details .title {
+  width: calc(100% - 20px);
+  color: #33BAF1;
+}
+.main-grid .mod-grid .details .title a span {
+  color: #6789B2;
+  font-style: italic;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.main-grid .mod-grid .details .subtitle {
+  font-size: 1rem;
+  color: #DA592A;
+}
+.main-grid .mod-grid .details .subtitle span {
+  font-size: 1.5rem;
+  line-height: 1em;
+  display: block;
+}
+.main-grid .mod-grid .details .title a {
+  color: #1C7EBE;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+body.desktop .main-grid .mod-grid .details .title a:not(.disabled):hover, body.desktop .main-grid .mod-grid .details .title a:not(.disabled):hover span, body.desktop .main-grid .mod-grid .details .title a:not(.disabled):active, body.desktop .main-grid .mod-grid .details .title a:not(.disabled):active span, body.desktop .main-grid .mod-grid .details .title a:not(.disabled):focus, body.desktop .main-grid .mod-grid .details .title a:not(.disabled):focus span, .main-grid .mod-grid .details .title a:not(.disabled).selected, .main-grid .mod-grid .details .title a:not(.disabled).selected span {
+  color: inherit !important;
+}
+.main-grid .mod-grid .details .title a:not(.disabled).selected {
+  cursor: default;
+}
+.main-grid .mod-grid .details .description {
+  color: #6789B2;
+  padding: 0 0 30px 0;
+  width: 100%;
+  height: auto;
+  font-size: 0.95rem;
+  line-height: 1.2em;
+  display: block;
+}
+.main-grid .mod-grid .contact-view {
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main-grid .mod-grid .contact-view .contact {
+  float: left;
+  width: auto;
+  height: auto;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  line-height: 1.2em;
+  font-size: 1rem;
+  color: #33BAF1;
+}
+.main-grid .mod-grid .contact-view .contact a {
+  color: #6789B2;
+  display: block;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+body.desktop .main-grid .mod-grid .contact-view .contact a:not(.disabled):hover, body.desktop .main-grid .mod-grid .contact-view .contact a:not(.disabled):hover span, body.desktop .main-grid .mod-grid .contact-view .contact a:not(.disabled):active, body.desktop .main-grid .mod-grid .contact-view .contact a:not(.disabled):active span, body.desktop .main-grid .mod-grid .contact-view .contact a:not(.disabled):focus, body.desktop .main-grid .mod-grid .contact-view .contact a:not(.disabled):focus span, .main-grid .mod-grid .contact-view .contact a:not(.disabled).selected, .main-grid .mod-grid .contact-view .contact a:not(.disabled).selected span {
+  color: inherit !important;
+}
+.main-grid .mod-grid .contact-view .contact a:not(.disabled).selected {
+  cursor: default;
+}
+.main-grid .mod-grid .contact-view .view {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: right;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  font-family: 'ProximaNova-Bold';
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+}
+.main-grid .mod-grid .contact-view .view span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  line-height: 32px;
+  padding: 0 15px 0 15px;
+  border: #33BAF1 solid 4px;
+  opacity: 1;
+  display: block;
+  -webkit-transition: opacity 0.25s ease, border-color 0.25s ease;
+  -moz-transition: opacity 0.25s ease, border-color 0.25s ease;
+  -ms-transition: opacity 0.25s ease, border-color 0.25s ease;
+  -o-transition: opacity 0.25s ease, border-color 0.25s ease;
+  transition: opacity 0.25s ease, border-color 0.25s ease;
+}
+.main-grid .mod-grid .contact-view .view span:first-of-type {
+  background-color: #FFFFFF;
+  color: #33BAF1;
+}
+.main-grid .mod-grid .contact-view .view span:last-of-type {
+  background-color: #F6F6F6;
+  color: #6789B2;
+  position: relative;
+  border: #6789B2 solid 4px;
+}
+body.desktop .main-grid .mod-grid .contact-view .view:not(.disabled):hover span:last-of-type, body.desktop .main-grid .mod-grid .contact-view .view:not(.disabled):active span:last-of-type, body.desktop .main-grid .mod-grid .contact-view .view:not(.disabled):focus span:last-of-type, .main-grid .mod-grid .contact-view .view:not(.disabled).selected span:last-of-type {
+  opacity: 0;
+}
+.main-grid .mod-grid .contact-view .view:not(.disabled).selected {
+  cursor: default;
+}
+
+@media (min-width: 768px) {
+  .main-grid .mod-grid.list .item {
+    width: 100%;
+  }
+  .main-grid .mod-grid.list .item .wrapper {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .main-grid .mod-grid.list .mod-slider-thumbs {
+    float: left;
+    width: 32.4%;
+  }
+  .main-grid .mod-grid.list .details {
+    float: left;
+    width: 67.6%;
+  }
+  .main-grid .mod-grid.list .details .title,
+  .main-grid .mod-grid.list .details .subtitle {
+    padding: 0 0 18px 0;
+  }
+  .main-grid .mod-grid.list .details .description {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+  }
+  .main-grid .mod-grid.list .contact-view {
+    padding: 30px;
+    width: 67.6%;
+    height: auto;
+    left: auto;
+    left: auto;
+    right: 0;
+  }
+}
+.main-grid .mod-grid.list .details {
+  padding: 30px 30px 8% 30px;
+}
+
+@media (max-device-width: 1280px), (max-width: 1280px) {
+  .main-grid .mod-grid.list .details {
+    padding: 30px 30px 10% 30px;
+  }
+}
+@media (max-device-width: 1024px), (max-width: 1024px) {
+  .main-grid .mod-grid.list .mod-slider-thumbs {
+    width: 50%;
+  }
+  .main-grid .mod-grid.list .details {
+    width: 50%;
+    padding: 30px 30px 0% 30px;
+  }
+  .main-grid .mod-grid.list .contact-view {
+    position: relative;
+    clear: both;
+    width: 100%;
+  }
+}
+@media (max-device-width: 768px), (max-width: 768px) {
+  .main-grid .mod-grid.list .mod-slider-thumbs {
+    width: 100%;
+  }
+  .main-grid .mod-grid.list .details {
+    width: 100%;
+    padding: 5% 5% 0% 5%;
+  }
+
+  .main-grid .mod-grid .item .wrapper {
+    padding-bottom: 0;
+  }
+  .main-grid .mod-grid .details {
+    padding: 5% 5% 0% 5%;
+  }
+  .main-grid .mod-grid .details .description {
+    padding: 0;
+  }
+  .main-grid .mod-grid .contact-view {
+    clear: both;
+    position: relative;
+    padding: 5%;
+  }
+}
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1846,180 +2102,6 @@ body.desktop .rent .filters .list-type:not(.disabled):hover, body.desktop .rent 
   display: none;
 }
 
-.rent .mod-grid {
-  padding-bottom: 30px;
-}
-.rent .mod-grid .item {
-  cursor: default;
-  background-color: #F6F6F6;
-}
-.rent .mod-grid .item .wrapper {
-  position: relative;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  padding-bottom: 50px;
-  -webkit-transition: background-color 0.25s ease;
-  -moz-transition: background-color 0.25s ease;
-  -ms-transition: background-color 0.25s ease;
-  -o-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease;
-}
-body.desktop .rent .mod-grid .item:not(.disabled):hover .wrapper, body.desktop .rent .mod-grid .item:not(.disabled):active .wrapper, body.desktop .rent .mod-grid .item:not(.disabled):focus .wrapper, .rent .mod-grid .item:not(.disabled).selected .wrapper {
-  background-color: inherit !important;
-}
-.rent .mod-grid .item:not(.disabled).selected {
-  cursor: default;
-}
-.rent .mod-grid .details {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 30px;
-  width: 100%;
-  height: auto;
-}
-.rent .mod-grid .details .title,
-.rent .mod-grid .details .subtitle {
-  padding: 0 0 18px 0;
-  width: 100%;
-  height: auto;
-  line-height: 1em;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-family: 'ProximaNova-Bold';
-  font-weight: bold;
-  font-style: normal;
-  display: block;
-}
-.rent .mod-grid .details .title {
-  width: calc(100% - 20px);
-  color: #33BAF1;
-}
-.rent .mod-grid .details .title a span {
-  color: #6789B2;
-  font-style: italic;
-  font-size: 0.8rem;
-  display: inline-block;
-}
-.rent .mod-grid .details .subtitle {
-  font-size: 1rem;
-  color: #DA592A;
-}
-.rent .mod-grid .details .subtitle span {
-  font-size: 1.5rem;
-  line-height: 1em;
-  display: block;
-}
-.rent .mod-grid .details .title a {
-  color: #1C7EBE;
-  -webkit-transition: color 0.25s ease;
-  -moz-transition: color 0.25s ease;
-  -ms-transition: color 0.25s ease;
-  -o-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-}
-body.desktop .rent .mod-grid .details .title a:not(.disabled):hover, body.desktop .rent .mod-grid .details .title a:not(.disabled):hover span, body.desktop .rent .mod-grid .details .title a:not(.disabled):active, body.desktop .rent .mod-grid .details .title a:not(.disabled):active span, body.desktop .rent .mod-grid .details .title a:not(.disabled):focus, body.desktop .rent .mod-grid .details .title a:not(.disabled):focus span, .rent .mod-grid .details .title a:not(.disabled).selected, .rent .mod-grid .details .title a:not(.disabled).selected span {
-  color: inherit !important;
-}
-.rent .mod-grid .details .title a:not(.disabled).selected {
-  cursor: default;
-}
-.rent .mod-grid .details .description {
-  color: #6789B2;
-  padding: 0 0 30px 0;
-  width: 100%;
-  height: auto;
-  font-size: 0.95rem;
-  line-height: 1.2em;
-  display: block;
-}
-.rent .mod-grid .contact-view {
-  padding: 30px;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.rent .mod-grid .contact-view .contact {
-  float: left;
-  width: auto;
-  height: auto;
-  line-height: 1em;
-  text-decoration: none;
-  font-family: 'ProximaNova-Bold';
-  font-weight: bold;
-  font-style: normal;
-  display: block;
-  line-height: 1.2em;
-  font-size: 1rem;
-  color: #33BAF1;
-}
-.rent .mod-grid .contact-view .contact a {
-  color: #6789B2;
-  display: block;
-  -webkit-transition: color 0.25s ease;
-  -moz-transition: color 0.25s ease;
-  -ms-transition: color 0.25s ease;
-  -o-transition: color 0.25s ease;
-  transition: color 0.25s ease;
-}
-body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):hover, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):hover span, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):active, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):active span, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):focus, body.desktop .rent .mod-grid .contact-view .contact a:not(.disabled):focus span, .rent .mod-grid .contact-view .contact a:not(.disabled).selected, .rent .mod-grid .contact-view .contact a:not(.disabled).selected span {
-  color: inherit !important;
-}
-.rent .mod-grid .contact-view .contact a:not(.disabled).selected {
-  cursor: default;
-}
-.rent .mod-grid .contact-view .view {
-  position: relative;
-  top: 0;
-  left: 0;
-  float: right;
-  width: auto;
-  height: 40px;
-  line-height: 40px;
-  font-size: 1rem;
-  font-family: 'ProximaNova-Bold';
-  font-weight: bold;
-  font-style: normal;
-  text-decoration: none;
-  display: inline-block;
-}
-.rent .mod-grid .contact-view .view span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 100%;
-  line-height: 32px;
-  padding: 0 15px 0 15px;
-  border: #33BAF1 solid 4px;
-  opacity: 1;
-  display: block;
-  -webkit-transition: opacity 0.25s ease, border-color 0.25s ease;
-  -moz-transition: opacity 0.25s ease, border-color 0.25s ease;
-  -ms-transition: opacity 0.25s ease, border-color 0.25s ease;
-  -o-transition: opacity 0.25s ease, border-color 0.25s ease;
-  transition: opacity 0.25s ease, border-color 0.25s ease;
-}
-.rent .mod-grid .contact-view .view span:first-of-type {
-  background-color: #FFFFFF;
-  color: #33BAF1;
-}
-.rent .mod-grid .contact-view .view span:last-of-type {
-  background-color: #F6F6F6;
-  color: #6789B2;
-  position: relative;
-  border: #6789B2 solid 4px;
-}
-body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-of-type, body.desktop .rent .mod-grid .contact-view .view:not(.disabled):active span:last-of-type, body.desktop .rent .mod-grid .contact-view .view:not(.disabled):focus span:last-of-type, .rent .mod-grid .contact-view .view:not(.disabled).selected span:last-of-type {
-  opacity: 0;
-}
-.rent .mod-grid .contact-view .view:not(.disabled).selected {
-  cursor: default;
-}
-
 @media (min-width: 768px) {
   .rent .filters .list-type {
     display: block;
@@ -2028,45 +2110,7 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   .rent .filters .mod-select.order {
     margin-right: 20px;
   }
-
-  .rent .mod-grid.list .item {
-    width: 100%;
-  }
-  .rent .mod-grid.list .item .wrapper {
-    width: 100%;
-    padding-bottom: 0;
-  }
-  .rent .mod-grid.list .mod-slider-thumbs {
-    float: left;
-    width: 32.4%;
-  }
-  .rent .mod-grid.list .details {
-    float: left;
-    width: 67.6%;
-  }
-  .rent .mod-grid.list .details .title,
-  .rent .mod-grid.list .details .subtitle {
-    padding: 0 0 18px 0;
-  }
-  .rent .mod-grid.list .details .description {
-    position: relative;
-    top: 0;
-    left: 0;
-    padding: 0;
-  }
-  .rent .mod-grid.list .contact-view {
-    padding: 30px;
-    width: 67.6%;
-    height: auto;
-    left: auto;
-    left: auto;
-    right: 0;
-  }
 }
-.rent .mod-grid.list .details {
-  padding: 30px 30px 8% 30px;
-}
-
 @media (max-device-width: 1439px), (max-width: 1439px) {
   .rent .filters.more .wrapper .mod-select,
   .rent .filters.more .wrapper .mod-select-grid {
@@ -2077,10 +2121,6 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
 }
 @media (max-device-width: 1280px), (max-width: 1280px) {
-  .rent .mod-grid.list .details {
-    padding: 30px 30px 10% 30px;
-  }
-
   .rent .filters .mod-select.rooms {
     display: none;
   }
@@ -2097,20 +2137,6 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   }
   .rent .filters.more .wrapper .mod-select.pets {
     clear: none;
-  }
-}
-@media (max-device-width: 1024px), (max-width: 1024px) {
-  .rent .mod-grid.list .mod-slider-thumbs {
-    width: 50%;
-  }
-  .rent .mod-grid.list .details {
-    width: 50%;
-    padding: 30px 30px 0% 30px;
-  }
-  .rent .mod-grid.list .contact-view {
-    position: relative;
-    clear: both;
-    width: 100%;
   }
 }
 @media (max-device-width: 1023px), (max-width: 1023px) {
@@ -2144,30 +2170,6 @@ body.desktop .rent .mod-grid .contact-view .view:not(.disabled):hover span:last-
   .rent .filters.more .wrapper .mod-select.rooms,
   .rent .filters.more .wrapper .mod-select.pets {
     clear: none;
-  }
-}
-@media (max-device-width: 768px), (max-width: 768px) {
-  .rent .mod-grid.list .mod-slider-thumbs {
-    width: 100%;
-  }
-  .rent .mod-grid.list .details {
-    width: 100%;
-    padding: 5% 5% 0% 5%;
-  }
-
-  .rent .mod-grid .item .wrapper {
-    padding-bottom: 0;
-  }
-  .rent .mod-grid .details {
-    padding: 5% 5% 0% 5%;
-  }
-  .rent .mod-grid .details .description {
-    padding: 0;
-  }
-  .rent .mod-grid .contact-view {
-    clear: both;
-    position: relative;
-    padding: 5%;
   }
 }
 @media (max-device-width: 640px), (max-width: 640px) {
@@ -2454,6 +2456,12 @@ body.desktop .rent-detail .wrapper .block.resume .extra a:not(.disabled):hover, 
   .rent-detail .wrapper .padded {
     padding: 5%;
   }
+}
+.favorites .filters {
+  clear: both;
+  width: 100%;
+  height: auto;
+  padding: 20px 0 0 0;
 }
 .favorites .filters .options,
 .favorites .filters .options * {

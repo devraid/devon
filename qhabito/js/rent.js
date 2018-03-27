@@ -14,6 +14,7 @@ var QHABITO = window.QHABITO || {};
 				if (!qh_list) {
 					QHABITO.common.setCookie('qh_list', 'false');
 				}
+				// Note: Maybe we should move this to common ...
 				$('.filters .list-type a:eq(0)').on('click', function() {
 					var self = $(this);
 					self.blur();

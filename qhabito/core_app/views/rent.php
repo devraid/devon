@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</head>
 <body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
-	<div class="main rent">
+	<div class="main rent main-grid">
 		<!-- HEADER / BEGIN -->
 		<div class="header clearfix">
 			<div class="top-bar">

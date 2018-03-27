@@ -1,61 +1,24 @@
 /*
-Error: Undefined mixin 'on-hover'.
-        on line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent - Copy (2).scss, in `on-hover'
-        from line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent - Copy (2).scss
+Error: Undefined variable: "$colorm".
+        on line 7 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\main-grid.scss
 
-90: 						&:before, &:after {
-91: 							background-color: #1C7EBE !important;
-92: 						}
-93: 					}
-94: 					
-95: 					@include on-hover {
-96: 						span {
-97: 							&:before, &:after {
-98: 								background-color: #1C7EBE !important;
-99: 							}
-100: 						}
+2: .main-grid .mod-grid {
+3: 	padding-bottom: 30px;
+4: 	
+5: 	.item {
+6: 		cursor: default;
+7: 		background-color: $colorm;
+8: 		
+9: 		.wrapper {
+10: 			position: relative;
+11: 			top: 0;
+12: 			left: 0;
 
 Backtrace:
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent - Copy (2).scss:95:in `on-hover'
-D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent - Copy (2).scss:95
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\main-grid.scss:7
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -109,4 +72,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'on-hover'.\A         on line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent - Copy (2).scss, in `on-hover'\A         from line 95 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\rent - Copy (2).scss\A \A 90: 						&:before, &:after {\A 91: 							background-color: #1C7EBE !important;\A 92: 						}\A 93: 					}\A 94: 					\A 95: 					@include on-hover {\A 96: 						span {\A 97: 							&:before, &:after {\A 98: 								background-color: #1C7EBE !important;\A 99: 							}\A 100: 						}"; }
+  content: "Error: Undefined variable: \"$colorm\".\A         on line 7 of D:\xampp\htdocs\wirexmedia.com\www\devon\qhabito\scss\main-grid.scss\A \A 2: .main-grid .mod-grid {\A 3: 	padding-bottom: 30px;\A 4: 	\A 5: 	.item {\A 6: 		cursor: default;\A 7: 		background-color: $colorm;\A 8: 		\A 9: 		.wrapper {\A 10: 			position: relative;\A 11: 			top: 0;\A 12: 			left: 0;"; }

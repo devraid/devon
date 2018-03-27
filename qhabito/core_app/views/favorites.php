@@ -29,11 +29,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script type="text/javascript" src="/qhabito/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
-		<script type="text/javascript" src="/qhabito/js/rent.js"></script>
+		<script type="text/javascript" src="/qhabito/js/favorites.js"></script>
 	</head>
 <body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
-	<div class="main rent favorites">
+	<div class="main favorites main-grid">
 		<!-- HEADER / BEGIN -->
 		<div class="header clearfix">
 			<div class="top-bar">
@@ -58,43 +58,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="content">
 			<div class="wrap">
 				
-				<div class="filters selection mod-tags-cloud clearfix">
-					<div class="wrapper clearfix">
-						<h1>Filtros aplicados:</h1>
-					</div>
-				</div>
-				
 				<div class="filters clearfix">
-					
 					<ul class="options">
 						<li><a class="selected" href="#" title=""><span>Favoritos</span><span>Favoritos</span></a></li>
 						<li><a href="#" title=""><span>Búsquedas</span><span>Búsquedas</span></a></li>
 						<li><a href="#" title=""><span>Inmuebles</span><span>Inmuebles</span></a></li>
 					</ul>
-					
-					<ul class="list-type">
-						<?php $selected = ($data['list_type'] === 'grid') ? ' selected' : ''; ?>
-						<li>
-							<a class="icon-grid<?php echo $selected; ?>" href="#" title="">
-								<span>&nbsp;</span>
-								<span>&nbsp;</span>
-								<span>&nbsp;</span>
-							</a>
-						</li>
-						<?php $selected = ($data['list_type'] === 'list') ? ' selected' : ''; ?>
-						<li>
-							<a class="icon-list<?php echo $selected; ?>" href="#" title="">
-								<span>&nbsp;</span>
-								<span>&nbsp;</span>
-								<span>&nbsp;</span>
-							</a>
-						</li>
-					</ul>
-					
 				</div>
 				
 				<!-- MODULE / BEGIN -->
-				<div class="mod-grid <?php echo $data['list_type']; ?>">
+				<div class="mod-grid list">
 					<div class="item">
 						<div class="wrapper">
 							<!-- MODULE / BEGIN -->

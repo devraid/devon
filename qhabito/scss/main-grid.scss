@@ -1,0 +1,334 @@
+// MAIN GRID : GRID (GRID TYPE)
+.main-grid .mod-grid {
+	padding-bottom: 30px;
+	
+	.item {
+		cursor: default;
+		background-color: $colorm;
+		
+		.wrapper {
+			position: relative;
+			top: 0;
+			left: 0;
+			min-height: 100%;
+			padding-bottom: 50px;
+			
+			// Transition
+			-webkit-transition: background-color 0.25s ease;
+			-moz-transition: background-color 0.25s ease;
+			-ms-transition: background-color 0.25s ease;
+			-o-transition: background-color 0.25s ease;
+			transition: background-color 0.25s ease;
+		}
+		
+		@include on-hover {
+			.wrapper {
+				background-color: inherit !important;
+			}
+		}
+	}
+	
+	// DETAILS
+	.details {
+		position: relative;
+		top: 0;
+		left: 0;
+		padding: 30px;
+		width: 100%;
+		height: auto;
+		
+		.title,
+		.subtitle {
+			padding: 0 0 18px 0;
+			width: 100%;
+			height: auto;
+			line-height: 1em;
+			text-decoration: none;
+			font-size: 1.5rem;
+			font-family: 'ProximaNova-Bold';
+			font-weight: bold;
+			font-style: normal;
+			display: block;
+		}
+		.title {
+			width: calc(100% - 20px);
+			color: $colorg;
+		}
+		
+		.title a span {
+			color: $colorc;
+			font-style: italic;
+			font-size: 0.8rem;
+			display: inline-block;
+		}
+		
+		.subtitle {
+			font-size: 1rem;
+			color: $colork;
+			
+			span {
+				font-size: 1.5rem;
+				line-height: 1em;
+				display: block;
+			}
+		}
+		
+		.title a {
+			color: $colord;
+			
+			// Transition
+			-webkit-transition: color 0.25s ease;
+			-moz-transition: color 0.25s ease;
+			-ms-transition: color 0.25s ease;
+			-o-transition: color 0.25s ease;
+			transition: color 0.25s ease;
+			
+			@include on-hover {
+				&, & span {
+					color: inherit !important;
+				}
+			}
+		}
+
+		.description {
+			color: $colorc;
+			padding: 0 0 30px 0;
+			width: 100%;
+			height: auto;
+			font-size: 0.95rem;
+			line-height: 1.2em;
+			display: block;
+		}
+	}
+	
+	// CONTACT VIEW
+	.contact-view {
+		padding: 30px;
+		width: 100%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		
+		.contact {
+			float: left;
+			width: auto;
+			height: auto;
+			line-height: 1em;
+			text-decoration: none;
+			font-family: 'ProximaNova-Bold';
+			font-weight: bold;
+			font-style: normal;
+			display: block;
+			line-height: 1.2em;
+			font-size: 1rem;
+			color: $colorg;
+			
+			a {
+				color: $colorc;
+				display: block;
+				
+				// Transition
+				-webkit-transition: color 0.25s ease;
+				-moz-transition: color 0.25s ease;
+				-ms-transition: color 0.25s ease;
+				-o-transition: color 0.25s ease;
+				transition: color 0.25s ease;
+
+				@include on-hover {
+					&, & span {
+						color: inherit !important;
+					}
+				}
+			}
+		}
+		
+		.view {
+			position: relative;
+			top: 0;
+			left: 0;
+			float: right;
+			width: auto;
+			height: 40px;
+			line-height: 40px;
+			font-size: 1rem;
+			font-family: 'ProximaNova-Bold';
+			font-weight: bold;
+			font-style: normal;
+			text-decoration: none;
+			display: inline-block;
+
+			span {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: auto;
+				height: 100%;
+				line-height: 32px;
+				padding: 0 15px 0 15px;
+				border: $colorg solid 4px;
+				opacity: 1;
+				display: block;
+				
+				// Transition
+				-webkit-transition: opacity 0.25s ease, border-color 0.25s ease;
+				-moz-transition: opacity 0.25s ease, border-color 0.25s ease;
+				-ms-transition: opacity 0.25s ease, border-color 0.25s ease;
+				-o-transition: opacity 0.25s ease, border-color 0.25s ease;
+				transition: opacity 0.25s ease, border-color 0.25s ease;
+			}
+			
+			span:first-of-type {
+				background-color: $colora;
+				color: $colorg;
+			}
+			
+			span:last-of-type {
+				background-color: $colorm;
+				color: $colorc;
+				position: relative;
+				border: $colorc solid 4px;
+			}
+			
+			@include on-hover {
+				span:last-of-type {
+					opacity: 0;
+				}
+				&:after {
+					
+				}
+			}
+		}
+	}
+	
+}
+
+// RESPONSIVE
+@media (min-width: 768px) { // from 768px
+	// MAIN GRID : GRID (LIST TYPE)
+	.main-grid .mod-grid.list {
+
+		.item {
+			width: 100%;
+
+			.wrapper {
+				width: 100%;
+				padding-bottom: 0;
+			}
+		}
+
+		// SLIDER AND THUMBS
+		.mod-slider-thumbs {
+			float: left;
+			width: 32.4%;
+		}
+
+		// DETAILS
+		.details {
+			float: left;
+			width: 67.6%;
+
+			.title,
+			.subtitle {
+				padding: 0 0 18px 0;
+			}
+
+			.description {
+				position: relative;
+				top: 0;
+				left: 0;
+				padding: 0;
+			}
+		}
+
+		// CONTACT VIEW
+		.contact-view {
+			padding: 30px;
+			width: 67.6%;
+			height: auto;
+			left: auto;
+			left: auto;
+			right: 0;
+		}
+
+	}
+}
+
+// MAIN GRID : GRID (LIST TYPE)
+.main-grid .mod-grid.list {
+	// DETAILS
+	.details {
+		padding: 30px 30px 8% 30px;
+	}
+}
+@media (max-device-width: 1280px), (max-width: 1280px) { // up to 1280px
+	// MAIN GRID : GRID (LIST TYPE)
+	.main-grid .mod-grid.list {
+
+		// DETAILS
+		.details {
+			padding: 30px 30px 10% 30px;
+		}
+	}
+}
+@media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
+	// MAIN GRID : GRID (LIST TYPE)
+	.main-grid .mod-grid.list {
+
+		// SLIDER AND THUMBS
+		.mod-slider-thumbs {
+			width: 50%;
+		}
+		
+		// DETAILS
+		.details {
+			width: 50%;
+			padding: 30px 30px 0% 30px;
+		}
+		
+		// CONTACT VIEW
+		.contact-view {
+			position: relative;
+			clear: both;
+			width: 100%;
+		}
+	}
+}
+@media (max-device-width: 768px), (max-width: 768px) { // up to 768px
+	// MAIN GRID : GRID (ALL TYPES)
+	.main-grid .mod-grid.list {
+
+		// SLIDER AND THUMBS
+		.mod-slider-thumbs {
+			width: 100%;
+		}
+		
+		// DETAILS
+		.details {
+			width: 100%;
+			padding: 5% 5% 0% 5%;
+		}
+	}
+	.main-grid .mod-grid {
+		
+		.item .wrapper {
+			padding-bottom: 0;
+		}
+		
+		// DETAILS
+		.details {
+			padding: 5% 5% 0% 5%;
+			
+			.description {
+				padding: 0;
+			}
+		}
+		
+		// CONTACT VIEW
+		.contact-view {
+			clear: both;
+			position: relative;
+			padding: 5%;
+		}
+	}
+}
