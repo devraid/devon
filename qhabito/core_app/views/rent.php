@@ -18,6 +18,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta name="msapplication-navbutton-color" content="#16487B" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		
 		<!--
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
