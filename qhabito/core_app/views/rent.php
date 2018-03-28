@@ -6,6 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
 		<title>QHabito</title>
 		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="author" content="WirexMedia.com" />
@@ -18,10 +20,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta name="msapplication-navbutton-color" content="#16487B" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="format-detection" content="telephone=no">
-		<meta http-equiv="cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
-		<meta http-equiv="pragma" content="no-cache" />
-		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-		
 		<!--
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -70,36 +68,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				
 				<div class="filters more clearfix">
 					<div class="wrapper clearfix">
-						
-						<ul class="mod-select-grid property">
+					
+						<ul class="mod-select-grid property" data-ref="property">
 							<li>
 								<a href="#" title="">Tipo de Vivienda<span class="arrow">&nbsp;</span></a>
 								<ul class="clearfix">
-									<li><a href="#" title="">Piso</a></li>
-									<li><a href="#" title="">Ático</a></li>
-									<li><a href="#" title="">Dúplex</a></li>
-									<li><a href="#" title="">Estudio</a></li>
-									<li><a href="#" title="">Loft</a></li>
-									<li><a href="#" title="">Casa o Chalet</a></li>
+									<li><a href="#" title="" data-ref="property" data-filter="" data-value="Tipo de Vivienda">Indiferente</a></li>
+									<li><a href="#" title="" data-ref="property" data-filter="piso" data-value="">Piso</a></li>
+									<li><a href="#" title="" data-ref="property" data-filter="atico" data-value="">Ático</a></li>
+									<li><a href="#" title="" data-ref="property" data-filter="duplex" data-value="">Dúplex</a></li>
+									<li><a href="#" title="" data-ref="property" data-filter="estudio" data-value="">Estudio</a></li>
+									<li><a href="#" title="" data-ref="property" data-filter="loft" data-value="">Loft</a></li>
+									<li><a href="#" title="" data-ref="property" data-filter="casa-o-chalet" data-value="">Casa o Chalet</a></li>
 								</ul>
 							</li>
 						</ul>
-					
+						
 						<ul class="mod-select-grid price-min" data-ref="price-min">
 							<li>
 								<a href="#" title="">Precio Mín<span class="arrow">&nbsp;</span></a>
 								<ul class="clearfix">
 									<li><a href="#" title="" data-ref="price-min" data-filter="" data-value="Precio Mín">Indiferente</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-300" data-value="Mín., 300€">300€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-350" data-value="Mín., 350€">350€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-400" data-value="Mín., 400€">400€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-450" data-value="Mín., 450€">450€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-500" data-value="Mín., 500€">500€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-550" data-value="Mín., 550€">550€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-600" data-value="Mín., 600€">600€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-650" data-value="Mín., 650€">650€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-700" data-value="Mín., 700€">700€</a></li>
-									<li><a href="#" title="" data-ref="price-min" data-filter="price-min-750" data-value="Mín., 750€">750€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-300" data-value="Mín., 300€">300€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-350" data-value="Mín., 350€">350€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-400" data-value="Mín., 400€">400€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-450" data-value="Mín., 450€">450€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-500" data-value="Mín., 500€">500€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-550" data-value="Mín., 550€">550€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-600" data-value="Mín., 600€">600€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-650" data-value="Mín., 650€">650€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-700" data-value="Mín., 700€">700€</a></li>
+									<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-750" data-value="Mín., 750€">750€</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -109,16 +108,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a href="#" title="">Precio Máx<span class="arrow">&nbsp;</span></a>
 								<ul class="clearfix">
 									<li><a href="#" title="" data-ref="price-max" data-filter="" data-value="Precio Máx">Indiferente</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-300" data-value="Máx., 300€">300€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-350" data-value="Máx., 350€">350€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-400" data-value="Máx., 400€">400€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-450" data-value="Máx., 450€">450€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-500" data-value="Máx., 500€">500€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-550" data-value="Máx., 550€">550€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-600" data-value="Máx., 600€">600€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-650" data-value="Máx., 650€">650€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-700" data-value="Máx., 700€">700€</a></li>
-									<li><a href="#" title="" data-ref="price-max" data-filter="price-max-750" data-value="Máx., 750€">750€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-300" data-value="Máx., 300€">300€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-350" data-value="Máx., 350€">350€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-400" data-value="Máx., 400€">400€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-450" data-value="Máx., 450€">450€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-500" data-value="Máx., 500€">500€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-550" data-value="Máx., 550€">550€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-600" data-value="Máx., 600€">600€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-650" data-value="Máx., 650€">650€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-700" data-value="Máx., 700€">700€</a></li>
+									<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-750" data-value="Máx., 750€">750€</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -128,16 +127,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a href="#" title="">Tamaño Mín<span class="arrow">&nbsp;</span></a>
 								<ul class="clearfix">
 									<li><a href="#" title="" data-ref="size-min" data-filter="" data-value="Tamaño Mín">Indiferente</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-50" data-value="Mín., 50m²">50m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-60" data-value="Mín., 60m²">60m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-70" data-value="Mín., 70m²">70m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-80" data-value="Mín., 80m²">80m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-100" data-value="Mín., 100m²">100m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-120" data-value="Mín., 120m²">120m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-140" data-value="Mín., 140m²">140m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-160" data-value="Mín., 160m²">160m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-180" data-value="Mín., 180m²">180m²</a></li>
-									<li><a href="#" title="" data-ref="size-min" data-filter="size-min-200" data-value="Mín., 200m²">200m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-50" data-value="Mín., 50m²">50m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-60" data-value="Mín., 60m²">60m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-70" data-value="Mín., 70m²">70m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-80" data-value="Mín., 80m²">80m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-100" data-value="Mín., 100m²">100m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-120" data-value="Mín., 120m²">120m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-140" data-value="Mín., 140m²">140m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-160" data-value="Mín., 160m²">160m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-180" data-value="Mín., 180m²">180m²</a></li>
+									<li><a href="#" title="" data-ref="size-min" data-filter="tamano-min-200" data-value="Mín., 200m²">200m²</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -147,16 +146,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<a href="#" title="">Tamaño Máx<span class="arrow">&nbsp;</span></a>
 								<ul class="clearfix">
 									<li><a href="#" title="" data-ref="size-max" data-filter="" data-value="Tamaño Máx">Indiferente</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-50" data-value="Máx., 50m²">50m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-60" data-value="Máx., 60m²">60m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-70" data-value="Máx., 70m²">70m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-80" data-value="Máx., 80m²">80m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-100" data-value="Máx., 100m²">100m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-120" data-value="Máx., 120m²">120m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-140" data-value="Máx., 140m²">140m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-160" data-value="Máx., 160m²">160m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-180" data-value="Máx., 180m²">180m²</a></li>
-									<li><a href="#" title="" data-ref="size-max" data-filter="size-max-200" data-value="Máx., 200m²">200m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-50" data-value="Máx., 50m²">50m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-60" data-value="Máx., 60m²">60m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-70" data-value="Máx., 70m²">70m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-80" data-value="Máx., 80m²">80m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-100" data-value="Máx., 100m²">100m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-120" data-value="Máx., 120m²">120m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-140" data-value="Máx., 140m²">140m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-160" data-value="Máx., 160m²">160m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-180" data-value="Máx., 180m²">180m²</a></li>
+									<li><a href="#" title="" data-ref="size-max" data-filter="tamano-max-200" data-value="Máx., 200m²">200m²</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -289,16 +288,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<a href="#" title="">Precio Mín<span class="arrow">&nbsp;</span></a>
 							<ul class="clearfix">
 								<li><a href="#" title="" data-ref="price-min" data-filter="" data-value="Precio Mín">Indiferente</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-300" data-value="Mín., 300€">300€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-350" data-value="Mín., 350€">350€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-400" data-value="Mín., 400€">400€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-450" data-value="Mín., 450€">450€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-500" data-value="Mín., 500€">500€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-550" data-value="Mín., 550€">550€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-600" data-value="Mín., 600€">600€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-650" data-value="Mín., 650€">650€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-700" data-value="Mín., 700€">700€</a></li>
-								<li><a href="#" title="" data-ref="price-min" data-filter="price-min-750" data-value="Mín., 750€">750€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-300" data-value="Mín., 300€">300€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-350" data-value="Mín., 350€">350€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-400" data-value="Mín., 400€">400€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-450" data-value="Mín., 450€">450€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-500" data-value="Mín., 500€">500€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-550" data-value="Mín., 550€">550€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-600" data-value="Mín., 600€">600€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-650" data-value="Mín., 650€">650€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-700" data-value="Mín., 700€">700€</a></li>
+								<li><a href="#" title="" data-ref="price-min" data-filter="precio-min-750" data-value="Mín., 750€">750€</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -308,16 +307,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<a href="#" title="">Precio Máx<span class="arrow">&nbsp;</span></a>
 							<ul class="clearfix">
 								<li><a href="#" title="" data-ref="price-max" data-filter="" data-value="Precio Máx">Indiferente</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-300" data-value="Máx., 300€">300€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-350" data-value="Máx., 350€">350€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-400" data-value="Máx., 400€">400€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-450" data-value="Máx., 450€">450€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-500" data-value="Máx., 500€">500€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-550" data-value="Máx., 550€">550€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-600" data-value="Máx., 600€">600€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-650" data-value="Máx., 650€">650€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-700" data-value="Máx., 700€">700€</a></li>
-								<li><a href="#" title="" data-ref="price-max" data-filter="price-max-750" data-value="Máx., 750€">750€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-300" data-value="Máx., 300€">300€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-350" data-value="Máx., 350€">350€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-400" data-value="Máx., 400€">400€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-450" data-value="Máx., 450€">450€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-500" data-value="Máx., 500€">500€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-550" data-value="Máx., 550€">550€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-600" data-value="Máx., 600€">600€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-650" data-value="Máx., 650€">650€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-700" data-value="Máx., 700€">700€</a></li>
+								<li><a href="#" title="" data-ref="price-max" data-filter="precio-max-750" data-value="Máx., 750€">750€</a></li>
 							</ul>
 						</li>
 					</ul>

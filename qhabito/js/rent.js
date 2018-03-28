@@ -191,5 +191,11 @@ var QHABITO = window.QHABITO || {};
 	$(document).ready(function() {
 		new Rent();
 	});
+	// Note: Avoid caching on safari
+	/*$(window).on('pageshow', function(event) {
+		if (event.originalEvent.persisted) {
+			 window.location.reload();
+		}
+	});*/
 
 })(jQuery);

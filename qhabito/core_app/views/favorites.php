@@ -6,6 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
 		<title>QHabito</title>
 		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="author" content="WirexMedia.com" />
@@ -114,6 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular...</p>
+								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -154,6 +157,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -194,6 +198,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -234,6 +239,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -274,6 +280,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -314,6 +321,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -354,6 +362,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
+								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
