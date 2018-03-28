@@ -9,6 +9,7 @@ var QHABITO = window.QHABITO || {};
 	function Rent() {
 		QHABITO.rent = {
 			target : $('div.main'),
+			cloud : $('.mod-tags-cloud'),
 			setCookies : function() {
 				var qh_list = QHABITO.common.getCookie('qh_list');
 				if (!qh_list) {
@@ -36,8 +37,22 @@ var QHABITO = window.QHABITO || {};
 					return false;
 				});
 			},
+			updateUrl : function() {
+				var cloud = QHABITO.rent.cloud;
+				var uri = '';
+				$('a.item', cloud).each(function() {
+					uri += '_' + $(this).data('filter');
+				});
+				uri = '/qhabito/alquiler/' + uri.substring(1);
+				uri = (uri.charAt(uri.length-1) === '/') ? uri.substr(0, uri.length - 1) : uri;
+				if (QHABITO.common.utilHistory()) {
+					history.replaceState({}, '' + document.title, '' + uri);
+				} else {
+					document.location.href = '' + uri;
+				}
+			},
 			filters : function() {
-				var cloud = $('.mod-tags-cloud');
+				var cloud = QHABITO.rent.cloud;
 				var cloud_wrapper = $('.wrapper', cloud);
 				var grid_cloud = $('.mod-grid-tags-cloud');
 				
@@ -68,6 +83,7 @@ var QHABITO = window.QHABITO || {};
 							cloud.removeClass('active');
 						}
 					}
+					QHABITO.rent.updateUrl();
 				});
 				
 				cloud.on('click', 'a.item', function() {
@@ -98,7 +114,7 @@ var QHABITO = window.QHABITO || {};
 						});
 					}
 					self.remove();
-
+					QHABITO.rent.updateUrl();
 					return false;
 				});
 				

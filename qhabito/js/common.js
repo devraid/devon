@@ -33,6 +33,9 @@ var QHABITO = window.QHABITO || {};
 					cookies.remove();
 				}
 			},
+			utilHistory : function() {
+				return !!(window.history && window.history.replaceState);
+			},
 			modSelect : function() {
 				$('.mod-select').each(function() {
 					var select = $(this);
