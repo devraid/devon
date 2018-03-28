@@ -38,12 +38,7 @@ var QHABITO = window.QHABITO || {};
 				});
 			},
 			urlManager : function() {
-				$(window).bind("pageshow", function(event) {
-					if (event.originalEvent.persisted) {
-						console.log('hello ');
-						//window.location.reload() 
-					}
-				});
+				
 			},
 			updateUrl : function() {
 				var cloud = QHABITO.rent.cloud;
@@ -195,6 +190,11 @@ var QHABITO = window.QHABITO || {};
 	
 	$(document).ready(function() {
 		new Rent();
+	});
+	$(window).on('pageshow', function(event) {
+		if (event.originalEvent.persisted) {
+			console.log('hello ');
+		}
 	});
 
 })(jQuery);
