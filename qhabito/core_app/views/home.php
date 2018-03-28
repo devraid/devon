@@ -85,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="wrap">
 				<ul class="primary clearfix">
 					<li><a href="#" title=""><span>Inicio</span><span>Inicio</span></a></li>
-					<li><a href="#" title=""><span>Alquiler</span><span>Alquiler</span></a></li>
+					<li><a href="/qhabito/alquiler" title=""><span>Alquiler</span><span>Alquiler</span></a></li>
 					<li><a href="#" title=""><span>Compra</span><span>Compra</span></a></li>
 					<li><a href="#" title=""><span>Venta</span><span>Venta</span></a></li>
 					<li><a href="#" title=""><span>Vacacional</span><span>Vacacional</span></a></li>

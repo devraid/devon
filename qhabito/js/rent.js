@@ -37,6 +37,14 @@ var QHABITO = window.QHABITO || {};
 					return false;
 				});
 			},
+			urlManager : function() {
+				$(window).bind("pageshow", function(event) {
+					if (event.originalEvent.persisted) {
+						console.log('hello ');
+						//window.location.reload() 
+					}
+				});
+			},
 			updateUrl : function() {
 				var cloud = QHABITO.rent.cloud;
 				var uri = '';
@@ -46,7 +54,7 @@ var QHABITO = window.QHABITO || {};
 				uri = '/qhabito/alquiler/' + uri.substring(1);
 				uri = (uri.charAt(uri.length-1) === '/') ? uri.substr(0, uri.length - 1) : uri;
 				if (QHABITO.common.utilHistory()) {
-					history.replaceState({}, '' + document.title, '' + uri);
+					window.history.replaceState({}, '' + document.title, '' + uri);
 				} else {
 					document.location.href = '' + uri;
 				}
@@ -176,6 +184,9 @@ var QHABITO = window.QHABITO || {};
 				
 				// Filters
 				QHABITO.rent.filters();
+				
+				// URL Manager
+				QHABITO.rent.urlManager();
 			}
 		};
 		
