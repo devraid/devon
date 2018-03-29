@@ -2305,11 +2305,15 @@ body.desktop .rent .filters .list-type:not(.disabled):hover, body.desktop .rent 
   }
 }
 @media (max-device-width: 640px), (max-width: 640px) {
+  .rent .filters.selection {
+    width: 100vw;
+    margin-left: -5vw;
+  }
   .rent .filters .mod-select-grid.property {
     display: none;
   }
   .rent .filters a.more-filters.selected span:last-of-type {
-    border-left: #FFFFFF solid 1px;
+    border-left: none;
   }
 
   .rent .filters.more .wrapper .mod-select,

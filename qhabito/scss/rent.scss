@@ -449,7 +449,13 @@
 @media (max-device-width: 640px), (max-width: 640px) { // up to 640px
 	// RENT : FILTERS
 	.rent .filters {
-			
+		
+		// SELECTION
+		&.selection {
+			width: 100vw;
+			margin-left: -5vw;
+		}
+		
 		// HIDE SOME FILTERS
 		.mod-select-grid.property {
 			display: none;
@@ -458,10 +464,11 @@
 		// MORE FILTERS BUTTON
 		a.more-filters {
 			&.selected span:last-of-type {
-				border-left: $colora solid 1px;
+				border-left: none;
 			}
 		}
 	}
+
 	// RENT : FILTERS : MORE
 	.rent .filters.more {
 		
