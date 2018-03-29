@@ -231,6 +231,54 @@ html, body {
 	display: block;
 }
 
+// SAVE BUTTON
+.save-button {
+	position: absolute;
+	bottom: 0;
+	right:  0;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	color: $colora;
+	overflow: hidden;
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+	
+	span,
+	span:before {
+		float: none;
+		width: 100%;
+		height: 100%;
+		line-height: 40px;
+		text-align: center;
+		font-weight: bold;
+		display: block;
+	}
+	span {
+		background-color: $colorc;
+		font-size: 0;
+		color: $colora;
+		
+		// Transition
+		-webkit-transition: all 0.25s ease;
+		-moz-transition: all 0.25s ease;
+		-ms-transition: all 0.25s ease;
+		-o-transition: all 0.25s ease;
+		transition: all 0.25s ease;
+	}
+
+	@include on-hover {
+		span {
+			color: inherit !important;
+			background-color: $colorg;
+		}
+	}
+}
+
 // ADD TO FAVORITES
 .add-to-favorite {
 	position: absolute;

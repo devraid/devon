@@ -189,6 +189,49 @@ body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.deskt
   display: block;
 }
 
+.save-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #FFFFFF;
+  overflow: hidden;
+  display: none;
+}
+.save-button.active {
+  display: block;
+}
+.save-button span,
+.save-button span:before {
+  float: none;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+.save-button span {
+  background-color: #6789B2;
+  font-size: 0;
+  color: #FFFFFF;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+body.desktop .save-button:not(.disabled):hover span, body.desktop .save-button:not(.disabled):active span, body.desktop .save-button:not(.disabled):focus span, .save-button:not(.disabled).selected span {
+  color: inherit !important;
+  background-color: #33BAF1;
+}
+.save-button:not(.disabled).selected {
+  cursor: default;
+}
+
 .add-to-favorite {
   position: absolute;
   top: 0;

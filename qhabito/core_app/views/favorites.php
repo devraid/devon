@@ -65,6 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<li><a class="selected" href="#" title=""><span>Favoritos</span><span>Favoritos</span></a></li>
 						<li><a href="#" title=""><span>Búsquedas</span><span>Búsquedas</span></a></li>
 						<li><a href="#" title=""><span>Inmuebles</span><span>Inmuebles</span></a></li>
+						<li><a href="#" title=""><span>Mensajes</span><span>Mensajes</span></a></li>
 					</ul>
 				</div>
 				
@@ -116,7 +117,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular...</p>
-								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+								<div class="notes">
+									<h1 class="title">Notas:</h1>
+									<textarea class="textarea" name="f_notes" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+									<a class="save-button" href="#" title=""><span class="icon-floppy">&nbsp;</span></a>
+								</div>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -157,7 +162,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle tamarindos, 7, Solymar - Puerto Marina, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+								<div class="notes">
+									<h1 class="title">Notas:</h1>
+									<textarea class="textarea" name="f_notes" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+									<a class="save-button" href="#" title=""><span class="icon-floppy">&nbsp;</span></a>
+								</div>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -198,7 +207,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en avenida antonio machado, 100, Benalmádena Costa - Parque de la Paloma, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+								<div class="notes">
+									<h1 class="title">Notas:</h1>
+									<textarea class="textarea" name="f_notes" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+									<a class="save-button" href="#" title=""><span class="icon-floppy">&nbsp;</span></a>
+								</div>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -239,7 +252,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+								<div class="notes">
+									<h1 class="title">Notas:</h1>
+									<textarea class="textarea" name="f_notes" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+									<a class="save-button" href="#" title=""><span class="icon-floppy">&nbsp;</span></a>
+								</div>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -280,7 +297,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+								<div class="notes">
+									<h1 class="title">Notas:</h1>
+									<textarea class="textarea" name="f_notes" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+									<a class="save-button" href="#" title=""><span class="icon-floppy">&nbsp;</span></a>
+								</div>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -321,7 +342,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+								<div class="notes">
+									<h1 class="title">Notas:</h1>
+									<textarea class="textarea" name="f_notes" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+									<a class="save-button" href="#" title=""><span class="icon-floppy">&nbsp;</span></a>
+								</div>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">
@@ -362,7 +387,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h1 class="title"><a href="/qhabito/alquiler/detalle" title="">Piso en calle Ágave, Santangelo, Benalmádena <span>&mdash; 12/07/18 12:30h</span></a></h1>
 								<h2 class="subtitle"><span>600€/mes</span>85m | 2 hab | 1 baño</h2>
 								<p class="description">Precioso piso de tres dormitorios en Santangelo Norte sin amueblar para larga temporada, con un porche y zona verde privativa espectacular de 70 metros cuadrados ...</p>
-								<textarea class="textarea notes" name="c_message" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+								<div class="notes">
+									<h1 class="title">Notas:</h1>
+									<textarea class="textarea" name="f_notes" autocapitalize="none" autocorrect="off" autocomplete="off" spellcheck="false" maxlength="255" placeholder="Puedes añadir una nota ..."></textarea>
+									<a class="save-button" href="#" title=""><span class="icon-floppy">&nbsp;</span></a>
+								</div>
 							</div>
 							<div class="contact-view clearfix">
 								<p class="contact">

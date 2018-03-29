@@ -75,3 +75,7 @@
 .icon-close:before {
   content: '\e805';
 }
+
+.icon-floppy:before {
+  content: '\e806';
+}

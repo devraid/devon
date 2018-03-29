@@ -76,6 +76,10 @@
   content: '\e805';
 }
 
+.icon-floppy:before {
+  content: '\e806';
+}
+
 *,
 *:before,
 *:after {
@@ -265,6 +269,49 @@ body.desktop .cookies .button:not(.disabled):hover span:last-of-type, body.deskt
 
 .cookies.visible {
   display: block;
+}
+
+.save-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #FFFFFF;
+  overflow: hidden;
+  display: none;
+}
+.save-button.active {
+  display: block;
+}
+.save-button span,
+.save-button span:before {
+  float: none;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+.save-button span {
+  background-color: #6789B2;
+  font-size: 0;
+  color: #FFFFFF;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+body.desktop .save-button:not(.disabled):hover span, body.desktop .save-button:not(.disabled):active span, body.desktop .save-button:not(.disabled):focus span, .save-button:not(.disabled).selected span {
+  color: inherit !important;
+  background-color: #33BAF1;
+}
+.save-button:not(.disabled).selected {
+  cursor: default;
 }
 
 .add-to-favorite {
@@ -846,7 +893,8 @@ body.desktop .main-grid .mod-grid .details .title a:not(.disabled):hover, body.d
   cursor: default;
 }
 .main-grid .mod-grid .details .description,
-.main-grid .mod-grid .details .notes {
+.main-grid .mod-grid .details .notes,
+.main-grid .mod-grid .details .notes textarea {
   color: #6789B2;
   padding: 0 0 30px 0;
   width: 100%;
@@ -856,6 +904,19 @@ body.desktop .main-grid .mod-grid .details .title a:not(.disabled):hover, body.d
   display: block;
 }
 .main-grid .mod-grid .details .notes {
+  padding: 18px 0 0 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.main-grid .mod-grid .details .notes .title {
+  padding: 0 0 8px 0 !important;
+  color: #1C7EBE;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.main-grid .mod-grid .details .notes textarea {
+  line-height: 18px;
   font-weight: normal;
   font-style: normal;
   border: none;
@@ -863,7 +924,6 @@ body.desktop .main-grid .mod-grid .details .title a:not(.disabled):hover, body.d
   -webkit-border-radius: 0;
   border-radius: 0;
   outline: none;
-  margin-top: 20px;
   padding: 15px;
   resize: none;
   background: none;
@@ -871,54 +931,59 @@ body.desktop .main-grid .mod-grid .details .title a:not(.disabled):hover, body.d
   background-color: #F6F6F6;
   border: #E4E5E6 dashed 2px;
   max-height: calc(1.2em * 10 + 35px);
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
-.main-grid .mod-grid .details .notes::-webkit-input-placeholder {
+.main-grid .mod-grid .details .notes textarea::-webkit-input-placeholder {
   opacity: 1;
   color: #6789B2;
 }
-.main-grid .mod-grid .details .notes:-moz-placeholder {
+.main-grid .mod-grid .details .notes textarea:-moz-placeholder {
   opacity: 1;
   color: #6789B2;
 }
-.main-grid .mod-grid .details .notes::-moz-placeholder {
+.main-grid .mod-grid .details .notes textarea::-moz-placeholder {
   opacity: 1;
   color: #6789B2;
 }
-.main-grid .mod-grid .details .notes:-ms-input-placeholder {
+.main-grid .mod-grid .details .notes textarea:-ms-input-placeholder {
   opacity: 1;
   color: #6789B2;
 }
-.main-grid .mod-grid .details .notes::-ms-input-placeholder {
+.main-grid .mod-grid .details .notes textarea::-ms-input-placeholder {
   opacity: 1;
   color: #6789B2;
 }
-.main-grid .mod-grid .details .notes::placeholder {
+.main-grid .mod-grid .details .notes textarea::placeholder {
   opacity: 1;
   color: #6789B2;
 }
-.main-grid .mod-grid .details .notes:focus {
+.main-grid .mod-grid .details .notes textarea:hover, .main-grid .mod-grid .details .notes textarea:focus {
   background-color: #FFFFFF;
   border: #6789B2 dashed 2px;
 }
-.main-grid .mod-grid .details .notes:focus::-webkit-input-placeholder {
+.main-grid .mod-grid .details .notes textarea:hover::-webkit-input-placeholder, .main-grid .mod-grid .details .notes textarea:focus::-webkit-input-placeholder {
   color: #DBE4E8;
 }
-.main-grid .mod-grid .details .notes:focus:-moz-placeholder {
+.main-grid .mod-grid .details .notes textarea:hover:-moz-placeholder, .main-grid .mod-grid .details .notes textarea:focus:-moz-placeholder {
   color: #DBE4E8;
 }
-.main-grid .mod-grid .details .notes:focus::-moz-placeholder {
+.main-grid .mod-grid .details .notes textarea:hover::-moz-placeholder, .main-grid .mod-grid .details .notes textarea:focus::-moz-placeholder {
   color: #DBE4E8;
 }
-.main-grid .mod-grid .details .notes:focus:-ms-input-placeholder {
+.main-grid .mod-grid .details .notes textarea:hover:-ms-input-placeholder, .main-grid .mod-grid .details .notes textarea:focus:-ms-input-placeholder {
   color: #DBE4E8;
 }
-.main-grid .mod-grid .details .notes:focus::-ms-input-placeholder {
+.main-grid .mod-grid .details .notes textarea:hover::-ms-input-placeholder, .main-grid .mod-grid .details .notes textarea:focus::-ms-input-placeholder {
   color: #DBE4E8;
 }
-.main-grid .mod-grid .details .notes:focus::placeholder {
+.main-grid .mod-grid .details .notes textarea:hover::placeholder, .main-grid .mod-grid .details .notes textarea:focus::placeholder {
   color: #DBE4E8;
 }
-.main-grid .mod-grid .details .notes::-ms-clear {
+.main-grid .mod-grid .details .notes textarea::-ms-clear {
   display: none;
 }
 .main-grid .mod-grid .contact-view {
