@@ -383,6 +383,7 @@ body.desktop .add-to-favorite:not(.disabled):hover span, body.desktop .add-to-fa
   height: 100px;
 }
 .main .header .logo-link {
+  float: left;
   clear: both;
   width: 188px;
   height: 100%;
@@ -393,6 +394,17 @@ body.desktop .add-to-favorite:not(.disabled):hover span, body.desktop .add-to-fa
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
+}
+.main .header .search-form {
+  float: right;
+  max-width: 40%;
+  margin-top: 20px;
+}
+.main .header .search-form .send span:last-of-type {
+  background-color: #6789B2;
+}
+.main .header .search-form .send span:first-of-type {
+  background-color: #33BAF1;
 }
 .main .header .top-bar {
   float: left;
@@ -1402,6 +1414,34 @@ body.desktop .mod-grid-tags-cloud .item:not(.disabled):hover, body.desktop .mod-
 .mod-simple-form div:first-of-type {
   width: 100%;
 }
+.mod-simple-form div.results {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mod-simple-form div.results .mod-select {
+  border-top: #E4E5E6 solid 1px;
+  height: auto;
+  float: left;
+  width: 100%;
+  background-color: #DBE4E8;
+}
+.mod-simple-form div.results .mod-select li:first-of-type {
+  display: none;
+}
+.mod-simple-form div.results .mod-select li {
+  background-color: #FFFFFF;
+  border-left: none;
+  border-right: none;
+}
+body.desktop .mod-simple-form div.results .mod-select:not(.disabled):hover li, body.desktop .mod-simple-form div.results .mod-select:not(.disabled):active li, body.desktop .mod-simple-form div.results .mod-select:not(.disabled):focus li, .mod-simple-form div.results .mod-select:not(.disabled).selected li {
+  border-bottom: #E4E5E6 solid 1px;
+  border-left: none;
+  border-right: none;
+}
+.mod-simple-form div.results .mod-select:not(.disabled).selected {
+  cursor: default;
+}
 .mod-simple-form form,
 .mod-simple-form fieldset,
 .mod-simple-form input {
@@ -1429,9 +1469,56 @@ body.desktop .mod-grid-tags-cloud .item:not(.disabled):hover, body.desktop .mod-
   color: #09315A;
   line-height: normal;
   background-color: #DBE4E8;
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
 }
-.mod-simple-form input:focus {
+.mod-simple-form input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.mod-simple-form input:-moz-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.mod-simple-form input::-moz-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.mod-simple-form input:-ms-input-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.mod-simple-form input::-ms-input-placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.mod-simple-form input::placeholder {
+  opacity: 1;
+  color: #6789B2;
+}
+.mod-simple-form input:hover, .mod-simple-form input:focus {
   background-color: #FFFFFF !important;
+}
+.mod-simple-form input:hover::-webkit-input-placeholder, .mod-simple-form input:focus::-webkit-input-placeholder {
+  color: #DBE4E8;
+}
+.mod-simple-form input:hover:-moz-placeholder, .mod-simple-form input:focus:-moz-placeholder {
+  color: #DBE4E8;
+}
+.mod-simple-form input:hover::-moz-placeholder, .mod-simple-form input:focus::-moz-placeholder {
+  color: #DBE4E8;
+}
+.mod-simple-form input:hover:-ms-input-placeholder, .mod-simple-form input:focus:-ms-input-placeholder {
+  color: #DBE4E8;
+}
+.mod-simple-form input:hover::-ms-input-placeholder, .mod-simple-form input:focus::-ms-input-placeholder {
+  color: #DBE4E8;
+}
+.mod-simple-form input:hover::placeholder, .mod-simple-form input:focus::placeholder {
+  color: #DBE4E8;
 }
 .mod-simple-form input::-ms-clear {
   display: none;
@@ -1480,6 +1567,9 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
 }
 .mod-simple-form .send:not(.disabled).selected {
   cursor: default;
+}
+.mod-simple-form.has-results input {
+  border-bottom-left-radius: 0;
 }
 
 .mod-modal {

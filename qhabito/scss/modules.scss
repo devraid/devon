@@ -146,7 +146,6 @@
 	height: 60px;
 	display: block;
 }
-
 .mod-simple-form {
 	width: 100%;
 	height: auto;
@@ -158,6 +157,36 @@
 		
 		&:first-of-type {
 			width: 100%;
+		}
+	}
+	
+	div.results {
+		width: 100%;
+		height: auto;
+		display: block;
+		
+		.mod-select {
+			border-top: $coloro solid 1px;
+			height: auto;
+			float: left;
+			width: 100%;
+			background-color: $colorl;
+			
+			li:first-of-type {
+				display: none;
+			}
+			li {
+				background-color: $colora;
+				border-left: none;
+				border-right: none;
+			}
+			@include on-hover {
+				li {
+					border-bottom: $coloro solid 1px;
+					border-left: none;
+					border-right: none;
+				}
+			}
 		}
 	}
 
@@ -191,8 +220,62 @@
 		line-height: normal;
 		background-color: $colorl;
 		
+		// Transition
+		-webkit-transition: background-color 0.25s ease;
+		-moz-transition: background-color 0.25s ease;
+		-ms-transition: background-color 0.25s ease;
+		-o-transition: background-color 0.25s ease;
+		transition: background-color 0.25s ease;
+		
+		// PLACE HOLDER COLOR
+		&::-webkit-input-placeholder {
+			opacity: 1;
+			color: $colorc;
+		}
+		&:-moz-placeholder {
+			opacity: 1;
+			color: $colorc;
+		}
+		&::-moz-placeholder {
+			opacity: 1;
+			color: $colorc;
+		}
+		&:-ms-input-placeholder {
+			opacity: 1;
+			color: $colorc;
+		}
+		&::-ms-input-placeholder {
+			opacity: 1;
+			color: $colorc;
+		}
+		&::placeholder {
+			opacity: 1;
+			color: $colorc;
+		}
+		
+		&:hover,
 		&:focus {
 			background-color: $colora !important;
+
+			// PLACE HOLDER COLOR
+			&::-webkit-input-placeholder {
+				color: $colorl;
+			}
+			&:-moz-placeholder {
+				color: $colorl;
+			}
+			&::-moz-placeholder {
+				color: $colorl;
+			}
+			&:-ms-input-placeholder {
+				color: $colorl;
+			}
+			&::-ms-input-placeholder {
+				color: $colorl;
+			}
+			&::placeholder {
+				color: $colorl;
+			}
 		}
 		&::-ms-clear {
 			display: none;
@@ -249,6 +332,12 @@
 			span:last-of-type {
 				opacity: 0;
 			}
+		}
+	}
+	
+	&.has-results {
+		input {
+			border-bottom-left-radius: 0;
 		}
 	}
 }

@@ -51,11 +51,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- HEADER / END -->
 		<!-- MODULE / BEGIN -->
 		<div class="mod-top-big-poster" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
-			<div class="mod-simple-form">
+			<div class="mod-simple-form search-form">
 				<h1>Alquilar y comprar en pocos pasos...</h1>
 				<form action="/busca" method="get">
 					<fieldset>
-						<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." /></div>
+						<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." />
+						<div class="results clearfix"></div></div>
 						<div><a class="send" href="#" title=""><span>Buscar</span><span>Buscar</span></a></div>
 					</fieldset>
 				</form>
@@ -65,20 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
 			<div class="wrap">
-			
-				<!-- MODULE / BEGIN -->
-				<div class="mod-grid">
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World Hello<br />World Hello<br />World Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-					<div class="item">Hello<br />World</div>
-				</div>
-				<!-- MODULE / END -->
-			
-				hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />hello world<br />
+				<!-- TBD -->
 			</div>
 		</div>
 		<!-- CONTENT / END -->

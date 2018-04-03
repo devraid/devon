@@ -1,8 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+$dictionary = array(
+	'es' => array(
+		'test' => 'test'
+	),
+	'en' => array(
+		'test' => 'test'
+	)
+);
 ?>
 <!DOCTYPE HTML>
-	<html lang="en">
+	<html lang="<?php echo $language; ?>">
 	<head>
 		<title>QHabito</title>
 		<meta http-equiv="pragma" content="no-cache" />
@@ -46,13 +54,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="content">
 				<a class="logo-link" href="#" title="">&nbsp;</a>
+				<div class="mod-simple-form search-form">
+					<form action="/busca" method="get">
+						<fieldset>
+							<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." />
+							<div class="results"></div></div>
+							<div><a class="send" href="#" title=""><span>Buscar</span><span>Buscar</span></a></div>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 			<ul class="breadcrumb clearfix">
-				<li><a href="/qhabito/" title=""><span class="text">Inicio</span><span class="arrow">&nbsp;</span></a></li>
-				<li><a href="#" title=""><span class="text">Lorem ipsum</span><span class="arrow">&nbsp;</span></a></li>
-				<li><a href="#" title=""><span class="text">Lorem ipsum</span><span class="arrow">&nbsp;</span></a></li>
-				<li><a href="#" title=""><span class="text">Lorem ipsum dolor</span><span class="arrow">&nbsp;</span></a></li>
-				<li><a class="selected" href="#" title=""><span class="text">Lorem ipsum sit amet</span></a></li>
+				<li><a href="<?php echo base_url(); ?>" title=""><span class="text">Inicio</span><span class="arrow">&nbsp;</span></a></li>
+				<li><a href="<?php echo base_url().$data['location']['community']['slug']; ?>" title=""><span class="text"><?php echo $data['location']['community']['name']; ?></span><span class="arrow">&nbsp;</span></a></li>
+				<li><a href="<?php echo base_url().$data['location']['province']['slug']; ?>" title=""><span class="text"><?php echo $data['location']['province']['name']; ?></span><span class="arrow">&nbsp;</span></a></li>
+				<li><a class="selected" href="<?php echo base_url().$data['location']['city']['slug']; ?>" title=""><span class="text"><?php echo $data['location']['city']['name']; ?></span></a></li>
 			</ul>
 		</div>
 		<!-- HEADER / END -->

@@ -9,6 +9,9 @@ class Rent extends CI_Controller {
 		//print_r($this->uri->segment('2'));
 		//die();
 		
+		// Language
+		$data['language'] = 'es';
+		
 		// Touch device
 		$data['device'] = 'desktop';
 		if (Util::isMobileOrTablet() === TRUE) {
@@ -22,6 +25,8 @@ class Rent extends CI_Controller {
 		}
 		
 		// Model
+		$this->load->model('rent_model');
+		$data['location'] = $this->rent_model->get_location();
 		$data['data'] = $data;
 		
 		// View

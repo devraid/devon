@@ -37,7 +37,7 @@ var QHABITO = window.QHABITO || {};
 				return !!(window.history && window.history.replaceState);
 			},
 			modSelect : function() {
-				$('.mod-select').each(function() {
+				$('.mod-select:not(.results)').each(function() {
 					var select = $(this);
 					var length = $('li', select).length;
 					select.data('height', '' + (57+((length-1)*40))); // 57 is the first li. 40 are next ones
@@ -159,6 +159,67 @@ var QHABITO = window.QHABITO || {};
 					});
 				});
 			},
+			modSearch : function() {
+				var form = $('.search-form');
+				var field = $('.search', form);
+				var results = $('.results', form);
+				var timeout;
+				if (field.length) {
+					field.blur(function() {
+						if($('.mod-select', results).length) {
+							setTimeout(function() {
+								results.hide();
+								form.removeClass('has-results');
+							}, 250);
+						}
+					});
+					field.focus(function() {
+						if($('.mod-select', results).length) {
+							if (!form.hasClass('has-results')) {
+								form.addClass('has-results');
+							}
+							results.show();
+						}
+					});
+					field.keyup(function() {
+						if(timeout) {
+							clearTimeout(timeout);
+						}
+						timeout = setTimeout(function() {
+							var t = field.val();
+							if(t.length >= 3) {
+								$.ajax({
+									type: 'GET',
+									url: '/qhabito/search',
+									data: 't=' + field.val(),
+									beforeSend: function() {
+										// TBD
+									},
+									success: function(response) {
+										results.empty();
+										form.removeClass('has-results');
+										if(response.data.length > 0) {
+											var tba = '<ul class="mod-select results" style="height: auto;"><li><!-- results --></li>';
+											$.each(response.data, function(i, item) {
+												tba += '<li><a href="/qhabito/alquiler/' + item.slug + '" title="">' + item.name + '</a></li>';
+											});
+											tba += '</ul>';
+											results.append(tba);
+											if (!form.hasClass('has-results')) {
+												form.addClass('has-results');
+											}
+											results.show();
+										}
+									}
+								});
+							} else {
+								results.empty();
+								form.removeClass('has-results');
+							}
+						}, 500);
+					});
+				}
+			},
 			init : function() {
 				// Cookies
 				QHABITO.common.setCookies();
@@ -171,12 +232,9 @@ var QHABITO = window.QHABITO || {};
 				
 				// Module
 				QHABITO.common.modSliderThumbs();
-				
+
 				// Module
-				//QHABITO.common.modTagsCloud();
-				
-				// Module
-				//QHABITO.common.modGridTagsCloud();
+				QHABITO.common.modSearch();
 				
 				// Navigation
 				/*QHABITO.common.target.on('scroll', function() {
