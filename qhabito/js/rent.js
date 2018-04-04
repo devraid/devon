@@ -9,6 +9,7 @@ var QHABITO = window.QHABITO || {};
 	function Rent() {
 		QHABITO.rent = {
 			target : $('div.main'),
+			base_uri : $('.breadcrumb li:last-of-type a').attr('href'),
 			cloud : $('.mod-tags-cloud'),
 			setCookies : function() {
 				var qh_list = QHABITO.common.getCookie('qh_list');
@@ -46,7 +47,7 @@ var QHABITO = window.QHABITO || {};
 				$('a.item', cloud).each(function() {
 					uri += '_' + $(this).data('filter');
 				});
-				uri = '/qhabito/alquiler/' + uri.substring(1);
+				uri = QHABITO.rent.base_uri + '/' + uri.substring(1);
 				uri = (uri.charAt(uri.length-1) === '/') ? uri.substr(0, uri.length - 1) : uri;
 				if (QHABITO.common.utilHistory()) {
 					window.history.replaceState({}, '' + document.title, '' + uri);

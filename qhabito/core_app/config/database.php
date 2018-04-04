@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '127.0.0.1',
 	'username' => 'qhabito18',//'wirexmed_18habit',
 	'password' => 'dx4Wb6pbFsXRRUD4',
 	'database' => 'que_habito',//'wirexmed_que_habito',

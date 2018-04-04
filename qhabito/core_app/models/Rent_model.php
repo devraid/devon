@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Rent_model extends CI_Model {
 
-	private $location;
+	private $location = array();
 	
 	public function __construct() {
 		parent::__construct();
