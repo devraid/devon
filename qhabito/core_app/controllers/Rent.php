@@ -24,9 +24,11 @@ class Rent extends CI_Controller {
 			$data['list_type'] = 'list';
 		}
 		
-		// Model
+		// Rent model
 		$this->load->model('rent_model');
 		$data['location'] = $this->rent_model->get_location();
+		
+		// Data
 		$data['data'] = $data;
 		
 		// View

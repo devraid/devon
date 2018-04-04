@@ -549,6 +549,11 @@ body.desktop .main .breadcrumb li a:not(.disabled):hover span, body.desktop .mai
 }
 .main .breadcrumb li:last-of-type a span.text {
   font-weight: bold;
+  color: inherit !important;
+  cursor: default;
+}
+.main .breadcrumb li:last-of-type a span.arrow {
+  display: none;
 }
 
 .main .footer {
@@ -1420,6 +1425,7 @@ body.desktop .mod-grid-tags-cloud .item:not(.disabled):hover, body.desktop .mod-
   display: block;
 }
 .mod-simple-form div.results .mod-select {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.2);
   border-top: #E4E5E6 solid 1px;
   height: auto;
   float: left;
@@ -1568,7 +1574,7 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
 .mod-simple-form .send:not(.disabled).selected {
   cursor: default;
 }
-.mod-simple-form.has-results input {
+.mod-simple-form form.has-results input {
   border-bottom-left-radius: 0;
 }
 

@@ -36,6 +36,9 @@ var QHABITO = window.QHABITO || {};
 			utilHistory : function() {
 				return !!(window.history && window.history.replaceState);
 			},
+			utilTrimAll : function(str) {
+				return str.replace(/^\s+|\s+$/g,'').replace(/\s+/g,' ');
+			},
 			modSelect : function() {
 				$('.mod-select:not(.results)').each(function() {
 					var select = $(this);
@@ -160,15 +163,16 @@ var QHABITO = window.QHABITO || {};
 				});
 			},
 			modSearch : function() {
-				var form = $('.search-form');
+				var form = $('.search-form form');
 				var field = $('.search', form);
 				var results = $('.results', form);
 				var timeout;
+				
 				if (field.length) {
 					field.blur(function() {
 						if($('.mod-select', results).length) {
 							setTimeout(function() {
-								results.hide();
+								results.css('visibility', 'hidden');
 								form.removeClass('has-results');
 							}, 250);
 						}
@@ -178,7 +182,7 @@ var QHABITO = window.QHABITO || {};
 							if (!form.hasClass('has-results')) {
 								form.addClass('has-results');
 							}
-							results.show();
+							results.css('visibility', 'visible');
 						}
 					});
 					field.keyup(function() {
@@ -186,37 +190,56 @@ var QHABITO = window.QHABITO || {};
 							clearTimeout(timeout);
 						}
 						timeout = setTimeout(function() {
-							var t = field.val();
+							var t = QHABITO.common.utilTrimAll(field.val());
 							if(t.length >= 3) {
-								$.ajax({
-									type: 'GET',
-									url: '/qhabito/search',
-									data: 't=' + field.val(),
-									beforeSend: function() {
-										// TBD
-									},
-									success: function(response) {
-										results.empty();
-										form.removeClass('has-results');
-										if(response.data.length > 0) {
-											var tba = '<ul class="mod-select results" style="height: auto;"><li><!-- results --></li>';
-											$.each(response.data, function(i, item) {
-												tba += '<li><a href="/qhabito/alquiler/' + item.slug + '" title="">' + item.name + '</a></li>';
-											});
-											tba += '</ul>';
-											results.append(tba);
-											if (!form.hasClass('has-results')) {
-												form.addClass('has-results');
+								var token = QHABITO.common.getCookie('csrf_cookie_name');
+								if (token) {
+									$.ajax({
+										type: 'POST',
+										url: '/qhabito/search',
+										data: 't=' + t + '&csrf_token_name=' + token,
+										beforeSend: function() {
+											// TBD
+										},
+										success: function(response) {
+											results.empty();
+											form.removeClass('has-results');
+											if(response.data.length > 0) {
+												var tba = '<ul class="mod-select results" style="height: auto;"><li><!-- results --></li>';
+												$.each(response.data, function(i, item) {
+													tba += '<li><a href="/qhabito/alquiler/' + item.slug + '" title="">' + item.name + '</a></li>';
+												});
+												tba += '</ul>';
+												results.append(tba);
+												if (!form.hasClass('has-results')) {
+													form.addClass('has-results');
+												}
+												results.css('visibility', 'visible');
 											}
-											results.show();
 										}
-									}
-								});
+									});
+								}
 							} else {
 								results.empty();
 								form.removeClass('has-results');
 							}
 						}, 500);
+					});
+					$('.send', form).on('click', function() {
+						var self = $(this);
+						self.blur();
+						
+						var t = QHABITO.common.utilTrimAll(field.val());
+						if(t.length) {
+							if (!form.hasClass('has-results')) {
+								t = t.replace(/ /g, '-');
+								document.location.href = '' + t;
+							} else {
+								document.location.href = '' + $('li:eq(1) a', results).attr('href');
+							}
+						}
+						
+						return false;
 					});
 				}
 			},

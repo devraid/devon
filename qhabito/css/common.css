@@ -467,6 +467,11 @@ body.desktop .main .breadcrumb li a:not(.disabled):hover span, body.desktop .mai
 }
 .main .breadcrumb li:last-of-type a span.text {
   font-weight: bold;
+  color: inherit !important;
+  cursor: default;
+}
+.main .breadcrumb li:last-of-type a span.arrow {
+  display: none;
 }
 
 .main .footer {

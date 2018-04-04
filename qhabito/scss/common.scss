@@ -545,8 +545,15 @@ html, body {
 			}
 		}
 
-		&:last-of-type a span.text {
-			font-weight: bold;
+		&:last-of-type {
+			a span.text {
+				font-weight: bold;
+				color: inherit !important;
+				cursor: default;
+			}
+			a span.arrow {
+				display: none;
+			}
 		}
 	}
 }

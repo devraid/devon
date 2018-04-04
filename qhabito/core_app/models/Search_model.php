@@ -11,7 +11,12 @@ class Search_model extends CI_Model {
 	
 	public function get_data() {
 		// Search term
-		$term = '' . $this->input->get('t', true);
+		$term = '' . $this->input->post('t', true);
+		
+		if (!$term) {
+			echo 'No direct script access allowed';
+			die();
+		}
 		
 		// Cache off
 		$this->db->cache_on();

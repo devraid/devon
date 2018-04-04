@@ -166,6 +166,7 @@
 		display: block;
 		
 		.mod-select {
+			box-shadow: 0 10px 26px rgba(0, 0, 0, .2);
 			border-top: $coloro solid 1px;
 			height: auto;
 			float: left;
@@ -335,7 +336,7 @@
 		}
 	}
 	
-	&.has-results {
+	& form.has-results {
 		input {
 			border-bottom-left-radius: 0;
 		}

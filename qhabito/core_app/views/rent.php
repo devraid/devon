@@ -55,7 +55,7 @@ $dictionary = array(
 			<div class="content">
 				<a class="logo-link" href="#" title="">&nbsp;</a>
 				<div class="mod-simple-form search-form">
-					<form action="/busca" method="get">
+					<form action="<?php echo base_url(); ?>alquiler" method="get">
 						<fieldset>
 							<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." />
 							<div class="results"></div></div>
@@ -66,9 +66,9 @@ $dictionary = array(
 			</div>
 			<ul class="breadcrumb clearfix">
 				<li><a href="<?php echo base_url(); ?>" title=""><span class="text">Inicio</span><span class="arrow">&nbsp;</span></a></li>
-				<li><a href="<?php echo base_url().$data['location']['community']['slug']; ?>" title=""><span class="text"><?php echo $data['location']['community']['name']; ?></span><span class="arrow">&nbsp;</span></a></li>
-				<li><a href="<?php echo base_url().$data['location']['province']['slug']; ?>" title=""><span class="text"><?php echo $data['location']['province']['name']; ?></span><span class="arrow">&nbsp;</span></a></li>
-				<li><a class="selected" href="<?php echo base_url().$data['location']['city']['slug']; ?>" title=""><span class="text"><?php echo $data['location']['city']['name']; ?></span></a></li>
+				<?php foreach($data['location'] as $location): ?>
+				<li><a href="<?php echo base_url().$location['slug']; ?>" title=""><span class="text"><?php echo $location['name']; ?></span><span class="arrow">&nbsp;</span></a></li>
+				<?php endforeach; ?>
 			</ul>
 		</div>
 		<!-- HEADER / END -->
