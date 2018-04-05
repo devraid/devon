@@ -337,7 +337,7 @@
 	}
 	
 	& form.has-results {
-		input {
+		input:focus {
 			border-bottom-left-radius: 0;
 		}
 	}

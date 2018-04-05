@@ -4,6 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Search extends CI_Controller {
 	
 	public function index($id = NULL) {
+		// Language
+		$data['language'] = 'es';
+		
+		// CSRF
+		$data['csrf_exp'] = '' . $this->config->item('csrf_expire');
+		
 		// Model
 		$this->load->model('search_model');
 		$data['data'] = $this->search_model->get_data();

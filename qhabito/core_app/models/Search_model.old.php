@@ -22,7 +22,7 @@ class Search_model extends CI_Model {
 		$this->db->cache_on();
 		
 		// Vars
-		$arr1 = $arr2 = [];
+		$arr1 = $arr2 = $arr3 = $arr4 = $arr5 = [];
 		
 		// Cities
 		$query = $this->db->select('name, slug')->from('city')->like('name', '' . $term, 'after')->order_by('name', 'asc')->limit(5)->get();
@@ -31,33 +31,35 @@ class Search_model extends CI_Model {
 			$query = $this->db->select('name, slug')->from('city')->like('name', '' . $term, 'both')->order_by('name', 'asc')->limit(5)->get();
 			$arr2 = $query->result();
 		}
-		$arr1 = array_merge($arr1, $arr2);
-		if($arr1) {
-			$arr1 = array_map(function($item) {
-				return (object)array(
-					'name' => $item->name . ', ciudad',
-					'slug' => '' . $item->slug
-				);
-			}, $arr1);
-		}
 		
 		// Provinces
 		$query = $this->db->select('name, slug')->from('province')->like('name', '' . $term, 'both')->order_by('name', 'asc')->limit(5)->get();
-		$arr2 = $query->result();
-		if($arr2) {
-			$arr2 = array_map(function($item) {
+		$arr3 = $query->result();
+		if($arr3) {
+			$arr3 = array_map(function($item) {
 				return (object)array(
 					'name' => $item->name . ', provincia',
 					'slug' => 'provincia-' . $item->slug
 				);
-			}, $arr2);
+			}, $arr3);
+		}
+		
+		// Communities
+		$query = $this->db->select('name, slug')->from('community')->like('name', '' . $term, 'both')->order_by('name', 'asc')->limit(5)->get();
+		$arr4 = $query->result();
+		if($arr4) {
+			$arr4 = array_map(function($item) {
+				return (object)array(
+					'name' => $item->name . ', comunidad',
+					'slug' => 'comunidad-' . $item->slug
+				);
+			}, $arr4);
 		}
 		
 		// Cache off
 		$this->db->cache_off();
-
-		// Results
-		$result = array_slice(array_merge($arr1, $arr2), 0, 11);
+		
+		$result = array_slice(array_merge($arr1, $arr2, $arr3, $arr4), 0, 11);
 		$result = array_map("unserialize", array_unique(array_map("serialize", $result)));
 		$results = [];
 		foreach($result as $item) {

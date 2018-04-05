@@ -344,7 +344,7 @@ html, body {
 	top: 0;
 	width: 100%;
 	height: auto;
-	z-index: 999999;
+	z-index: 999998;
 	background-color: $colore;
 	display: block;
 	
@@ -352,6 +352,7 @@ html, body {
 		position: relative;
 		top: 0;
 		left: 0;
+		z-index: 999997;
 		/*position: -webkit-sticky;
 		position: sticky;*/
 		height: 100px;
@@ -766,6 +767,11 @@ html, body {
 	.cookies {
 		padding: 5%;
 	}
+	
+	// MAIN : HEADER : SEARCH FORM
+	.main .header .search-form {
+		max-width: 50%;
+	}
 }
 @media (max-device-width: 1200px), (max-width: 1200px) { // up to 1200px
 	// MAIN : FOOTER
@@ -780,6 +786,11 @@ html, body {
 		.mod-simple-form {
 			width: 45%;
 		}
+	}
+	
+	// MAIN : HEADER : SEARCH FORM
+	.main .header .search-form {
+		max-width: 60%;
 	}
 }
 @media (max-device-width: 1024px), (max-width: 1024px) { // up to 1024px
@@ -844,6 +855,13 @@ html, body {
 				top: 0;
 				left: 0;
 				padding: 0 0 0 10px;
+			}
+			
+			// SEARCH FORM
+			.search-form {
+				max-width: none;
+				margin-top: 0;
+				margin-bottom: 20px;
 			}
 		}
 	

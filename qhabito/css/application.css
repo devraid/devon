@@ -370,7 +370,7 @@ body.desktop .add-to-favorite:not(.disabled):hover span, body.desktop .add-to-fa
   top: 0;
   width: 100%;
   height: auto;
-  z-index: 999999;
+  z-index: 999998;
   background-color: #16487B;
   display: block;
 }
@@ -378,6 +378,7 @@ body.desktop .add-to-favorite:not(.disabled):hover span, body.desktop .add-to-fa
   position: relative;
   top: 0;
   left: 0;
+  z-index: 999997;
   /*position: -webkit-sticky;
   position: sticky;*/
   height: 100px;
@@ -729,6 +730,10 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   .cookies {
     padding: 5%;
   }
+
+  .main .header .search-form {
+    max-width: 50%;
+  }
 }
 @media (max-device-width: 1200px), (max-width: 1200px) {
   .main .footer .secondary {
@@ -736,6 +741,10 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   }
   .main .footer .mod-simple-form {
     width: 45%;
+  }
+
+  .main .header .search-form {
+    max-width: 60%;
   }
 }
 @media (max-device-width: 1024px), (max-width: 1024px) {
@@ -780,6 +789,11 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     top: 0;
     left: 0;
     padding: 0 0 0 10px;
+  }
+  .main .header .search-form {
+    max-width: none;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   .main .footer {
     padding: 50px 0 50px 0;
@@ -1574,7 +1588,7 @@ body.desktop .mod-simple-form .send:not(.disabled):hover span:last-of-type, body
 .mod-simple-form .send:not(.disabled).selected {
   cursor: default;
 }
-.mod-simple-form form.has-results input {
+.mod-simple-form form.has-results input:focus {
   border-bottom-left-radius: 0;
 }
 

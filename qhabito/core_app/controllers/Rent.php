@@ -12,6 +12,9 @@ class Rent extends CI_Controller {
 		// Language
 		$data['language'] = 'es';
 		
+		// CSRF
+		$data['csrf_exp'] = '' . $this->config->item('csrf_expire');
+		
 		// Touch device
 		$data['device'] = 'desktop';
 		if (Util::isMobileOrTablet() === TRUE) {

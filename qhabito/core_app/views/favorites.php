@@ -10,6 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="csrf" content="<?php echo $csrf_exp; ?>" />
 		<meta name="author" content="WirexMedia.com" />
 		<meta charset="utf-8" />
 		<meta name="description" content="" />

@@ -171,10 +171,7 @@ var QHABITO = window.QHABITO || {};
 				if (field.length) {
 					field.blur(function() {
 						if($('.mod-select', results).length) {
-							setTimeout(function() {
-								results.css('visibility', 'hidden');
-								form.removeClass('has-results');
-							}, 250);
+							results.css('visibility', 'hidden');
 						}
 					});
 					field.focus(function() {
@@ -210,7 +207,12 @@ var QHABITO = window.QHABITO || {};
 													tba += '<li><a href="/qhabito/alquiler/' + item.slug + '" title="">' + item.name + '</a></li>';
 												});
 												tba += '</ul>';
-												results.append(tba);
+												results.append(tba).after(function() {
+													$('li a', $(this)).on('mousedown', function() {
+														// To resolve the need of a blur timeout on field
+														return false;
+													});
+												});
 												if (!form.hasClass('has-results')) {
 													form.addClass('has-results');
 												}
@@ -242,6 +244,11 @@ var QHABITO = window.QHABITO || {};
 						return false;
 					});
 				}
+				// CSRF
+				var delay = $('meta[name="csrf"]').attr('content')*1000;
+				setTimeout(function() {
+					document.location.reload();
+				}, delay);
 			},
 			init : function() {
 				// Cookies
