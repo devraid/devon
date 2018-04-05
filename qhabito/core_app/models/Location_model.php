@@ -66,7 +66,20 @@ class Location_model extends CI_Model {
 					'name' => $city->name,
 					'slug' => 'alquiler/' . $city->slug
 				));
+			} else {
+				$type = 'search';
 			}
+		}
+		
+		// None of above
+		if ($type == 'search') {
+			$slug = urldecode($slug);
+			array_push($this->location, array(
+				'name' => 'Búsqueda: ' . str_replace('-', ' ', $slug),
+				'slug' => 'alquiler/' . $slug
+			));
+			
+			// TO BE DONE: A keyword search on properties
 		}
 	}
 	

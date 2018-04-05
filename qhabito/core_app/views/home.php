@@ -45,18 +45,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</ul>
 			</div>
 			<div class="content">
-				<a class="logo-link" href="#" title="">&nbsp;</a>
+				<a class="logo-link" href="<?php echo base_url(); ?>" title="">&nbsp;</a>
 			</div>
 		</div>
 		<!-- HEADER / END -->
 		<!-- MODULE / BEGIN -->
 		<div class="mod-top-big-poster" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="mod-simple-form search-form">
-				<h1>Alquilar y comprar en pocos pasos...</h1>
-				<form action="/busca" method="get">
+				<form action="<?php echo base_url(); ?>alquiler" method="get">
 					<fieldset>
-						<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." />
-						<div class="results clearfix"></div></div>
+						<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad..." />
+						<div class="results"></div></div>
 						<div><a class="send" href="#" title=""><span>Buscar</span><span>Buscar</span></a></div>
 					</fieldset>
 				</form>

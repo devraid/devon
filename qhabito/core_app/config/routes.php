@@ -57,6 +57,6 @@ $route['search'] = 'Search';
 
 $route['alquiler'] = 'Rent';
 $route['alquiler/detalle'] = 'Rent_Detail';
-$route['alquiler/:any'] = 'Rent';
+$route['alquiler/(.*)'] = 'Rent';
 
 $route['favoritos'] = 'Favorites';

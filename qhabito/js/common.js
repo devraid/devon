@@ -233,7 +233,7 @@ var QHABITO = window.QHABITO || {};
 						if(t.length) {
 							if (!form.hasClass('has-results')) {
 								t = t.replace(/ /g, '-');
-								document.location.href = '' + t;
+								document.location.href = form.attr('action') + '/' + t;
 							} else {
 								document.location.href = '' + $('li:eq(1) a', results).attr('href');
 							}

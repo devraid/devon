@@ -73,24 +73,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => '127.0.0.1',
-	'username' => 'qhabito18',//'wirexmed_18habit',
-	'password' => 'dx4Wb6pbFsXRRUD4',
-	'database' => 'que_habito',//'wirexmed_que_habito',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => 'core_app/cache',
-	'char_set' => 'utf8mb4',
-	'dbcollat' => 'utf8mb4_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => FALSE
-);
+if ($_SERVER['SERVER_NAME'] == 'devon.wirexmedia.localhost') {
+	$db['default'] = array(
+		'dsn'	=> '',
+		'hostname' => '127.0.0.1',
+		'username' => 'qhabito18',//'wirexmed_18habit',
+		'password' => 'dx4Wb6pbFsXRRUD4',
+		'database' => 'que_habito',//'wirexmed_que_habito',
+		'dbdriver' => 'mysqli',
+		'dbprefix' => '',
+		'pconnect' => FALSE,
+		'db_debug' => (ENVIRONMENT !== 'production'),
+		'cache_on' => FALSE,
+		'cachedir' => 'core_app/cache',
+		'char_set' => 'utf8mb4',
+		'dbcollat' => 'utf8mb4_general_ci',
+		'swap_pre' => '',
+		'encrypt' => FALSE,
+		'compress' => FALSE,
+		'stricton' => FALSE,
+		'failover' => array(),
+		'save_queries' => FALSE
+	);
+} else {
+	$db['default'] = array(
+		'dsn'	=> '',
+		'hostname' => 'localhost',
+		'username' => 'wirexmed_18habit',
+		'password' => 'dx4Wb6pbFsXRRUD4',
+		'database' => 'wirexmed_que_habito',
+		'dbdriver' => 'mysqli',
+		'dbprefix' => '',
+		'pconnect' => FALSE,
+		'db_debug' => (ENVIRONMENT !== 'production'),
+		'cache_on' => FALSE,
+		'cachedir' => 'core_app/cache',
+		'char_set' => 'utf8mb4',
+		'dbcollat' => 'utf8mb4_general_ci',
+		'swap_pre' => '',
+		'encrypt' => FALSE,
+		'compress' => FALSE,
+		'stricton' => FALSE,
+		'failover' => array(),
+		'save_queries' => FALSE
+	);
+}

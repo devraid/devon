@@ -53,23 +53,25 @@ $dictionary = array(
 				</ul>
 			</div>
 			<div class="content">
-				<a class="logo-link" href="#" title="">&nbsp;</a>
+				<a class="logo-link" href="<?php echo base_url(); ?>" title="">&nbsp;</a>
 				<div class="mod-simple-form search-form">
 					<form action="<?php echo base_url(); ?>alquiler" method="get">
 						<fieldset>
-							<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad, código postal..." />
+							<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad..." />
 							<div class="results"></div></div>
 							<div><a class="send" href="#" title=""><span>Buscar</span><span>Buscar</span></a></div>
 						</fieldset>
 					</form>
 				</div>
 			</div>
+			<?php if(sizeof($data['location']) > 0): ?>
 			<ul class="breadcrumb clearfix">
 				<li><a href="<?php echo base_url(); ?>" title=""><span class="text">Inicio</span><span class="arrow">&nbsp;</span></a></li>
 				<?php foreach($data['location'] as $location): ?>
 				<li><a href="<?php echo base_url().$location['slug']; ?>" title=""><span class="text"><?php echo $location['name']; ?></span><span class="arrow">&nbsp;</span></a></li>
 				<?php endforeach; ?>
 			</ul>
+			<?php endif; ?>
 		</div>
 		<!-- HEADER / END -->
 		<!-- CONTENT / BEGIN -->
