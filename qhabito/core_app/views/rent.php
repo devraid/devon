@@ -53,7 +53,7 @@ $dictionary = array(
 					<li><a href="#" title=""><span>ENG</span><span>ENG</span></a></li>
 				</ul>
 			</div>
-			<div class="content">
+			<div class="content clearfix">
 				<a class="logo-link" href="<?php echo base_url(); ?>" title="">&nbsp;</a>
 				<div class="mod-simple-form search-form">
 					<form action="<?php echo base_url(); ?>alquiler" method="get">
