@@ -420,7 +420,7 @@ body.desktop .main .header .top-bar .languages li a:not(.disabled):hover span:la
 }
 
 .main .breadcrumb {
-  padding: 7px 5% 7px 5%;
+  padding: 0 5% 0 5%;
   min-width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0 2px 8px 0 rgba(71, 71, 68, 0.24);
@@ -429,7 +429,7 @@ body.desktop .main .header .top-bar .languages li a:not(.disabled):hover span:la
   position: relative;
   top: 0;
   left: 0;
-  padding: 6px 0 6px 0;
+  padding: 16px 0 16px 0;
   overflow: hidden;
 }
 .main .breadcrumb li a {
@@ -467,6 +467,9 @@ body.desktop .main .breadcrumb li a:not(.disabled):hover span, body.desktop .mai
   color: inherit !important;
 }
 .main .breadcrumb li a:not(.disabled).selected {
+  cursor: default;
+}
+.main .breadcrumb li:last-of-type a {
   cursor: default;
 }
 .main .breadcrumb li:last-of-type a span.text {
@@ -724,6 +727,12 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
     height: 50px;
     line-height: 50px;
   }
+  .main .header .search-form .send span {
+    display: none;
+  }
+  .main .header .search-form .send .icon-search {
+    display: block;
+  }
   .main .footer {
     padding: 50px 0 50px 0;
     width: 100%;
@@ -765,6 +774,9 @@ body.desktop .main .footer .secondary li li a:not(.disabled):hover, body.desktop
   }
   .main .breadcrumb li {
     display: none;
+  }
+  .main .breadcrumb li a {
+    padding: 13px 0 13px 0;
   }
   .main .breadcrumb li a span.text {
     padding: 0;

@@ -493,7 +493,7 @@ html, body {
 	display: block;
 }
 .main .breadcrumb {
-	padding: 7px 5% 7px 5%;
+	padding: 0 5% 0 5%;
 	min-width: 100%;
 	background-color: $colora;
 	box-shadow: 0 2px 8px 0 rgba(71,71,68,0.24);
@@ -503,7 +503,7 @@ html, body {
 			position: relative;
 			top: 0;
 			left: 0;
-			padding: 6px 0 6px 0;
+			padding: 16px 0 16px 0;
 			overflow: hidden;
 
 			& {
@@ -551,6 +551,9 @@ html, body {
 		}
 
 		&:last-of-type {
+			a {
+				cursor: default;
+			}
 			a span.text {
 				font-weight: bold;
 				color: inherit !important;
@@ -877,6 +880,14 @@ html, body {
 					height: 50px;
 					line-height: 50px;
 				}
+				.send {
+					span {
+						display: none;
+					}
+					.icon-search {
+						display: block;
+					}
+				}
 			}
 		}
 	
@@ -935,10 +946,13 @@ html, body {
 		.breadcrumb li {
 			display: none;
 			
-			a span.text {
-				padding: 0;
+			a {
+				padding: 13px 0 13px 0;
+				
+				span.text {
+					padding: 0;
+				}
 			}
-
 			&:last-of-type {
 				display: block;
 			}

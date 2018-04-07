@@ -171,7 +171,7 @@ var QHABITO = window.QHABITO || {};
 				if (field.length) {
 					field.blur(function() {
 						if($('.mod-select', results).length) {
-							results.css('visibility', 'hidden');
+							results.css('display', 'none');
 						}
 					});
 					field.focus(function() {
@@ -179,7 +179,7 @@ var QHABITO = window.QHABITO || {};
 							if (!form.hasClass('has-results')) {
 								form.addClass('has-results');
 							}
-							results.css('visibility', 'visible');
+							results.css('display', 'block');
 						}
 					});
 					field.keyup(function() {
@@ -216,7 +216,7 @@ var QHABITO = window.QHABITO || {};
 												if (!form.hasClass('has-results')) {
 													form.addClass('has-results');
 												}
-												results.css('visibility', 'visible');
+												results.css('display', 'block');
 											}
 										}
 									});

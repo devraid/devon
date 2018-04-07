@@ -60,7 +60,7 @@ $dictionary = array(
 						<fieldset>
 							<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad..." />
 							<div class="results"></div></div>
-							<div><a class="send" href="#" title=""><span>Buscar</span><span>Buscar</span></a></div>
+							<div><a class="send" href="#" title=""><span>Buscar</span><span>Buscar</span><i class="icon-search">&nbsp;</i></a></div>
 						</fieldset>
 					</form>
 				</div>

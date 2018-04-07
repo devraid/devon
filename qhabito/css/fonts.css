@@ -79,3 +79,7 @@
 .icon-floppy:before {
   content: '\e806';
 }
+
+.icon-search:before {
+  content: '\e807';
+}
