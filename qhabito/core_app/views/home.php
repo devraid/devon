@@ -67,7 +67,7 @@ $d = $dictionary;
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
 			<div class="wrap">
-				<!-- TBD -->
+				<div class="canvas"></div>
 			</div>
 		</div>
 		<!-- CONTENT / END -->
