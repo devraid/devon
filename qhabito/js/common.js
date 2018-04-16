@@ -14,9 +14,10 @@ var QHABITO = window.QHABITO || {};
 				return keyValue ? keyValue[2] : null;
 			},
 			setCookie : function(key, value) {
+				document.cookie = key +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 				var expires = new Date();
 				expires.setTime(expires.getTime() + (360 * 24 * 60 * 60 * 1000));
-				document.cookie = key + '=' + value + ';path=/;expires=' + expires.toUTCString();
+				document.cookie = key + '=' + value + '; path=/; expires=' + expires.toUTCString();
 			},
 			setCookies : function() {
 				var cookies = $('.cookies');
@@ -250,6 +251,17 @@ var QHABITO = window.QHABITO || {};
 					document.location.reload();
 				}, delay);
 			},
+			language : function() {
+				$('.languages li a').on('click', function() {
+					var self = $(this);
+					self.blur();
+					
+					QHABITO.common.setCookie('qh_lang', '' + self.data('lang'));
+					document.location.reload();
+					
+					return false;
+				});
+			},
 			init : function() {
 				// Cookies
 				QHABITO.common.setCookies();
@@ -265,6 +277,9 @@ var QHABITO = window.QHABITO || {};
 
 				// Module
 				QHABITO.common.modSearch();
+				
+				// Lanaguage
+				//QHABITO.common.language();
 				
 				// Navigation
 				/*QHABITO.common.target.on('scroll', function() {

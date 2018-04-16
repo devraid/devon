@@ -4,9 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Favorites extends CI_Controller {
 	
 	public function index() {
-		// Language
-		$data['language'] = 'es';
-		
 		// CSRF
 		$data['csrf_exp'] = '' . $this->config->item('csrf_expire');
 		
@@ -16,11 +13,11 @@ class Favorites extends CI_Controller {
 			$data['device'] = 'mobile-tablet';
 		}
 		
-		// Cookies: Grid or list
-		$data['list_type'] = 'grid';
-		if ((boolean)json_decode(get_cookie('qh_list')) === TRUE) {
-			$data['list_type'] = 'list';
-		}
+		// Dictionary model
+		$this->load->model('dictionary_model');
+		$data['language'] = $this->dictionary_model->get_language();
+		/*$data['dictionary'] = $this->dictionary_model->get_words(array('home', 'rent', 'vacational', 'buy', 'faqs', 'users_area', 'sitemap', 'contact', 'sitemap', 'about_us', 'advertising', 'general_conditions', 'privacy_policy', 'newsletter', 'email', 'essentials', 'all_rights_reserved', 'cookies_msg', 'close', 'more_info', 'send'));*/
+		$data['dictionary'] = $this->dictionary_model->get_all();
 		
 		// Model
 		$data['data'] = $data;

@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+$d = $dictionary;
 ?>
 <!DOCTYPE HTML>
 	<html lang="en">
@@ -41,8 +42,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="header clearfix">
 			<div class="top-bar">
 				<ul class="languages">
-					<li><a class="selected" href="#" title=""><span>ESP</span><span>ESP</span></a></li>
-					<li><a href="#" title=""><span>ENG</span><span>ENG</span></a></li>
+					<li><a <?= ($language === 'es' ? ' class="selected' : ''); ?> href="<?= base_url(); ?>inicio" title="" data-lang="es"><span>ESP</span><span>ESP</span></a></li>
+					<li><a <?= ($language === 'en' ? ' class="selected' : ''); ?> href="<?= base_url(); ?>home" title="" data-lang="en"><span>ENG</span><span>ENG</span></a></li>
 				</ul>
 			</div>
 			<div class="content">
@@ -74,40 +75,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="footer clearfix">
 			<div class="wrap">
 				<ul class="primary clearfix">
-					<li><a href="#" title=""><span>Inicio</span><span>Inicio</span></a></li>
-					<li><a href="/qhabito/alquiler" title=""><span>Alquiler</span><span>Alquiler</span></a></li>
-					<li><a href="#" title=""><span>Compra</span><span>Compra</span></a></li>
-					<li><a href="#" title=""><span>Venta</span><span>Venta</span></a></li>
-					<li><a href="#" title=""><span>Vacacional</span><span>Vacacional</span></a></li>
+					<li><a href="#" title=""><span><?= $d['home']; ?></span><span><?= $d['home']; ?></span></a></li>
+					<li><a href="#" title=""><span><?= $d['rent']; ?></span><span><?= $d['rent']; ?></span></a></li>
+					<li><a href="#" title=""><span><?= $d['vacational']; ?></span><span><?= $d['vacational']; ?></span></a></li>
+					<li><a href="#" title=""><span><?= $d['buy']; ?></span><span><?= $d['buy']; ?></span></a></li>
 				</ul>
 				<ul class="secondary clearfix">
-					<li><h1>Esenciales</h1>
+					<li><h1><?= $d['essentials']; ?></h1>
 						<ul>
-							<li><a href="#" title="">Area de Usuarios</a></li>
-							<li><a href="#" title="">Preguntas Frecuentes</a></li>
-							<li><a href="#" title="">Mapa del Sitio</a></li>
-							<li><a href="#" title="">Contactar</a></li>
+							<li><a href="#" title=""><?= $d['users_area']; ?></a></li>
+							<li><a href="#" title=""><?= $d['faqs']; ?></a></li>
+							<li><a href="#" title=""><?= $d['sitemap']; ?></a></li>
+							<li><a href="#" title=""><?= $d['contact']; ?></a></li>
 						</ul>
 					</li>
 					<li><h1>QHabito</h1>
 						<ul>
-							<li><a href="#" title="">Sobre Nosotros</a></li>
-							<li><a href="#" title="">Publicidad</a></li>
-							<li><a href="#" title="">Condiciones Generales</a></li>
-							<li><a href="#" title="">Política de Privacidad</a></li>
+							<li><a href="#" title=""><?= $d['about_us']; ?></a></li>
+							<li><a href="#" title=""><?= $d['advertising']; ?></a></li>
+							<li><a href="#" title=""><?= $d['general_conditions']; ?></a></li>
+							<li><a href="#" title=""><?= $d['privacy_policy']; ?></a></li>
 						</ul>
 					</li>
 				</ul>
 				<div class="mod-simple-form clearfix">
-					<h1>Newsletter</h1>
+					<h1><?= $d['newsletter']; ?></h1>
 					<form action="/newsletter" method="get">
 						<fieldset>
-							<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Email" /></div>
-							<div><a class="send" href="#" title=""><span>Enviar</span><span>Enviar</span></a></div>
+							<div><input class="text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="<?= $d['email']; ?>" /></div>
+							<div><a class="send" href="#" title=""><span><?= $d['send']; ?></span><span><?= $d['send']; ?></span></a></div>
 						</fieldset>
 					</form>
 				</div>
-				<div class="bottom-text clearfix"><p>&copy; 2018 QHabito LTD. All Rights Reserved.</p></div>
+				<div class="bottom-text clearfix"><p>&copy; 2018 QHabito LTD. <?= $d['all_rights_reserved']; ?>.</p></div>
 			</div>
 		</div>
 		<!-- FOOTER / END -->
@@ -116,9 +116,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- COOKIES / BEGIN -->
 	<div class="cookies">
 		<p>
-			Usamos cookies para ofrecer una experiencia más personalizada. <a href="#" title=""><span>Más información &gt;</span></a>
+			<?= $d['cookies_msg']; ?>. <a href="#" title=""><span><?= $d['more_info']; ?> &gt;</span></a>
 		</p>
-		<a class="button" href="#" title=""><span>Cerrar</span><span>Cerrar</span></a>
+		<a class="button" href="#" title=""><span><?= $d['close']; ?></span><span><?= $d['close']; ?></span></a>
 	</div>
 	<!-- COOKIES / END -->
 </body>

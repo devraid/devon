@@ -47,7 +47,11 @@ var QHABITO = window.QHABITO || {};
 				$('a.item', cloud).each(function() {
 					uri += '_' + $(this).data('filter');
 				});
-				console.log(QHABITO.rent.base_uri);
+				if (QHABITO.rent.base_uri) {
+					console.log(QHABITO.rent.base_uri);
+				} else {
+					QHABITO.rent.base_uri = document.location.href;
+				}
 				uri = QHABITO.rent.base_uri + '/' + uri.substring(1);
 				uri = (uri.charAt(uri.length-1) === '/') ? uri.substr(0, uri.length - 1) : uri;
 				if (QHABITO.common.utilHistory()) {
