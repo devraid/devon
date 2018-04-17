@@ -20,8 +20,12 @@
 
 // HOME : CANVAS
 .home .canvas {
+	position: relative;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: auto;
+	overflow: hidden;
 	background-color: red;
 	
 	&:before {

@@ -34,6 +34,7 @@ $d = $dictionary;
 		<script type="text/javascript" src="/qhabito/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/slick.min.js"></script>
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
+		<script type="text/javascript" src="/qhabito/js/mod-map.js"></script>
 	</head>
 <body class="<?php echo $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
@@ -67,7 +68,7 @@ $d = $dictionary;
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
 			<div class="wrap">
-				<div class="canvas"></div>
+				
 			</div>
 		</div>
 		<!-- CONTENT / END -->
