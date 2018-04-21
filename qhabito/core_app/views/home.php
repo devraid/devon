@@ -68,7 +68,17 @@ $d = $dictionary;
 		<!-- CONTENT / BEGIN -->
 		<div class="content">
 			<div class="wrap">
-				
+				<div class="mod-map canvas">
+					
+					<!--
+					<object class="country" id="country" data="/qhabito/tmp/map.svg" type="image/svg+xml"></object>
+					-->
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" width="700" height="500" viewBox="150.522 11.305 416.74600000000004 348.17">
+						<?php foreach($provinces as $province): ?>
+						<?= $province->svg; ?>
+						<?php endforeach; ?>
+					</svg>
+				</div>
 			</div>
 		</div>
 		<!-- CONTENT / END -->

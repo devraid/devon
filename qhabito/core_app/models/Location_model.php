@@ -72,4 +72,19 @@ class Location_model extends CI_Model {
 		return $this->location;
 	}
 	
+	public function get_provinces() {
+		$query = $this->db->select('name, slug, data')->from('province')->order_by('name', 'asc')->get();
+		$arr = $query->result();
+		if($arr) {
+			$arr = array_map(function($item) {
+				return (object)array(
+					'name' => '' . $item->name,
+					'slug' => 'provincia-' . $item->slug,
+					'svg' => '' . $item->data
+				);
+			}, $arr);
+		}
+		return $arr;
+	}
+	
 }

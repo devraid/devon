@@ -18,20 +18,50 @@
 	}
 }
 
-// HOME : CANVAS
-.home .canvas {
+// HOME : MOD MAP
+.home .mod-map {
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	background-color: red;
+	margin: 50px 0 50px 0;
 	
 	&:before {
 		height: 0;
-		margin-top: 100%;
+		margin-top: 71.42%; // 700 x 500
 		content: "";
 		display: block;
+	}
+}
+
+// HOME : MOD MAP : COUNTRY
+.home .mod-map svg {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	
+	* {
+		fill: #A0A0A0;
+		stroke: #C0C0C0;
+		stroke-width: 0.2;
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	
+	path {
+		// Transition
+		-webkit-transition: all 0.25s ease 0.025s;
+		-moz-transition: all 0.25s ease 0.025s;
+		-ms-transition: all 0.25s ease 0.025s;
+		-o-transition: all 0.25s ease 0.025s;
+		transition: all 0.25s ease 0.025s;
+	}
+	
+	path:hover {
+		fill: #C0C0C0;
 	}
 }

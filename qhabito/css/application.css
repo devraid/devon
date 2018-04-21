@@ -2140,20 +2140,45 @@ body.desktop .mod-slider-thumbs .thumbs li a:not(.disabled):hover span:last-of-t
   transform: translate(-50%, -50%);
 }
 
-.home .canvas {
+.home .mod-map {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: red;
+  margin: 50px 0 50px 0;
 }
-.home .canvas:before {
+.home .mod-map:before {
   height: 0;
-  margin-top: 100%;
+  margin-top: 71.42%;
   content: "";
   display: block;
+}
+
+.home .mod-map svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .mod-map svg * {
+  fill: #A0A0A0;
+  stroke: #C0C0C0;
+  stroke-width: 0.2;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.home .mod-map svg path {
+  -webkit-transition: all 0.25s ease 0.025s;
+  -moz-transition: all 0.25s ease 0.025s;
+  -ms-transition: all 0.25s ease 0.025s;
+  -o-transition: all 0.25s ease 0.025s;
+  transition: all 0.25s ease 0.025s;
+}
+.home .mod-map svg path:hover {
+  fill: #C0C0C0;
 }
 
 .rent .filters {
