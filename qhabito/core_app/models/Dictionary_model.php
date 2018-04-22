@@ -7,10 +7,12 @@ class Dictionary_model extends CI_Model {
 	
 	public function __construct() {
 		parent::__construct();
-		
+	}
+	
+	public function make($rest = FALSE) {
 		// Set language
 		$slug = $this->uri->segment('1');
-		if($slug) {
+		if($slug && $rest === FALSE) {
 			$section = $this->db->select('language')->get_where('section', array('slug' => $slug))->row();
 			if ($section) {
 				$this->set_language('' . $section->language);

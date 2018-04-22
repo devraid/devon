@@ -2,19 +2,19 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home_model extends CI_Model {
-
-	private $provinces = array();
 	
 	public function __construct() {
 		parent::__construct();
-		
+	}
+	
+	public function make() {
 		// Location model
 		$this->load->model('location_model');
-		$this->provinces = $this->location_model->get_provinces();
+		$this->location_model->make();
 	}
 	
 	public function get_provinces() {
-		return $this->provinces;
+		return $this->location_model->get_provinces();
 	}
 	
 }

@@ -7,7 +7,9 @@ class Location_model extends CI_Model {
 	
 	public function __construct() {
 		parent::__construct();
-		
+	}
+	
+	public function make() {
 		$slug = $this->uri->segment('2');
 		$type = 'city';
 
@@ -85,6 +87,10 @@ class Location_model extends CI_Model {
 			}, $arr);
 		}
 		return $arr;
+	}
+	
+	public function init() {
+		return $this->location;
 	}
 	
 }

@@ -15,11 +15,11 @@ class Favorites extends CI_Controller {
 		
 		// Dictionary model
 		$this->load->model('dictionary_model');
+		$this->dictionary_model->make();
 		$data['language'] = $this->dictionary_model->get_language();
-		/*$data['dictionary'] = $this->dictionary_model->get_words(array('home', 'rent', 'vacational', 'buy', 'faqs', 'users_area', 'sitemap', 'contact', 'sitemap', 'about_us', 'advertising', 'general_conditions', 'privacy_policy', 'newsletter', 'email', 'essentials', 'all_rights_reserved', 'cookies_msg', 'close', 'more_info', 'send'));*/
 		$data['dictionary'] = $this->dictionary_model->get_all();
 		
-		// Model
+		// Data
 		$data['data'] = $data;
 		
 		// View

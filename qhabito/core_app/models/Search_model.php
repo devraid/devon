@@ -3,13 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Search_model extends CI_Model {
 
-	private $data = [];
+	private $results = [];
 	
 	public function __construct() {
 		parent::__construct();
 	}
 	
-	public function get_data() {
+	public function make() {
 		// Search term
 		$term = '' . $this->input->post('t', true);
 		
@@ -59,10 +59,10 @@ class Search_model extends CI_Model {
 		// Results
 		$result = array_slice(array_merge($arr1, $arr2), 0, 11);
 		$result = array_map("unserialize", array_unique(array_map("serialize", $result)));
-		$results = [];
+		$this->results = [];
 		foreach($result as $item) {
 			if (is_object($item)) {
-				array_push($results,
+				array_push($this->results,
 					array(
 						'name' => $item->name,
 						'slug' => $item->slug
@@ -70,9 +70,10 @@ class Search_model extends CI_Model {
 				);
 			}
 		}
-		
-		// Results
-		return $results;
+	}
+	
+	public function get_data() {
+		return $this->results;
 	}
 	
 }

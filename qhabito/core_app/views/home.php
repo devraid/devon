@@ -11,7 +11,7 @@ $d = $dictionary;
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="csrf" content="<?php echo $csrf_exp; ?>" />
+		<meta name="csrf" content="<?= $csrf_exp; ?>" />
 		<meta name="author" content="WirexMedia.com" />
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
@@ -36,7 +36,7 @@ $d = $dictionary;
 		<script type="text/javascript" src="/qhabito/js/common.js"></script>
 		<script type="text/javascript" src="/qhabito/js/mod-map.js"></script>
 	</head>
-<body class="<?php echo $data['device']; ?>">
+<body class="<?= $data['device']; ?>">
 	<!-- MAIN / BEGIN -->
 	<div class="main home">
 		<!-- HEADER / BEGIN -->
@@ -48,14 +48,14 @@ $d = $dictionary;
 				</ul>
 			</div>
 			<div class="content">
-				<a class="logo-link" href="<?php echo base_url(); ?>" title="">&nbsp;</a>
+				<a class="logo-link" href="<?= base_url(); ?>" title="">&nbsp;</a>
 			</div>
 		</div>
 		<!-- HEADER / END -->
 		<!-- MODULE / BEGIN -->
 		<div class="mod-top-big-poster" style="background-image: url(/qhabito/css/images/image-0002.jpg);">
 			<div class="mod-simple-form search-form">
-				<form action="<?php echo base_url(); ?>alquiler" method="get">
+				<form action="<?= base_url(); ?>alquiler" method="get">
 					<fieldset>
 						<div><input class="search text" type="text" name="q" value="" tabindex="1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Provincia, ciudad..." />
 						<div class="results"></div></div>
@@ -73,7 +73,7 @@ $d = $dictionary;
 					<!--
 					<object class="country" id="country" data="/qhabito/tmp/map.svg" type="image/svg+xml"></object>
 					-->
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" width="700" height="500" viewBox="150.522 11.305 416.74600000000004 348.17">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" width="700" height="500" viewBox="0 0 700 500">
 						<?php foreach($provinces as $province): ?>
 						<?= $province->svg; ?>
 						<?php endforeach; ?>
